@@ -1,0 +1,26 @@
+select (?videogameLabel as ?title) (group_concat(DISTINCT ?genreLabel;SEPARATOR=";") as ?genres) (group_concat(DISTINCT ?platformLabel;SEPARATOR=";") as ?platforms) #(sample(?publisherLabel) as ?publisher) 
+where {
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+  ?videogame wdt:P31 wd:Q7889.
+  OPTIONAL { ?videogame wdt:P136 ?genreVar. }
+  OPTIONAL { ?videogame wdt:P400 ?platformVar. }
+  #OPTIONAL { ?videogame wdt:P123 ?publisherVar. }
+  #OPTIONAL { ?videogame wdt:P577 ?publication_dateVar. }
+  #OPTIONAL { ?videogame wdt:P2284 ?price. }
+  #OPTIONAL { ?videogame wdt:P444 ?rating. }
+  #OPTIONAL { ?videogame wdt:P404 ?game_modeVar. }
+  #OPTIONAL { ?videogame wdt:P914 ?USK_rating. }
+  #OPTIONAL { ?videogame wdt:P908 ?PEGI_rating. }
+  
+  SERVICE wikibase:label { 
+    bd:serviceParam wikibase:language "en". 
+    ?videogame rdfs:label ?videogameLabel.
+    ?genreVar rdfs:label ?genreLabel.
+    ?platformVar rdfs:label ?platformLabel.
+    #?publisherVar rdfs:label ?publisherLabel.
+    #?game_modeVar rdfs:label ?game_modeLabel.
+  }
+}
+group by ?videogame ?videogameLabel
+
+LIMIT 1000

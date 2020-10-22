@@ -1,0 +1,16 @@
+SELECT ?videogame ?videogameLabel ?title ?genreLabel ?platformLabel ?publisherLabel ?publication_date ?rating ?minimum_age ?game_modeLabel ?USK_ratingLabel ?PEGI_ratingLabel ?price WHERE {
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+  ?videogame wdt:P31 wd:Q7889.
+  OPTIONAL { ?videogame wdt:P1476 ?title. }
+  OPTIONAL { ?videogame wdt:P136 ?genre. }
+  OPTIONAL { ?videogame wdt:P400 ?platform. }
+  OPTIONAL { ?videogame wdt:P123 ?publisher. }
+  OPTIONAL { ?videogame wdt:P577 ?publication_date. }
+  OPTIONAL { ?videogame wdt:P444 ?rating. }
+  OPTIONAL { ?videogame wdt:P2899 ?minimum_age. }
+  OPTIONAL { ?videogame wdt:P404 ?game_mode. }
+  OPTIONAL { ?videogame wdt:P914 ?USK_rating. }
+  OPTIONAL { ?videogame wdt:P908 ?PEGI_rating. }
+  OPTIONAL { ?videogame wdt:P2284 ?price. }
+}
+LIMIT 100
