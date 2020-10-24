@@ -1,0 +1,60 @@
+# COUNT DISTINCT VALUES
+SELECT 
+(count(distinct ?steam_id) as ?count)
+WHERE {
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+  ?videogame wdt:P31 wd:Q7889.
+  # { ?videogame wdt:P1476 ?title. }
+  # { ?videogame wdt:P136 ?genre. }
+  # { ?videogame wdt:P400 ?platform. }
+  # { ?videogame wdt:P123 ?publisher. }
+  # { ?videogame wdt:P577 ?publication_date. }
+  # { ?videogame wdt:P178 ?developer. }
+  # { ?videogame wdt:P2284 ?price. }
+  # { ?videogame wdt:P444 ?rating. }
+  # { ?videogame wdt:P479 ?input_method. }
+  # { ?videogame wdt:P404 ?game_mode. }
+  # { ?videogame wdt:P495 ?origin_country. }
+  # { ?videogame wdt:P57 ?director. }
+  # { ?videogame wdt:P852 ?esrb_rating. }
+  # { ?videogame wdt:P853 ?cero_rating. }
+  # { ?videogame wdt:P914 ?USK_rating. }
+  # { ?videogame wdt:P908 ?PEGI_rating. }
+  { ?videogame wdt:P1733 ?steam_id. }
+}
+
+
+
+
+
+
+# SHOWING DISTINCT VALUES
+SELECT 
+DISTINCT ?steam_id
+WHERE {
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+  ?videogame wdt:P31 wd:Q7889.
+  # { ?videogame wdt:P1476 ?title. }
+  # { ?videogame wdt:P136 ?genre. }
+  # { ?videogame wdt:P400 ?platform. }
+  # { ?videogame wdt:P123 ?publisher. }
+  # { ?videogame wdt:P577 ?publication_date. }
+  # { ?videogame wdt:P178 ?developer. }
+  # { ?videogame wdt:P2284 ?price. }
+  # { ?videogame wdt:P444 ?rating. }
+  # { ?videogame wdt:P479 ?input_method. }
+  # { ?videogame wdt:P404 ?game_mode. }
+  # { ?videogame wdt:P495 ?origin_country. }
+  # { ?videogame wdt:P57 ?director. }
+  # { ?videogame wdt:P852 ?esrb_rating. }
+  # { ?videogame wdt:P853 ?cero_rating. }
+  # { ?videogame wdt:P914 ?USK_rating. }
+  # { ?videogame wdt:P908 ?PEGI_rating. }
+  { ?videogame wdt:P1733 ?steam_id. }
+  # FILTER(?rating = 849999).
+  # filter( regex(str(?rating), '[A-Z]+$' ))
+}
+
+ORDER BY (?steam_id)
+LIMIT 10
+
