@@ -1,0 +1,34 @@
+<videogames>
+	<videogame>
+		<id>videogame1</id>
+		<title>game1</title>
+		<platform>plat1</platform>
+		<publisher>pub1</publisher>
+		<publishingdate>01.01.2000</publishingdate>
+		<developer>dev1</developer>
+		<age>a</age>
+		<gamemode>mode1</gamemode>
+		<price>24.3</price>
+		<genres>
+			<genre>asdf</genre>
+			<genre>jlk</genre>
+			<genre>xyz</genre>
+		</genres>
+	</videogame>
+	<videogame>
+		<id>videogame2</id>
+		<title>game2</title>
+		<platform>plat2</platform>
+		<publisher>pub2</publisher>
+		<publishingdate>12.03.1970</publishingdate>
+		<developer>dev2</developer>
+		<age>b</age>
+		<gamemode>mode2</gamemode>
+		<price>24.3</price>
+		<genres>
+			<genre>asdf</genre>
+			<genre>jlk</genre>
+			<genre>xyz</genre>
+		</genres>
+	</videogame>
+</videogames>
