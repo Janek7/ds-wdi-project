@@ -1,12 +1,12 @@
+from datetime import datetime
 import requests
 import pandas as pd
-import numpy as np
 import json
 
 url = "https://query.wikidata.org/sparql"
 
 query = """
-        SELECT ?videogame ?videogameLabel ?title ?genreLabel ?platformLabel ?publisherLabel ?publication_date ?rating ?minimum_age ?game_modeLabel ?USK_ratingLabel ?PEGI_ratingLabel ?price
+        SELECT ?videogame ?videogameLabel ?title ?genreLabel ?platformLabel ?publisherLabel ?publication_date ?developerLabel ?game_modeLabel ?minimum_age ?USK_ratingLabel ?PEGI_ratingLabel ?price
         WHERE {
             SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
             ?videogame wdt:P31 wd:Q7889.
@@ -17,9 +17,9 @@ query = """
             OPTIONAL { ?videogame wdt:P400 ?platform. }
             OPTIONAL { ?videogame wdt:P123 ?publisher. }
             OPTIONAL { ?videogame wdt:P577 ?publication_date. }
-            OPTIONAL { ?videogame wdt:P444 ?rating. }
-            OPTIONAL { ?videogame wdt:P2899 ?minimum_age. }
+            OPTIONAL { ?videogame wdt:P178 ?developer. }
             OPTIONAL { ?videogame wdt:P404 ?game_mode. }
+            OPTIONAL { ?videogame wdt:P2899 ?minimum_age. }
             OPTIONAL { ?videogame wdt:P914 ?USK_rating. }
             OPTIONAL { ?videogame wdt:P908 ?PEGI_rating. }
             OPTIONAL { ?videogame wdt:P2284 ?price. }
@@ -67,4 +67,4 @@ if __name__ == "__main__":
             break
     df_full.drop_duplicates().reset_index(drop=True, inplace=True)
     print(df_full)
-    df_full.to_csv("data/output_wikidata.csv", index=False)
+    df_full.to_csv("data/output_wikidata" + datetime.now().strftime("%d%m%Y-%H%M%S") + ".csv", index=False)
