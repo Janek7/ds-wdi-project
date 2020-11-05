@@ -13,6 +13,8 @@
 							<xs:element name="publishingdate" type="xs:string"/>
 							<xs:element name="developer" type="xs:string"/>
 							<xs:element name="age" type="xs:string"/>
+							<xs:element name="usk_rating" type="xs:string"/>
+							<xs:element name="pegi_rating" type="xs:string"/>
 							<xs:element name="gamemodes">
 								<xs:complexType>
 									<xs:sequence>
