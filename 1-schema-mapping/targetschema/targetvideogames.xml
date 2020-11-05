@@ -6,7 +6,9 @@
 		<publisher>pub1</publisher>
 		<publishingdate>01.01.2000</publishingdate>
 		<developer>dev1</developer>
-		<age>a</age>
+		<age>6</age>
+		<usk_rating>USK 6</usk_rating>
+		<pegi_rating>PEGI 7</pegi_rating>
 		<gamemodes>
 			<gamemode>mode1</gamemode>
 			<gamemode>mode2</gamemode>
@@ -25,7 +27,9 @@
 		<publisher>pub2</publisher>
 		<publishingdate>12.03.1970</publishingdate>
 		<developer>dev2</developer>
-		<age>b</age>
+		<age>6</age>
+		<usk_rating>USK 18</usk_rating>
+		<pegi_rating>PEGI 18</pegi_rating>
 		<gamemodes>
 			<gamemode>mode3</gamemode>
 			<gamemode>mode1</gamemode>
