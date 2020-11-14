@@ -3,21 +3,30 @@
 <mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="22">
 	<resources/>
 	<component name="defaultmap" uid="1" editable="1" blackbox="0">
-		<properties ShowLibraryNameInHeader="1" SelectedLanguage="builtin"/>
+		<properties SelectedLanguage="builtin"/>
 		<structure>
 			<children>
-				<component name="constant" library="core" uid="25" kind="2">
-					<targets>
-						<datapoint pos="0" key="16"/>
-					</targets>
-					<view ltx="200" lty="328" rbx="323" rby="344"/>
+				<component name="generate_id" library="user" uid="17" kind="19" visible="0" blackbox="0">
+					<view ltx="700" lty="-15" rbx="747" rby="2"/>
 					<data>
-						<constant value="[Y]" datatype="string"/>
+						<root>
+							<header>
+								<namespaces/>
+							</header>
+						</root>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="id" outkey="27" componentid="16"/>
+						</root>
 					</data>
 				</component>
-				<component name="targetvideogames" library="xml" uid="4" kind="14">
-					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
-					<view ltx="745" lty="-14" rbx="1166" rby="342"/>
+				<component name="targettestvideogames" library="xml" uid="24" kind="14">
+					<properties XSLTDefaultOutput="1"/>
+					<view ltx="851" lty="14" rbx="1281" rby="368"/>
 					<data>
 						<root>
 							<header>
@@ -29,28 +38,28 @@
 							<entry name="FileInstance" ns="1" expanded="1">
 								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
 									<entry name="videogames" expanded="1">
-										<entry name="videogame" inpkey="19" expanded="1">
-											<entry name="id" inpkey="20"/>
-											<entry name="title" inpkey="21"/>
-											<entry name="platform" inpkey="22"/>
-											<entry name="publisher" inpkey="23"/>
-											<entry name="publishingdate" inpkey="24"/>
+										<entry name="videogame" inpkey="30" expanded="1">
+											<entry name="id" inpkey="31"/>
+											<entry name="title" inpkey="32"/>
+											<entry name="platform" inpkey="33"/>
+											<entry name="publisher" inpkey="34"/>
+											<entry name="publishingdate" inpkey="35"/>
 											<entry name="genres" expanded="1">
-												<entry name="genre" inpkey="25"/>
+												<entry name="genre" inpkey="40"/>
 											</entry>
 										</entry>
 									</entry>
 								</entry>
 							</entry>
 						</root>
-						<document schema="..\..\..\..\..\Desktop\targetvideogames.xsd" instanceroot="{}videogames" inputinstance="Project\wdi-project\1-schema-mapping\targetschema\targetvideogames.xml" outputinstance="Project\wdi-project\1-schema-mapping\targetschema\targetvideogames.xml"/>
+						<document schema="..\targetschema\targettestvideogames.xsd" instanceroot="{}videogames" inputinstance="..\targetschema\targettestvideogames.xml" outputinstance="..\targetschema\targettestvideogames.xml"/>
 					</data>
 				</component>
-				<component name="vg_sales" library="text" uid="3" kind="16">
+				<component name="sales" library="text" uid="3" kind="16">
 					<properties/>
-					<view rbx="168" rby="217"/>
+					<view ltx="84" lty="2" rbx="252" rby="219"/>
 					<data>
-						<root>
+						<root scrollposition="2">
 							<header>
 								<namespaces>
 									<namespace/>
@@ -59,19 +68,19 @@
 							</header>
 							<entry name="FileInstance" ns="1" expanded="1">
 								<entry name="document" ns="1" expanded="1">
-									<entry name="Rows" outkey="26" expanded="1">
-										<entry name="Name" outkey="27"/>
-										<entry name="Platform" outkey="28"/>
-										<entry name="Year" outkey="29"/>
-										<entry name="Genre" outkey="30"/>
-										<entry name="Publisher" outkey="31"/>
+									<entry name="Rows" outkey="20" expanded="1">
+										<entry name="Name" outkey="21"/>
+										<entry name="Platform" outkey="22"/>
+										<entry name="Year" outkey="23"/>
+										<entry name="Genre" outkey="26"/>
+										<entry name="Publisher" outkey="24"/>
 									</entry>
 								</entry>
 							</entry>
 						</root>
-						<text type="csv" encoding="1000" byteorder="1" byteordermark="0" inputinstance="Project\archive\vgsales.csv">
+						<text type="csv" encoding="1000" byteorder="1" byteordermark="0" inputinstance="..\..\..\archive\vgsales.csv">
 							<settings separator="," quote="&quot;" firstrownames="true" removeempty="true">
-								<names root="vg_sales" block="Rows">
+								<names root="sales" block="Rows">
 									<field0 name="Rank" type="string"/>
 									<field1 name="Name" type="string"/>
 									<field2 name="Platform" type="string"/>
@@ -88,23 +97,16 @@
 						</text>
 					</data>
 				</component>
-				<component name="parse-date" library="core" uid="24" kind="5">
-					<sources>
-						<datapoint pos="0" key="32"/>
-						<datapoint pos="1" key="33"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="34"/>
-					</targets>
-					<view ltx="385" lty="279" rbx="492" rby="331"/>
-				</component>
-				<component name="generateid" library="user" uid="33" kind="19" visible="0" blackbox="0">
-					<view ltx="448" lty="-13" rbx="495" rby="4"/>
+				<component name="formatYear" library="user" uid="37" kind="19" visible="0" blackbox="0">
+					<view ltx="477" lty="317" rbx="477" rby="317"/>
 					<data>
 						<root>
 							<header>
-								<namespaces/>
+								<namespaces>
+									<namespace/>
+								</namespaces>
 							</header>
+							<entry name="value" inpkey="41" componentid="35"/>
 						</root>
 						<root>
 							<header>
@@ -112,7 +114,7 @@
 									<namespace/>
 								</namespaces>
 							</header>
-							<entry name="id" outkey="35" componentid="32"/>
+							<entry name="publishingdate" outkey="42" componentid="36"/>
 						</root>
 					</data>
 				</component>
@@ -120,49 +122,44 @@
 			<graph directed="1">
 				<edges/>
 				<vertices>
-					<vertex vertexkey="26">
+					<vertex vertexkey="20">
 						<edges>
-							<edge vertexkey="19"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="35">
-						<edges>
-							<edge vertexkey="20"/>
+							<edge vertexkey="30"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="27">
 						<edges>
-							<edge vertexkey="21"/>
+							<edge vertexkey="31"/>
 						</edges>
 					</vertex>
-					<vertex vertexkey="28">
-						<edges>
-							<edge vertexkey="22"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="31">
-						<edges>
-							<edge vertexkey="23"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="34">
-						<edges>
-							<edge vertexkey="24"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="30">
-						<edges>
-							<edge vertexkey="25"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="29">
+					<vertex vertexkey="21">
 						<edges>
 							<edge vertexkey="32"/>
 						</edges>
 					</vertex>
-					<vertex vertexkey="16">
+					<vertex vertexkey="22">
 						<edges>
 							<edge vertexkey="33"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="24">
+						<edges>
+							<edge vertexkey="34"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="42">
+						<edges>
+							<edge vertexkey="35"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="26">
+						<edges>
+							<edge vertexkey="40"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="23">
+						<edges>
+							<edge vertexkey="41"/>
 						</edges>
 					</vertex>
 				</vertices>
@@ -174,116 +171,49 @@
 			<children>
 				<component name="constant" library="core" uid="12" kind="2">
 					<targets>
-						<datapoint pos="0" key="3"/>
+						<datapoint pos="0" key="6"/>
 					</targets>
 					<view ltx="300" lty="82" rbx="337" rby="98"/>
 					<data>
 						<constant value="1" datatype="decimal"/>
 					</data>
 				</component>
-				<component name="constant" library="core" uid="13" kind="2">
+				<component name="auto-number" library="core" uid="13" kind="5">
+					<sources>
+						<datapoint/>
+						<datapoint pos="1" key="7"/>
+						<datapoint/>
+						<datapoint/>
+					</sources>
 					<targets>
 						<datapoint pos="0" key="1"/>
 					</targets>
-					<view ltx="421" rbx="503" rby="16"/>
-					<data>
-						<constant value="vg_sales_" datatype="string"/>
-					</data>
+					<view ltx="390" lty="65" rbx="517" rby="149"/>
 				</component>
 				<component name="concat" library="core" uid="14" kind="5" growable="1" growablebasename="value">
 					<sources>
-						<datapoint pos="0" key="2"/>
-						<datapoint pos="1" key="6"/>
-					</sources>
-					<targets>
-						<datapoint/>
-					</targets>
-					<view ltx="552" lty="36" rbx="624" rby="90"/>
-				</component>
-				<component name="auto-number" library="core" uid="15" kind="5">
-					<sources>
-						<datapoint/>
-						<datapoint pos="1" key="4"/>
-						<datapoint/>
-						<datapoint/>
-					</sources>
-					<targets>
 						<datapoint pos="0" key="5"/>
-					</targets>
-					<view ltx="388" lty="51" rbx="515" rby="135"/>
-				</component>
-			</children>
-			<graph directed="1">
-				<edges/>
-				<vertices>
-					<vertex vertexkey="1">
-						<edges>
-							<edge vertexkey="2"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="3">
-						<edges>
-							<edge vertexkey="4"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="5">
-						<edges>
-							<edge vertexkey="6"/>
-						</edges>
-					</vertex>
-				</vertices>
-			</graph>
-		</structure>
-	</component>
-	<component name="generateid" library="user" uid="27" inline="1" editable="1" blackbox="0">
-		<description/>
-		<structure>
-			<children>
-				<component name="constant" library="core" uid="28" kind="2">
+						<datapoint pos="1" key="2"/>
+					</sources>
 					<targets>
-						<datapoint pos="0" key="6"/>
+						<datapoint pos="0" key="3"/>
 					</targets>
-					<view ltx="421" rbx="574" rby="16"/>
+					<view ltx="601" lty="64" rbx="673" rby="118"/>
+				</component>
+				<component name="constant" library="core" uid="15" kind="2">
+					<targets>
+						<datapoint pos="0" key="4"/>
+					</targets>
+					<view ltx="461" rbx="543" rby="16"/>
 					<data>
 						<constant value="vg_sales_" datatype="string"/>
 					</data>
 				</component>
-				<component name="constant" library="core" uid="29" kind="2">
-					<targets>
-						<datapoint pos="0" key="4"/>
-					</targets>
-					<view ltx="300" lty="82" rbx="408" rby="98"/>
-					<data>
-						<constant value="1" datatype="decimal"/>
-					</data>
-				</component>
-				<component name="auto-number" library="core" uid="30" kind="5">
-					<sources>
-						<datapoint/>
-						<datapoint pos="1" key="5"/>
-						<datapoint/>
-						<datapoint/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="2"/>
-					</targets>
-					<view ltx="388" lty="51" rbx="515" rby="135"/>
-				</component>
-				<component name="concat" library="core" uid="31" kind="5" growable="1" growablebasename="value">
-					<sources>
-						<datapoint pos="0" key="7"/>
-						<datapoint pos="1" key="3"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="1"/>
-					</targets>
-					<view ltx="535" lty="44" rbx="621" rby="98"/>
-				</component>
-				<component name="id" library="core" uid="32" kind="7">
+				<component name="id" library="core" uid="16" kind="7">
 					<sources>
 						<datapoint pos="0" key="8"/>
 					</sources>
-					<view ltx="721" rbx="786" rby="36"/>
+					<view ltx="773" rbx="808" rby="36"/>
 					<data>
 						<output datatype="string"/>
 						<parameter usageKind="output" name="id"/>
@@ -293,9 +223,9 @@
 			<graph directed="1">
 				<edges/>
 				<vertices>
-					<vertex vertexkey="2">
+					<vertex vertexkey="1">
 						<edges>
-							<edge vertexkey="3"/>
+							<edge vertexkey="2"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="4">
@@ -308,9 +238,108 @@
 							<edge vertexkey="7"/>
 						</edges>
 					</vertex>
-					<vertex vertexkey="1">
+					<vertex vertexkey="3">
 						<edges>
 							<edge vertexkey="8"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+	<component name="formatYear" library="user" uid="30" inline="1" editable="1" blackbox="0">
+		<description/>
+		<structure>
+			<children>
+				<component name="constant" library="core" uid="31" kind="2">
+					<targets>
+						<datapoint pos="0" key="4"/>
+					</targets>
+					<view ltx="300" lty="127" rbx="352" rby="143"/>
+					<data>
+						<constant value="[Y]" datatype="string"/>
+					</data>
+				</component>
+				<component name="format-date" library="core" uid="32" kind="5">
+					<sources>
+						<datapoint pos="0" key="8"/>
+						<datapoint pos="1" key="5"/>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="6"/>
+					</targets>
+					<view ltx="560" lty="39" rbx="646" rby="107"/>
+				</component>
+				<component name="parse-date" library="core" uid="33" kind="5">
+					<sources>
+						<datapoint pos="0" key="3"/>
+						<datapoint pos="1" key="2"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="7"/>
+					</targets>
+					<view ltx="398" rbx="474" rby="52"/>
+				</component>
+				<component name="constant" library="core" uid="34" kind="2">
+					<targets>
+						<datapoint pos="0" key="1"/>
+					</targets>
+					<view ltx="317" lty="36" rbx="369" rby="52"/>
+					<data>
+						<constant value="[Y]" datatype="string"/>
+					</data>
+				</component>
+				<component name="value" library="core" uid="35" kind="6">
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="9"/>
+					</targets>
+					<view rbx="73" rby="36"/>
+					<data>
+						<input datatype="string"/>
+						<parameter usageKind="input" name="value"/>
+					</data>
+				</component>
+				<component name="publishingdate" library="core" uid="36" kind="7">
+					<sources>
+						<datapoint pos="0" key="10"/>
+					</sources>
+					<view ltx="746" rbx="841" rby="36"/>
+					<data>
+						<output datatype="string"/>
+						<parameter usageKind="output" name="publishingdate"/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="1">
+						<edges>
+							<edge vertexkey="2"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="9">
+						<edges>
+							<edge vertexkey="3"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4">
+						<edges>
+							<edge vertexkey="5"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="7">
+						<edges>
+							<edge vertexkey="8"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="6">
+						<edges>
+							<edge vertexkey="10"/>
 						</edges>
 					</vertex>
 				</vertices>
