@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Edited with Altova MapForce 2021 -->
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="22">
+	<resources/>
+	<component name="defaultmap" uid="1" editable="1" blackbox="0">
+		<properties SelectedLanguage="builtin"/>
+		<structure>
+			<children>
+				<component name="csv_format" library="text" uid="3" kind="16">
+					<properties XSLTDefaultOutput="1"/>
+					<view ltx="449" lty="16" rbx="665" rby="216"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1">
+									<entry name="Zeilen" inpkey="1" expanded="1">
+										<entry name="id" inpkey="2"/>
+										<entry name="title" inpkey="3"/>
+										<entry name="platform" inpkey="4"/>
+										<entry name="publisher" inpkey="5"/>
+										<entry name="publishingdate" inpkey="6"/>
+										<entry name="developer" inpkey="7"/>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<text type="csv" encoding="1000" byteorder="1" byteordermark="0" inputinstance="csv_format.csv">
+							<settings separator="," quote="&quot;" firstrownames="true" removeempty="false">
+								<names root="csv_format" block="Zeilen">
+									<field0 name="id" type="string"/>
+									<field1 name="title" type="string"/>
+									<field2 name="platform" type="string"/>
+									<field3 name="publisher" type="string"/>
+									<field4 name="publishingdate" type="string"/>
+									<field5 name="developer" type="string"/>
+								</names>
+							</settings>
+						</text>
+					</data>
+				</component>
+				<component name="targetvideogames" library="xml" uid="2" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" EnableMinMaxOccursOptimizations="0"/>
+					<view rbx="301" rby="299"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="videogames" expanded="1">
+										<entry name="videogame" outkey="8" expanded="1">
+											<entry name="id" outkey="9"/>
+											<entry name="title" outkey="10"/>
+											<entry name="platform" outkey="11"/>
+											<entry name="publisher" outkey="12"/>
+											<entry name="publishingdate" outkey="13"/>
+											<entry name="developer" outkey="14"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="..\..\1-schema-mapping\targetschema\targetvideogames.xsd" instanceroot="{}videogames" inputinstance="..\..\1-schema-mapping\data-outputs\wikidata_mapping_output.xml" outputinstance="..\..\1-schema-mapping\data-outputs\wikidata_mapping_output.xml"/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="8">
+						<edges>
+							<edge vertexkey="1"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="9">
+						<edges>
+							<edge vertexkey="2"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="10">
+						<edges>
+							<edge vertexkey="3"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="11">
+						<edges>
+							<edge vertexkey="4"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="12">
+						<edges>
+							<edge vertexkey="5"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="13">
+						<edges>
+							<edge vertexkey="6"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="14">
+						<edges>
+							<edge vertexkey="7"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>
