@@ -6,15 +6,6 @@
 		<properties SelectedLanguage="builtin"/>
 		<structure>
 			<children>
-				<component name="constant" library="core" uid="21" kind="2">
-					<targets>
-						<datapoint pos="0" key="34"/>
-					</targets>
-					<view ltx="344" lty="70" rbx="433" rby="87"/>
-					<data>
-						<constant value="[D].[M].[Y]" datatype="string"/>
-					</data>
-				</component>
 				<component name="auto-number" library="core" uid="11" kind="5">
 					<sources>
 						<datapoint/>
@@ -25,7 +16,7 @@
 					<targets>
 						<datapoint pos="0" key="31"/>
 					</targets>
-					<view ltx="315" lty="-38" rbx="457" rby="48"/>
+					<view ltx="315" lty="-38" rbx="442" rby="46"/>
 				</component>
 				<component name="concat" library="core" uid="13" kind="5" growable="1" growablebasename="value">
 					<sources>
@@ -35,7 +26,7 @@
 					<targets>
 						<datapoint pos="0" key="29"/>
 					</targets>
-					<view ltx="474" lty="-86" rbx="556" rby="-30"/>
+					<view ltx="474" lty="-86" rbx="546" rby="-32"/>
 				</component>
 				<component name="tokenize-regexp" library="core" uid="5" kind="5">
 					<sources>
@@ -46,7 +37,7 @@
 					<targets>
 						<datapoint pos="0" key="25"/>
 					</targets>
-					<view ltx="447" lty="129" rbx="557" rby="199"/>
+					<view ltx="447" lty="129" rbx="547" rby="197"/>
 				</component>
 				<component name="format-date" library="core" uid="19" kind="5">
 					<sources>
@@ -57,13 +48,13 @@
 					<targets>
 						<datapoint pos="0" key="39"/>
 					</targets>
-					<view ltx="460" lty="35" rbx="558" rby="105"/>
+					<view ltx="460" lty="35" rbx="546" rby="103"/>
 				</component>
 				<component name="constant" library="core" uid="9" kind="2">
 					<targets>
 						<datapoint pos="0" key="1"/>
 					</targets>
-					<view ltx="356" lty="369" rbx="401" rby="386"/>
+					<view ltx="356" lty="369" rbx="398" rby="385"/>
 					<data>
 						<constant value=";" datatype="string"/>
 					</data>
@@ -77,13 +68,13 @@
 					<targets>
 						<datapoint pos="0" key="4"/>
 					</targets>
-					<view ltx="446" lty="332" rbx="556" rby="402"/>
+					<view ltx="446" lty="332" rbx="546" rby="400"/>
 				</component>
 				<component name="constant" library="core" uid="23" kind="2">
 					<targets>
 						<datapoint pos="0" key="52"/>
 					</targets>
-					<view ltx="366" lty="245" rbx="411" rby="262"/>
+					<view ltx="366" lty="245" rbx="408" rby="261"/>
 					<data>
 						<constant value=";" datatype="string"/>
 					</data>
@@ -92,7 +83,7 @@
 					<targets>
 						<datapoint pos="0" key="26"/>
 					</targets>
-					<view ltx="366" lty="166" rbx="411" rby="183"/>
+					<view ltx="366" lty="166" rbx="408" rby="182"/>
 					<data>
 						<constant value=";" datatype="string"/>
 					</data>
@@ -138,7 +129,7 @@
 					<targets>
 						<datapoint pos="0" key="30"/>
 					</targets>
-					<view ltx="315" lty="-66" rbx="430" rby="-49"/>
+					<view ltx="315" lty="-66" rbx="422" rby="-50"/>
 					<data>
 						<constant value="steam_games_" datatype="string"/>
 					</data>
@@ -205,7 +196,16 @@
 					<targets>
 						<datapoint pos="0" key="51"/>
 					</targets>
-					<view ltx="448" lty="208" rbx="558" rby="278"/>
+					<view ltx="448" lty="208" rbx="548" rby="276"/>
+				</component>
+				<component name="constant" library="core" uid="21" kind="2">
+					<targets>
+						<datapoint pos="0" key="34"/>
+					</targets>
+					<view ltx="344" lty="70" rbx="396" rby="86"/>
+					<data>
+						<constant value="[Y]" datatype="string"/>
+					</data>
 				</component>
 			</children>
 			<graph directed="1">
