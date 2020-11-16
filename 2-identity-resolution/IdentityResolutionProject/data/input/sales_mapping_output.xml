@@ -1795,7 +1795,6 @@
 		<title>Madden NFL 2004</title>
 		<platform>PS2</platform>
 		<publisher>Electronic Arts</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Sports</genre>
 		</genres>
@@ -3775,7 +3774,6 @@
 		<title>FIFA Soccer 2004</title>
 		<platform>PS2</platform>
 		<publisher>Electronic Arts</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Sports</genre>
 		</genres>
@@ -4315,7 +4313,6 @@
 		<title>LEGO Batman: The Videogame</title>
 		<platform>Wii</platform>
 		<publisher>Warner Bros. Interactive Entertainment</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Action</genre>
 		</genres>
@@ -4704,8 +4701,6 @@
 		<id>vg_sales_471</id>
 		<title>wwe Smackdown vs. Raw 2006</title>
 		<platform>PS2</platform>
-		<publisher>N/A</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Fighting</genre>
 		</genres>
@@ -6075,7 +6070,6 @@
 		<title>Space Invaders</title>
 		<platform>2600</platform>
 		<publisher>Atari</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Shooter</genre>
 		</genres>
@@ -6245,7 +6239,6 @@
 		<title>Rock Band</title>
 		<platform>X360</platform>
 		<publisher>Electronic Arts</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Misc</genre>
 		</genres>
@@ -6495,7 +6488,6 @@
 		<title>Frogger's Adventures: Temple of the Frog</title>
 		<platform>GBA</platform>
 		<publisher>Konami Digital Entertainment</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Adventure</genre>
 		</genres>
@@ -6525,7 +6517,6 @@
 		<title>LEGO Indiana Jones: The Original Adventures</title>
 		<platform>Wii</platform>
 		<publisher>LucasArts</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Action</genre>
 		</genres>
@@ -7115,7 +7106,6 @@
 		<title>Call of Duty 3</title>
 		<platform>Wii</platform>
 		<publisher>Activision</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Shooter</genre>
 		</genres>
@@ -7825,7 +7815,6 @@
 		<title>Rock Band</title>
 		<platform>Wii</platform>
 		<publisher>MTV Games</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Misc</genre>
 		</genres>
@@ -11265,7 +11254,6 @@
 		<title>Call of Duty: Black Ops</title>
 		<platform>PC</platform>
 		<publisher>Activision</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Shooter</genre>
 		</genres>
@@ -11335,7 +11323,6 @@
 		<title>Rock Band</title>
 		<platform>PS3</platform>
 		<publisher>Electronic Arts</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Misc</genre>
 		</genres>
@@ -13034,8 +13021,6 @@
 		<id>vg_sales_1304</id>
 		<title>Triple Play 99</title>
 		<platform>PS</platform>
-		<publisher>N/A</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Sports</genre>
 		</genres>
@@ -14335,7 +14320,6 @@
 		<title>LEGO Harry Potter: Years 5-7</title>
 		<platform>Wii</platform>
 		<publisher>Warner Bros. Interactive Entertainment</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Action</genre>
 		</genres>
@@ -14985,7 +14969,6 @@
 		<title>LEGO Batman: The Videogame</title>
 		<platform>PSP</platform>
 		<publisher>Warner Bros. Interactive Entertainment</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Action</genre>
 		</genres>
@@ -15135,7 +15118,6 @@
 		<title>Adventure</title>
 		<platform>2600</platform>
 		<publisher>Atari</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Adventure</genre>
 		</genres>
@@ -15855,7 +15837,6 @@
 		<title>Combat</title>
 		<platform>2600</platform>
 		<publisher>Atari</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Action</genre>
 		</genres>
@@ -16495,7 +16476,6 @@
 		<title>NASCAR Thunder 2003</title>
 		<platform>PS2</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Racing</genre>
 		</genres>
@@ -16624,7 +16604,6 @@
 		<id>vg_sales_1663</id>
 		<title>Shrek / Shrek 2 2-in-1 Gameboy Advance Video</title>
 		<platform>GBA</platform>
-		<publisher>N/A</publisher>
 		<publishingdate>2007</publishingdate>
 		<genres>
 			<genre>Misc</genre>
@@ -16975,7 +16954,6 @@
 		<title>Hitman 2: Silent Assassin</title>
 		<platform>XB</platform>
 		<publisher>Eidos Interactive</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Action</genre>
 		</genres>
@@ -18375,7 +18353,6 @@
 		<title>Rock Band</title>
 		<platform>PS2</platform>
 		<publisher>Electronic Arts</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Misc</genre>
 		</genres>
@@ -19905,7 +19882,6 @@
 		<title>Legacy of Kain: Soul Reaver</title>
 		<platform>PS</platform>
 		<publisher>Eidos Interactive</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Action</genre>
 		</genres>
@@ -20195,7 +20171,6 @@
 		<title>Donkey Kong Land III</title>
 		<platform>GB</platform>
 		<publisher>Nintendo</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Platform</genre>
 		</genres>
@@ -20865,7 +20840,6 @@
 		<title>LEGO Harry Potter: Years 5-7</title>
 		<platform>X360</platform>
 		<publisher>Warner Bros. Interactive Entertainment</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Action</genre>
 		</genres>
@@ -21135,7 +21109,6 @@
 		<title>Air-Sea Battle</title>
 		<platform>2600</platform>
 		<publisher>Atari</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Shooter</genre>
 		</genres>
@@ -21145,7 +21118,6 @@
 		<title>Suikoden III</title>
 		<platform>PS2</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Role-Playing</genre>
 		</genres>
@@ -21345,7 +21317,6 @@
 		<title>Yakuza 4</title>
 		<platform>PS3</platform>
 		<publisher>Sega</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Action</genre>
 		</genres>
@@ -21455,7 +21426,6 @@
 		<title>LEGO Harry Potter: Years 5-7</title>
 		<platform>PS3</platform>
 		<publisher>Warner Bros. Interactive Entertainment</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Action</genre>
 		</genres>
@@ -21735,7 +21705,6 @@
 		<title>Wheel of Fortune</title>
 		<platform>PS2</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Misc</genre>
 		</genres>
@@ -22224,7 +22193,6 @@
 		<id>vg_sales_2223</id>
 		<title>Bentley's Hackpack</title>
 		<platform>GBA</platform>
-		<publisher>N/A</publisher>
 		<publishingdate>2005</publishingdate>
 		<genres>
 			<genre>Misc</genre>
@@ -22865,7 +22833,6 @@
 		<title>Namco Museum</title>
 		<platform>XB</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Misc</genre>
 		</genres>
@@ -22955,7 +22922,6 @@
 		<title>Rhythm Heaven</title>
 		<platform>Wii</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Misc</genre>
 		</genres>
@@ -24155,7 +24121,6 @@
 		<title>The Lord of the Rings: War in the North</title>
 		<platform>PS3</platform>
 		<publisher>Warner Bros. Interactive Entertainment</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Action</genre>
 		</genres>
@@ -24225,7 +24190,6 @@
 		<title>The Lord of the Rings: War in the North</title>
 		<platform>X360</platform>
 		<publisher>Warner Bros. Interactive Entertainment</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Action</genre>
 		</genres>
@@ -24845,7 +24809,6 @@
 		<title>Madden NFL 07</title>
 		<platform>PSP</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Sports</genre>
 		</genres>
@@ -24975,7 +24938,6 @@
 		<title>MLB SlugFest 20-03</title>
 		<platform>PS2</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Sports</genre>
 		</genres>
@@ -25285,7 +25247,6 @@
 		<title>Shaun White Snowboarding</title>
 		<platform>X360</platform>
 		<publisher>Ubisoft</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Sports</genre>
 		</genres>
@@ -25865,7 +25826,6 @@
 		<title>PES 2009: Pro Evolution Soccer</title>
 		<platform>PSP</platform>
 		<publisher>Konami Digital Entertainment</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Sports</genre>
 		</genres>
@@ -27765,7 +27725,6 @@
 		<title>Madden NFL 11</title>
 		<platform>Wii</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Sports</genre>
 		</genres>
@@ -27865,7 +27824,6 @@
 		<title>WarioWare: Twisted!</title>
 		<platform>GBA</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Puzzle</genre>
 		</genres>
@@ -28385,7 +28343,6 @@
 		<title>LEGO Harry Potter: Years 5-7</title>
 		<platform>DS</platform>
 		<publisher>Warner Bros. Interactive Entertainment</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Action</genre>
 		</genres>
@@ -29475,7 +29432,6 @@
 		<title>Test Drive Unlimited 2</title>
 		<platform>X360</platform>
 		<publisher>Atari</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Racing</genre>
 		</genres>
@@ -30495,7 +30451,6 @@
 		<title>The Chronicles of Narnia: The Lion, The Witch and The Wardrobe</title>
 		<platform>GBA</platform>
 		<publisher>Disney Interactive Studios</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Action</genre>
 		</genres>
@@ -31415,7 +31370,6 @@
 		<title>Test Drive Unlimited 2</title>
 		<platform>PS3</platform>
 		<publisher>Atari</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Racing</genre>
 		</genres>
@@ -31594,7 +31548,6 @@
 		<id>vg_sales_3160</id>
 		<title>Nicktoons Collection: Game Boy Advance Video Volume 1</title>
 		<platform>GBA</platform>
-		<publisher>N/A</publisher>
 		<publishingdate>2004</publishingdate>
 		<genres>
 			<genre>Misc</genre>
@@ -31664,7 +31617,6 @@
 		<id>vg_sales_3167</id>
 		<title>SpongeBob SquarePants: Game Boy Advance Video Volume 1</title>
 		<platform>GBA</platform>
-		<publisher>N/A</publisher>
 		<publishingdate>2004</publishingdate>
 		<genres>
 			<genre>Misc</genre>
@@ -31945,7 +31897,6 @@
 		<title>Monster Hunter 2</title>
 		<platform>PS2</platform>
 		<publisher>Capcom</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Role-Playing</genre>
 		</genres>
@@ -32175,7 +32126,6 @@
 		<title>Advance Wars: Days of Ruin</title>
 		<platform>DS</platform>
 		<publisher>Nintendo</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Strategy</genre>
 		</genres>
@@ -32385,7 +32335,6 @@
 		<title>Metal Gear Solid 2: Substance</title>
 		<platform>XB</platform>
 		<publisher>Konami Digital Entertainment</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Action</genre>
 		</genres>
@@ -33465,7 +33414,6 @@
 		<title>The Golden Compass</title>
 		<platform>Wii</platform>
 		<publisher>Sega</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Action</genre>
 		</genres>
@@ -34215,7 +34163,6 @@
 		<title>Madden NFL 06</title>
 		<platform>X360</platform>
 		<publisher>Electronic Arts</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Sports</genre>
 		</genres>
@@ -34685,7 +34632,6 @@
 		<title>NASCAR: Dirt to Daytona</title>
 		<platform>PS2</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Racing</genre>
 		</genres>
@@ -35015,7 +34961,6 @@
 		<title>Madden NFL 2002</title>
 		<platform>XB</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Sports</genre>
 		</genres>
@@ -37155,7 +37100,6 @@
 		<title>Def Jam: Fight for NY</title>
 		<platform>XB</platform>
 		<publisher>Electronic Arts</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Fighting</genre>
 		</genres>
@@ -37535,7 +37479,6 @@
 		<title>NBA Street Vol. 2</title>
 		<platform>GC</platform>
 		<publisher>Electronic Arts</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Sports</genre>
 		</genres>
@@ -37664,7 +37607,6 @@
 		<id>vg_sales_3767</id>
 		<title>SpongeBob SquarePants: Game Boy Advance Video Volume 2</title>
 		<platform>GBA</platform>
-		<publisher>N/A</publisher>
 		<publishingdate>2004</publishingdate>
 		<genres>
 			<genre>Misc</genre>
@@ -38805,7 +38747,6 @@
 		<title>Fishing Derby</title>
 		<platform>2600</platform>
 		<publisher>Activision</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Sports</genre>
 		</genres>
@@ -39525,7 +39466,6 @@
 		<title>Wet</title>
 		<platform>X360</platform>
 		<publisher>Bethesda Softworks</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Shooter</genre>
 		</genres>
@@ -41454,8 +41394,6 @@
 		<id>vg_sales_4146</id>
 		<title>Sonic the Hedgehog</title>
 		<platform>PS3</platform>
-		<publisher>N/A</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Platform</genre>
 		</genres>
@@ -41515,7 +41453,6 @@
 		<title>Karate</title>
 		<platform>2600</platform>
 		<publisher>Ultravision</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Fighting</genre>
 		</genres>
@@ -41995,7 +41932,6 @@
 		<title>Tiger Woods PGA Tour 07</title>
 		<platform>Wii</platform>
 		<publisher>Electronic Arts</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Sports</genre>
 		</genres>
@@ -42325,7 +42261,6 @@
 		<title>Circus Atari</title>
 		<platform>2600</platform>
 		<publisher>Atari</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Action</genre>
 		</genres>
@@ -43305,7 +43240,6 @@
 		<title>The Chronicles of Riddick: Escape from Butcher Bay</title>
 		<platform>XB</platform>
 		<publisher>Vivendi Games</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Shooter</genre>
 		</genres>
@@ -43785,7 +43719,6 @@
 		<title>Maze Craze: A Game of Cops 'n Robbers</title>
 		<platform>2600</platform>
 		<publisher>Atari</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Action</genre>
 		</genres>
@@ -43805,7 +43738,6 @@
 		<title>Silent Hill: Homecoming</title>
 		<platform>X360</platform>
 		<publisher>Konami Digital Entertainment</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Action</genre>
 		</genres>
@@ -44695,7 +44627,6 @@
 		<title>Super Breakout</title>
 		<platform>2600</platform>
 		<publisher>Atari</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Puzzle</genre>
 		</genres>
@@ -44725,7 +44656,6 @@
 		<title>Robert Ludlum's The Bourne Conspiracy</title>
 		<platform>X360</platform>
 		<publisher>Vivendi Games</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Action</genre>
 		</genres>
@@ -45264,7 +45194,6 @@
 		<id>vg_sales_4527</id>
 		<title>The Fairly Odd Parents: Game Boy Advance Video Volume 1</title>
 		<platform>GBA</platform>
-		<publisher>N/A</publisher>
 		<publishingdate>2004</publishingdate>
 		<genres>
 			<genre>Misc</genre>
@@ -45365,7 +45294,6 @@
 		<title>NHL Slapshot</title>
 		<platform>Wii</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Sports</genre>
 		</genres>
@@ -46354,7 +46282,6 @@
 		<id>vg_sales_4636</id>
 		<title>The Fairly Odd Parents: Game Boy Advance Video Volume 2</title>
 		<platform>GBA</platform>
-		<publisher>N/A</publisher>
 		<publishingdate>2004</publishingdate>
 		<genres>
 			<genre>Misc</genre>
@@ -46835,7 +46762,6 @@
 		<title>TERA</title>
 		<platform>PC</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Role-Playing</genre>
 		</genres>
@@ -47915,7 +47841,6 @@
 		<title>LEGO Harry Potter: Years 5-7</title>
 		<platform>3DS</platform>
 		<publisher>Warner Bros. Interactive Entertainment</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Action</genre>
 		</genres>
@@ -47975,7 +47900,6 @@
 		<title>NFL GameDay 2003</title>
 		<platform>PS2</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Sports</genre>
 		</genres>
@@ -48585,7 +48509,6 @@
 		<title>Silent Hill: Homecoming</title>
 		<platform>PS3</platform>
 		<publisher>Konami Digital Entertainment</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Action</genre>
 		</genres>
@@ -48655,7 +48578,6 @@
 		<title>Harvest Moon: Save the Homeland</title>
 		<platform>PS2</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Simulation</genre>
 		</genres>
@@ -49345,7 +49267,6 @@
 		<title>Robert Ludlum's The Bourne Conspiracy</title>
 		<platform>PS3</platform>
 		<publisher>Vivendi Games</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Action</genre>
 		</genres>
@@ -50615,7 +50536,6 @@
 		<title>Hangman</title>
 		<platform>2600</platform>
 		<publisher>Atari</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Puzzle</genre>
 		</genres>
@@ -50785,7 +50705,6 @@
 		<title>The Golden Compass</title>
 		<platform>PSP</platform>
 		<publisher>Sega</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Action</genre>
 		</genres>
@@ -51625,7 +51544,6 @@
 		<title>NBA Live 2003</title>
 		<platform>XB</platform>
 		<publisher>Electronic Arts</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Sports</genre>
 		</genres>
@@ -51715,7 +51633,6 @@
 		<title>Bejeweled 3</title>
 		<platform>DS</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Puzzle</genre>
 		</genres>
@@ -51955,7 +51872,6 @@
 		<title>Cubix Robots for Everyone: Clash 'n' Bash</title>
 		<platform>GBA</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Action</genre>
 		</genres>
@@ -51965,7 +51881,6 @@
 		<title>Tropico 4</title>
 		<platform>X360</platform>
 		<publisher>Kalypso Media</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Strategy</genre>
 		</genres>
@@ -52405,7 +52320,6 @@
 		<title>Tomb Raider (2013)</title>
 		<platform>PC</platform>
 		<publisher>Square Enix</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Action</genre>
 		</genres>
@@ -53024,8 +52938,6 @@
 		<id>vg_sales_5303</id>
 		<title>Dragon Ball Z: Budokai Tenkaichi 2 (JP sales)</title>
 		<platform>Wii</platform>
-		<publisher>N/A</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Action</genre>
 		</genres>
@@ -55085,7 +54997,6 @@
 		<title>Custom Robo</title>
 		<platform>N64</platform>
 		<publisher>Nintendo</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Role-Playing</genre>
 		</genres>
@@ -56185,7 +56096,6 @@
 		<title>Final Fantasy XI</title>
 		<platform>PS2</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Role-Playing</genre>
 		</genres>
@@ -56255,7 +56165,6 @@
 		<title>Singularity</title>
 		<platform>X360</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Shooter</genre>
 		</genres>
@@ -56474,7 +56383,6 @@
 		<id>vg_sales_5648</id>
 		<title>Cartoon Network Collection: Game Boy Advance Video Platinum Edition</title>
 		<platform>GBA</platform>
-		<publisher>N/A</publisher>
 		<publishingdate>2005</publishingdate>
 		<genres>
 			<genre>Misc</genre>
@@ -56575,7 +56483,6 @@
 		<title>Dragster</title>
 		<platform>2600</platform>
 		<publisher>Activision</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Racing</genre>
 		</genres>
@@ -56695,7 +56602,6 @@
 		<title>All-Star Baseball 2005</title>
 		<platform>PS2</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Sports</genre>
 		</genres>
@@ -57695,7 +57601,6 @@
 		<title>Star Wars Jedi Knight II: Jedi Outcast</title>
 		<platform>XB</platform>
 		<publisher>Activision</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Shooter</genre>
 		</genres>
@@ -57985,7 +57890,6 @@
 		<title>Slot Machine</title>
 		<platform>2600</platform>
 		<publisher>Atari</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Action</genre>
 		</genres>
@@ -58385,7 +58289,6 @@
 		<title>Shrek the Third</title>
 		<platform>DS</platform>
 		<publisher>Activision</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Action</genre>
 		</genres>
@@ -58615,7 +58518,6 @@
 		<title>The Dukes of Hazzard II: Daisy Dukes It Out</title>
 		<platform>PS</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Racing</genre>
 		</genres>
@@ -58705,7 +58607,6 @@
 		<title>Disgaea 3: Absence of Detention</title>
 		<platform>PSV</platform>
 		<publisher>Nippon Ichi Software</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Role-Playing</genre>
 		</genres>
@@ -59015,7 +58916,6 @@
 		<title>NBA Live 2003</title>
 		<platform>GC</platform>
 		<publisher>Electronic Arts</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Sports</genre>
 		</genres>
@@ -59135,7 +59035,6 @@
 		<title>Harvest Moon: The Tale of Two Towns</title>
 		<platform>3DS</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Simulation</genre>
 		</genres>
@@ -60425,7 +60324,6 @@
 		<title>Nicktoons: Battle for Volcano Island</title>
 		<platform>GC</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Action</genre>
 		</genres>
@@ -61255,7 +61153,6 @@
 		<title>Haven: Call of the King</title>
 		<platform>PS2</platform>
 		<publisher>Midway Games</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Platform</genre>
 		</genres>
@@ -61535,7 +61432,6 @@
 		<title>Unreal Championship 2: The Liandri Conflict</title>
 		<platform>XB</platform>
 		<publisher>Midway Games</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Shooter</genre>
 		</genres>
@@ -61955,7 +61851,6 @@
 		<title>The Chronicles of Narnia: The Lion, The Witch and The Wardrobe</title>
 		<platform>GC</platform>
 		<publisher>Disney Interactive Studios</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Action</genre>
 		</genres>
@@ -62115,7 +62010,6 @@
 		<title>Pac-Man Fever</title>
 		<platform>GC</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Misc</genre>
 		</genres>
@@ -62724,8 +62618,6 @@
 		<id>vg_sales_6273</id>
 		<title>The Legend of Zelda: The Minish Cap(weekly JP sales)</title>
 		<platform>GBA</platform>
-		<publisher>N/A</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Action</genre>
 		</genres>
@@ -62835,7 +62727,6 @@
 		<title>Indy 500</title>
 		<platform>2600</platform>
 		<publisher>Atari</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Racing</genre>
 		</genres>
@@ -63145,7 +63036,6 @@
 		<title>Gun</title>
 		<platform>X360</platform>
 		<publisher>Activision</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Shooter</genre>
 		</genres>
@@ -63165,7 +63055,6 @@
 		<title>Flag Capture</title>
 		<platform>2600</platform>
 		<publisher>Atari</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Action</genre>
 		</genres>
@@ -63195,7 +63084,6 @@
 		<title>LEGO Harry Potter: Years 5-7</title>
 		<platform>PSP</platform>
 		<publisher>Warner Bros. Interactive Entertainment</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Action</genre>
 		</genres>
@@ -64015,7 +63903,6 @@
 		<title>Rock Revolution</title>
 		<platform>PS3</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Misc</genre>
 		</genres>
@@ -64374,7 +64261,6 @@
 		<id>vg_sales_6438</id>
 		<title>Sonic X: Game Boy Advance Video Volume 1</title>
 		<platform>GBA</platform>
-		<publisher>N/A</publisher>
 		<publishingdate>2004</publishingdate>
 		<genres>
 			<genre>Misc</genre>
@@ -64965,7 +64851,6 @@
 		<title>Jonah Lomu Rugby Challenge</title>
 		<platform>PS3</platform>
 		<publisher>Home Entertainment Suppliers</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Sports</genre>
 		</genres>
@@ -65624,7 +65509,6 @@
 		<id>vg_sales_6563</id>
 		<title>Dora the Explorer: Game Boy Advance Video Volume 1</title>
 		<platform>GBA</platform>
-		<publisher>N/A</publisher>
 		<publishingdate>2004</publishingdate>
 		<genres>
 			<genre>Misc</genre>
@@ -66475,7 +66359,6 @@
 		<title>College Hoops 2K6</title>
 		<platform>PS2</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Sports</genre>
 		</genres>
@@ -66484,7 +66367,6 @@
 		<id>vg_sales_6649</id>
 		<title>Cartoon Network Collection: Game Boy Advance Video Volume 1</title>
 		<platform>GBA</platform>
-		<publisher>N/A</publisher>
 		<publishingdate>2004</publishingdate>
 		<genres>
 			<genre>Misc</genre>
@@ -67775,7 +67657,6 @@
 		<title>Mega Man X Collection</title>
 		<platform>PS2</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Misc</genre>
 		</genres>
@@ -68065,7 +67946,6 @@
 		<title>BioShock 2</title>
 		<platform>PC</platform>
 		<publisher>Take-Two Interactive</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Shooter</genre>
 		</genres>
@@ -68325,7 +68205,6 @@
 		<title>Singularity</title>
 		<platform>PS3</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Shooter</genre>
 		</genres>
@@ -68494,7 +68373,6 @@
 		<id>vg_sales_6850</id>
 		<title>All Grown Up!: Game Boy Advance Video Volume 1</title>
 		<platform>GBA</platform>
-		<publisher>N/A</publisher>
 		<publishingdate>2004</publishingdate>
 		<genres>
 			<genre>Misc</genre>
@@ -69195,7 +69073,6 @@
 		<title>Danganronpa: Trigger Happy Havoc</title>
 		<platform>PSP</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Misc</genre>
 		</genres>
@@ -69265,7 +69142,6 @@
 		<title>DanceDanceRevolution II</title>
 		<platform>Wii</platform>
 		<publisher>Konami Digital Entertainment</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Misc</genre>
 		</genres>
@@ -69375,7 +69251,6 @@
 		<title>Tony Hawk's Downhill Jam</title>
 		<platform>Wii</platform>
 		<publisher>Activision</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Sports</genre>
 		</genres>
@@ -69665,7 +69540,6 @@
 		<title>Big Beach Sports 2</title>
 		<platform>Wii</platform>
 		<publisher>THQ</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Sports</genre>
 		</genres>
@@ -69685,7 +69559,6 @@
 		<title>Jet X20</title>
 		<platform>PS2</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Racing</genre>
 		</genres>
@@ -70355,7 +70228,6 @@
 		<title>Tribes: Aerial Assault</title>
 		<platform>PS2</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Shooter</genre>
 		</genres>
@@ -71815,7 +71687,6 @@
 		<title>Move Fitness</title>
 		<platform>PS3</platform>
 		<publisher>Sony Computer Entertainment</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Sports</genre>
 		</genres>
@@ -72084,7 +71955,6 @@
 		<id>vg_sales_7209</id>
 		<title>Nicktoons Collection: Game Boy Advance Video Volume 2</title>
 		<platform>GBA</platform>
-		<publisher>N/A</publisher>
 		<publishingdate>2004</publishingdate>
 		<genres>
 			<genre>Misc</genre>
@@ -72135,7 +72005,6 @@
 		<title>LEGO Harry Potter: Years 5-7</title>
 		<platform>PC</platform>
 		<publisher>Warner Bros. Interactive Entertainment</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Action</genre>
 		</genres>
@@ -73514,8 +73383,6 @@
 		<id>vg_sales_7352</id>
 		<title>Yu Yu Hakusho: Dark Tournament</title>
 		<platform>PS2</platform>
-		<publisher>N/A</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Fighting</genre>
 		</genres>
@@ -73695,7 +73562,6 @@
 		<title>Ghostbusters II</title>
 		<platform>2600</platform>
 		<publisher>Activision</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Action</genre>
 		</genres>
@@ -73705,7 +73571,6 @@
 		<title>Breakaway IV</title>
 		<platform>2600</platform>
 		<publisher>Sears</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Puzzle</genre>
 		</genres>
@@ -73825,7 +73690,6 @@
 		<title>Robotech: Battlecry</title>
 		<platform>XB</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Shooter</genre>
 		</genres>
@@ -74065,7 +73929,6 @@
 		<title>Valkyria Chronicles III: Unrecorded Chronicles</title>
 		<platform>PSP</platform>
 		<publisher>Sega</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Strategy</genre>
 		</genres>
@@ -74235,7 +74098,6 @@
 		<title>WRC: FIA World Rally Championship</title>
 		<platform>PS3</platform>
 		<publisher>Black Bean Games</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Racing</genre>
 		</genres>
@@ -74704,7 +74566,6 @@
 		<id>vg_sales_7471</id>
 		<title>SpongeBob SquarePants: Game Boy Advance Video Volume 3</title>
 		<platform>GBA</platform>
-		<publisher>N/A</publisher>
 		<publishingdate>2004</publishingdate>
 		<genres>
 			<genre>Misc</genre>
@@ -76155,7 +76016,6 @@
 		<title>Famista 64</title>
 		<platform>N64</platform>
 		<publisher>Namco Bandai Games</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Sports</genre>
 		</genres>
@@ -76485,7 +76345,6 @@
 		<title>Dead Space 3</title>
 		<platform>PC</platform>
 		<publisher>Electronic Arts</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Action</genre>
 		</genres>
@@ -77205,7 +77064,6 @@
 		<title>Test Drive Unlimited 2</title>
 		<platform>PC</platform>
 		<publisher>Atari</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Racing</genre>
 		</genres>
@@ -79085,7 +78943,6 @@
 		<title>Pet Zombies</title>
 		<platform>3DS</platform>
 		<publisher>Majesco Entertainment</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Simulation</genre>
 		</genres>
@@ -79465,7 +79322,6 @@
 		<title>Star Trek: Legacy</title>
 		<platform>X360</platform>
 		<publisher>Ubisoft</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Simulation</genre>
 		</genres>
@@ -79534,7 +79390,6 @@
 		<id>vg_sales_7954</id>
 		<title>Thomas the Tank Engine &amp; Friends</title>
 		<platform>GBA</platform>
-		<publisher>N/A</publisher>
 		<publishingdate>2004</publishingdate>
 		<genres>
 			<genre>Adventure</genre>
@@ -80445,7 +80300,6 @@
 		<title>Trauma Team</title>
 		<platform>Wii</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Simulation</genre>
 		</genres>
@@ -80865,7 +80719,6 @@
 		<title>Backbreaker</title>
 		<platform>X360</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Sports</genre>
 		</genres>
@@ -81575,7 +81428,6 @@
 		<title>Twisted Metal: Small Brawl</title>
 		<platform>PS</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Action</genre>
 		</genres>
@@ -81675,7 +81527,6 @@
 		<title>Otomedius Excellent</title>
 		<platform>X360</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Shooter</genre>
 		</genres>
@@ -82045,7 +81896,6 @@
 		<title>NBA Starting Five</title>
 		<platform>PS2</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Sports</genre>
 		</genres>
@@ -82235,7 +82085,6 @@
 		<title>Teen Titans</title>
 		<platform>GBA</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Action</genre>
 		</genres>
@@ -83135,7 +82984,6 @@
 		<title>Backbreaker</title>
 		<platform>PS3</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Sports</genre>
 		</genres>
@@ -83304,7 +83152,6 @@
 		<id>vg_sales_8331</id>
 		<title>Dragon Ball GT: Game Boy Advance Video Volume 1</title>
 		<platform>GBA</platform>
-		<publisher>N/A</publisher>
 		<publishingdate>2004</publishingdate>
 		<genres>
 			<genre>Misc</genre>
@@ -83345,7 +83192,6 @@
 		<title>James Cameron's Dark Angel</title>
 		<platform>PS2</platform>
 		<publisher>Universal Interactive</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Action</genre>
 		</genres>
@@ -83414,7 +83260,6 @@
 		<id>vg_sales_8342</id>
 		<title>Codename: Kids Next Door: Game Boy Advance Video Volume 1</title>
 		<platform>GBA</platform>
-		<publisher>N/A</publisher>
 		<publishingdate>2004</publishingdate>
 		<genres>
 			<genre>Misc</genre>
@@ -83684,7 +83529,6 @@
 		<id>vg_sales_8369</id>
 		<title>Teenage Mutant Ninja Turtles: Game Boy Advance Video Volume 1</title>
 		<platform>GBA</platform>
-		<publisher>N/A</publisher>
 		<publishingdate>2004</publishingdate>
 		<genres>
 			<genre>Misc</genre>
@@ -83765,7 +83609,6 @@
 		<title>Sword of the Samurai</title>
 		<platform>PS2</platform>
 		<publisher>Ubisoft</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Fighting</genre>
 		</genres>
@@ -84395,7 +84238,6 @@
 		<title>Splatterhouse</title>
 		<platform>PS3</platform>
 		<publisher>Namco Bandai Games</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Action</genre>
 		</genres>
@@ -85034,7 +84876,6 @@
 		<id>vg_sales_8504</id>
 		<title>Stronghold 3</title>
 		<platform>PC</platform>
-		<publisher>N/A</publisher>
 		<publishingdate>2011</publishingdate>
 		<genres>
 			<genre>Strategy</genre>
@@ -85535,7 +85376,6 @@
 		<title>Alone in the Dark: The New Nightmare</title>
 		<platform>PS</platform>
 		<publisher>Infogrames</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Adventure</genre>
 		</genres>
@@ -86205,7 +86045,6 @@
 		<title>Vegas Party</title>
 		<platform>Wii</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Misc</genre>
 		</genres>
@@ -87075,7 +86914,6 @@
 		<title>Jurassic Park: The Game</title>
 		<platform>X360</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Action</genre>
 		</genres>
@@ -87605,7 +87443,6 @@
 		<title>Home Run</title>
 		<platform>2600</platform>
 		<publisher>Atari</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Sports</genre>
 		</genres>
@@ -87704,7 +87541,6 @@
 		<id>vg_sales_8771</id>
 		<title>Cartoon Network Collection: Game Boy Advance Video Special Edition</title>
 		<platform>GBA</platform>
-		<publisher>N/A</publisher>
 		<publishingdate>2005</publishingdate>
 		<genres>
 			<genre>Misc</genre>
@@ -88484,7 +88320,6 @@
 		<id>vg_sales_8849</id>
 		<title>Pokémon: Johto Photo Finish: Game Boy Advance Video</title>
 		<platform>GBA</platform>
-		<publisher>N/A</publisher>
 		<publishingdate>2004</publishingdate>
 		<genres>
 			<genre>Misc</genre>
@@ -88964,7 +88799,6 @@
 		<id>vg_sales_8897</id>
 		<title>Strawberry Shortcake: Game Boy Advance Video Volume 1</title>
 		<platform>GBA</platform>
-		<publisher>N/A</publisher>
 		<publishingdate>2004</publishingdate>
 		<genres>
 			<genre>Misc</genre>
@@ -88995,7 +88829,6 @@
 		<title>eJay Clubworld</title>
 		<platform>PS2</platform>
 		<publisher>Empire Interactive</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Misc</genre>
 		</genres>
@@ -89295,7 +89128,6 @@
 		<title>All-Star Baseball 2005</title>
 		<platform>XB</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Sports</genre>
 		</genres>
@@ -90815,7 +90647,6 @@
 		<title>Our House Party!</title>
 		<platform>Wii</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Simulation</genre>
 		</genres>
@@ -91515,7 +91346,6 @@
 		<title>WCW Backstage Assault</title>
 		<platform>N64</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Action</genre>
 		</genres>
@@ -91715,7 +91545,6 @@
 		<title>Bejeweled 3</title>
 		<platform>PS3</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Puzzle</genre>
 		</genres>
@@ -92515,7 +92344,6 @@
 		<title>Bejeweled 3</title>
 		<platform>X360</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Puzzle</genre>
 		</genres>
@@ -93105,7 +92933,6 @@
 		<title>Disney's Cinderella: Magical Dreams</title>
 		<platform>GBA</platform>
 		<publisher>Disney Interactive Studios</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Platform</genre>
 		</genres>
@@ -93925,7 +93752,6 @@
 		<title>Transworld Surf</title>
 		<platform>XB</platform>
 		<publisher>Atari</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Sports</genre>
 		</genres>
@@ -94755,7 +94581,6 @@
 		<title>Street Fighter IV</title>
 		<platform>PC</platform>
 		<publisher>Capcom</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Fighting</genre>
 		</genres>
@@ -95174,7 +94999,6 @@
 		<id>vg_sales_9518</id>
 		<title>Farming Simulator 2011</title>
 		<platform>PC</platform>
-		<publisher>N/A</publisher>
 		<publishingdate>2010</publishingdate>
 		<genres>
 			<genre>Simulation</genre>
@@ -95225,7 +95049,6 @@
 		<title>Nintendo Puzzle Collection</title>
 		<platform>GC</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Puzzle</genre>
 		</genres>
@@ -96675,7 +96498,6 @@
 		<title>Charm Girls Club: My Fashion Mall</title>
 		<platform>DS</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Simulation</genre>
 		</genres>
@@ -96925,7 +96747,6 @@
 		<title>WRC: FIA World Rally Championship</title>
 		<platform>X360</platform>
 		<publisher>Black Bean Games</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Racing</genre>
 		</genres>
@@ -97425,7 +97246,6 @@
 		<title>Record of Agarest War Zero</title>
 		<platform>PS3</platform>
 		<publisher>Ghostlight</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Strategy</genre>
 		</genres>
@@ -97494,8 +97314,6 @@
 		<id>vg_sales_9750</id>
 		<title>Super Robot Wars OG Saga: Masou Kishin II - Revelation of Evil God</title>
 		<platform>PSP</platform>
-		<publisher>N/A</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Strategy</genre>
 		</genres>
@@ -97695,7 +97513,6 @@
 		<title>Saru! Get You! Million Monkeys</title>
 		<platform>PS2</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Platform</genre>
 		</genres>
@@ -98155,7 +97972,6 @@
 		<title>Street Hoops</title>
 		<platform>GC</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Sports</genre>
 		</genres>
@@ -98205,7 +98021,6 @@
 		<title>Godzilla: Destroy All Monsters Melee</title>
 		<platform>XB</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Fighting</genre>
 		</genres>
@@ -98215,7 +98030,6 @@
 		<title>The Daring Game for Girls</title>
 		<platform>DS</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Adventure</genre>
 		</genres>
@@ -98405,7 +98219,6 @@
 		<title>Rocksmith</title>
 		<platform>PC</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Misc</genre>
 		</genres>
@@ -98685,7 +98498,6 @@
 		<title>Major League Baseball 2K6</title>
 		<platform>PSP</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Sports</genre>
 		</genres>
@@ -99815,7 +99627,6 @@
 		<title>Happy Feet Two</title>
 		<platform>DS</platform>
 		<publisher>Warner Bros. Interactive Entertainment</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Action</genre>
 		</genres>
@@ -100455,7 +100266,6 @@
 		<title>Star Trek: Conquest</title>
 		<platform>PS2</platform>
 		<publisher>Bethesda Softworks</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Strategy</genre>
 		</genres>
@@ -102725,7 +102535,6 @@
 		<title>GiFTPiA</title>
 		<platform>GC</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Role-Playing</genre>
 		</genres>
@@ -103625,7 +103434,6 @@
 		<title>Disney's Chicken Little: Ace In Action</title>
 		<platform>Wii</platform>
 		<publisher>Disney Interactive Studios</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Shooter</genre>
 		</genres>
@@ -103824,7 +103632,6 @@
 		<id>vg_sales_10383</id>
 		<title>Disney Channel Collection Vol. 1</title>
 		<platform>GBA</platform>
-		<publisher>N/A</publisher>
 		<publishingdate>2004</publishingdate>
 		<genres>
 			<genre>Misc</genre>
@@ -104655,7 +104462,6 @@
 		<title>Happy Feet Two</title>
 		<platform>PS3</platform>
 		<publisher>Warner Bros. Interactive Entertainment</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Action</genre>
 		</genres>
@@ -104944,8 +104750,6 @@
 		<id>vg_sales_10495</id>
 		<title>Atsumare! Power Pro Kun no DS Koushien</title>
 		<platform>DS</platform>
-		<publisher>N/A</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Sports</genre>
 		</genres>
@@ -105595,7 +105399,6 @@
 		<title>My Healthy Cooking Coach</title>
 		<platform>DS</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Simulation</genre>
 		</genres>
@@ -106905,7 +106708,6 @@
 		<title>Happy Feet Two</title>
 		<platform>X360</platform>
 		<publisher>Warner Bros. Interactive Entertainment</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Action</genre>
 		</genres>
@@ -107585,7 +107387,6 @@
 		<title>Luminous Arc 2 (JP sales)</title>
 		<platform>DS</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Role-Playing</genre>
 		</genres>
@@ -107925,7 +107726,6 @@
 		<title>The Daring Game for Girls</title>
 		<platform>Wii</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Adventure</genre>
 		</genres>
@@ -108295,7 +108095,6 @@
 		<title>Egg Monster Hero</title>
 		<platform>DS</platform>
 		<publisher>Square Enix</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Role-Playing</genre>
 		</genres>
@@ -109795,7 +109594,6 @@
 		<title>Samurai Shodown Anthology</title>
 		<platform>PSP</platform>
 		<publisher>Ignition Entertainment</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Fighting</genre>
 		</genres>
@@ -109975,7 +109773,6 @@
 		<title>Demon Chaos</title>
 		<platform>PS2</platform>
 		<publisher>Konami Digital Entertainment</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Action</genre>
 		</genres>
@@ -110764,8 +110561,6 @@
 		<id>vg_sales_11077</id>
 		<title>Action Man-Operation Extreme</title>
 		<platform>PS</platform>
-		<publisher>N/A</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Action</genre>
 		</genres>
@@ -111085,7 +110880,6 @@
 		<title>Super Puzzle Fighter II</title>
 		<platform>GBA</platform>
 		<publisher>Capcom</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Puzzle</genre>
 		</genres>
@@ -111425,7 +111219,6 @@
 		<title>Happy Feet Two</title>
 		<platform>Wii</platform>
 		<publisher>Warner Bros. Interactive Entertainment</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Action</genre>
 		</genres>
@@ -113235,7 +113028,6 @@
 		<title>Charm Girls Club: My Fashion Show</title>
 		<platform>DS</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Simulation</genre>
 		</genres>
@@ -113315,7 +113107,6 @@
 		<title>Get Fit with Mel B</title>
 		<platform>X360</platform>
 		<publisher>Black Bean Games</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Sports</genre>
 		</genres>
@@ -113765,7 +113556,6 @@
 		<title>Face Racers: Photo Finish</title>
 		<platform>3DS</platform>
 		<publisher>Majesco Entertainment</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Racing</genre>
 		</genres>
@@ -114095,7 +113885,6 @@
 		<title>Zero: Tsukihami no Kamen</title>
 		<platform>Wii</platform>
 		<publisher>Nintendo</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Action</genre>
 		</genres>
@@ -114555,7 +114344,6 @@
 		<title>The Hidden</title>
 		<platform>3DS</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Adventure</genre>
 		</genres>
@@ -115264,7 +115052,6 @@
 		<id>vg_sales_11527</id>
 		<title>Cartoon Network Collection: Game Boy Advance Video Volume 2</title>
 		<platform>GBA</platform>
-		<publisher>N/A</publisher>
 		<publishingdate>2004</publishingdate>
 		<genres>
 			<genre>Misc</genre>
@@ -115435,7 +115222,6 @@
 		<title>Rock Revolution</title>
 		<platform>Wii</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Misc</genre>
 		</genres>
@@ -115735,7 +115521,6 @@
 		<title>Dead Island: Riptide</title>
 		<platform>PC</platform>
 		<publisher>Deep Silver</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Action</genre>
 		</genres>
@@ -117555,7 +117340,6 @@
 		<title>Mega Man Battle Network: Operation Shooting Star</title>
 		<platform>DS</platform>
 		<publisher>Capcom</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Role-Playing</genre>
 		</genres>
@@ -117985,7 +117769,6 @@
 		<title>Smashing Drive</title>
 		<platform>GC</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Racing</genre>
 		</genres>
@@ -119215,7 +118998,6 @@
 		<title>Dream Trigger 3D</title>
 		<platform>3DS</platform>
 		<publisher>D3Publisher</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Shooter</genre>
 		</genres>
@@ -119385,7 +119167,6 @@
 		<title>Tornado</title>
 		<platform>DS</platform>
 		<publisher>Ignition Entertainment</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Action</genre>
 		</genres>
@@ -119765,7 +119546,6 @@
 		<title>McFarlane's Evil Prophecy</title>
 		<platform>PS2</platform>
 		<publisher>Konami Digital Entertainment</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Action</genre>
 		</genres>
@@ -120155,7 +119935,6 @@
 		<title>Drake of the 99 Dragons</title>
 		<platform>XB</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Shooter</genre>
 		</genres>
@@ -120285,7 +120064,6 @@
 		<title>Port Royale 3</title>
 		<platform>PS3</platform>
 		<publisher>Kalypso Media</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Simulation</genre>
 		</genres>
@@ -121275,7 +121053,6 @@
 		<title>Build-A-Bear Workshop: Friendship Valley</title>
 		<platform>Wii</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Misc</genre>
 		</genres>
@@ -121295,7 +121072,6 @@
 		<title>Alex Rider: Stormbreaker</title>
 		<platform>DS</platform>
 		<publisher>THQ</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Action</genre>
 		</genres>
@@ -121355,7 +121131,6 @@
 		<title>Yoostar on MTV</title>
 		<platform>X360</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Misc</genre>
 		</genres>
@@ -121845,7 +121620,6 @@
 		<title>Rayman Arena</title>
 		<platform>XB</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Racing</genre>
 		</genres>
@@ -122125,7 +121899,6 @@
 		<title>National Geographic Challenge!</title>
 		<platform>X360</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Misc</genre>
 		</genres>
@@ -122385,7 +122158,6 @@
 		<title>Port Royale 3</title>
 		<platform>X360</platform>
 		<publisher>Kalypso Media</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Simulation</genre>
 		</genres>
@@ -122485,7 +122257,6 @@
 		<title>Jewel Link Chronicles: Mountains of Madness</title>
 		<platform>DS</platform>
 		<publisher>Avanquest</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Puzzle</genre>
 		</genres>
@@ -124874,8 +124645,6 @@
 		<id>vg_sales_12488</id>
 		<title>Chou Soujuu Mecha MG</title>
 		<platform>DS</platform>
-		<publisher>N/A</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Simulation</genre>
 		</genres>
@@ -125174,8 +124943,6 @@
 		<id>vg_sales_12518</id>
 		<title>Prinny: Can I Really Be The Hero? (US sales)</title>
 		<platform>PSP</platform>
-		<publisher>N/A</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Action</genre>
 		</genres>
@@ -125315,7 +125082,6 @@
 		<title>Combat Elite: WWII Paratroopers</title>
 		<platform>PS2</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Shooter</genre>
 		</genres>
@@ -126265,7 +126031,6 @@
 		<title>Captain America: Super Soldier</title>
 		<platform>Wii</platform>
 		<publisher>Sega</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Action</genre>
 		</genres>
@@ -126665,7 +126430,6 @@
 		<title>Flip's Twisted World</title>
 		<platform>Wii</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Platform</genre>
 		</genres>
@@ -127095,7 +126859,6 @@
 		<title>Mobile Ops: The One Year War</title>
 		<platform>X360</platform>
 		<publisher>Namco Bandai Games</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Simulation</genre>
 		</genres>
@@ -127495,7 +127258,6 @@
 		<title>Tom Clancy's Rainbow Six: Critical Hour</title>
 		<platform>XB</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Shooter</genre>
 		</genres>
@@ -128075,7 +127837,6 @@
 		<title>GRID</title>
 		<platform>DS</platform>
 		<publisher>Codemasters</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Racing</genre>
 		</genres>
@@ -128255,7 +128016,6 @@
 		<title>Captain America: Super Soldier</title>
 		<platform>DS</platform>
 		<publisher>Sega</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Action</genre>
 		</genres>
@@ -128795,7 +128555,6 @@
 		<title>Reader Rabbit 2nd Grade</title>
 		<platform>Wii</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Misc</genre>
 		</genres>
@@ -129155,7 +128914,6 @@
 		<title>Mountain Bike Adrenaline</title>
 		<platform>PS2</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Sports</genre>
 		</genres>
@@ -129225,7 +128983,6 @@
 		<title>Tour de France 2011</title>
 		<platform>X360</platform>
 		<publisher>Focus Home Interactive</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Racing</genre>
 		</genres>
@@ -129295,7 +129052,6 @@
 		<title>Drill Dozer</title>
 		<platform>GBA</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Platform</genre>
 		</genres>
@@ -130555,7 +130311,6 @@
 		<title>Battle vs. Chess</title>
 		<platform>PS3</platform>
 		<publisher>TopWare Interactive</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Misc</genre>
 		</genres>
@@ -131565,7 +131320,6 @@
 		<title>The History Channel: Great Battles - Medieval</title>
 		<platform>PS3</platform>
 		<publisher>Slitherine Software</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Strategy</genre>
 		</genres>
@@ -132784,8 +132538,6 @@
 		<id>vg_sales_13279</id>
 		<title>Monster Hunter Frontier Online</title>
 		<platform>PS3</platform>
-		<publisher>N/A</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Role-Playing</genre>
 		</genres>
@@ -134775,7 +134527,6 @@
 		<title>RollerCoaster Tycoon</title>
 		<platform>PC</platform>
 		<publisher>Microprose</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Strategy</genre>
 		</genres>
@@ -136655,7 +136406,6 @@
 		<title>GRID</title>
 		<platform>PC</platform>
 		<publisher>Codemasters</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Racing</genre>
 		</genres>
@@ -136724,8 +136474,6 @@
 		<id>vg_sales_13673</id>
 		<title>B.L.U.E.: Legend of Water</title>
 		<platform>PS</platform>
-		<publisher>N/A</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Adventure</genre>
 		</genres>
@@ -136755,7 +136503,6 @@
 		<title>Luxor: Pharaoh's Challenge</title>
 		<platform>Wii</platform>
 		<publisher>Funsta</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Puzzle</genre>
 		</genres>
@@ -137335,7 +137082,6 @@
 		<title>NHL Hitz Pro</title>
 		<platform>GC</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Sports</genre>
 		</genres>
@@ -138705,7 +138451,6 @@
 		<title>Sega Rally 2006</title>
 		<platform>PS2</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Racing</genre>
 		</genres>
@@ -139624,8 +139369,6 @@
 		<id>vg_sales_13963</id>
 		<title>World of Tanks</title>
 		<platform>X360</platform>
-		<publisher>N/A</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Shooter</genre>
 		</genres>
@@ -140465,7 +140208,6 @@
 		<title>Swords</title>
 		<platform>Wii</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Fighting</genre>
 		</genres>
@@ -140555,7 +140297,6 @@
 		<title>Half-Minute Hero 2</title>
 		<platform>PSP</platform>
 		<publisher>Rising Star Games</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Role-Playing</genre>
 		</genres>
@@ -140565,7 +140306,6 @@
 		<title>Clockwork Empires</title>
 		<platform>PC</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Strategy</genre>
 		</genres>
@@ -140874,8 +140614,6 @@
 		<id>vg_sales_14088</id>
 		<title>Housekeeping</title>
 		<platform>DS</platform>
-		<publisher>N/A</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Action</genre>
 		</genres>
@@ -140985,7 +140723,6 @@
 		<title>Major League Baseball 2K8</title>
 		<platform>PSP</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Sports</genre>
 		</genres>
@@ -141605,7 +141342,6 @@
 		<title>Sabre Wulf</title>
 		<platform>GBA</platform>
 		<publisher>THQ</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Platform</genre>
 		</genres>
@@ -142735,7 +142471,6 @@
 		<title>Beyond the Labyrinth</title>
 		<platform>3DS</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Role-Playing</genre>
 		</genres>
@@ -142964,8 +142699,6 @@
 		<id>vg_sales_14297</id>
 		<title>Bikkuriman Daijiten</title>
 		<platform>DS</platform>
-		<publisher>N/A</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Misc</genre>
 		</genres>
@@ -143114,7 +142847,6 @@
 		<id>vg_sales_14312</id>
 		<title>Silverlicious</title>
 		<platform>DS</platform>
-		<publisher>N/A</publisher>
 		<publishingdate>2012</publishingdate>
 		<genres>
 			<genre>Action</genre>
@@ -143125,7 +142857,6 @@
 		<title>Majesty 2: The Fantasy Kingdom Sim</title>
 		<platform>X360</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Simulation</genre>
 		</genres>
@@ -143775,7 +143506,6 @@
 		<title>Fullmetal Alchemist: Brotherhood</title>
 		<platform>PSP</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Action</genre>
 		</genres>
@@ -144735,7 +144465,6 @@
 		<title>Combat Elite: WWII Paratroopers</title>
 		<platform>XB</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Shooter</genre>
 		</genres>
@@ -145225,7 +144954,6 @@
 		<title>Samurai Spirits: Tenkaichi Kenkakuden</title>
 		<platform>PS2</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Fighting</genre>
 		</genres>
@@ -145835,7 +145563,6 @@
 		<title>Battle vs. Chess</title>
 		<platform>PC</platform>
 		<publisher>TopWare Interactive</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Misc</genre>
 		</genres>
@@ -146765,7 +146492,6 @@
 		<title>Tom and Jerry in War of the Whiskers</title>
 		<platform>XB</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Fighting</genre>
 		</genres>
@@ -146965,7 +146691,6 @@
 		<title>Super Duper Sumos</title>
 		<platform>GBA</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Action</genre>
 		</genres>
@@ -146984,7 +146709,6 @@
 		<id>vg_sales_14699</id>
 		<title>UK Truck Simulator</title>
 		<platform>PC</platform>
-		<publisher>N/A</publisher>
 		<publishingdate>2010</publishingdate>
 		<genres>
 			<genre>Simulation</genre>
@@ -148495,7 +148219,6 @@
 		<title>Legacy of Ys: Books I &amp; II</title>
 		<platform>DS</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Role-Playing</genre>
 		</genres>
@@ -148555,7 +148278,6 @@
 		<title>The King of Fighters: Maximum Impact - Maniax</title>
 		<platform>XB</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Fighting</genre>
 		</genres>
@@ -148765,7 +148487,6 @@
 		<title>Combat Wings: The Great Battles of WWII</title>
 		<platform>Wii</platform>
 		<publisher>City Interactive</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Simulation</genre>
 		</genres>
@@ -149255,7 +148976,6 @@
 		<title>Tube Slider</title>
 		<platform>GC</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Racing</genre>
 		</genres>
@@ -149424,8 +149144,6 @@
 		<id>vg_sales_14943</id>
 		<title>Umineko no Naku Koro ni San: Shinjitsu to Gensou no Yasoukyoku</title>
 		<platform>PS3</platform>
-		<publisher>N/A</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Adventure</genre>
 		</genres>
@@ -149975,7 +149693,6 @@
 		<title>Wii de Asobu: Metroid Prime</title>
 		<platform>Wii</platform>
 		<publisher>Nintendo</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Shooter</genre>
 		</genres>
@@ -149985,7 +149702,6 @@
 		<title>Payout Poker &amp; Casino</title>
 		<platform>PSP</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Misc</genre>
 		</genres>
@@ -149995,7 +149711,6 @@
 		<title>Wii de Asobu: Metroid Prime</title>
 		<platform>Wii</platform>
 		<publisher>Nintendo</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Shooter</genre>
 		</genres>
@@ -150564,7 +150279,6 @@
 		<id>vg_sales_15057</id>
 		<title>Xia-Xia</title>
 		<platform>DS</platform>
-		<publisher>N/A</publisher>
 		<publishingdate>2012</publishingdate>
 		<genres>
 			<genre>Platform</genre>
@@ -151975,7 +151689,6 @@
 		<title>Saint</title>
 		<platform>Wii</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Shooter</genre>
 		</genres>
@@ -152085,7 +151798,6 @@
 		<title>Steal Princess</title>
 		<platform>DS</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Platform</genre>
 		</genres>
@@ -152614,8 +152326,6 @@
 		<id>vg_sales_15262</id>
 		<title>Mario Tennis</title>
 		<platform>3DS</platform>
-		<publisher>N/A</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Sports</genre>
 		</genres>
@@ -153165,7 +152875,6 @@
 		<title>Runaway: A Twist of Fate</title>
 		<platform>DS</platform>
 		<publisher>Focus Home Interactive</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Adventure</genre>
 		</genres>
@@ -153254,7 +152963,6 @@
 		<id>vg_sales_15326</id>
 		<title>Nicktoons Collection: Game Boy Advance Video Volume 3</title>
 		<platform>GBA</platform>
-		<publisher>N/A</publisher>
 		<publishingdate>2005</publishingdate>
 		<genres>
 			<genre>Misc</genre>
@@ -153534,7 +153242,6 @@
 		<id>vg_sales_15354</id>
 		<title>Demolition Company: Gold Edition</title>
 		<platform>PC</platform>
-		<publisher>N/A</publisher>
 		<publishingdate>2011</publishingdate>
 		<genres>
 			<genre>Simulation</genre>
@@ -154765,7 +154472,6 @@
 		<title>Yu-Gi-Oh! 5D's Wheelie Breakers (JP sales)</title>
 		<platform>Wii</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Racing</genre>
 		</genres>
@@ -155795,7 +155501,6 @@
 		<title>Cabela's Alaskan Adventure</title>
 		<platform>PS2</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Sports</genre>
 		</genres>
@@ -156065,7 +155770,6 @@
 		<title>Writing and Speaking Beautiful Japanese DS</title>
 		<platform>DS</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Misc</genre>
 		</genres>
@@ -156525,7 +156229,6 @@
 		<title>Virtua Quest</title>
 		<platform>PS2</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Role-Playing</genre>
 		</genres>
@@ -156975,7 +156678,6 @@
 		<title>Shonen Jump's Yu-Gi-Oh! GX Card Almanac</title>
 		<platform>DS</platform>
 		<publisher>Konami Digital Entertainment</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Misc</genre>
 		</genres>
@@ -157175,7 +156877,6 @@
 		<title>Without Warning</title>
 		<platform>XB</platform>
 		<publisher>Capcom</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Shooter</genre>
 		</genres>
@@ -157395,7 +157096,6 @@
 		<title>Football Manager 2007</title>
 		<platform>X360</platform>
 		<publisher>Sega</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Sports</genre>
 		</genres>
@@ -157884,7 +157584,6 @@
 		<id>vg_sales_15789</id>
 		<title>Moshi, Kono Sekai ni Kami-sama ga Iru to suru Naraba.</title>
 		<platform>PSV</platform>
-		<publisher>N/A</publisher>
 		<publishingdate>2016</publishingdate>
 		<genres>
 			<genre>Adventure</genre>
@@ -158115,7 +157814,6 @@
 		<title>Ferrari: The Race Experience</title>
 		<platform>Wii</platform>
 		<publisher>System 3 Arcade Software</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Racing</genre>
 		</genres>
@@ -158655,7 +158353,6 @@
 		<title>PDC World Championship Darts 2008</title>
 		<platform>DS</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Sports</genre>
 		</genres>
@@ -158765,7 +158462,6 @@
 		<title>Dinotopia: The Sunstone Odyssey</title>
 		<platform>GC</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Action</genre>
 		</genres>
@@ -158785,7 +158481,6 @@
 		<title>Dance! It's Your Stage</title>
 		<platform>Wii</platform>
 		<publisher>DTP Entertainment</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Misc</genre>
 		</genres>
@@ -159005,7 +158700,6 @@
 		<title>Jet Impulse</title>
 		<platform>DS</platform>
 		<publisher>Nintendo</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Simulation</genre>
 		</genres>
@@ -159154,8 +158848,6 @@
 		<id>vg_sales_15916</id>
 		<title>Dream Dancer</title>
 		<platform>DS</platform>
-		<publisher>N/A</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Misc</genre>
 		</genres>
@@ -160575,7 +160267,6 @@
 		<title>PDC World Championship Darts 2008</title>
 		<platform>PSP</platform>
 		<publisher>Oxygen Interactive</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Sports</genre>
 		</genres>
@@ -160585,7 +160276,6 @@
 		<title>WRC: FIA World Rally Championship</title>
 		<platform>PC</platform>
 		<publisher>Black Bean Games</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Racing</genre>
 		</genres>
@@ -160655,7 +160345,6 @@
 		<title>Aquaman: Battle for Atlantis</title>
 		<platform>XB</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Action</genre>
 		</genres>
@@ -161914,8 +161603,6 @@
 		<id>vg_sales_16192</id>
 		<title>Homeworld Remastered Collection</title>
 		<platform>PC</platform>
-		<publisher>N/A</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Strategy</genre>
 		</genres>
@@ -161945,7 +161632,6 @@
 		<title>Shorts</title>
 		<platform>DS</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Platform</genre>
 		</genres>
@@ -161984,8 +161670,6 @@
 		<id>vg_sales_16199</id>
 		<title>AKB1/48: Idol to Guam de Koishitara...</title>
 		<platform>X360</platform>
-		<publisher>N/A</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Misc</genre>
 		</genres>
@@ -162084,7 +161768,6 @@
 		<id>vg_sales_16209</id>
 		<title>Super Robot Monkey Team: Game Boy Advance Video Volume 1</title>
 		<platform>GBA</platform>
-		<publisher>N/A</publisher>
 		<publishingdate>2005</publishingdate>
 		<genres>
 			<genre>Misc</genre>
@@ -162294,8 +161977,6 @@
 		<id>vg_sales_16230</id>
 		<title>Brothers in Arms: Furious 4</title>
 		<platform>X360</platform>
-		<publisher>N/A</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Shooter</genre>
 		</genres>
@@ -162465,7 +162146,6 @@
 		<title>Agarest Senki: Re-appearance</title>
 		<platform>PS3</platform>
 		<publisher>Idea Factory</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Role-Playing</genre>
 		</genres>
@@ -163075,7 +162755,6 @@
 		<title>Freaky Flyers</title>
 		<platform>GC</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Racing</genre>
 		</genres>
@@ -163275,7 +162954,6 @@
 		<title>Inversion</title>
 		<platform>PC</platform>
 		<publisher>Namco Bandai Games</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Shooter</genre>
 		</genres>
@@ -163665,7 +163343,6 @@
 		<title>Hakuouki: Shinsengumi Kitan</title>
 		<platform>PS3</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Adventure</genre>
 		</genres>
@@ -163674,7 +163351,6 @@
 		<id>vg_sales_16368</id>
 		<title>Dance with Devils</title>
 		<platform>PSV</platform>
-		<publisher>N/A</publisher>
 		<publishingdate>2016</publishingdate>
 		<genres>
 			<genre>Action</genre>
@@ -164275,7 +163951,6 @@
 		<title>Virtua Quest</title>
 		<platform>GC</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Role-Playing</genre>
 		</genres>
@@ -164935,7 +164610,6 @@
 		<title>The Smurfs</title>
 		<platform>3DS</platform>
 		<publisher>Unknown</publisher>
-		<publishingdate>1</publishingdate>
 		<genres>
 			<genre>Action</genre>
 		</genres>
@@ -164944,7 +164618,6 @@
 		<id>vg_sales_16495</id>
 		<title>Legends of Oz: Dorothy's Return</title>
 		<platform>3DS</platform>
-		<publisher>N/A</publisher>
 		<publishingdate>2014</publishingdate>
 		<genres>
 			<genre>Puzzle</genre>
@@ -165434,7 +165107,6 @@
 		<id>vg_sales_16544</id>
 		<title>Driving Simulator 2011</title>
 		<platform>PC</platform>
-		<publisher>N/A</publisher>
 		<publishingdate>2011</publishingdate>
 		<genres>
 			<genre>Racing</genre>
@@ -165534,7 +165206,6 @@
 		<id>vg_sales_16554</id>
 		<title>Bound By Flame</title>
 		<platform>X360</platform>
-		<publisher>N/A</publisher>
 		<publishingdate>2014</publishingdate>
 		<genres>
 			<genre>Role-Playing</genre>
