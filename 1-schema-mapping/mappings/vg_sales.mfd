@@ -6,60 +6,11 @@
 		<properties SelectedLanguage="builtin"/>
 		<structure>
 			<children>
-				<component name="generate_id" library="user" uid="17" kind="19" visible="0" blackbox="0">
-					<view ltx="700" lty="-15" rbx="747" rby="2"/>
-					<data>
-						<root>
-							<header>
-								<namespaces/>
-							</header>
-						</root>
-						<root>
-							<header>
-								<namespaces>
-									<namespace/>
-								</namespaces>
-							</header>
-							<entry name="id" outkey="27" componentid="16"/>
-						</root>
-					</data>
-				</component>
-				<component name="targettestvideogames" library="xml" uid="24" kind="14">
-					<properties XSLTDefaultOutput="1"/>
-					<view ltx="851" lty="14" rbx="1281" rby="368"/>
-					<data>
-						<root>
-							<header>
-								<namespaces>
-									<namespace/>
-									<namespace uid="http://www.altova.com/mapforce"/>
-								</namespaces>
-							</header>
-							<entry name="FileInstance" ns="1" expanded="1">
-								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
-									<entry name="videogames" expanded="1">
-										<entry name="videogame" inpkey="30" expanded="1">
-											<entry name="id" inpkey="31"/>
-											<entry name="title" inpkey="32"/>
-											<entry name="platform" inpkey="33"/>
-											<entry name="publisher" inpkey="34"/>
-											<entry name="publishingdate" inpkey="35"/>
-											<entry name="genres" expanded="1">
-												<entry name="genre" inpkey="40"/>
-											</entry>
-										</entry>
-									</entry>
-								</entry>
-							</entry>
-						</root>
-						<document schema="..\targetschema\targettestvideogames.xsd" instanceroot="{}videogames" inputinstance="..\targetschema\targettestvideogames.xml" outputinstance="..\targetschema\targettestvideogames.xml"/>
-					</data>
-				</component>
 				<component name="sales" library="text" uid="3" kind="16">
 					<properties/>
-					<view ltx="84" lty="2" rbx="252" rby="219"/>
+					<view ltx="-4" lty="-74" rbx="164" rby="143"/>
 					<data>
-						<root scrollposition="2">
+						<root>
 							<header>
 								<namespaces>
 									<namespace/>
@@ -97,8 +48,39 @@
 						</text>
 					</data>
 				</component>
-				<component name="formatYear" library="user" uid="37" kind="19" visible="0" blackbox="0">
-					<view ltx="477" lty="317" rbx="477" rby="317"/>
+				<component name="targettestvideogames" library="xml" uid="24" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="898" lty="132" rbx="1328" rby="486"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="videogames" expanded="1">
+										<entry name="videogame" inpkey="30" expanded="1">
+											<entry name="id" inpkey="31"/>
+											<entry name="title" inpkey="32"/>
+											<entry name="platform" inpkey="33"/>
+											<entry name="publisher" inpkey="34"/>
+											<entry name="publishingdate" inpkey="35"/>
+											<entry name="genres" expanded="1">
+												<entry name="genre" inpkey="40"/>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="..\targetschema\targettestvideogames.xsd" instanceroot="{}videogames" inputinstance="..\targetschema\targettestvideogames.xml" outputinstance="..\targetschema\targettestvideogames.xml"/>
+					</data>
+				</component>
+				<component name="filterNonEmptyYear" library="user" uid="75" kind="19" visible="0" blackbox="0">
+					<view ltx="474" lty="171" rbx="618" rby="188"/>
 					<data>
 						<root>
 							<header>
@@ -106,7 +88,7 @@
 									<namespace/>
 								</namespaces>
 							</header>
-							<entry name="value" inpkey="41" componentid="35"/>
+							<entry name="value" inpkey="63" componentid="73"/>
 						</root>
 						<root>
 							<header>
@@ -114,7 +96,46 @@
 									<namespace/>
 								</namespaces>
 							</header>
-							<entry name="publishingdate" outkey="42" componentid="36"/>
+							<entry name="publishingdate" outkey="64" componentid="74"/>
+						</root>
+					</data>
+				</component>
+				<component name="filterNonEmptyPublishers" library="user" uid="66" kind="19" visible="0" blackbox="0">
+					<view ltx="358" lty="228" rbx="482" rby="245"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="string1" inpkey="65" componentid="64"/>
+						</root>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="publisher" outkey="66" componentid="65"/>
+						</root>
+					</data>
+				</component>
+				<component name="generate_id" library="user" uid="17" kind="19" visible="0" blackbox="0">
+					<view ltx="759" lty="95" rbx="806" rby="112"/>
+					<data>
+						<root>
+							<header>
+								<namespaces/>
+							</header>
+						</root>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="id" outkey="27" componentid="16"/>
 						</root>
 					</data>
 				</component>
@@ -142,12 +163,12 @@
 							<edge vertexkey="33"/>
 						</edges>
 					</vertex>
-					<vertex vertexkey="24">
+					<vertex vertexkey="66">
 						<edges>
 							<edge vertexkey="34"/>
 						</edges>
 					</vertex>
-					<vertex vertexkey="42">
+					<vertex vertexkey="64">
 						<edges>
 							<edge vertexkey="35"/>
 						</edges>
@@ -159,7 +180,12 @@
 					</vertex>
 					<vertex vertexkey="23">
 						<edges>
-							<edge vertexkey="41"/>
+							<edge vertexkey="63"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="24">
+						<edges>
+							<edge vertexkey="65"/>
 						</edges>
 					</vertex>
 				</vertices>
@@ -248,7 +274,6 @@
 		</structure>
 	</component>
 	<component name="formatYear" library="user" uid="30" inline="1" editable="1" blackbox="0">
-		<description/>
 		<structure>
 			<children>
 				<component name="constant" library="core" uid="31" kind="2">
@@ -340,6 +365,264 @@
 					<vertex vertexkey="6">
 						<edges>
 							<edge vertexkey="10"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+	<component name="filterYear" library="user" uid="56" inline="1" editable="1" blackbox="0">
+		<description/>
+		<structure>
+			<children>
+				<component name="result" library="core" uid="57" kind="7">
+					<sources>
+						<datapoint/>
+					</sources>
+					<view ltx="1132" rbx="1184" rby="36"/>
+					<data>
+						<output datatype="string"/>
+						<parameter usageKind="output" name="result"/>
+					</data>
+				</component>
+			</children>
+		</structure>
+	</component>
+	<component name="filterNonEmptyPublishers" library="user" uid="58" inline="1" editable="1" blackbox="0">
+		<description/>
+		<structure>
+			<children>
+				<component name="string-compare" library="lang" uid="59" kind="5">
+					<sources>
+						<datapoint pos="0" key="5"/>
+						<datapoint pos="1" key="7"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="10"/>
+					</targets>
+					<view ltx="374" rbx="471" rby="52"/>
+				</component>
+				<component name="constant" library="core" uid="60" kind="2">
+					<targets>
+						<datapoint pos="0" key="6"/>
+					</targets>
+					<view ltx="300" lty="36" rbx="358" rby="52"/>
+					<data>
+						<constant value="N/A" datatype="string"/>
+					</data>
+				</component>
+				<component name="equal" library="core" uid="61" kind="5">
+					<sources>
+						<datapoint pos="0" key="11"/>
+						<datapoint pos="1" key="9"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="2"/>
+					</targets>
+					<view ltx="569" lty="8" rbx="620" rby="60"/>
+				</component>
+				<component name="constant" library="core" uid="62" kind="2">
+					<targets>
+						<datapoint pos="0" key="8"/>
+					</targets>
+					<view ltx="512" lty="44" rbx="549" rby="60"/>
+					<data>
+						<constant value="0" datatype="decimal"/>
+					</data>
+				</component>
+				<component name="filter" library="core" uid="63" kind="3">
+					<sources>
+						<datapoint pos="0" key="4"/>
+						<datapoint pos="1" key="3"/>
+					</sources>
+					<targets>
+						<datapoint/>
+						<datapoint pos="1" key="1"/>
+					</targets>
+					<view ltx="638" lty="86" rbx="738" rby="138"/>
+				</component>
+				<component name="string1" library="core" uid="64" kind="6">
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="12"/>
+					</targets>
+					<view rbx="81" rby="36"/>
+					<data>
+						<input datatype="string"/>
+						<parameter usageKind="input" name="string1"/>
+					</data>
+				</component>
+				<component name="publisher" library="core" uid="65" kind="7">
+					<sources>
+						<datapoint pos="0" key="13"/>
+					</sources>
+					<view ltx="838" rbx="907" rby="36"/>
+					<data>
+						<output datatype="string"/>
+						<parameter usageKind="output" name="publisher"/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="2">
+						<edges>
+							<edge vertexkey="3"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="12">
+						<edges>
+							<edge vertexkey="4"/>
+							<edge vertexkey="5"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="6">
+						<edges>
+							<edge vertexkey="7"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="8">
+						<edges>
+							<edge vertexkey="9"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="10">
+						<edges>
+							<edge vertexkey="11"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1">
+						<edges>
+							<edge vertexkey="13"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+	<component name="filterNonEmptyYear" library="user" uid="67" inline="1" editable="1" blackbox="0">
+		<description/>
+		<structure>
+			<children>
+				<component name="formatYear" library="user" uid="68" kind="19" visible="0" blackbox="0">
+					<view ltx="300" rbx="444" rby="17"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="value" inpkey="2" componentid="35"/>
+						</root>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="publishingdate" outkey="7" componentid="36"/>
+						</root>
+					</data>
+				</component>
+				<component name="string-length" library="core" uid="69" kind="5">
+					<sources>
+						<datapoint pos="0" key="8"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="9"/>
+					</targets>
+					<view ltx="502" lty="2" rbx="586" rby="38"/>
+				</component>
+				<component name="equal" library="core" uid="70" kind="5">
+					<sources>
+						<datapoint pos="0" key="10"/>
+						<datapoint pos="1" key="4"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="5"/>
+					</targets>
+					<view ltx="613" lty="22" rbx="664" rby="74"/>
+				</component>
+				<component name="constant" library="core" uid="71" kind="2">
+					<targets>
+						<datapoint pos="0" key="3"/>
+					</targets>
+					<view ltx="557" lty="59" rbx="594" rby="75"/>
+					<data>
+						<constant value="1" datatype="decimal"/>
+					</data>
+				</component>
+				<component name="filter" library="core" uid="72" kind="3">
+					<sources>
+						<datapoint pos="0" key="11"/>
+						<datapoint pos="1" key="6"/>
+					</sources>
+					<targets>
+						<datapoint/>
+						<datapoint pos="1" key="1"/>
+					</targets>
+					<view ltx="653" lty="88" rbx="753" rby="140"/>
+				</component>
+				<component name="value" library="core" uid="73" kind="6">
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="12"/>
+					</targets>
+					<view rbx="73" rby="36"/>
+					<data>
+						<input datatype="string"/>
+						<parameter usageKind="input" name="value"/>
+					</data>
+				</component>
+				<component name="publishingdate" library="core" uid="74" kind="7">
+					<sources>
+						<datapoint pos="0" key="13"/>
+					</sources>
+					<view ltx="853" rbx="948" rby="36"/>
+					<data>
+						<output datatype="string"/>
+						<parameter usageKind="output" name="publishingdate"/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="12">
+						<edges>
+							<edge vertexkey="2"/>
+							<edge vertexkey="11"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3">
+						<edges>
+							<edge vertexkey="4"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="5">
+						<edges>
+							<edge vertexkey="6"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="7">
+						<edges>
+							<edge vertexkey="8"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="9">
+						<edges>
+							<edge vertexkey="10"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1">
+						<edges>
+							<edge vertexkey="13"/>
 						</edges>
 					</vertex>
 				</vertices>
