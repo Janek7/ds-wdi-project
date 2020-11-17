@@ -21,7 +21,7 @@ import de.uni_mannheim.informatik.web_data_integration.comparator.VideoGameTitle
 import de.uni_mannheim.informatik.web_data_integration.model.VideoGame;
 import de.uni_mannheim.informatik.web_data_integration.model.VideoGameXMLReader;
 
-public class IR_using_linear_combination_test {
+public class IR_using_linear_combination_nadine {
 
 	private static final Logger logger = WinterLogManager.activateLogger("default");
 
