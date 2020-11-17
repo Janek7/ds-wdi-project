@@ -1,6 +1,12 @@
 package de.uni_mannheim.informatik.web_data_integration;
 
 import java.io.File;
+
+import de.uni_mannheim.informatik.dws.winter.similarity.string.LevenshteinSimilarity;
+import de.uni_mannheim.informatik.dws.winter.similarity.string.TokenizingJaccardSimilarity;
+import de.uni_mannheim.informatik.web_data_integration.comparator.VideoGamePlatformComparator;
+import de.uni_mannheim.informatik.web_data_integration.comparator.VideoGameTitleComparatorJaccard;
+import de.uni_mannheim.informatik.web_data_integration.comparator.VideoGameTitleComparatorLevenshtein;
 import org.slf4j.Logger;
 
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEngine;
@@ -16,8 +22,6 @@ import de.uni_mannheim.informatik.dws.winter.model.io.CSVCorrespondenceFormatter
 import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 import de.uni_mannheim.informatik.dws.winter.utils.WinterLogManager;
 import de.uni_mannheim.informatik.web_data_integration.blocking.VideoGameBlockingKeyByTitleGenerator;
-import de.uni_mannheim.informatik.web_data_integration.comparator.VideoGamePlatformComparatorJaccard;
-import de.uni_mannheim.informatik.web_data_integration.comparator.VideoGameTitleComparatorJaccard;
 import de.uni_mannheim.informatik.web_data_integration.model.VideoGame;
 import de.uni_mannheim.informatik.web_data_integration.model.VideoGameXMLReader;
 
@@ -45,8 +49,9 @@ public class IR_using_linear_combination_nadine {
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", 1000, gsTest);
 
 		// add comparators
-		matchingRule.addComparator(new VideoGamePlatformComparatorJaccard(), 0.5);
-		matchingRule.addComparator(new VideoGameTitleComparatorJaccard(), 0.5);
+		matchingRule.addComparator(new VideoGameTitleComparatorLevenshtein(), 0.5);
+		matchingRule.addComparator(new VideoGamePlatformComparator(new LevenshteinSimilarity()), 0.5);
+		//matchingRule.addComparator(new VideoGamePlatformComparator(new TokenizingJaccardSimilarity()), 0.5);
 
 		// creating a blocker
 		StandardRecordBlocker<VideoGame, Attribute> blocker = new StandardRecordBlocker<VideoGame, Attribute>(

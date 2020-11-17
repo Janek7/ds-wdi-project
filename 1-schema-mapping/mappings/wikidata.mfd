@@ -65,93 +65,6 @@
 					</targets>
 					<view ltx="728" lty="156" rbx="843" rby="210"/>
 				</component>
-				<component name="output_wikidata04112020-143914" library="text" uid="3" kind="16">
-					<properties/>
-					<view ltx="53" lty="65" rbx="316" rby="319"/>
-					<data>
-						<root scrollposition="1">
-							<header>
-								<namespaces>
-									<namespace/>
-									<namespace uid="http://www.altova.com/mapforce"/>
-								</namespaces>
-							</header>
-							<entry name="FileInstance" ns="1" expanded="1">
-								<entry name="document" ns="1" expanded="1">
-									<entry name="Zeilen" outkey="60" expanded="1">
-										<entry name="videogameLabel" outkey="61"/>
-										<entry name="publication_date" outkey="62"/>
-										<entry name="genreLabel" outkey="63"/>
-										<entry name="platformLabel" outkey="27"/>
-										<entry name="publisherLabel" outkey="23"/>
-										<entry name="developerLabel" outkey="64"/>
-										<entry name="game_modeLabel" outkey="12"/>
-										<entry name="USK_ratingLabel" outkey="65"/>
-										<entry name="PEGI_ratingLabel4" outkey="66"/>
-										<entry name="price" outkey="19"/>
-									</entry>
-								</entry>
-							</entry>
-						</root>
-						<text type="csv" encoding="1000" byteorder="1" byteordermark="0" inputinstance="..\0-data-collection-profiling\wikidata\data\output_wikidata04112020-143914.csv">
-							<settings separator="," quote="&quot;" firstrownames="true" removeempty="true">
-								<names root="output_wikidata04112020-143914" block="Zeilen">
-									<field0 name="videogame" type="string"/>
-									<field1 name="videogameLabel" type="string"/>
-									<field2 name="title" type="string"/>
-									<field3 name="publication_date" type="string"/>
-									<field4 name="genreLabel" type="string"/>
-									<field5 name="platformLabel" type="string"/>
-									<field6 name="publisherLabel" type="string"/>
-									<field7 name="developerLabel" type="string"/>
-									<field8 name="game_modeLabel" type="string"/>
-									<field9 name="USK_ratingLabel" type="string"/>
-									<field10 name="PEGI_ratingLabel4" type="string"/>
-									<field11 name="PEGI_ratingLabel" type="string"/>
-									<field12 name="price" type="string"/>
-								</names>
-							</settings>
-						</text>
-					</data>
-				</component>
-				<component name="targetvideogames" library="xml" uid="28" kind="14">
-					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
-					<view ltx="1210" lty="54" rbx="1452" rby="367"/>
-					<data>
-						<root scrollposition="1">
-							<header>
-								<namespaces>
-									<namespace/>
-									<namespace uid="http://www.altova.com/mapforce"/>
-								</namespaces>
-							</header>
-							<entry name="FileInstance" ns="1" expanded="1">
-								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
-									<entry name="videogames" expanded="1">
-										<entry name="videogame" inpkey="53" expanded="1">
-											<entry name="id" inpkey="54"/>
-											<entry name="title" inpkey="55"/>
-											<entry name="platform" inpkey="28"/>
-											<entry name="publisher" inpkey="24"/>
-											<entry name="publishingdate" inpkey="56"/>
-											<entry name="developer" inpkey="57"/>
-											<entry name="usk_rating" inpkey="91"/>
-											<entry name="pegi_rating" inpkey="109"/>
-											<entry name="gamemodes" expanded="1">
-												<entry name="gamemode" inpkey="13"/>
-											</entry>
-											<entry name="price" inpkey="20"/>
-											<entry name="genres" expanded="1">
-												<entry name="genre" inpkey="59"/>
-											</entry>
-										</entry>
-									</entry>
-								</entry>
-							</entry>
-						</root>
-						<document schema="targetschema\targetvideogames.xsd" instanceroot="{}videogames" inputinstance="targetschema\targetvideogames.xml" outputinstance="targetschema\targetvideogames.xml"/>
-					</data>
-				</component>
 				<component name="first-items" library="core" uid="44" kind="5">
 					<sources>
 						<datapoint pos="0" key="31"/>
@@ -183,16 +96,6 @@
 						</root>
 					</data>
 				</component>
-				<component name="first-items" library="core" uid="36" kind="5">
-					<sources>
-						<datapoint pos="0" key="21"/>
-						<datapoint/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="22"/>
-					</targets>
-					<view ltx="728" lty="431" rbx="843" rby="485"/>
-				</component>
 				<component name="first-items" library="core" uid="72" kind="5">
 					<sources>
 						<datapoint pos="0" key="89"/>
@@ -201,27 +104,7 @@
 					<targets>
 						<datapoint pos="0" key="90"/>
 					</targets>
-					<view ltx="728" lty="504" rbx="843" rby="558"/>
-				</component>
-				<component name="first-items" library="core" uid="35" kind="5">
-					<sources>
-						<datapoint pos="0" key="17"/>
-						<datapoint/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="18"/>
-					</targets>
-					<view ltx="731" lty="742" rbx="846" rby="796"/>
-				</component>
-				<component name="first-items" library="core" uid="73" kind="5">
-					<sources>
-						<datapoint pos="0" key="92"/>
-						<datapoint/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="93"/>
-					</targets>
-					<view ltx="728" lty="583" rbx="843" rby="637"/>
+					<view ltx="731" lty="585" rbx="846" rby="639"/>
 				</component>
 				<component name="group-by" library="core" uid="32" kind="5">
 					<sources>
@@ -232,7 +115,7 @@
 						<datapoint/>
 						<datapoint pos="1" key="11"/>
 					</targets>
-					<view ltx="731" lty="665" rbx="849" rby="719"/>
+					<view ltx="734" lty="746" rbx="852" rby="800"/>
 				</component>
 				<component name="group-by" library="core" uid="33" kind="5">
 					<sources>
@@ -244,6 +127,137 @@
 						<datapoint pos="1" key="16"/>
 					</targets>
 					<view ltx="728" lty="349" rbx="846" rby="403"/>
+				</component>
+				<component name="first-items" library="core" uid="73" kind="5">
+					<sources>
+						<datapoint pos="0" key="92"/>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="93"/>
+					</targets>
+					<view ltx="731" lty="664" rbx="846" rby="718"/>
+				</component>
+				<component name="first-items" library="core" uid="36" kind="5">
+					<sources>
+						<datapoint pos="0" key="21"/>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="22"/>
+					</targets>
+					<view ltx="731" lty="512" rbx="846" rby="566"/>
+				</component>
+				<component name="first-items" library="core" uid="35" kind="5">
+					<sources>
+						<datapoint pos="0" key="17"/>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="18"/>
+					</targets>
+					<view ltx="734" lty="823" rbx="849" rby="877"/>
+				</component>
+				<component name="targetvideogames" library="xml" uid="28" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="1210" lty="54" rbx="1452" rby="367"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="videogames" expanded="1">
+										<entry name="videogame" inpkey="53" expanded="1">
+											<entry name="id" inpkey="54"/>
+											<entry name="title" inpkey="55"/>
+											<entry name="platform" inpkey="28"/>
+											<entry name="publisher" inpkey="24"/>
+											<entry name="publishingdate" inpkey="56"/>
+											<entry name="developer" inpkey="57"/>
+											<entry name="age" inpkey="114"/>
+											<entry name="usk_rating" inpkey="91"/>
+											<entry name="pegi_rating" inpkey="109"/>
+											<entry name="gamemodes" expanded="1">
+												<entry name="gamemode" inpkey="13"/>
+											</entry>
+											<entry name="price" inpkey="20"/>
+											<entry name="genres" expanded="1">
+												<entry name="genre" inpkey="59"/>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="..\targetschema\targetvideogames.xsd" instanceroot="{}videogames" inputinstance="..\targetschema\targetvideogames.xml" outputinstance="targetschema\targetvideogames.xml"/>
+					</data>
+				</component>
+				<component name="first-items" library="core" uid="74" kind="5">
+					<sources>
+						<datapoint pos="0" key="112"/>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="113"/>
+					</targets>
+					<view ltx="731" lty="429" rbx="846" rby="483"/>
+				</component>
+				<component name="output_wikidata_all_age" library="text" uid="3" kind="16">
+					<properties/>
+					<view ltx="53" lty="65" rbx="316" rby="380"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1">
+									<entry name="Zeilen" outkey="60" expanded="1">
+										<entry name="videogameLabel" outkey="61"/>
+										<entry name="publication_date" outkey="62"/>
+										<entry name="genreLabel" outkey="63"/>
+										<entry name="platformLabel" outkey="27"/>
+										<entry name="publisherLabel" outkey="23"/>
+										<entry name="developerLabel" outkey="64"/>
+										<entry name="game_modeLabel" outkey="12"/>
+										<entry name="USK_ratingLabel" outkey="65"/>
+										<entry name="PEGI_ratingLabel" outkey="115"/>
+										<entry name="price" outkey="19"/>
+										<entry name="minimum_age" outkey="116"/>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<text type="csv" encoding="1000" byteorder="1" byteordermark="0" inputinstance="..\..\0-data-collection-profiling\wikidata\data\output_wikidata_all_age.csv">
+							<settings separator="," quote="&quot;" firstrownames="true" removeempty="true">
+								<names root="output_wikidata_all_age" block="Zeilen">
+									<field0 name="Field1" type="string"/>
+									<field1 name="Unnamed_ 0" realname="Unnamed: 0" type="string"/>
+									<field2 name="videogame" type="string"/>
+									<field3 name="videogameLabel" type="string"/>
+									<field4 name="title" type="string"/>
+									<field5 name="publication_date" type="string"/>
+									<field6 name="genreLabel" type="string"/>
+									<field7 name="platformLabel" type="string"/>
+									<field8 name="publisherLabel" type="string"/>
+									<field9 name="developerLabel" type="string"/>
+									<field10 name="game_modeLabel" type="string"/>
+									<field11 name="USK_ratingLabel" type="string"/>
+									<field12 name="PEGI_ratingLabel" type="string"/>
+									<field13 name="price" type="string"/>
+									<field14 name="minimum_age" type="string"/>
+								</names>
+							</settings>
+						</text>
+					</data>
 				</component>
 			</children>
 			<graph directed="1">
@@ -358,7 +372,7 @@
 							<edge vertexkey="91"/>
 						</edges>
 					</vertex>
-					<vertex vertexkey="66">
+					<vertex vertexkey="115">
 						<edges>
 							<edge vertexkey="92"/>
 						</edges>
@@ -371,6 +385,16 @@
 					<vertex vertexkey="62">
 						<edges>
 							<edge vertexkey="110"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="116">
+						<edges>
+							<edge vertexkey="112"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="113">
+						<edges>
+							<edge vertexkey="114"/>
 						</edges>
 					</vertex>
 				</vertices>
@@ -459,7 +483,6 @@
 		</structure>
 	</component>
 	<component name="Publication Date" library="user" uid="45" inline="1" editable="1" blackbox="0">
-		<description/>
 		<structure>
 			<children>
 				<component name="constant" library="core" uid="46" kind="2">

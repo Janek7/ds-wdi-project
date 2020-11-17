@@ -6,9 +6,11 @@ import java.util.LinkedList;
 import java.util.List;
 
 import de.uni_mannheim.informatik.dws.winter.model.Matchable;
+import de.uni_mannheim.informatik.web_data_integration.VideoGameDataSource;
 
 public class VideoGame implements Matchable {
 
+    private VideoGameDataSource source;
     protected String id;
     protected String provenance;
     private String title;
@@ -26,6 +28,15 @@ public class VideoGame implements Matchable {
         this.provenance = provenance;
         genres = new LinkedList<>();
         gameModes = new LinkedList<>();
+
+        if (id.contains("wikidata")) {
+            this.source = VideoGameDataSource.WIKIDATA;
+        } else if (id.contains("vg_sales")) {
+            this.source = VideoGameDataSource.SALES;
+        } else if (id.contains("steam_games")) {
+            this.source = VideoGameDataSource.STEAM;
+        }
+
     }
 
     @Override
@@ -129,4 +140,7 @@ public class VideoGame implements Matchable {
             return false;
     }
 
+    public VideoGameDataSource getSource() {
+        return source;
+    }
 }
