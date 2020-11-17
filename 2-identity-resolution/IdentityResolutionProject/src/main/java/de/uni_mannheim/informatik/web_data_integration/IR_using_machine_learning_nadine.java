@@ -8,6 +8,7 @@ import org.slf4j.Logger;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEngine;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator;
 import de.uni_mannheim.informatik.dws.winter.matching.algorithms.RuleLearner;
+import de.uni_mannheim.informatik.dws.winter.matching.blockers.SortedNeighbourhoodBlocker;
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardRecordBlocker;
 import de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
@@ -18,17 +19,24 @@ import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.model.io.CSVCorrespondenceFormatter;
 import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 import de.uni_mannheim.informatik.dws.winter.utils.WinterLogManager;
+import de.uni_mannheim.informatik.web_data_integration.blocking.VideoGameBlockingKeyByPlatformGenerator;
 import de.uni_mannheim.informatik.web_data_integration.blocking.VideoGameBlockingKeyByTitleGenerator;
+import de.uni_mannheim.informatik.web_data_integration.comparator.VideoGameDeveloperComparatorEqual;
+import de.uni_mannheim.informatik.web_data_integration.comparator.VideoGameDeveloperComparatorJaccard;
+import de.uni_mannheim.informatik.web_data_integration.comparator.VideoGameDeveloperComparatorLevenshtein;
 import de.uni_mannheim.informatik.web_data_integration.comparator.VideoGamePlatformComparatorEqual;
 import de.uni_mannheim.informatik.web_data_integration.comparator.VideoGamePlatformComparatorJaccard;
 import de.uni_mannheim.informatik.web_data_integration.comparator.VideoGamePlatformComparatorLevenshtein;
+import de.uni_mannheim.informatik.web_data_integration.comparator.VideoGamePublisherComparatorEqual;
+import de.uni_mannheim.informatik.web_data_integration.comparator.VideoGamePublisherComparatorJaccard;
+import de.uni_mannheim.informatik.web_data_integration.comparator.VideoGamePublisherComparatorLevenshtein;
 import de.uni_mannheim.informatik.web_data_integration.comparator.VideoGameTitleComparatorEqual;
 import de.uni_mannheim.informatik.web_data_integration.comparator.VideoGameTitleComparatorJaccard;
 import de.uni_mannheim.informatik.web_data_integration.comparator.VideoGameTitleComparatorLevenshtein;
 import de.uni_mannheim.informatik.web_data_integration.model.VideoGame;
 import de.uni_mannheim.informatik.web_data_integration.model.VideoGameXMLReader;
 
-public class IR_using_machine_learning {
+public class IR_using_machine_learning_nadine {
 
 private static final Logger logger = WinterLogManager.activateLogger("default");
 	
@@ -53,6 +61,7 @@ private static final Logger logger = WinterLogManager.activateLogger("default");
 		WekaMatchingRule<VideoGame, Attribute> matchingRule = new WekaMatchingRule<>(0.7, modelType, options);
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", 1000, gsTraining);
 		
+		
 		// add comparators
 		matchingRule.addComparator(new VideoGameTitleComparatorEqual());
 		matchingRule.addComparator(new VideoGamePlatformComparatorEqual());
@@ -60,6 +69,18 @@ private static final Logger logger = WinterLogManager.activateLogger("default");
 		matchingRule.addComparator(new VideoGamePlatformComparatorJaccard());
 		matchingRule.addComparator(new VideoGameTitleComparatorLevenshtein());
 		matchingRule.addComparator(new VideoGameTitleComparatorJaccard());
+/*		matchingRule.addComparator(new VideoGamePublisherComparatorJaccard());
+		matchingRule.addComparator(new VideoGamePublisherComparatorLevenshtein());
+		matchingRule.addComparator(new VideoGamePublisherComparatorEqual());
+		matchingRule.addComparator(new VideoGameDeveloperComparatorJaccard());
+		matchingRule.addComparator(new VideoGameDeveloperComparatorLevenshtein());
+		matchingRule.addComparator(new VideoGameDeveloperComparatorEqual());*/
+		
+		// results comparator combinations:
+		// all title, all platform:						P=0,99 R=0,74 F1=0,85
+		// all title, all platform, all developer:		P=0,99 R=0,74 F1=0,85
+		// all title, all platform, all publisher:		P=0,97 R=0,74 F1=0,84
+		// all title, platform, publisher, developer:	P=0,97 R=0,74 F1=0,84
 		
 		
 		// train the matching rule's model
@@ -70,7 +91,8 @@ private static final Logger logger = WinterLogManager.activateLogger("default");
 		
 		// create a blocker (blocking strategy)
 		StandardRecordBlocker<VideoGame, Attribute> blocker = new StandardRecordBlocker<VideoGame, Attribute>(new VideoGameBlockingKeyByTitleGenerator());
-//		SortedNeighbourhoodBlocker<Movie, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new MovieBlockingKeyByDecadeGenerator(), 1);
+		//sorted doesn't work? only 0 scores
+		//SortedNeighbourhoodBlocker<VideoGame, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new VideoGameBlockingKeyByPlatformGenerator(), 1);
 		blocker.collectBlockSizeData("data/output/debugResultsBlocking.csv", 100);
 		
 		// Initialize Matching Engine

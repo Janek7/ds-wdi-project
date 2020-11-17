@@ -1,6 +1,5 @@
 package de.uni_mannheim.informatik.web_data_integration.comparator;
 
-
 import de.uni_mannheim.informatik.dws.winter.matching.rules.Comparator;
 import de.uni_mannheim.informatik.dws.winter.matching.rules.ComparatorLogger;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
@@ -9,7 +8,7 @@ import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.similarity.string.LevenshteinSimilarity;
 import de.uni_mannheim.informatik.web_data_integration.model.VideoGame;
 
-public class VideoGameTitleComparatorLevenshtein implements Comparator<VideoGame, Attribute> {
+public class VideoGamePublisherComparatorLevenshtein implements Comparator<VideoGame, Attribute> {
 
 	private static final long serialVersionUID = 1L;
 	private LevenshteinSimilarity sim = new LevenshteinSimilarity();
@@ -22,8 +21,8 @@ public class VideoGameTitleComparatorLevenshtein implements Comparator<VideoGame
 			VideoGame record2,
 			Correspondence<Attribute, Matchable> schemaCorrespondences) {
 		
-		String s1 = record1.getTitle();
-		String s2 = record2.getTitle();
+		String s1 = record1.getPublisher();
+		String s2 = record2.getPublisher();
 		
 		double similarity = sim.calculate(s1, s2);
 		

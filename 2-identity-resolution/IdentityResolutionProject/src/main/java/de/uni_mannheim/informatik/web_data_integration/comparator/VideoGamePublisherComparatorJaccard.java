@@ -1,18 +1,17 @@
 package de.uni_mannheim.informatik.web_data_integration.comparator;
 
-
 import de.uni_mannheim.informatik.dws.winter.matching.rules.Comparator;
 import de.uni_mannheim.informatik.dws.winter.matching.rules.ComparatorLogger;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.Matchable;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
-import de.uni_mannheim.informatik.dws.winter.similarity.string.LevenshteinSimilarity;
+import de.uni_mannheim.informatik.dws.winter.similarity.string.TokenizingJaccardSimilarity;
 import de.uni_mannheim.informatik.web_data_integration.model.VideoGame;
 
-public class VideoGameTitleComparatorLevenshtein implements Comparator<VideoGame, Attribute> {
-
+public class VideoGamePublisherComparatorJaccard implements Comparator<VideoGame, Attribute>{
+	
 	private static final long serialVersionUID = 1L;
-	private LevenshteinSimilarity sim = new LevenshteinSimilarity();
+	private TokenizingJaccardSimilarity sim = new TokenizingJaccardSimilarity();
 	
 	private ComparatorLogger comparisonLog;
 
@@ -22,11 +21,11 @@ public class VideoGameTitleComparatorLevenshtein implements Comparator<VideoGame
 			VideoGame record2,
 			Correspondence<Attribute, Matchable> schemaCorrespondences) {
 		
-		String s1 = record1.getTitle();
-		String s2 = record2.getTitle();
-		
-		double similarity = sim.calculate(s1, s2);
-		
+		String s1 = record1.getPublisher();
+		String s2 = record2.getPublisher();
+    	
+    	double similarity = sim.calculate(s1, s2);
+    	
 		if(this.comparisonLog != null){
 			this.comparisonLog.setComparatorName(getClass().getName());
 		
@@ -37,7 +36,6 @@ public class VideoGameTitleComparatorLevenshtein implements Comparator<VideoGame
 		}
 		
 		return similarity;
-		
 	}
 
 	@Override
