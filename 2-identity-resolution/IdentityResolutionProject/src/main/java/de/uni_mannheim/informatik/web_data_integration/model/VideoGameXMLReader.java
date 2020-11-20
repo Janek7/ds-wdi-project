@@ -30,7 +30,9 @@ public class VideoGameXMLReader extends XMLMatchableReader<VideoGame, Attribute>
         videoGame.setTitle(getValueFromChildElement(node, "title"));
         videoGame.setPlatform(getValueFromChildElement(node, "platform"));
         videoGame.setPublisher(getValueFromChildElement(node, "publisher"));
-        videoGame.setDeveloper(getValueFromChildElement(node, "devoloper"));
+        videoGame.setDeveloper(getValueFromChildElement(node, "developer"));
+        videoGame.setUskRating(getValueFromChildElement(node, "usk_rating"));
+        videoGame.setPegiRating(getValueFromChildElement(node, "pegi_rating"));
 
         List<Genre> genres = getObjectListFromChildElement(node, "genres", "genre", new GenreXMLReader(),
                 provenanceInfo);

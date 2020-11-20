@@ -22,6 +22,8 @@ public class VideoGame implements Matchable {
     private String developer;
     private int age;
     private double price;
+    private String uskRating;
+    private String pegiRating;
 
     public VideoGame(String identifier, String provenance) {
         id = identifier;
@@ -123,8 +125,8 @@ public class VideoGame implements Matchable {
 
     @Override
     public String toString() {
-        return String.format("[VideoGame %s: %s / %s / %s / %s]\n", getIdentifier(), getTitle(), getPlatform(),
-                getPublishingDate().toString(), getGenres().toString());
+        return String.format("[VideoGame %s: %s / %s / %s / %s / %s / %s]\n", getIdentifier(), getTitle(),
+                getPlatform(), getPublishingDate().toString(), getGenres().toString(), getUskRating(), getPegiRating());
     }
 
     @Override
@@ -142,5 +144,21 @@ public class VideoGame implements Matchable {
 
     public VideoGameDataSource getSource() {
         return source;
+    }
+
+    public String getUskRating() {
+        return uskRating;
+    }
+
+    public void setUskRating(String uskRating) {
+        this.uskRating = uskRating;
+    }
+
+    public String getPegiRating() {
+        return pegiRating;
+    }
+
+    public void setPegiRating(String pegiRating) {
+        this.pegiRating = pegiRating;
     }
 }
