@@ -1,6 +1,5 @@
 package de.uni_mannheim.informatik.web_data_integration.blocking;
 
-
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.generators.RecordBlockingKeyGenerator;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.Matchable;
@@ -10,8 +9,8 @@ import de.uni_mannheim.informatik.dws.winter.processing.DataIterator;
 import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 import de.uni_mannheim.informatik.web_data_integration.model.VideoGame;
 
-public class VideoGameBlockingKeyByYearGenerator extends RecordBlockingKeyGenerator<VideoGame, Attribute> {
-
+public class VideoGameBlockingKeyByDeveloperGenerator extends RecordBlockingKeyGenerator<VideoGame, Attribute> {
+	
 	private static final long serialVersionUID = 1L;
 
 
@@ -20,15 +19,23 @@ public class VideoGameBlockingKeyByYearGenerator extends RecordBlockingKeyGenera
 	 */
 	@Override
 	public void generateBlockingKeys(VideoGame record, Processable<Correspondence<Attribute, Matchable>> correspondences,
-	DataIterator<Pair<String, VideoGame>> resultCollector) {
-
+			DataIterator<Pair<String, VideoGame>> resultCollector) {
+		
 		try {
-			resultCollector.next(new Pair<>(Integer.toString(record.getPublishingDate().getYear()), record));
+			String[] tokens  = record.getDeveloper().split(" ");
+
+			String blockingKeyValue = "";
+
+			for(int i = 0; i <= 2 && i < tokens.length; i++) {
+				blockingKeyValue += tokens[i].substring(0, Math.min(2,tokens[i].length())).toUpperCase();
+			}
+
+			resultCollector.next(new Pair<>(blockingKeyValue, record));
 		}
 		catch (Exception e) {
 			System.out.println("FEHLER: " + record.getIdentifier());
 		}
-		
 	}
+	
 
 }

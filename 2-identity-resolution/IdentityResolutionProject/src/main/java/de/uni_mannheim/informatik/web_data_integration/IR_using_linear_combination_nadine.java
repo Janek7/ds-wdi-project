@@ -5,6 +5,7 @@ import java.io.File;
 import de.uni_mannheim.informatik.dws.winter.similarity.string.LevenshteinSimilarity;
 import de.uni_mannheim.informatik.dws.winter.similarity.string.TokenizingJaccardSimilarity;
 import de.uni_mannheim.informatik.web_data_integration.comparator.VideoGamePlatformComparator;
+import de.uni_mannheim.informatik.web_data_integration.comparator.VideoGamePubDateComparator1Year;
 import de.uni_mannheim.informatik.web_data_integration.comparator.VideoGameTitleComparatorJaccard;
 import de.uni_mannheim.informatik.web_data_integration.comparator.VideoGameTitleComparatorLevenshtein;
 import org.slf4j.Logger;
@@ -50,7 +51,8 @@ public class IR_using_linear_combination_nadine {
 
 		// add comparators
 		matchingRule.addComparator(new VideoGameTitleComparatorLevenshtein(), 0.5);
-		matchingRule.addComparator(new VideoGamePlatformComparator(new LevenshteinSimilarity()), 0.5);
+		matchingRule.addComparator(new VideoGamePlatformComparator(new LevenshteinSimilarity()), 0.3);
+		matchingRule.addComparator(new VideoGamePubDateComparator1Year(), 0.2);
 		//matchingRule.addComparator(new VideoGamePlatformComparator(new TokenizingJaccardSimilarity()), 0.5);
 
 		// creating a blocker
