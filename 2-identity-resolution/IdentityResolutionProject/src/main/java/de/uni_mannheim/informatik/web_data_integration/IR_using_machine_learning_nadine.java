@@ -74,7 +74,7 @@ private static final Logger logger = WinterLogManager.activateLogger("trace");
 		// matchingRule.addComparator(new VideoGameDeveloperComparatorJaccard());
 		// matchingRule.addComparator(new VideoGameDeveloperComparatorLevenshtein());
 		// matchingRule.addComparator(new VideoGameDeveloperComparatorEqual());
-		matchingRule.addComparator(new VideoGamePubDateComparator3Years());
+		matchingRule.addComparator(new VideoGamePubDateComparator1Year());
 		
 		
 		
@@ -88,7 +88,7 @@ private static final Logger logger = WinterLogManager.activateLogger("trace");
 		//StandardRecordBlocker<VideoGame, Attribute> blocker = new StandardRecordBlocker<VideoGame, Attribute>(new VideoGameBlockingKeyByTitleGenerator());
 		//NoBlocker<VideoGame, Attribute> blocker = new NoBlocker<>();
 		//sorted neigbourhood --> F1 = 0,92
-		SortedNeighbourhoodBlocker<VideoGame, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new VideoGameBlockingKeyByTitleGenerator(), 50);
+		SortedNeighbourhoodBlocker<VideoGame, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new VideoGameBlockingKeyByTitleGenerator(), 75);
 		blocker.collectBlockSizeData("data/output/debugResultsBlocking.csv", 100);
 		
 		// Initialize Matching Engine
