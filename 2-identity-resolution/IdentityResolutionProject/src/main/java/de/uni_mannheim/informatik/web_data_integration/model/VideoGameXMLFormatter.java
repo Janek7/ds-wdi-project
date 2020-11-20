@@ -24,6 +24,8 @@ public class VideoGameXMLFormatter extends XMLFormatter<VideoGame> {
         videoGame.appendChild(createTextElement("platform", record.getPlatform(), doc));
         videoGame.appendChild(createTextElement("publishingdate", record.getPublishingDate().toString(), doc));
         videoGame.appendChild(createTextElement("developer", record.getDeveloper(), doc));
+        videoGame.appendChild(createTextElement("usk_rating", record.getUskRating(), doc));
+        videoGame.appendChild(createTextElement("pegi_rating", record.getPegiRating(), doc));
         // videoGame.appendChild(createTextElement(name, value, doc));
         return videoGame;
     }
