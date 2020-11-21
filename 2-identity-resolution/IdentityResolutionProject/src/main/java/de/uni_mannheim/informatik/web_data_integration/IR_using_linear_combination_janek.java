@@ -13,6 +13,7 @@ import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.model.io.CSVCorrespondenceFormatter;
 import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 import de.uni_mannheim.informatik.dws.winter.similarity.string.LevenshteinSimilarity;
+import de.uni_mannheim.informatik.dws.winter.similarity.string.TokenizingJaccardSimilarity;
 import de.uni_mannheim.informatik.dws.winter.utils.WinterLogManager;
 import de.uni_mannheim.informatik.web_data_integration.blocking.VideoGameBlockingKeyByTitleGenerator;
 import de.uni_mannheim.informatik.web_data_integration.comparator.*;
@@ -46,12 +47,11 @@ public class IR_using_linear_combination_janek {
         matchingRule.activateDebugReport("data/output/wikidata_sales/debugWikidataSalesResultsMatchingRule.csv", 1000, gsTest);
 
         // add comparators
-        matchingRule.addComparator(new VideoGameTitleComparatorLevenshtein(), 0.4);
-        matchingRule.addComparator(new VideoGamePlatformComparator(new LevenshteinSimilarity()), 0.3);
-        //matchingRule.addComparator(new VideoGamePlatformComparator(new TokenizingJaccardSimilarity()), 0.5);
-        matchingRule.addComparator(new VideoGamePublisherComparatorLevenshtein(), 0.1);
-        matchingRule.addComparator(new VideoGamePubDateComparator1Year(), 0.1);
-        matchingRule.addComparator(new VideoGameDeveloperComparatorLevenshtein(), 0.1);
+        matchingRule.addComparator(new VideoGameTitleComparatorLevenshtein(), 0.3);
+        matchingRule.addComparator(new VideoGamePlatformComparator(new TokenizingJaccardSimilarity()), 0.3);
+        matchingRule.addComparator(new VideoGamePublisherComparatorJaccard(), 0.1);
+        matchingRule.addComparator(new VideoGamePubDateComparator2Years(), 0.1);
+        matchingRule.addComparator(new VideoGameDeveloperComparatorJaccard(), 0.1);
 
         // creating a blocker
 //        StandardRecordBlocker<VideoGame, Attribute> blocker = new StandardRecordBlocker<VideoGame, Attribute>(
