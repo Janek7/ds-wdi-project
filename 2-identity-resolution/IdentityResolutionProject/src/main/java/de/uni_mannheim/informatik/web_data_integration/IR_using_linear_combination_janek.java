@@ -2,6 +2,7 @@ package de.uni_mannheim.informatik.web_data_integration;
 
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEngine;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator;
+import de.uni_mannheim.informatik.dws.winter.matching.blockers.SortedNeighbourhoodBlocker;
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardRecordBlocker;
 import de.uni_mannheim.informatik.dws.winter.matching.rules.LinearCombinationMatchingRule;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
@@ -23,7 +24,7 @@ import java.io.File;
 
 public class IR_using_linear_combination_janek {
 
-    private static final Logger logger = WinterLogManager.activateLogger("default");
+    private static final Logger logger = WinterLogManager.activateLogger("trace");
 
     public static void main(String[] args) throws Exception {
         // loading data
@@ -53,8 +54,9 @@ public class IR_using_linear_combination_janek {
         matchingRule.addComparator(new VideoGameDeveloperComparatorLevenshtein(), 0.1);
 
         // creating a blocker
-        StandardRecordBlocker<VideoGame, Attribute> blocker = new StandardRecordBlocker<VideoGame, Attribute>(
-                new VideoGameBlockingKeyByTitleGenerator());
+//        StandardRecordBlocker<VideoGame, Attribute> blocker = new StandardRecordBlocker<VideoGame, Attribute>(
+//                new VideoGameBlockingKeyByTitleGenerator());
+        SortedNeighbourhoodBlocker<VideoGame, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new VideoGameBlockingKeyByTitleGenerator(), 75);
         blocker.setMeasureBlockSizes(true);
         blocker.collectBlockSizeData("data/output/wikidata_sales/debugResultsBlocking.csv", 100);
 
