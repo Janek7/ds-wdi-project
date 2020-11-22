@@ -6,14 +6,19 @@ import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.Matchable;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.similarity.EqualsSimilarity;
+import de.uni_mannheim.informatik.dws.winter.similarity.SimilarityMeasure;
 import de.uni_mannheim.informatik.web_data_integration.model.VideoGame;
 
-public class VideoGameTitleComparatorEqual implements Comparator<VideoGame, Attribute> {
+public class DeveloperComparator implements Comparator<VideoGame, Attribute> {
 
 	private static final long serialVersionUID = 1L;
-	private EqualsSimilarity<String> sim = new EqualsSimilarity<String>();
+	private SimilarityMeasure<String> sim;
 	
 	private ComparatorLogger comparisonLog;
+
+	public DeveloperComparator(SimilarityMeasure<String> stringSimilarityMeasure) {
+		this.sim = stringSimilarityMeasure;
+	}
 
 	@Override
 	public double compare(
@@ -21,8 +26,8 @@ public class VideoGameTitleComparatorEqual implements Comparator<VideoGame, Attr
 			VideoGame record2,
 			Correspondence<Attribute, Matchable> schemaCorrespondences) {
 		
-    	String s1 = record1.getTitle();
-		String s2 = record2.getTitle();
+    	String s1 = record1.getDeveloper();
+		String s2 = record2.getDeveloper();
     	
     	double similarity = sim.calculate(s1, s2);
     	

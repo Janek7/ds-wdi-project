@@ -1,9 +1,8 @@
-package de.uni_mannheim.informatik.web_data_integration;
+package de.uni_mannheim.informatik.web_data_integration.matching_rules;
 
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEngine;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator;
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.SortedNeighbourhoodBlocker;
-import de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardRecordBlocker;
 import de.uni_mannheim.informatik.dws.winter.matching.rules.LinearCombinationMatchingRule;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.HashedDataSet;
@@ -17,22 +16,20 @@ import de.uni_mannheim.informatik.dws.winter.similarity.string.TokenizingJaccard
 import de.uni_mannheim.informatik.dws.winter.utils.WinterLogManager;
 import de.uni_mannheim.informatik.web_data_integration.blocking.ExecutionResult;
 import de.uni_mannheim.informatik.web_data_integration.blocking.VideoGameBlockingKeyByTitleGenerator;
-import de.uni_mannheim.informatik.web_data_integration.blocking.VideoGameBlockingKeyByTitlePlatformGenerator;
 import de.uni_mannheim.informatik.web_data_integration.comparator.*;
 import de.uni_mannheim.informatik.web_data_integration.model.VideoGame;
 import de.uni_mannheim.informatik.web_data_integration.model.VideoGameXMLReader;
 import org.slf4j.Logger;
 
 import java.io.File;
-import java.io.IOException;
 
 public class IR_using_linear_combination_janek {
 
-    private static final Logger logger = WinterLogManager.activateLogger("trace");
+    private static final Logger logger = WinterLogManager.activateLogger("default");
 
     public static void main(String[] args) throws Exception {
 
-        identityResolution(75);
+        identityResolution(20);
 
     }
 
@@ -57,11 +54,11 @@ public class IR_using_linear_combination_janek {
         matchingRule.activateDebugReport("data/output/wikidata_sales/debugWikidataSalesResultsMatchingRule.csv", 1000, gsTest);
 
         // add comparators
-        matchingRule.addComparator(new VideoGameTitleComparatorLevenshtein(), 0.4);
-        matchingRule.addComparator(new VideoGamePlatformComparator(new TokenizingJaccardSimilarity()), 0.3);
-        matchingRule.addComparator(new VideoGamePublisherComparatorJaccard(), 0.1);
-        matchingRule.addComparator(new VideoGamePubDateComparator2Years(), 0.1);
-        matchingRule.addComparator(new VideoGameDeveloperComparatorJaccard(), 0.1);
+        matchingRule.addComparator(new TitleComparator(new LevenshteinSimilarity()), 0.4);
+        matchingRule.addComparator(new PlatformComparator(new TokenizingJaccardSimilarity()), 0.3);
+        matchingRule.addComparator(new PublisherComparator(new TokenizingJaccardSimilarity()), 0.1);
+        matchingRule.addComparator(new PubDateComparator(2), 0.1);
+        matchingRule.addComparator(new DeveloperComparator(new TokenizingJaccardSimilarity()), 0.1);
 
         // creating a blocker
 //        StandardRecordBlocker<VideoGame, Attribute> blocker = new StandardRecordBlocker<VideoGame, Attribute>(

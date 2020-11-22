@@ -1,7 +1,9 @@
-package de.uni_mannheim.informatik.web_data_integration;
+package de.uni_mannheim.informatik.web_data_integration.matching_rules;
 
 import java.io.File;
 
+import de.uni_mannheim.informatik.dws.winter.similarity.string.LevenshteinSimilarity;
+import de.uni_mannheim.informatik.web_data_integration.comparator.*;
 import org.slf4j.Logger;
 
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEngine;
@@ -15,17 +17,10 @@ import de.uni_mannheim.informatik.dws.winter.model.Performance;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.model.io.CSVCorrespondenceFormatter;
 import de.uni_mannheim.informatik.dws.winter.processing.Processable;
-import de.uni_mannheim.informatik.dws.winter.similarity.string.LevenshteinSimilarity;
 import de.uni_mannheim.informatik.dws.winter.similarity.string.MaximumOfTokenContainment;
 import de.uni_mannheim.informatik.dws.winter.similarity.string.TokenizingJaccardSimilarity;
 import de.uni_mannheim.informatik.dws.winter.utils.WinterLogManager;
 import de.uni_mannheim.informatik.web_data_integration.blocking.VideoGameBlockingKeyByTitleGenerator;
-import de.uni_mannheim.informatik.web_data_integration.comparator.VideoGameDeveloperComparatorLevenshtein;
-import de.uni_mannheim.informatik.web_data_integration.comparator.VideoGamePlatformComparator;
-import de.uni_mannheim.informatik.web_data_integration.comparator.VideoGamePubDateComparator1Year;
-import de.uni_mannheim.informatik.web_data_integration.comparator.VideoGamePublisherComparatorJaccard;
-import de.uni_mannheim.informatik.web_data_integration.comparator.VideoGamePublisherComparatorLevenshtein;
-import de.uni_mannheim.informatik.web_data_integration.comparator.VideoGameTitleComparator;
 import de.uni_mannheim.informatik.web_data_integration.model.VideoGame;
 import de.uni_mannheim.informatik.web_data_integration.model.VideoGameXMLReader;
 
@@ -64,11 +59,11 @@ public class IR_using_linear_combination_daniel {
                                 1000, gsTest);
 
                 // add comparators
-                matchingRule.addComparator(new VideoGameTitleComparator(new MaximumOfTokenContainment()), 0.4);
-                matchingRule.addComparator(new VideoGamePlatformComparator(new TokenizingJaccardSimilarity()), 0.3);
-                matchingRule.addComparator(new VideoGamePublisherComparatorJaccard(), 0.1);
-                matchingRule.addComparator(new VideoGamePubDateComparator1Year(), 0.1);
-                matchingRule.addComparator(new VideoGameDeveloperComparatorLevenshtein(), 0.1);
+                matchingRule.addComparator(new TitleComparator(new MaximumOfTokenContainment()), 0.4);
+                matchingRule.addComparator(new PlatformComparator(new TokenizingJaccardSimilarity()), 0.3);
+                matchingRule.addComparator(new PublisherComparator(new TokenizingJaccardSimilarity()), 0.1);
+                matchingRule.addComparator(new PubDateComparator(1), 0.1);
+                matchingRule.addComparator(new DeveloperComparator(new LevenshteinSimilarity()), 0.1);
 
                 // creating a blocker
                 StandardRecordBlocker<VideoGame, Attribute> blocker = new StandardRecordBlocker<VideoGame, Attribute>(

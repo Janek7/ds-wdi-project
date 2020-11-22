@@ -8,7 +8,7 @@ import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.similarity.SimilarityMeasure;
 import de.uni_mannheim.informatik.web_data_integration.model.VideoGame;
 
-public class VideoGameTitleComparator implements Comparator<VideoGame, Attribute> {
+public class TitleComparator implements Comparator<VideoGame, Attribute> {
 
     /**
      *
@@ -18,7 +18,7 @@ public class VideoGameTitleComparator implements Comparator<VideoGame, Attribute
 
     private ComparatorLogger comparisonLog;
 
-    public VideoGameTitleComparator(SimilarityMeasure<String> stringSimilarityMeasure) {
+    public TitleComparator(SimilarityMeasure<String> stringSimilarityMeasure) {
         this.stringSimilarityMeasure = stringSimilarityMeasure;
     }
 

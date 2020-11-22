@@ -1,14 +1,15 @@
-package de.uni_mannheim.informatik.web_data_integration;
+package de.uni_mannheim.informatik.web_data_integration.matching_rules;
 
 import java.io.File;
 
+import de.uni_mannheim.informatik.web_data_integration.comparator.*;
+import de.uni_mannheim.informatik.web_data_integration.comparator.custom_similarity_measure.JaroSimilarity;
+import de.uni_mannheim.informatik.web_data_integration.comparator.custom_similarity_measure.JaroWinklerSimilarity;
 import org.slf4j.Logger;
 
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEngine;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator;
 import de.uni_mannheim.informatik.dws.winter.matching.algorithms.RuleLearner;
-import de.uni_mannheim.informatik.dws.winter.matching.blockers.NoBlocker;
-import de.uni_mannheim.informatik.dws.winter.matching.blockers.SortedNeighbourhoodBlocker;
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardRecordBlocker;
 import de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
@@ -24,21 +25,7 @@ import de.uni_mannheim.informatik.dws.winter.similarity.string.LevenshteinSimila
 import de.uni_mannheim.informatik.dws.winter.similarity.string.MaximumOfTokenContainment;
 import de.uni_mannheim.informatik.dws.winter.similarity.string.TokenizingJaccardSimilarity;
 import de.uni_mannheim.informatik.dws.winter.utils.WinterLogManager;
-import de.uni_mannheim.informatik.web_data_integration.blocking.VideoGameBlockingKeyByPlatformGenerator;
 import de.uni_mannheim.informatik.web_data_integration.blocking.VideoGameBlockingKeyByTitleGenerator;
-import de.uni_mannheim.informatik.web_data_integration.comparator.JaroSimilarity;
-import de.uni_mannheim.informatik.web_data_integration.comparator.JaroWinklerSimilarity;
-import de.uni_mannheim.informatik.web_data_integration.comparator.VideoGameDeveloperComparatorEqual;
-import de.uni_mannheim.informatik.web_data_integration.comparator.VideoGameDeveloperComparatorJaccard;
-import de.uni_mannheim.informatik.web_data_integration.comparator.VideoGameDeveloperComparatorLevenshtein;
-import de.uni_mannheim.informatik.web_data_integration.comparator.VideoGamePlatformComparator;
-import de.uni_mannheim.informatik.web_data_integration.comparator.VideoGamePublisherComparatorEqual;
-import de.uni_mannheim.informatik.web_data_integration.comparator.VideoGamePublisherComparatorJaccard;
-import de.uni_mannheim.informatik.web_data_integration.comparator.VideoGamePublisherComparatorLevenshtein;
-import de.uni_mannheim.informatik.web_data_integration.comparator.VideoGameTitleComparator;
-import de.uni_mannheim.informatik.web_data_integration.comparator.VideoGameTitleComparatorEqual;
-import de.uni_mannheim.informatik.web_data_integration.comparator.VideoGameTitleComparatorJaccard;
-import de.uni_mannheim.informatik.web_data_integration.comparator.VideoGameTitleComparatorLevenshtein;
 import de.uni_mannheim.informatik.web_data_integration.model.VideoGame;
 import de.uni_mannheim.informatik.web_data_integration.model.VideoGameXMLReader;
 
@@ -68,23 +55,23 @@ public class IR_using_machine_learning_wikidata_sales_daniel {
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", 1000, gsTraining);
 
 		// add comparators
-		matchingRule.addComparator(new VideoGameTitleComparator(new EqualsSimilarity<String>()));
-		matchingRule.addComparator(new VideoGameTitleComparator(new LevenshteinSimilarity()));
-		matchingRule.addComparator(new VideoGameTitleComparator(new TokenizingJaccardSimilarity()));
-		matchingRule.addComparator(new VideoGameTitleComparator(new JaccardOnNGramsSimilarity(3)));
-		matchingRule.addComparator(new VideoGameTitleComparator(new MaximumOfTokenContainment()));
-		matchingRule.addComparator(new VideoGameTitleComparator(new JaroWinklerSimilarity()));
-		matchingRule.addComparator(new VideoGameTitleComparator(new JaroSimilarity()));
-		matchingRule.addComparator(new VideoGamePlatformComparator(new TokenizingJaccardSimilarity()));
-		matchingRule.addComparator(new VideoGamePlatformComparator(new LevenshteinSimilarity()));
-		matchingRule.addComparator(new VideoGameTitleComparatorLevenshtein());
-		matchingRule.addComparator(new VideoGameTitleComparatorJaccard());
-		matchingRule.addComparator(new VideoGamePublisherComparatorJaccard());
-		matchingRule.addComparator(new VideoGamePublisherComparatorLevenshtein());
-		matchingRule.addComparator(new VideoGamePublisherComparatorEqual());
-		matchingRule.addComparator(new VideoGameDeveloperComparatorJaccard());
-		matchingRule.addComparator(new VideoGameDeveloperComparatorLevenshtein());
-		matchingRule.addComparator(new VideoGameDeveloperComparatorEqual());
+		matchingRule.addComparator(new TitleComparator(new EqualsSimilarity<String>()));
+		matchingRule.addComparator(new TitleComparator(new LevenshteinSimilarity()));
+		matchingRule.addComparator(new TitleComparator(new TokenizingJaccardSimilarity()));
+		matchingRule.addComparator(new TitleComparator(new JaccardOnNGramsSimilarity(3)));
+		matchingRule.addComparator(new TitleComparator(new MaximumOfTokenContainment()));
+		matchingRule.addComparator(new TitleComparator(new JaroWinklerSimilarity()));
+		matchingRule.addComparator(new TitleComparator(new JaroSimilarity()));
+		matchingRule.addComparator(new PlatformComparator(new TokenizingJaccardSimilarity()));
+		matchingRule.addComparator(new PlatformComparator(new LevenshteinSimilarity()));
+		matchingRule.addComparator(new TitleComparator(new LevenshteinSimilarity()));
+		matchingRule.addComparator(new TitleComparator(new TokenizingJaccardSimilarity()));
+		matchingRule.addComparator(new PublisherComparator(new TokenizingJaccardSimilarity()));
+		matchingRule.addComparator(new PublisherComparator(new LevenshteinSimilarity()));
+		matchingRule.addComparator(new PublisherComparator(new EqualsSimilarity<>()));
+		matchingRule.addComparator(new DeveloperComparator(new TokenizingJaccardSimilarity()));
+		matchingRule.addComparator(new DeveloperComparator(new LevenshteinSimilarity()));
+		matchingRule.addComparator(new DeveloperComparator(new EqualsSimilarity<>()));
 
 		// train the matching rule's model
 		System.out.println("*\n*\tLearning matching rule\n*");

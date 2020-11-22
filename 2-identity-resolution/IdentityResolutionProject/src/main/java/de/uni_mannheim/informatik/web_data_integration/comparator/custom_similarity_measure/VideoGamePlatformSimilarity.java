@@ -1,4 +1,4 @@
-package de.uni_mannheim.informatik.web_data_integration.comparator;
+package de.uni_mannheim.informatik.web_data_integration.comparator.custom_similarity_measure;
 
 import de.uni_mannheim.informatik.dws.winter.similarity.SimilarityMeasure;
 import de.uni_mannheim.informatik.web_data_integration.model.VideoGame;

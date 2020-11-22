@@ -1,9 +1,8 @@
 package de.uni_mannheim.informatik.web_data_integration.blocking;
 
-import de.uni_mannheim.informatik.web_data_integration.IR_using_linear_combination_janek;
+import de.uni_mannheim.informatik.web_data_integration.matching_rules.IR_using_linear_combination_janek;
 
 import java.io.FileWriter;
-import java.util.concurrent.TimeUnit;
 
 public class BlockingTest {
 

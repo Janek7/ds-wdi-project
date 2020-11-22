@@ -6,15 +6,21 @@ import de.uni_mannheim.informatik.dws.winter.matching.rules.ComparatorLogger;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.Matchable;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
+import de.uni_mannheim.informatik.dws.winter.similarity.EqualsSimilarity;
+import de.uni_mannheim.informatik.dws.winter.similarity.SimilarityMeasure;
 import de.uni_mannheim.informatik.dws.winter.similarity.date.YearSimilarity;
 import de.uni_mannheim.informatik.web_data_integration.model.VideoGame;
 
-public class VideoGamePubDateComparator1Year implements Comparator<VideoGame, Attribute> {
+public class PubDateComparator implements Comparator<VideoGame, Attribute> {
 
 	private static final long serialVersionUID = 1L;
-    private YearSimilarity sim = new YearSimilarity(1);
+    private YearSimilarity sim; //= new YearSimilarity(1);
 	
 	private ComparatorLogger comparisonLog;
+	
+	public PubDateComparator(int years) {
+      this.sim = new YearSimilarity(years);
+    }
 
 	@Override
 	public double compare(
@@ -22,14 +28,10 @@ public class VideoGamePubDateComparator1Year implements Comparator<VideoGame, At
 			VideoGame record2,
 			Correspondence<Attribute, Matchable> schemaCorrespondences) {
 	  
-	  
-	  
 	     double similarity = 0.0;
 	     
 	     if (record1.getPublishingDate() != null && record2.getPublishingDate() != null ) {
 	       similarity = sim.calculate(record1.getPublishingDate(), record2.getPublishingDate());
-//	         System.out.println(record1.getPublishingDate().toString() +","+ record2.getPublishingDate().toString());
-
 	     }
 	     
     	

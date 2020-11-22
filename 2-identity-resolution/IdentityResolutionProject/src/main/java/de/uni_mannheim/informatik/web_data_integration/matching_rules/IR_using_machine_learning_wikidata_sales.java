@@ -1,14 +1,17 @@
-package de.uni_mannheim.informatik.web_data_integration;
+package de.uni_mannheim.informatik.web_data_integration.matching_rules;
 
 import java.io.File;
 
+import de.uni_mannheim.informatik.dws.winter.similarity.string.LevenshteinSimilarity;
+import de.uni_mannheim.informatik.web_data_integration.comparator.PlatformComparator;
+import de.uni_mannheim.informatik.web_data_integration.comparator.PubDateComparator;
+import de.uni_mannheim.informatik.web_data_integration.comparator.TitleComparator;
 import org.slf4j.Logger;
 
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEngine;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator;
 import de.uni_mannheim.informatik.dws.winter.matching.algorithms.RuleLearner;
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.SortedNeighbourhoodBlocker;
-import de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardRecordBlocker;
 import de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.HashedDataSet;
@@ -17,15 +20,9 @@ import de.uni_mannheim.informatik.dws.winter.model.Performance;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.model.io.CSVCorrespondenceFormatter;
 import de.uni_mannheim.informatik.dws.winter.processing.Processable;
-import de.uni_mannheim.informatik.dws.winter.similarity.string.LevenshteinSimilarity;
 import de.uni_mannheim.informatik.dws.winter.similarity.string.TokenizingJaccardSimilarity;
 import de.uni_mannheim.informatik.dws.winter.utils.WinterLogManager;
 import de.uni_mannheim.informatik.web_data_integration.blocking.VideoGameBlockingKeyByTitleGenerator;
-import de.uni_mannheim.informatik.web_data_integration.comparator.VideoGamePlatformComparator;
-import de.uni_mannheim.informatik.web_data_integration.comparator.VideoGamePubDateComparator1Year;
-import de.uni_mannheim.informatik.web_data_integration.comparator.VideoGameTitleComparatorEqual;
-import de.uni_mannheim.informatik.web_data_integration.comparator.VideoGameTitleComparatorJaccard;
-import de.uni_mannheim.informatik.web_data_integration.comparator.VideoGameTitleComparatorLevenshtein;
 import de.uni_mannheim.informatik.web_data_integration.model.VideoGame;
 import de.uni_mannheim.informatik.web_data_integration.model.VideoGameXMLReader;
 
@@ -57,17 +54,17 @@ public class IR_using_machine_learning_wikidata_sales {
 				
 				// add comparators
 				//matchingRule.addComparator(new VideoGameTitleComparatorEqual());
-				matchingRule.addComparator(new VideoGamePlatformComparator(new TokenizingJaccardSimilarity()));
-				//matchingRule.addComparator(new VideoGamePlatformComparator(new LevenshteinSimilarity()));
-				matchingRule.addComparator(new VideoGameTitleComparatorLevenshtein());
-				matchingRule.addComparator(new VideoGameTitleComparatorJaccard());
+				matchingRule.addComparator(new PlatformComparator(new TokenizingJaccardSimilarity()));
+				//matchingRule.addComparator(new PlatformComparator(new LevenshteinSimilarity()));
+				matchingRule.addComparator(new TitleComparator(new LevenshteinSimilarity()));
+				matchingRule.addComparator(new TitleComparator(new TokenizingJaccardSimilarity()));
 				// matchingRule.addComparator(new VideoGamePublisherComparatorJaccard());
 				// matchingRule.addComparator(new VideoGamePublisherComparatorLevenshtein());
 				// matchingRule.addComparator(new VideoGamePublisherComparatorEqual());
 				// matchingRule.addComparator(new VideoGameDeveloperComparatorJaccard());
 				// matchingRule.addComparator(new VideoGameDeveloperComparatorLevenshtein());
 				// matchingRule.addComparator(new VideoGameDeveloperComparatorEqual());
-				matchingRule.addComparator(new VideoGamePubDateComparator1Year());
+				matchingRule.addComparator(new PubDateComparator(1));
 				
 				
 				

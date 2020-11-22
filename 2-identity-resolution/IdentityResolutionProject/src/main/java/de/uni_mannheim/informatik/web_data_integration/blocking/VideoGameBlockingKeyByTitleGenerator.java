@@ -49,6 +49,11 @@ public class VideoGameBlockingKeyByTitleGenerator extends RecordBlockingKeyGener
 			blockingKeyValue += tokens[i].substring(0, Math.min(2,tokens[i].length())).toUpperCase();
 		}
 
+//		if (record.getPlatform() != null) {
+//			blockingKeyValue += record.getPlatform().substring(0,1);
+//		}
+//		System.out.println(title + " " + blockingKeyValue);
+
 		resultCollector.next(new Pair<>(blockingKeyValue, record));
 	}
 	
