@@ -86,7 +86,7 @@ public class IR_using_linear_combination_daniel {
 
                 // write the correspondences to the output file
                 new CSVCorrespondenceFormatter().writeCSV(
-                                new File("data/output/wikidata_sales/wikidata_sales_correspondences.csv"),
+                                new File("data/output/wikidata_sales_linear/wikidata_sales_correspondences_daniel.csv"),
                                 correspondences);
 
                 System.out.println("*\n*\tEvaluating result\n*");
