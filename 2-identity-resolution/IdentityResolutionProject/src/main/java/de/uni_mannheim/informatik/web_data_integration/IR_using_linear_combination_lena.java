@@ -5,8 +5,7 @@ import java.io.File;
 import de.uni_mannheim.informatik.dws.winter.similarity.string.LevenshteinSimilarity;
 import de.uni_mannheim.informatik.dws.winter.similarity.string.TokenizingJaccardSimilarity;
 import de.uni_mannheim.informatik.web_data_integration.comparator.VideoGamePlatformComparator;
-import de.uni_mannheim.informatik.web_data_integration.comparator.VideoGamePubDateComparator1Year;
-import de.uni_mannheim.informatik.web_data_integration.comparator.VideoGamePubDateComparator3Years;
+import de.uni_mannheim.informatik.web_data_integration.comparator.VideoGamePubDateComparator;
 import de.uni_mannheim.informatik.web_data_integration.comparator.VideoGamePublisherComparatorJaccard;
 import de.uni_mannheim.informatik.web_data_integration.comparator.VideoGamePublisherComparatorLevenshtein;
 import de.uni_mannheim.informatik.web_data_integration.comparator.VideoGameTitleComparatorEqual;
@@ -60,7 +59,7 @@ public class IR_using_linear_combination_lena {
 	    matchingRule.addComparator(new VideoGameTitleComparatorJaccard(), 0.7); 
 
         // -- Year --
-        matchingRule.addComparator(new VideoGamePubDateComparator3Years(), 0.3);
+        matchingRule.addComparator(new VideoGamePubDateComparator(3), 0.3);
 
 
 		// creating a blocker
