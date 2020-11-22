@@ -15,19 +15,29 @@ import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 import de.uni_mannheim.informatik.dws.winter.similarity.string.LevenshteinSimilarity;
 import de.uni_mannheim.informatik.dws.winter.similarity.string.TokenizingJaccardSimilarity;
 import de.uni_mannheim.informatik.dws.winter.utils.WinterLogManager;
+import de.uni_mannheim.informatik.web_data_integration.blocking.ExecutionResult;
 import de.uni_mannheim.informatik.web_data_integration.blocking.VideoGameBlockingKeyByTitleGenerator;
+import de.uni_mannheim.informatik.web_data_integration.blocking.VideoGameBlockingKeyByTitlePlatformGenerator;
 import de.uni_mannheim.informatik.web_data_integration.comparator.*;
 import de.uni_mannheim.informatik.web_data_integration.model.VideoGame;
 import de.uni_mannheim.informatik.web_data_integration.model.VideoGameXMLReader;
 import org.slf4j.Logger;
 
 import java.io.File;
+import java.io.IOException;
 
 public class IR_using_linear_combination_janek {
 
     private static final Logger logger = WinterLogManager.activateLogger("trace");
 
     public static void main(String[] args) throws Exception {
+
+        identityResolution(75);
+
+    }
+
+    public static ExecutionResult identityResolution(int blockingNeighborHoodSize) throws Exception {
+
         // loading data
         System.out.println("*\n*\tLoading datasets\n*");
         HashedDataSet<VideoGame, Attribute> dataWikidata = new HashedDataSet<>();
@@ -47,7 +57,7 @@ public class IR_using_linear_combination_janek {
         matchingRule.activateDebugReport("data/output/wikidata_sales/debugWikidataSalesResultsMatchingRule.csv", 1000, gsTest);
 
         // add comparators
-        matchingRule.addComparator(new VideoGameTitleComparatorLevenshtein(), 0.3);
+        matchingRule.addComparator(new VideoGameTitleComparatorLevenshtein(), 0.4);
         matchingRule.addComparator(new VideoGamePlatformComparator(new TokenizingJaccardSimilarity()), 0.3);
         matchingRule.addComparator(new VideoGamePublisherComparatorJaccard(), 0.1);
         matchingRule.addComparator(new VideoGamePubDateComparator2Years(), 0.1);
@@ -56,7 +66,7 @@ public class IR_using_linear_combination_janek {
         // creating a blocker
 //        StandardRecordBlocker<VideoGame, Attribute> blocker = new StandardRecordBlocker<VideoGame, Attribute>(
 //                new VideoGameBlockingKeyByTitleGenerator());
-        SortedNeighbourhoodBlocker<VideoGame, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new VideoGameBlockingKeyByTitleGenerator(), 75);
+        SortedNeighbourhoodBlocker<VideoGame, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new VideoGameBlockingKeyByTitleGenerator(), blockingNeighborHoodSize);
         blocker.setMeasureBlockSizes(true);
         blocker.collectBlockSizeData("data/output/wikidata_sales/debugResultsBlocking.csv", 100);
 
@@ -69,7 +79,7 @@ public class IR_using_linear_combination_janek {
                 .runIdentityResolution(dataWikidata, dataSales, null, matchingRule, blocker);
 
         // write the correspondences to the output file
-        new CSVCorrespondenceFormatter().writeCSV(new File("data/output/wikidata_sales/wikidata_sales_correspondences.csv"),
+        new CSVCorrespondenceFormatter().writeCSV(new File("data/output/wikidata_sales_linear/wikidata_sales_correspondences.csv"),
                 correspondences);
 
         System.out.println("*\n*\tEvaluating result\n*");
@@ -82,6 +92,8 @@ public class IR_using_linear_combination_janek {
         System.out.println(String.format("Precision: %.4f", perfTest.getPrecision()));
         System.out.println(String.format("Recall: %.4f", perfTest.getRecall()));
         System.out.println(String.format("F1: %.4f", perfTest.getF1()));
+
+        return new ExecutionResult(perfTest.getF1(), blocker.getReductionRatio());
 
     }
 
