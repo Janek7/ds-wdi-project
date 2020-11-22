@@ -11,12 +11,15 @@ import de.uni_mannheim.informatik.dws.winter.model.Performance;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.model.io.CSVCorrespondenceFormatter;
 import de.uni_mannheim.informatik.dws.winter.processing.Processable;
+import de.uni_mannheim.informatik.dws.winter.similarity.string.JaccardOnNGramsSimilarity;
 import de.uni_mannheim.informatik.dws.winter.similarity.string.LevenshteinSimilarity;
 import de.uni_mannheim.informatik.dws.winter.similarity.string.TokenizingJaccardSimilarity;
 import de.uni_mannheim.informatik.dws.winter.utils.WinterLogManager;
 import de.uni_mannheim.informatik.web_data_integration.blocking.ExecutionResult;
 import de.uni_mannheim.informatik.web_data_integration.blocking.VideoGameBlockingKeyByTitleGenerator;
 import de.uni_mannheim.informatik.web_data_integration.comparator.*;
+import de.uni_mannheim.informatik.web_data_integration.comparator.custom_similarity_measure.JaroSimilarity;
+import de.uni_mannheim.informatik.web_data_integration.comparator.custom_similarity_measure.JaroWinklerSimilarity;
 import de.uni_mannheim.informatik.web_data_integration.model.VideoGame;
 import de.uni_mannheim.informatik.web_data_integration.model.VideoGameXMLReader;
 import org.slf4j.Logger;
@@ -29,7 +32,7 @@ public class IR_using_linear_combination_janek {
 
     public static void main(String[] args) throws Exception {
 
-        identityResolution(20);
+        identityResolution(100);
 
     }
 
@@ -54,11 +57,10 @@ public class IR_using_linear_combination_janek {
         matchingRule.activateDebugReport("data/output/wikidata_sales/debugWikidataSalesResultsMatchingRule.csv", 1000, gsTest);
 
         // add comparators
-        matchingRule.addComparator(new TitleComparator(new LevenshteinSimilarity()), 0.4);
-        matchingRule.addComparator(new PlatformComparator(new TokenizingJaccardSimilarity()), 0.3);
-        matchingRule.addComparator(new PublisherComparator(new TokenizingJaccardSimilarity()), 0.1);
-        matchingRule.addComparator(new PubDateComparator(2), 0.1);
-        matchingRule.addComparator(new DeveloperComparator(new TokenizingJaccardSimilarity()), 0.1);
+        matchingRule.addComparator(new TitleComparator(new JaccardOnNGramsSimilarity(3)), 0.4);
+        matchingRule.addComparator(new PlatformComparator(new LevenshteinSimilarity()), 0.3);
+        matchingRule.addComparator(new PublisherComparator(new JaroSimilarity()), 0.15);
+        matchingRule.addComparator(new PubDateComparator(7), 0.15);
 
         // creating a blocker
 //        StandardRecordBlocker<VideoGame, Attribute> blocker = new StandardRecordBlocker<VideoGame, Attribute>(

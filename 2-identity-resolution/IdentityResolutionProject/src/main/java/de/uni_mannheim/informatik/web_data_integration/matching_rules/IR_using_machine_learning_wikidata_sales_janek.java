@@ -2,10 +2,13 @@ package de.uni_mannheim.informatik.web_data_integration.matching_rules;
 
 import java.io.File;
 
+import de.uni_mannheim.informatik.dws.winter.similarity.string.JaccardOnNGramsSimilarity;
 import de.uni_mannheim.informatik.dws.winter.similarity.string.LevenshteinSimilarity;
 import de.uni_mannheim.informatik.web_data_integration.comparator.PlatformComparator;
 import de.uni_mannheim.informatik.web_data_integration.comparator.PubDateComparator;
+import de.uni_mannheim.informatik.web_data_integration.comparator.PublisherComparator;
 import de.uni_mannheim.informatik.web_data_integration.comparator.TitleComparator;
+import de.uni_mannheim.informatik.web_data_integration.comparator.custom_similarity_measure.JaroSimilarity;
 import org.slf4j.Logger;
 
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEngine;
@@ -26,7 +29,7 @@ import de.uni_mannheim.informatik.web_data_integration.blocking.VideoGameBlockin
 import de.uni_mannheim.informatik.web_data_integration.model.VideoGame;
 import de.uni_mannheim.informatik.web_data_integration.model.VideoGameXMLReader;
 
-public class IR_using_machine_learning_wikidata_sales {
+public class IR_using_machine_learning_wikidata_sales_janek {
 	
 	private static final Logger logger = WinterLogManager.activateLogger("trace");
 	
@@ -53,18 +56,10 @@ public class IR_using_machine_learning_wikidata_sales {
 				
 				
 				// add comparators
-				//matchingRule.addComparator(new VideoGameTitleComparatorEqual());
-				matchingRule.addComparator(new PlatformComparator(new TokenizingJaccardSimilarity()));
-				//matchingRule.addComparator(new PlatformComparator(new LevenshteinSimilarity()));
-				matchingRule.addComparator(new TitleComparator(new LevenshteinSimilarity()));
-				matchingRule.addComparator(new TitleComparator(new TokenizingJaccardSimilarity()));
-				// matchingRule.addComparator(new VideoGamePublisherComparatorJaccard());
-				// matchingRule.addComparator(new VideoGamePublisherComparatorLevenshtein());
-				// matchingRule.addComparator(new VideoGamePublisherComparatorEqual());
-				// matchingRule.addComparator(new VideoGameDeveloperComparatorJaccard());
-				// matchingRule.addComparator(new VideoGameDeveloperComparatorLevenshtein());
-				// matchingRule.addComparator(new VideoGameDeveloperComparatorEqual());
-				matchingRule.addComparator(new PubDateComparator(1));
+				matchingRule.addComparator(new TitleComparator(new JaccardOnNGramsSimilarity(3)));
+				matchingRule.addComparator(new PlatformComparator(new LevenshteinSimilarity()));
+				matchingRule.addComparator(new PublisherComparator(new JaroSimilarity()));
+				matchingRule.addComparator(new PubDateComparator(7));
 				
 				
 				

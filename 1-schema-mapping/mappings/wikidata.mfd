@@ -6,16 +6,6 @@
 		<properties ShowLibraryNameInHeader="1" SelectedLanguage="builtin"/>
 		<structure>
 			<children>
-				<component name="concat" library="core" uid="13" kind="5" growable="1" growablebasename="value">
-					<sources>
-						<datapoint pos="0" key="33"/>
-						<datapoint pos="1" key="34"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="35"/>
-					</targets>
-					<view ltx="581" lty="65" rbx="673" rby="121"/>
-				</component>
 				<component name="group-by" library="core" uid="5" kind="5">
 					<sources>
 						<datapoint pos="0" key="36"/>
@@ -27,8 +17,59 @@
 					</targets>
 					<view ltx="690" lty="4" rbx="808" rby="58"/>
 				</component>
+				<component name="first-items" library="core" uid="38" kind="5">
+					<sources>
+						<datapoint pos="0" key="29"/>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="30"/>
+					</targets>
+					<view ltx="728" lty="87" rbx="843" rby="141"/>
+				</component>
+				<component name="first-items" library="core" uid="44" kind="5">
+					<sources>
+						<datapoint pos="0" key="31"/>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="32"/>
+					</targets>
+					<view ltx="728" lty="223" rbx="843" rby="277"/>
+				</component>
+				<component name="first-items" library="core" uid="72" kind="5">
+					<sources>
+						<datapoint pos="0" key="89"/>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="90"/>
+					</targets>
+					<view ltx="728" lty="502" rbx="843" rby="556"/>
+				</component>
+				<component name="first-items" library="core" uid="73" kind="5">
+					<sources>
+						<datapoint pos="0" key="92"/>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="93"/>
+					</targets>
+					<view ltx="728" lty="581" rbx="843" rby="635"/>
+				</component>
+				<component name="group-by" library="core" uid="33" kind="5">
+					<sources>
+						<datapoint pos="0" key="14"/>
+						<datapoint pos="1" key="15"/>
+					</sources>
+					<targets>
+						<datapoint/>
+						<datapoint pos="1" key="16"/>
+					</targets>
+					<view ltx="728" lty="349" rbx="846" rby="403"/>
+				</component>
 				<component name="Generate ID" library="user" uid="22" kind="19" visible="0" blackbox="0">
-					<view ltx="1088" lty="4" rbx="1136" rby="21"/>
+					<view ltx="849" lty="4" rbx="897" rby="21"/>
 					<data>
 						<root>
 							<header>
@@ -44,36 +85,6 @@
 							<entry name="id" outkey="39" componentid="21"/>
 						</root>
 					</data>
-				</component>
-				<component name="first-items" library="core" uid="38" kind="5">
-					<sources>
-						<datapoint pos="0" key="29"/>
-						<datapoint/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="30"/>
-					</targets>
-					<view ltx="728" lty="87" rbx="843" rby="141"/>
-				</component>
-				<component name="first-items" library="core" uid="37" kind="5">
-					<sources>
-						<datapoint pos="0" key="25"/>
-						<datapoint/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="26"/>
-					</targets>
-					<view ltx="728" lty="156" rbx="843" rby="210"/>
-				</component>
-				<component name="first-items" library="core" uid="44" kind="5">
-					<sources>
-						<datapoint pos="0" key="31"/>
-						<datapoint/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="32"/>
-					</targets>
-					<view ltx="728" lty="223" rbx="843" rby="277"/>
 				</component>
 				<component name="Publication Date" library="user" uid="51" kind="19" visible="0" blackbox="0">
 					<view ltx="690" lty="289" rbx="870" rby="306"/>
@@ -96,47 +107,25 @@
 						</root>
 					</data>
 				</component>
-				<component name="first-items" library="core" uid="72" kind="5">
+				<component name="concat" library="core" uid="13" kind="5" growable="1" growablebasename="value">
 					<sources>
-						<datapoint pos="0" key="89"/>
-						<datapoint/>
+						<datapoint pos="0" key="33"/>
+						<datapoint pos="1" key="34"/>
 					</sources>
 					<targets>
-						<datapoint pos="0" key="90"/>
+						<datapoint pos="0" key="35"/>
 					</targets>
-					<view ltx="731" lty="585" rbx="846" rby="639"/>
+					<view ltx="605" lty="72" rbx="697" rby="128"/>
 				</component>
-				<component name="group-by" library="core" uid="32" kind="5">
+				<component name="first-items" library="core" uid="37" kind="5">
 					<sources>
-						<datapoint pos="0" key="9"/>
-						<datapoint pos="1" key="10"/>
-					</sources>
-					<targets>
-						<datapoint/>
-						<datapoint pos="1" key="11"/>
-					</targets>
-					<view ltx="734" lty="746" rbx="852" rby="800"/>
-				</component>
-				<component name="group-by" library="core" uid="33" kind="5">
-					<sources>
-						<datapoint pos="0" key="14"/>
-						<datapoint pos="1" key="15"/>
-					</sources>
-					<targets>
-						<datapoint/>
-						<datapoint pos="1" key="16"/>
-					</targets>
-					<view ltx="728" lty="349" rbx="846" rby="403"/>
-				</component>
-				<component name="first-items" library="core" uid="73" kind="5">
-					<sources>
-						<datapoint pos="0" key="92"/>
+						<datapoint pos="0" key="25"/>
 						<datapoint/>
 					</sources>
 					<targets>
-						<datapoint pos="0" key="93"/>
+						<datapoint pos="0" key="26"/>
 					</targets>
-					<view ltx="731" lty="664" rbx="846" rby="718"/>
+					<view ltx="728" lty="156" rbx="843" rby="210"/>
 				</component>
 				<component name="first-items" library="core" uid="36" kind="5">
 					<sources>
@@ -146,70 +135,11 @@
 					<targets>
 						<datapoint pos="0" key="22"/>
 					</targets>
-					<view ltx="731" lty="512" rbx="846" rby="566"/>
-				</component>
-				<component name="first-items" library="core" uid="35" kind="5">
-					<sources>
-						<datapoint pos="0" key="17"/>
-						<datapoint/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="18"/>
-					</targets>
-					<view ltx="734" lty="823" rbx="849" rby="877"/>
-				</component>
-				<component name="targetvideogames" library="xml" uid="28" kind="14">
-					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
-					<view ltx="1210" lty="54" rbx="1452" rby="367"/>
-					<data>
-						<root scrollposition="1">
-							<header>
-								<namespaces>
-									<namespace/>
-									<namespace uid="http://www.altova.com/mapforce"/>
-								</namespaces>
-							</header>
-							<entry name="FileInstance" ns="1" expanded="1">
-								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
-									<entry name="videogames" expanded="1">
-										<entry name="videogame" inpkey="53" expanded="1">
-											<entry name="id" inpkey="54"/>
-											<entry name="title" inpkey="55"/>
-											<entry name="platform" inpkey="28"/>
-											<entry name="publisher" inpkey="24"/>
-											<entry name="publishingdate" inpkey="56"/>
-											<entry name="developer" inpkey="57"/>
-											<entry name="age" inpkey="114"/>
-											<entry name="usk_rating" inpkey="91"/>
-											<entry name="pegi_rating" inpkey="109"/>
-											<entry name="gamemodes" expanded="1">
-												<entry name="gamemode" inpkey="13"/>
-											</entry>
-											<entry name="price" inpkey="20"/>
-											<entry name="genres" expanded="1">
-												<entry name="genre" inpkey="59"/>
-											</entry>
-										</entry>
-									</entry>
-								</entry>
-							</entry>
-						</root>
-						<document schema="..\targetschema\targetvideogames.xsd" instanceroot="{}videogames" inputinstance="..\targetschema\targetvideogames.xml" outputinstance="targetschema\targetvideogames.xml"/>
-					</data>
-				</component>
-				<component name="first-items" library="core" uid="74" kind="5">
-					<sources>
-						<datapoint pos="0" key="112"/>
-						<datapoint/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="113"/>
-					</targets>
-					<view ltx="731" lty="429" rbx="846" rby="483"/>
+					<view ltx="728" lty="429" rbx="843" rby="483"/>
 				</component>
 				<component name="output_wikidata_all_age" library="text" uid="3" kind="16">
 					<properties/>
-					<view ltx="53" lty="65" rbx="316" rby="380"/>
+					<view ltx="288" lty="42" rbx="551" rby="357"/>
 					<data>
 						<root scrollposition="1">
 							<header>
@@ -231,7 +161,6 @@
 										<entry name="USK_ratingLabel" outkey="65"/>
 										<entry name="PEGI_ratingLabel" outkey="115"/>
 										<entry name="price" outkey="19"/>
-										<entry name="minimum_age" outkey="116"/>
 									</entry>
 								</entry>
 							</entry>
@@ -257,6 +186,65 @@
 								</names>
 							</settings>
 						</text>
+					</data>
+				</component>
+				<component name="first-items" library="core" uid="35" kind="5">
+					<sources>
+						<datapoint pos="0" key="17"/>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="18"/>
+					</targets>
+					<view ltx="731" lty="740" rbx="846" rby="794"/>
+				</component>
+				<component name="group-by" library="core" uid="32" kind="5">
+					<sources>
+						<datapoint pos="0" key="9"/>
+						<datapoint pos="1" key="10"/>
+					</sources>
+					<targets>
+						<datapoint/>
+						<datapoint pos="1" key="11"/>
+					</targets>
+					<view ltx="731" lty="663" rbx="849" rby="717"/>
+				</component>
+				<component name="targetvideogames" library="xml" uid="28" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="935" lty="44" rbx="1177" rby="357"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="videogames" expanded="1">
+										<entry name="videogame" inpkey="53" expanded="1">
+											<entry name="id" inpkey="54"/>
+											<entry name="title" inpkey="55"/>
+											<entry name="platform" inpkey="28"/>
+											<entry name="publisher" inpkey="24"/>
+											<entry name="publishingdate" inpkey="56"/>
+											<entry name="developer" inpkey="57"/>
+											<entry name="usk_rating" inpkey="91"/>
+											<entry name="pegi_rating" inpkey="109"/>
+											<entry name="gamemodes" expanded="1">
+												<entry name="gamemode" inpkey="13"/>
+											</entry>
+											<entry name="price" inpkey="20"/>
+											<entry name="genres" expanded="1">
+												<entry name="genre" inpkey="59"/>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="..\targetschema\targetvideogames.xsd" instanceroot="{}videogames" inputinstance="..\targetschema\targetvideogames.xml" outputinstance="targetschema\targetvideogames.xml"/>
 					</data>
 				</component>
 			</children>
@@ -387,16 +375,6 @@
 							<edge vertexkey="110"/>
 						</edges>
 					</vertex>
-					<vertex vertexkey="116">
-						<edges>
-							<edge vertexkey="112"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="113">
-						<edges>
-							<edge vertexkey="114"/>
-						</edges>
-					</vertex>
 				</vertices>
 			</graph>
 		</structure>
@@ -489,7 +467,7 @@
 					<targets>
 						<datapoint pos="0" key="2"/>
 					</targets>
-					<view ltx="447" lty="55" rbx="500" rby="72"/>
+					<view ltx="447" lty="55" rbx="578" rby="72"/>
 					<data>
 						<constant value="[Y]" datatype="string"/>
 					</data>
@@ -513,7 +491,7 @@
 					<targets>
 						<datapoint pos="0" key="1"/>
 					</targets>
-					<view ltx="581" rbx="692" rby="70"/>
+					<view ltx="581" rbx="723" rby="70"/>
 				</component>
 				<component name="nodesrows" library="core" uid="49" kind="6">
 					<sources>
@@ -522,7 +500,7 @@
 					<targets>
 						<datapoint pos="0" key="7"/>
 					</targets>
-					<view rbx="114" rby="38"/>
+					<view rbx="115" rby="38"/>
 					<data>
 						<input datatype="string"/>
 						<parameter usageKind="input" name="nodesrows"/>
@@ -532,7 +510,7 @@
 					<sources>
 						<datapoint pos="0" key="8"/>
 					</sources>
-					<view ltx="792" rbx="899" rby="38"/>
+					<view ltx="792" rbx="930" rby="38"/>
 					<data>
 						<output datatype="string"/>
 						<parameter usageKind="output" name="publishingdate"/>
