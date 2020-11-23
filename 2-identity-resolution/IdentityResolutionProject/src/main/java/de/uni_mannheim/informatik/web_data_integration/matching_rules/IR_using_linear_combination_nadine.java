@@ -2,14 +2,23 @@ package de.uni_mannheim.informatik.web_data_integration.matching_rules;
 
 import java.io.File;
 
+import de.uni_mannheim.informatik.dws.winter.similarity.string.JaccardOnNGramsSimilarity;
 import de.uni_mannheim.informatik.dws.winter.similarity.string.LevenshteinSimilarity;
+import de.uni_mannheim.informatik.dws.winter.similarity.string.MaximumOfTokenContainment;
+import de.uni_mannheim.informatik.dws.winter.similarity.string.TokenizingJaccardSimilarity;
+import de.uni_mannheim.informatik.web_data_integration.comparator.DeveloperComparator;
 import de.uni_mannheim.informatik.web_data_integration.comparator.PlatformComparator;
 import de.uni_mannheim.informatik.web_data_integration.comparator.PubDateComparator;
+import de.uni_mannheim.informatik.web_data_integration.comparator.PublisherComparator;
 import de.uni_mannheim.informatik.web_data_integration.comparator.TitleComparator;
+import de.uni_mannheim.informatik.web_data_integration.comparator.custom_similarity_measure.JaroSimilarity;
+import de.uni_mannheim.informatik.web_data_integration.comparator.custom_similarity_measure.JaroWinklerSimilarity;
+
 import org.slf4j.Logger;
 
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEngine;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator;
+import de.uni_mannheim.informatik.dws.winter.matching.blockers.SortedNeighbourhoodBlocker;
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardRecordBlocker;
 import de.uni_mannheim.informatik.dws.winter.matching.rules.LinearCombinationMatchingRule;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
@@ -49,17 +58,25 @@ public class IR_using_linear_combination_nadine {
 		matchingRule.activateDebugReport("data/output/steam_wikidata/debugResultsMatchingRule.csv", 1000, gsTest);
 
 		// add comparators
-		matchingRule.addComparator(new TitleComparator(new LevenshteinSimilarity()), 0.5);
-		matchingRule.addComparator(new PlatformComparator(new LevenshteinSimilarity()), 0.3);
-		matchingRule.addComparator(new PubDateComparator(1), 0.2);
-		//matchingRule.addComparator(new PlatformComparator(new TokenizingJaccardSimilarity()), 0.5);
-
+        matchingRule.addComparator(new TitleComparator(new JaroSimilarity()), 0.4);
+		matchingRule.addComparator(new PlatformComparator(new LevenshteinSimilarity()), 0.4);
+		matchingRule.addComparator(new DeveloperComparator(new JaroWinklerSimilarity()), 0.1);
+		//matchingRule.addComparator(new PublisherComparator(new JaroWinklerSimilarity()), 0.1);
+        /*matchingRule.addComparator(new PlatformComparator(new TokenizingJaccardSimilarity()), 1);
+        matchingRule.addComparator(new PublisherComparator(new TokenizingJaccardSimilarity()), 1);
+        matchingRule.addComparator(new PubDateComparator(1), 1);
+        matchingRule.addComparator(new DeveloperComparator(new LevenshteinSimilarity()), 1);*/
+		matchingRule.addComparator(new PubDateComparator(1), 0.1);
+		
 		// creating a blocker
 		//SortedNeighbourhoodBlocker<VideoGame, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new VideoGameBlockingKeyByTitleGenerator(), 75);
-		StandardRecordBlocker<VideoGame, Attribute> blocker = new StandardRecordBlocker<VideoGame, Attribute>(
+		/*StandardRecordBlocker<VideoGame, Attribute> blocker = new StandardRecordBlocker<VideoGame, Attribute>(
 				new VideoGameBlockingKeyByTitleGenerator());
 		blocker.setMeasureBlockSizes(true);
-		blocker.collectBlockSizeData("data/output/debugResultsBlocking.csv", 100);
+		blocker.collectBlockSizeData("data/output/debugResultsBlocking.csv", 100);*/
+		 SortedNeighbourhoodBlocker<VideoGame, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new VideoGameBlockingKeyByTitleGenerator(), 100);
+	        blocker.setMeasureBlockSizes(true);
+	        blocker.collectBlockSizeData("data/output/wikidata_sales/debugResultsBlocking.csv", 100);
 
 		// Initialize Matching Engine
 		MatchingEngine<VideoGame, Attribute> engine = new MatchingEngine<>();
