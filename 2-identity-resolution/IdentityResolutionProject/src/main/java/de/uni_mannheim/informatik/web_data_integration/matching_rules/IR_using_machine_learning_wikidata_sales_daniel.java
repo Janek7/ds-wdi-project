@@ -1,6 +1,8 @@
 package de.uni_mannheim.informatik.web_data_integration.matching_rules;
 
 import java.io.File;
+import java.io.FileWriter;
+import java.io.PrintWriter;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 
@@ -49,20 +51,25 @@ public class IR_using_machine_learning_wikidata_sales_daniel {
 		ArrayList<Comparator<VideoGame, Attribute>> pubDateComparators = new ArrayList<>();
 		pubDateComparators.add(new PubDateComparator(1));
 
+		FileWriter fileWriter = new FileWriter("data/output/wikidata_sales_ml/analyze_ml_output.txt");
+		PrintWriter printWriter = new PrintWriter(fileWriter);
+
 		for (int i = 0; i < simMeasuresString.size(); i++) {
 			for (int j = 0; j < simMeasuresString.size(); j++) {
 				for (int k = 0; k < simMeasuresString.size(); k++) {
 					for (int l = 0; l < pubDateComparators.size(); l++) {
-						System.out.println(String.format("Title - %d: %s", i + 1, simMeasuresString.get(i)));
-						System.out.println(String.format("Platform - %d: %s", j + 1, simMeasuresString.get(j)));
-						System.out.println(String.format("Publisher - %d: %s", k + 1, simMeasuresString.get(k)));
-						System.out.println(String.format("PubDate - %d: %s", l + 1, pubDateComparators.get(l)));
-						System.out.println("");
+						printWriter.printf("Title - %d: %s\n", i + 1, simMeasuresString.get(i));
+						printWriter.printf("Platform - %d: %s\n", j + 1, simMeasuresString.get(j));
+						printWriter.printf("Publisher - %d: %s\n", k + 1, simMeasuresString.get(k));
+						printWriter.printf("PubDate - %d: %s\n", l + 1, pubDateComparators.get(l));
+						printWriter.print("\n");
 					}
 				}
 
 			}
 		}
+		printWriter.close();
+		fileWriter.close();
 		System.exit(0);
 
 		// loading data
