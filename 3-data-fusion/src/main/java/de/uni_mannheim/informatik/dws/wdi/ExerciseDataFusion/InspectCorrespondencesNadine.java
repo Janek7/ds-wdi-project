@@ -1,12 +1,14 @@
 package de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion;
 
 import java.io.File;
+import java.util.Collection;
 
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model_new.VideoGame;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model_new.VideoGameXMLReader;
 import de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet;
 import de.uni_mannheim.informatik.dws.winter.model.FusibleDataSet;
 import de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet;
+import de.uni_mannheim.informatik.dws.winter.model.RecordGroup;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 
 public class InspectCorrespondencesNadine {
@@ -35,6 +37,18 @@ public class InspectCorrespondencesNadine {
 	    // write group size distribution
 	    correspondences.printGroupSizeDistribution();
 	    
+	    Collection<RecordGroup<VideoGame, Attribute>> recordGroups = correspondences.getRecordGroups();
+        for (RecordGroup<VideoGame,Attribute> recordGroup : recordGroups) {
+                try {
+                        if (recordGroup.getRecords().size() > 10) {
+                                System.out.println(recordGroup.getRecords());
+                                System.out.println("");
+                                
+                        }
+                } catch (Exception e) {
+                        //TODO: handle exception
+                }
+        }
 	    
 	
 	}

@@ -59,6 +59,9 @@ public class VideoGameBlockingKeyByTitleAndPlatformGenerator  extends RecordBloc
 			else if (record.getPlatform().contains("mac") || record.getPlatform().contains("Mac")) {
 				recordKey = "pc";
 			}
+			else if (record.getPlatform().contains("linux") || record.getPlatform().contains("Linux")) {
+				recordKey = "pc";
+			}
 			else if (record.getPlatform().contains("PC")) {
 				recordKey = "pc";
 			}
