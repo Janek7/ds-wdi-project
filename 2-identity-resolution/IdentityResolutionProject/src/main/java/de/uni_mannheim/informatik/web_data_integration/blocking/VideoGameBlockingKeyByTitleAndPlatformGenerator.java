@@ -65,6 +65,9 @@ public class VideoGameBlockingKeyByTitleAndPlatformGenerator  extends RecordBloc
 			else if (record.getPlatform().contains("PC")) {
 				recordKey = "pc";
 			}
+			else if (record.getPlatform().contains("PlayStation") || record.getPlatform().contains("PS")) {
+				recordKey = "ps";
+			}
 			else {
 				recordKey = record.getPlatform().substring(0, 1);
 			}
