@@ -5,10 +5,9 @@ import java.io.File;
 import de.uni_mannheim.informatik.dws.winter.similarity.string.LevenshteinSimilarity;
 import de.uni_mannheim.informatik.dws.winter.similarity.string.TokenizingJaccardSimilarity;
 import de.uni_mannheim.informatik.web_data_integration.comparator.DeveloperComparator;
+import de.uni_mannheim.informatik.web_data_integration.comparator.PlatformComparatorAdvanced;
 import de.uni_mannheim.informatik.web_data_integration.comparator.PubDateComparator;
 import de.uni_mannheim.informatik.web_data_integration.comparator.TitleComparator;
-import de.uni_mannheim.informatik.web_data_integration.comparator.custom_similarity_measure.JaroSimilarity;
-import de.uni_mannheim.informatik.web_data_integration.comparator.custom_similarity_measure.JaroWinklerSimilarity;
 
 import org.slf4j.Logger;
 
@@ -27,7 +26,6 @@ import de.uni_mannheim.informatik.dws.winter.model.io.CSVCorrespondenceFormatter
 import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 import de.uni_mannheim.informatik.dws.winter.utils.WinterLogManager;
 import de.uni_mannheim.informatik.web_data_integration.blocking.VideoGameBlockingKeyByTitleGenerator;
-import de.uni_mannheim.informatik.web_data_integration.comparator.PlatformComparator;
 import de.uni_mannheim.informatik.web_data_integration.model.VideoGame;
 import de.uni_mannheim.informatik.web_data_integration.model.VideoGameXMLReader;
 
@@ -59,10 +57,10 @@ private static final Logger logger = WinterLogManager.activateLogger("trace");
 		// add comparators
 		//matchingRule.addComparator(new VideoGameTitleComparatorEqual());
 /*		matchingRule.addComparator(new TitleComparator(new JaroSimilarity()));
-		matchingRule.addComparator(new PlatformComparator(new LevenshteinSimilarity()));
+		matchingRule.addComparator(new PlatformComparatorAdvanced(new LevenshteinSimilarity()));
 		matchingRule.addComparator(new DeveloperComparator(new JaroWinklerSimilarity()));*/
-		matchingRule.addComparator(new PlatformComparator(new TokenizingJaccardSimilarity()));
-		//matchingRule.addComparator(new PlatformComparator(new LevenshteinSimilarity()));
+		matchingRule.addComparator(new PlatformComparatorAdvanced(new TokenizingJaccardSimilarity()));
+		//matchingRule.addComparator(new PlatformComparatorAdvanced(new LevenshteinSimilarity()));
 		matchingRule.addComparator(new TitleComparator(new LevenshteinSimilarity()));
 		matchingRule.addComparator(new TitleComparator(new TokenizingJaccardSimilarity()));
 		// matchingRule.addComparator(new VideoGamePublisherComparatorJaccard());

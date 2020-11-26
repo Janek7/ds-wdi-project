@@ -4,7 +4,7 @@ import java.io.File;
 
 import de.uni_mannheim.informatik.dws.winter.similarity.string.JaccardOnNGramsSimilarity;
 import de.uni_mannheim.informatik.dws.winter.similarity.string.LevenshteinSimilarity;
-import de.uni_mannheim.informatik.web_data_integration.comparator.PlatformComparator;
+import de.uni_mannheim.informatik.web_data_integration.comparator.PlatformComparatorAdvanced;
 import de.uni_mannheim.informatik.web_data_integration.comparator.PubDateComparator;
 import de.uni_mannheim.informatik.web_data_integration.comparator.PublisherComparator;
 import de.uni_mannheim.informatik.web_data_integration.comparator.TitleComparator;
@@ -23,7 +23,6 @@ import de.uni_mannheim.informatik.dws.winter.model.Performance;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.model.io.CSVCorrespondenceFormatter;
 import de.uni_mannheim.informatik.dws.winter.processing.Processable;
-import de.uni_mannheim.informatik.dws.winter.similarity.string.TokenizingJaccardSimilarity;
 import de.uni_mannheim.informatik.dws.winter.utils.WinterLogManager;
 import de.uni_mannheim.informatik.web_data_integration.blocking.VideoGameBlockingKeyByTitleGenerator;
 import de.uni_mannheim.informatik.web_data_integration.model.VideoGame;
@@ -57,7 +56,7 @@ public class IR_using_machine_learning_wikidata_sales_janek {
 				
 				// add comparators
 				matchingRule.addComparator(new TitleComparator(new JaccardOnNGramsSimilarity(3)));
-				matchingRule.addComparator(new PlatformComparator(new LevenshteinSimilarity()));
+				matchingRule.addComparator(new PlatformComparatorAdvanced(new LevenshteinSimilarity()));
 				matchingRule.addComparator(new PublisherComparator(new JaroSimilarity()));
 				matchingRule.addComparator(new PubDateComparator(7));
 				

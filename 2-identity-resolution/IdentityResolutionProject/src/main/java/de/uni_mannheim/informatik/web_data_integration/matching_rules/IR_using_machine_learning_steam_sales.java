@@ -2,7 +2,7 @@ package de.uni_mannheim.informatik.web_data_integration.matching_rules;
 
 import java.io.File;
 
-import de.uni_mannheim.informatik.web_data_integration.comparator.PlatformComparator;
+import de.uni_mannheim.informatik.web_data_integration.comparator.PlatformComparatorAdvanced;
 import de.uni_mannheim.informatik.web_data_integration.comparator.PubDateComparator;
 import de.uni_mannheim.informatik.web_data_integration.comparator.TitleComparator;
 import org.slf4j.Logger;
@@ -53,8 +53,8 @@ public class IR_using_machine_learning_steam_sales {
 		
 		// add comparators
 		//matchingRule.addComparator(new VideoGameTitleComparatorEqual());
-		matchingRule.addComparator(new PlatformComparator(new TokenizingJaccardSimilarity()));
-		matchingRule.addComparator(new PlatformComparator(new LevenshteinSimilarity()));
+		matchingRule.addComparator(new PlatformComparatorAdvanced(new TokenizingJaccardSimilarity()));
+		matchingRule.addComparator(new PlatformComparatorAdvanced(new LevenshteinSimilarity()));
 		matchingRule.addComparator(new TitleComparator(new LevenshteinSimilarity()));
 		matchingRule.addComparator(new TitleComparator(new TokenizingJaccardSimilarity()));
 		// matchingRule.addComparator(new VideoGamePublisherComparatorJaccard());

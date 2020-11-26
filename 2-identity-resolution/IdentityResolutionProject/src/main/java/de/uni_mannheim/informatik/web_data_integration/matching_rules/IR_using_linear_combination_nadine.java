@@ -2,15 +2,9 @@ package de.uni_mannheim.informatik.web_data_integration.matching_rules;
 
 import java.io.File;
 
-import de.uni_mannheim.informatik.dws.winter.similarity.string.JaccardOnNGramsSimilarity;
 import de.uni_mannheim.informatik.dws.winter.similarity.string.LevenshteinSimilarity;
-import de.uni_mannheim.informatik.dws.winter.similarity.string.MaximumOfTokenContainment;
-import de.uni_mannheim.informatik.dws.winter.similarity.string.TokenizingJaccardSimilarity;
-import de.uni_mannheim.informatik.web_data_integration.comparator.DeveloperComparator;
-import de.uni_mannheim.informatik.web_data_integration.comparator.PlatformComparator;
-import de.uni_mannheim.informatik.web_data_integration.comparator.PubDateComparator;
-import de.uni_mannheim.informatik.web_data_integration.comparator.PublisherComparator;
-import de.uni_mannheim.informatik.web_data_integration.comparator.TitleComparator;
+import de.uni_mannheim.informatik.web_data_integration.comparator.*;
+import de.uni_mannheim.informatik.web_data_integration.comparator.PlatformComparatorAdvanced;
 import de.uni_mannheim.informatik.web_data_integration.comparator.custom_similarity_measure.JaroSimilarity;
 import de.uni_mannheim.informatik.web_data_integration.comparator.custom_similarity_measure.JaroWinklerSimilarity;
 
@@ -19,7 +13,6 @@ import org.slf4j.Logger;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEngine;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator;
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.SortedNeighbourhoodBlocker;
-import de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardRecordBlocker;
 import de.uni_mannheim.informatik.dws.winter.matching.rules.LinearCombinationMatchingRule;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.HashedDataSet;
@@ -59,10 +52,10 @@ public class IR_using_linear_combination_nadine {
 
 		// add comparators
         matchingRule.addComparator(new TitleComparator(new JaroSimilarity()), 0.4);
-		matchingRule.addComparator(new PlatformComparator(new LevenshteinSimilarity()), 0.4);
+		matchingRule.addComparator(new PlatformComparatorAdvanced(new LevenshteinSimilarity()), 0.4);
 		matchingRule.addComparator(new DeveloperComparator(new JaroWinklerSimilarity()), 0.1);
 		//matchingRule.addComparator(new PublisherComparator(new JaroWinklerSimilarity()), 0.1);
-        /*matchingRule.addComparator(new PlatformComparator(new TokenizingJaccardSimilarity()), 1);
+        /*matchingRule.addComparator(new PlatformComparatorAdvanced(new TokenizingJaccardSimilarity()), 1);
         matchingRule.addComparator(new PublisherComparator(new TokenizingJaccardSimilarity()), 1);
         matchingRule.addComparator(new PubDateComparator(1), 1);
         matchingRule.addComparator(new DeveloperComparator(new LevenshteinSimilarity()), 1);*/

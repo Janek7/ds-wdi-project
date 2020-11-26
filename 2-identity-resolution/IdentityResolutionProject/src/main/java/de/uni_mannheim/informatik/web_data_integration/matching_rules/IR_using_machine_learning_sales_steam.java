@@ -2,6 +2,7 @@ package de.uni_mannheim.informatik.web_data_integration.matching_rules;
 
 import java.io.File;
 
+import de.uni_mannheim.informatik.web_data_integration.comparator.PlatformComparatorAdvanced;
 import de.uni_mannheim.informatik.web_data_integration.comparator.TitleComparator;
 import org.slf4j.Logger;
 
@@ -22,7 +23,6 @@ import de.uni_mannheim.informatik.dws.winter.similarity.string.LevenshteinSimila
 import de.uni_mannheim.informatik.dws.winter.similarity.string.TokenizingJaccardSimilarity;
 import de.uni_mannheim.informatik.dws.winter.utils.WinterLogManager;
 import de.uni_mannheim.informatik.web_data_integration.blocking.VideoGameBlockingKeyByTitleGenerator;
-import de.uni_mannheim.informatik.web_data_integration.comparator.PlatformComparator;
 import de.uni_mannheim.informatik.web_data_integration.model.VideoGame;
 import de.uni_mannheim.informatik.web_data_integration.model.VideoGameXMLReader;
 
@@ -59,8 +59,8 @@ private static final Logger logger = WinterLogManager.activateLogger("default");
 		matchingRule.addComparator(new TitleComparator(new TokenizingJaccardSimilarity()));
 //		
 		// Platform
-  	    matchingRule.addComparator(new PlatformComparator(new TokenizingJaccardSimilarity()));
-        matchingRule.addComparator(new PlatformComparator(new LevenshteinSimilarity()));
+  	    matchingRule.addComparator(new PlatformComparatorAdvanced(new TokenizingJaccardSimilarity()));
+        matchingRule.addComparator(new PlatformComparatorAdvanced(new LevenshteinSimilarity()));
 //     
 		// Publisher
 //      matchingRule.addComparator(new VideoGamePublisherComparatorJaccard());

@@ -60,7 +60,7 @@ public class IR_using_linear_combination_daniel {
 
                 // add comparators
                 matchingRule.addComparator(new TitleComparator(new MaximumOfTokenContainment()), 0.4);
-                matchingRule.addComparator(new PlatformComparator(new TokenizingJaccardSimilarity()), 0.3);
+                matchingRule.addComparator(new PlatformComparatorAdvanced(new TokenizingJaccardSimilarity()), 0.3);
                 matchingRule.addComparator(new PublisherComparator(new TokenizingJaccardSimilarity()), 0.1);
                 matchingRule.addComparator(new PubDateComparator(1), 0.1);
                 matchingRule.addComparator(new DeveloperComparator(new LevenshteinSimilarity()), 0.1);

@@ -1,161 +1,47 @@
 Steam <-> Wikidata
+all with blocking: neighborhood, 20
 
 TITLE
-
-1) LEVEN
-Precision: 0,9737
-Recall: 0,8457
-F1: 0,9052
-title 		leven		0.4
-platform 	leven		0.3
-publisher	leven		0.1
-date		1			0.1
-developer	leven		0.1
-blocking: neighborhood, 75
-
-2) JACCARD
-Precision: 0,9864
-Recall: 0,8286
-F1: 0,9006
-title 		jaccard		0.4
-platform 	leven		0.3
-publisher	leven		0.1
-date		1			0.1
-developer	leven		0.1
-blocking: neighborhood, 75
-
--> use leven for title
-
+Leven = 0,8809
+Tokenizing Jaccard = 0,8194
+Jaccard 1 Grams = 0,8774
+Jaccard 2 Grams = 0,8827
+Jaccard 3/4 Grams = 0,8833
+Jaro = 0,8811
+Jaro Winkler = 0,8717
+Maximum Token = 0,8975
 
 
 PLATFORM
-
-1) LEVEN
-Precision: 0,9737
-Recall: 0,8457
-F1: 0,9052
-title 		leven		0.4
-platform 	leven		0.3
-publisher	leven		0.1
-date		1			0.1
-developer	leven		0.1
-blocking: neighborhood, 75
-
-2) JACCARD
-Precision: 0,9737
-Recall: 0,8457
-F1: 0,9052
-title 		leven		0.4
-platform 	jaccard		0.3
-publisher	leven		0.1
-date		1			0.1
-developer	leven		0.1
-blocking: neighborhood, 75
-
--> doesn't matter which
-
+Leven = 0,0337
+Tokenizing Jaccard = 0
+Jaccard 1 Grams = 0,2488
+Jaccard 2 Grams = 0
+Jaccard 3/4 Grams = 0
+Jaro = 0,1474
+Jaro Winkler = 0,1474
+Maximum Token = 0,2574
+Maximum Token & Advanced = 0,9129
 
 
 PUBLISHER
-
-1) LEVEN
-Precision: 0,9737
-Recall: 0,8457
-F1: 0,9052
-title 		leven		0.4
-platform 	jaccard		0.3
-publisher	leven		0.1
-date		1			0.1
-developer	leven		0.1
-blocking: neighborhood, 75
-
-2) JACCARD
-Precision: 0,9737
-Recall: 0,8457
-F1: 0,9052
-title 		leven		0.4
-platform 	jaccard		0.3
-publisher	jaccard		0.1
-date		1			0.1
-developer	leven		0.1
-blocking: neighborhood, 75
-
--> doesn't matter which
-
-
+Leven = 0,5625
+Tokenizing Jaccard = 0,5591
+Jaccard 1 Grams = 0,6429
+Jaccard 2 Grams = 0,5681
+Jaccard 3/4 Grams = 0,5703
+Jaro = 0,7124
+Jaro Winkler = 0,7124
+Maximum Token = -
 
 PUB DATE
-
-1) One Year
-Precision: 0,9737
-Recall: 0,8457
-F1: 0,9052
-title 		leven		0.4
-platform 	jaccard		0.3
-publisher	jaccard		0.1
-date		1			0.1
-developer	leven		0.1
-blocking: neighborhood, 75
-
-2) TWO YEARS
-Precision: 0,9739
-Recall: 0,8514
-F1: 0,9085
-title 		leven		0.4
-platform 	jaccard		0.3
-publisher	jaccard		0.1
-date		2			0.1
-developer	leven		0.1
-blocking: neighborhood, 75
-
-3) THREE YEARS
-Precision: 0,9739
-Recall: 0,8514
-F1: 0,9085
-title 		leven		0.4
-platform 	jaccard		0.3
-publisher	jaccard		0.1
-date		3			0.1
-developer	leven		0.1
-blocking: neighborhood, 75
-
-3) FIVE YEARS
-Precision: 0,9739
-Recall: 0,8514
-F1: 0,9085
-title 		leven		0.4
-platform 	jaccard		0.3
-publisher	jaccard		0.1
-date		5			0.1
-developer	leven		0.1
-blocking: neighborhood, 75
-
--> use 2 years
-
-
-
-DEVELOPER
-
-1) LEVEN
-Precision: 0,9739
-Recall: 0,8514
-F1: 0,9085
-title 		leven		0.4
-platform 	jaccard		0.3
-publisher	jaccard		0.1
-date		2			0.1
-developer	leven		0.1
-blocking: neighborhood, 75
-
-2) JACCARD
-Precision: 0,9739
-Recall: 0,8514
-F1: 0,9085
-title 		leven		0.4
-platform 	jaccard		0.3
-publisher	jaccard		0.1
-date		2			0.1
-developer	jaccard		0.1
-blocking: neighborhood, 75
-
--> doesn't matter which
+1 = 0,8050
+2 = 0,8050
+3 = 0,8050
+4 = 0,8314
+5 = 0,8314
+6 = 0,8314
+7 = 0,8424
+8 = 0,8424
+9 = 0,8424
+10 = 0,8409

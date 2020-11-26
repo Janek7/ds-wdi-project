@@ -13,6 +13,7 @@ import de.uni_mannheim.informatik.dws.winter.model.io.CSVCorrespondenceFormatter
 import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 import de.uni_mannheim.informatik.dws.winter.similarity.string.JaccardOnNGramsSimilarity;
 import de.uni_mannheim.informatik.dws.winter.similarity.string.LevenshteinSimilarity;
+import de.uni_mannheim.informatik.dws.winter.similarity.string.MaximumOfTokenContainment;
 import de.uni_mannheim.informatik.dws.winter.similarity.string.TokenizingJaccardSimilarity;
 import de.uni_mannheim.informatik.dws.winter.utils.WinterLogManager;
 import de.uni_mannheim.informatik.web_data_integration.blocking.ExecutionResult;
@@ -50,16 +51,16 @@ public class IR_using_linear_combination_janek {
         // load the gold standard (test set)
         System.out.println("*\n*\tLoading gold standard\n*");
         MatchingGoldStandard gsTest = new MatchingGoldStandard();
-        gsTest.loadFromCSVFile(new File("data/goldstandard/gold-standard_wikidata_sales.csv"));
+        gsTest.loadFromCSVFile(new File("data/goldstandard/wikidata_sales/gold-standard_wikidata_sales.csv"));
 
         // create a matching rule
         LinearCombinationMatchingRule<VideoGame, Attribute> matchingRule = new LinearCombinationMatchingRule<>(0.7);
         matchingRule.activateDebugReport("data/output/wikidata_sales/debugWikidataSalesResultsMatchingRule.csv", 1000, gsTest);
 
         // add comparators
-        matchingRule.addComparator(new TitleComparator(new JaccardOnNGramsSimilarity(3)), 0.4);
-        matchingRule.addComparator(new PlatformComparator(new LevenshteinSimilarity()), 0.3);
-        matchingRule.addComparator(new PublisherComparator(new JaroSimilarity()), 0.15);
+        matchingRule.addComparator(new TitleComparator(new MaximumOfTokenContainment()), 0.4);
+        matchingRule.addComparator(new PlatformComparatorAdvanced(new MaximumOfTokenContainment()), 0.3);
+        matchingRule.addComparator(new PublisherComparator(new JaroWinklerSimilarity()), 0.15);
         matchingRule.addComparator(new PubDateComparator(7), 0.15);
 
         // creating a blocker
