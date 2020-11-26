@@ -29,17 +29,12 @@ public class InspectCorrespondencesNadine {
 	    System.out.println("*\n*\tLoading correspondences\n*");
 	    CorrespondenceSet<VideoGame, Attribute> correspondences = new CorrespondenceSet<>();
 	    correspondences.loadCorrespondences(new File("data/correspondences/sales_steam_correspondences.csv"), dsSteam, dsSales);
-	//    correspondences.loadCorrespondences(new File("data/correspondences/steam_wikidata_correspondences.csv"), dsSteam, dsWikidata);
-	//    correspondences.loadCorrespondences(new File("data/correspondences/wikidata_sales_correspondences.csv"), dsWikidata, dsSales);
+	    //correspondences.loadCorrespondences(new File("data/correspondences/steam_wikidata_correspondences.csv"), dsSteam, dsWikidata);
+	    //correspondences.loadCorrespondences(new File("data/correspondences/wikidata_sales_correspondences.csv"), dsWikidata, dsSales);
 	
 	    // write group size distribution
 	    correspondences.printGroupSizeDistribution();
 	    
-	    correspondences.getRecordGroups().toArray();
-	    for(int num=0; num<correspondences.getRecordGroups().size(); num++)
-	    {
-	  	  System.out.println(correspondences.getRecordGroups());
-	    }
 	    
 	
 	}
