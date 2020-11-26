@@ -1,5 +1,12 @@
 package de.uni_mannheim.informatik.web_data_integration.blocking;
 
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.generators.RecordBlockingKeyGenerator;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.Matchable;
@@ -13,6 +20,7 @@ import de.uni_mannheim.informatik.web_data_integration.model.VideoGame;
 public class VideoGameBlockingKeyByTitleAndPlatformGenerator  extends RecordBlockingKeyGenerator<VideoGame, Attribute> {
 	
 	private static final long serialVersionUID = 1L;
+	private static List<PlatformKey> platformKeyList = readFileIntoList();
 
 
 	/* (non-Javadoc)
@@ -49,35 +57,53 @@ public class VideoGameBlockingKeyByTitleAndPlatformGenerator  extends RecordBloc
 		for(int i = 0; i <= 2 && i < tokens.length; i++) {
 			blockingKeyValue += tokens[i].substring(0, Math.min(2,tokens[i].length())).toUpperCase();
 		}
+
+
+		boolean found = false;
+
+		for (PlatformKey platformKey : platformKeyList) {
+			if (record.getPlatform().equals(platformKey.platformValue)) {
+				blockingKeyValue += platformKey.platformKey;
+				found = true;
+				break;
+			}
+		}
 		
-		String recordKey="";
-		
-		if (record.getPlatform() != null) {
-			if (record.getPlatform().contains("windows") || record.getPlatform().contains("Windows")) {
-				recordKey = "pc";
-			}
-			else if (record.getPlatform().contains("mac") || record.getPlatform().contains("Mac")) {
-				recordKey = "pc";
-			}
-			else if (record.getPlatform().contains("linux") || record.getPlatform().contains("Linux")) {
-				recordKey = "pc";
-			}
-			else if (record.getPlatform().contains("PC")) {
-				recordKey = "pc";
-			}
-			else if (record.getPlatform().contains("PlayStation") || record.getPlatform().contains("PS")) {
-				recordKey = "ps";
-			}
-			else {
-				recordKey = record.getPlatform().substring(0, 1);
-			}
-		}	
-		
-		
-		
-        blockingKeyValue += recordKey;
+		if (!found) {
+			blockingKeyValue += record.getPlatform().substring(0,2);
+		}
 
 		resultCollector.next(new Pair<>(blockingKeyValue, record));
+	}
+
+	private static List<PlatformKey> readFileIntoList() {
+
+		List<PlatformKey> list = new ArrayList<>();
+		
+		try (BufferedReader br = new BufferedReader(new FileReader("data/platform_correspondences/platform_blocking_keys.csv"))) {
+            String line;
+            while ((line = br.readLine()) != null) {
+				String[] elements = line.split(";");
+				list.add(new PlatformKey(elements[0], elements[1]));
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+		}
+		
+		return list;
+
+	}
+	
+	static class PlatformKey {
+		String platformKey;
+		String platformValue;
+
+		PlatformKey(String platformKey, String platformValue) {
+			this.platformKey = platformKey;
+			this.platformValue = platformValue;
+		}
 	}
 	
 
