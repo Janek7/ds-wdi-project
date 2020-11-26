@@ -2,12 +2,16 @@ package de.uni_mannheim.informatik.web_data_integration.matching_rules;
 
 import java.io.File;
 
+import de.uni_mannheim.informatik.dws.winter.similarity.string.JaccardOnNGramsSimilarity;
 import de.uni_mannheim.informatik.dws.winter.similarity.string.LevenshteinSimilarity;
 import de.uni_mannheim.informatik.dws.winter.similarity.string.TokenizingJaccardSimilarity;
 import de.uni_mannheim.informatik.web_data_integration.comparator.DeveloperComparator;
 import de.uni_mannheim.informatik.web_data_integration.comparator.PlatformComparatorAdvanced;
 import de.uni_mannheim.informatik.web_data_integration.comparator.PubDateComparator;
+import de.uni_mannheim.informatik.web_data_integration.comparator.PublisherComparator;
 import de.uni_mannheim.informatik.web_data_integration.comparator.TitleComparator;
+import de.uni_mannheim.informatik.web_data_integration.comparator.custom_similarity_measure.JaroSimilarity;
+import de.uni_mannheim.informatik.web_data_integration.comparator.custom_similarity_measure.JaroWinklerSimilarity;
 
 import org.slf4j.Logger;
 
@@ -55,21 +59,23 @@ private static final Logger logger = WinterLogManager.activateLogger("trace");
 		matchingRule.activateDebugReport("data/output/steam_wikidata/debugResultsMatchingRule.csv", 1000, gsTraining);
 		
 		// add comparators
-		//matchingRule.addComparator(new VideoGameTitleComparatorEqual());
-/*		matchingRule.addComparator(new TitleComparator(new JaroSimilarity()));
-		matchingRule.addComparator(new PlatformComparatorAdvanced(new LevenshteinSimilarity()));
-		matchingRule.addComparator(new DeveloperComparator(new JaroWinklerSimilarity()));*/
 		matchingRule.addComparator(new PlatformComparatorAdvanced(new TokenizingJaccardSimilarity()));
-		//matchingRule.addComparator(new PlatformComparatorAdvanced(new LevenshteinSimilarity()));
-		matchingRule.addComparator(new TitleComparator(new LevenshteinSimilarity()));
+		//       matchingRule.addComparator(new PlatformComparatorAdvanced(new LevenshteinSimilarity()));
+		//       matchingRule.addComparator(new TitleComparator(new JaroSimilarity()));
+		//       matchingRule.addComparator(new TitleComparator(new LevenshteinSimilarity()));
 		matchingRule.addComparator(new TitleComparator(new TokenizingJaccardSimilarity()));
-		// matchingRule.addComparator(new VideoGamePublisherComparatorJaccard());
-		// matchingRule.addComparator(new VideoGamePublisherComparatorLevenshtein());
-		// matchingRule.addComparator(new VideoGamePublisherComparatorEqual());
-		matchingRule.addComparator(new DeveloperComparator(new TokenizingJaccardSimilarity()));
+		//matchingRule.addComparator(new TitleComparator(new JaccardOnNGramsSimilarity(3)));
+		//       matchingRule.addComparator(new PublisherComparator(new LevenshteinSimilarity()));
+		//       matchingRule.addComparator(new DeveloperComparator(new JaroWinklerSimilarity()));
+		//       matchingRule.addComparator(new DeveloperComparator(new TokenizingJaccardSimilarity()));
 		matchingRule.addComparator(new DeveloperComparator(new LevenshteinSimilarity()));
-		// matchingRule.addComparator(new VideoGameDeveloperComparatorEqual());
+		//       matchingRule.addComparator(new DeveloperComparator(new TokenizingJaccardSimilarity()));
 		matchingRule.addComparator(new PubDateComparator(1));
+		matchingRule.addComparator(new PublisherComparator(new JaroWinklerSimilarity()));
+		
+		
+		
+		
 		
 		
 		
@@ -82,7 +88,6 @@ private static final Logger logger = WinterLogManager.activateLogger("trace");
 		// create a blocker (blocking strategy)
 		//StandardRecordBlocker<VideoGame, Attribute> blocker = new StandardRecordBlocker<VideoGame, Attribute>(new VideoGameBlockingKeyByTitleGenerator());
 		//NoBlocker<VideoGame, Attribute> blocker = new NoBlocker<>();
-		//sorted neigbourhood --> F1 = 0,92
 		SortedNeighbourhoodBlocker<VideoGame, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new VideoGameBlockingKeyByTitleGenerator(), 75);
 		blocker.collectBlockSizeData("data/output/steam_wikidata/debugResultsBlocking.csv", 100);
 		
