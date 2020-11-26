@@ -3,9 +3,12 @@ package de.uni_mannheim.informatik.web_data_integration.matching_rules;
 import java.io.File;
 
 import de.uni_mannheim.informatik.dws.winter.similarity.string.TokenizingJaccardSimilarity;
+import de.uni_mannheim.informatik.web_data_integration.comparator.PlatformComparatorAdvanced;
 import de.uni_mannheim.informatik.web_data_integration.comparator.PubDateComparator;
+import de.uni_mannheim.informatik.web_data_integration.comparator.PublisherComparator;
 //import de.uni_mannheim.informatik.web_data_integration.comparator.PubDateComparator;
 import de.uni_mannheim.informatik.web_data_integration.comparator.TitleComparator;
+import de.uni_mannheim.informatik.web_data_integration.comparator.custom_similarity_measure.JaroWinklerSimilarity;
 import org.slf4j.Logger;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEngine;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator;
@@ -48,18 +51,14 @@ public class IR_using_linear_combination_lena {
 
 		// add comparators
 		// -- Title --
-	    matchingRule.addComparator(new TitleComparator(new TokenizingJaccardSimilarity()), 0.7);
-
-        // -- Year --
-        matchingRule.addComparator(new PubDateComparator(3), 0.3);
+	    matchingRule.addComparator(new TitleComparator(new TokenizingJaccardSimilarity()), 0.5);
+	    matchingRule.addComparator(new PlatformComparatorAdvanced(new TokenizingJaccardSimilarity()),0.23);
+	    matchingRule.addComparator(new PublisherComparator(new JaroWinklerSimilarity()),0.1);
+        matchingRule.addComparator(new PubDateComparator(10), 0.17);
 
 
 		// creating a blocker
-        SortedNeighbourhoodBlocker<VideoGame, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new VideoGameBlockingKeyByTitleGenerator(), 100);
-
-//		StandardRecordBlocker<VideoGame, Attribute> blocker = new StandardRecordBlocker<VideoGame, Attribute>(
-//				new VideoGameBlockingKeyByTitleGenerator());
-		//NoBlocker<VideoGame, Attribute> blocker = new NoBlocker<>();
+        SortedNeighbourhoodBlocker<VideoGame, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new VideoGameBlockingKeyByTitleGenerator(), 20);
 
 		blocker.setMeasureBlockSizes(true);
 		blocker.collectBlockSizeData("data/output/sales_steam_linear/debugResultsBlocking.csv", 100);
