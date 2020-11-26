@@ -12,6 +12,7 @@ import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.list.
 import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.meta.MostRecent;
 import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.numeric.Average;
 import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.string.LongestString;
+import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.string.ShortestString;
 import org.apache.logging.log4j.Logger;
 
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.TitleEvaluationRule;
@@ -101,17 +102,17 @@ public class DataFusion_Main {
         strategy.activateDebugReport("data/output/debugResultsDatafusion.csv", -1, gs);
 
         // add attribute fusers
-        strategy.addAttributeFuser(VideoGame.TITLE, new TitleFuser(new LongestString()), new TitleEvaluationRule());
-        strategy.addAttributeFuser(VideoGame.PLATFORM, new PlatformFuser(new LongestString()), null);
-        strategy.addAttributeFuser(VideoGame.PUBLISHER, new PublisherFuser(new LongestString()), null);
-        strategy.addAttributeFuser(VideoGame.PUBLISHING_DATE, new PublishingDateFuser(new MostRecent()), null);
-        strategy.addAttributeFuser(VideoGame.DEVELOPER, new DeveloperFuser(new LongestString()), null);
-        strategy.addAttributeFuser(VideoGame.GENRES, new GenreFuser(new Intersection()), null);
-        strategy.addAttributeFuser(VideoGame.GAME_MODES, new GameModeFuser(new Intersection()), null);
-        strategy.addAttributeFuser(VideoGame.PRICE, new PriceFuser(new Average()), null);
-        strategy.addAttributeFuser(VideoGame.AGE, new AgeFuser(new Average()), null);
-        strategy.addAttributeFuser(VideoGame.USK_RATING, new UskRatingFuser(), null);
-        strategy.addAttributeFuser(VideoGame.PEGI_RATING, new PegiRatingFuser(), null);
+        strategy.addAttributeFuser(VideoGame.TITLE, new TitleFuser(new ShortestString()), new TitleEvaluationRule());
+//        strategy.addAttributeFuser(VideoGame.PLATFORM, new PlatformFuser(new LongestString()), null);
+//        strategy.addAttributeFuser(VideoGame.PUBLISHER, new PublisherFuser(new LongestString()), null);
+//        strategy.addAttributeFuser(VideoGame.PUBLISHING_DATE, new PublishingDateFuser(new MostRecent()), null);
+//        strategy.addAttributeFuser(VideoGame.DEVELOPER, new DeveloperFuser(new LongestString()), null);
+//        strategy.addAttributeFuser(VideoGame.GENRES, new GenreFuser(new Intersection()), null);
+//        strategy.addAttributeFuser(VideoGame.GAME_MODES, new GameModeFuser(new Intersection()), null);
+//        strategy.addAttributeFuser(VideoGame.PRICE, new PriceFuser(new Average()), null);
+//        strategy.addAttributeFuser(VideoGame.AGE, new AgeFuser(new Average()), null);
+//        strategy.addAttributeFuser(VideoGame.USK_RATING, new UskRatingFuser(), null);
+//        strategy.addAttributeFuser(VideoGame.PEGI_RATING, new PegiRatingFuser(), null);
 
         // create the fusion engine
         DataFusionEngine<VideoGame, Attribute> engine = new DataFusionEngine<>(strategy);
