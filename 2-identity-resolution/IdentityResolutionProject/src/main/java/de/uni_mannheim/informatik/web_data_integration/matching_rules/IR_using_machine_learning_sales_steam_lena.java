@@ -25,16 +25,13 @@ import de.uni_mannheim.informatik.dws.winter.similarity.string.LevenshteinSimila
 import de.uni_mannheim.informatik.dws.winter.similarity.string.TokenizingJaccardSimilarity;
 import de.uni_mannheim.informatik.dws.winter.utils.WinterLogManager;
 import de.uni_mannheim.informatik.web_data_integration.blocking.VideoGameBlockingKeyByTitleGenerator;
-<<<<<<< HEAD
 import de.uni_mannheim.informatik.web_data_integration.comparator.PlatformComparator;
 import de.uni_mannheim.informatik.web_data_integration.comparator.PubDateComparator;
 import de.uni_mannheim.informatik.web_data_integration.comparator.PublisherComparator;
-=======
->>>>>>> d4bf4ae48e43f548897ba6aadb3147607bd28291
 import de.uni_mannheim.informatik.web_data_integration.model.VideoGame;
 import de.uni_mannheim.informatik.web_data_integration.model.VideoGameXMLReader;
 
-public class IR_using_machine_learning_sales_steam {
+public class IR_using_machine_learning_sales_steam_lena {
 
 private static final Logger logger = WinterLogManager.activateLogger("default");
 	
@@ -58,30 +55,13 @@ private static final Logger logger = WinterLogManager.activateLogger("default");
 		String options[] = new String[] { "-S" };
 		String modelType = "SimpleLogistic"; // use a logistic regression
 		WekaMatchingRule<VideoGame, Attribute> matchingRule = new WekaMatchingRule<>(0.7, modelType, options);
-		matchingRule.activateDebugReport("data/output/sales_steam/1debugResultsMatchingRule.csv", 1000, gsTraining);
+		matchingRule.activateDebugReport("data/output/sales_steam/debugResultsMatchingRule.csv", 1000, gsTraining);
 		
 		// add comparators
-<<<<<<< HEAD
-		 matchingRule.addComparator(new TitleComparator(new TokenizingJaccardSimilarity()));
-         matchingRule.addComparator(new PlatformComparator(new TokenizingJaccardSimilarity()));
-         matchingRule.addComparator(new PubDateComparator(10));
-         matchingRule.addComparator(new PublisherComparator(new JaroWinklerSimilarity()));
-=======
-		// Title
-  //	matchingRule.addComparator(new VideoGameTitleComparatorEqual());
-		matchingRule.addComparator(new TitleComparator(new LevenshteinSimilarity()));
-		matchingRule.addComparator(new TitleComparator(new TokenizingJaccardSimilarity()));
-//		
-		// Platform
-  	    matchingRule.addComparator(new PlatformComparatorAdvanced(new TokenizingJaccardSimilarity()));
-        matchingRule.addComparator(new PlatformComparatorAdvanced(new LevenshteinSimilarity()));
-//     
-		// Publisher
-//      matchingRule.addComparator(new VideoGamePublisherComparatorJaccard());
-//      matchingRule.addComparator(new VideoGamePublisherComparatorLevenshtein());
-//      matchingRule.addComparator(new VideoGamePublisherComparatorEqual());
->>>>>>> d4bf4ae48e43f548897ba6aadb3147607bd28291
-
+		matchingRule.addComparator(new TitleComparator(new TokenizingJaccardSimilarity())); 
+        matchingRule.addComparator(new PlatformComparatorAdvanced(new TokenizingJaccardSimilarity()));
+        matchingRule.addComparator(new PublisherComparator(new JaroWinklerSimilarity()));
+        matchingRule.addComparator(new PubDateComparator(10));
 
 		
 		// train the matching rule's model

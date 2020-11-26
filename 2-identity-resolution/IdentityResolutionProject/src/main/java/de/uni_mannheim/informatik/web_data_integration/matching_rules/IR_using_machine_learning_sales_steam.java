@@ -3,7 +3,10 @@ package de.uni_mannheim.informatik.web_data_integration.matching_rules;
 import java.io.File;
 
 import de.uni_mannheim.informatik.web_data_integration.comparator.PlatformComparatorAdvanced;
+import de.uni_mannheim.informatik.web_data_integration.comparator.PubDateComparator;
+import de.uni_mannheim.informatik.web_data_integration.comparator.PublisherComparator;
 import de.uni_mannheim.informatik.web_data_integration.comparator.TitleComparator;
+import de.uni_mannheim.informatik.web_data_integration.comparator.custom_similarity_measure.JaroWinklerSimilarity;
 import org.slf4j.Logger;
 
 
@@ -43,34 +46,20 @@ private static final Logger logger = WinterLogManager.activateLogger("default");
 		
 		// load the training set
 		MatchingGoldStandard gsTraining = new MatchingGoldStandard();
-	    gsTraining.loadFromCSVFile(new File("data/goldstandard/sales_steam/gold-standard_sales_steam_training.csv"));
+	    gsTraining.loadFromCSVFile(new File("data/goldstandard/sales_steam/gold-standard_sales_steam_training_80.csv"));
 
 
 		// create a matching rule
 		String options[] = new String[] { "-S" };
 		String modelType = "SimpleLogistic"; // use a logistic regression
 		WekaMatchingRule<VideoGame, Attribute> matchingRule = new WekaMatchingRule<>(0.7, modelType, options);
-		matchingRule.activateDebugReport("data/output/sales_steam/1debugResultsMatchingRule.csv", 1000, gsTraining);
+		matchingRule.activateDebugReport("data/output/sales_steam/debugResultsMatchingRule.csv", 1000, gsTraining);
 		
 		// add comparators
-		// Title
-  //	matchingRule.addComparator(new VideoGameTitleComparatorEqual());
-		matchingRule.addComparator(new TitleComparator(new LevenshteinSimilarity()));
-		matchingRule.addComparator(new TitleComparator(new TokenizingJaccardSimilarity()));
-//		
-		// Platform
+		matchingRule.addComparator(new TitleComparator(new TokenizingJaccardSimilarity()));	
   	    matchingRule.addComparator(new PlatformComparatorAdvanced(new TokenizingJaccardSimilarity()));
-        matchingRule.addComparator(new PlatformComparatorAdvanced(new LevenshteinSimilarity()));
-//     
-		// Publisher
-//      matchingRule.addComparator(new VideoGamePublisherComparatorJaccard());
-//      matchingRule.addComparator(new VideoGamePublisherComparatorLevenshtein());
-//      matchingRule.addComparator(new VideoGamePublisherComparatorEqual());
-
-        // Year
-//        matchingRule.addComparator(new PubDateComparator(1));
-//        matchingRule.addComparator(new PubDateComparator(2));
-//        matchingRule.addComparator(new PubDateComparator(3));
+        matchingRule.addComparator(new PublisherComparator(new JaroWinklerSimilarity()));
+        matchingRule.addComparator(new PubDateComparator(10));
 
 		
 		// train the matching rule's model
@@ -80,13 +69,9 @@ private static final Logger logger = WinterLogManager.activateLogger("default");
 		System.out.println(String.format("Matching rule is:\n%s", matchingRule.getModelDescription()));
 		
 		// create a blocker (blocking strategy)
-        SortedNeighbourhoodBlocker<VideoGame, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new VideoGameBlockingKeyByTitleGenerator(), 75);
-
-
-//		StandardRecordBlocker<VideoGame, Attribute> blocker = new StandardRecordBlocker<VideoGame, Attribute>(new VideoGameBlockingKeyByTitleGenerator());
-//		SortedNeighbourhoodBlocker<Movie, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new MovieBlockingKeyByDecadeGenerator(), 1);
+        SortedNeighbourhoodBlocker<VideoGame, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new VideoGameBlockingKeyByTitleGenerator(), 20);
 		
-        blocker.collectBlockSizeData("data/output/sales_steam/1debugResultsBlocking.csv", 100);
+        blocker.collectBlockSizeData("data/output/sales_steam/debugResultsBlocking.csv", 100);
 		
 		// Initialize Matching Engine
 		MatchingEngine<VideoGame, Attribute> engine = new MatchingEngine<>();
@@ -98,7 +83,7 @@ private static final Logger logger = WinterLogManager.activateLogger("default");
 				blocker);
 
 		// write the correspondences to the output file
-		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/sales_steam/1sales_steam_correspondences.csv"), correspondences);	
+		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/sales_steam/sales_steam_correspondences.csv"), correspondences);	
 		
 		
 	
@@ -106,7 +91,7 @@ private static final Logger logger = WinterLogManager.activateLogger("default");
         System.out.println("*\n*\tLoading gold standard\n*");
  		MatchingGoldStandard gsTest = new MatchingGoldStandard();
  		gsTest.loadFromCSVFile(new File(
-            "data/goldstandard/sales_steam/gold-standard_sales_steam_test.csv"));
+            "data/goldstandard/sales_steam/gold-standard_sales_steam_test_20.csv"));
  		
 		
 		// evaluate your result
