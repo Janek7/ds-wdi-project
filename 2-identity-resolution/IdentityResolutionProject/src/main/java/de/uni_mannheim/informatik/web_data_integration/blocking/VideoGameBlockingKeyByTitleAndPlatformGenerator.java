@@ -54,7 +54,7 @@ public class VideoGameBlockingKeyByTitleAndPlatformGenerator  extends RecordBloc
 
 		String blockingKeyValue = "";
 
-		for(int i = 0; i <= 2 && i < tokens.length; i++) {
+		for(int i = 0; i <= 3 && i < tokens.length; i++) {
 			blockingKeyValue += tokens[i].substring(0, Math.min(2,tokens[i].length())).toUpperCase();
 		}
 
@@ -84,7 +84,7 @@ public class VideoGameBlockingKeyByTitleAndPlatformGenerator  extends RecordBloc
             String line;
             while ((line = br.readLine()) != null) {
 				String[] elements = line.split(";");
-				list.add(new PlatformKey(elements[0], elements[1]));
+				list.add(new PlatformKey(elements[1], elements[0]));
             }
         } catch (FileNotFoundException e) {
             e.printStackTrace();

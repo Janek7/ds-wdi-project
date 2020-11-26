@@ -2,7 +2,9 @@ package de.uni_mannheim.informatik.web_data_integration.matching_rules;
 
 import java.io.File;
 
-import de.uni_mannheim.informatik.dws.winter.similarity.string.TokenizingJaccardSimilarity;
+import de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardRecordBlocker;
+import de.uni_mannheim.informatik.dws.winter.similarity.string.MaximumOfTokenContainment;
+import de.uni_mannheim.informatik.web_data_integration.blocking.VideoGameBlockingKeyByTitleAndPlatformGenerator;
 import de.uni_mannheim.informatik.web_data_integration.comparator.PlatformComparatorAdvanced;
 import de.uni_mannheim.informatik.web_data_integration.comparator.PubDateComparator;
 import de.uni_mannheim.informatik.web_data_integration.comparator.PublisherComparator;
@@ -12,7 +14,6 @@ import de.uni_mannheim.informatik.web_data_integration.comparator.custom_similar
 import org.slf4j.Logger;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEngine;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator;
-import de.uni_mannheim.informatik.dws.winter.matching.blockers.SortedNeighbourhoodBlocker;
 import de.uni_mannheim.informatik.dws.winter.matching.rules.LinearCombinationMatchingRule;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.HashedDataSet;
@@ -22,7 +23,6 @@ import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.model.io.CSVCorrespondenceFormatter;
 import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 import de.uni_mannheim.informatik.dws.winter.utils.WinterLogManager;
-import de.uni_mannheim.informatik.web_data_integration.blocking.VideoGameBlockingKeyByTitleGenerator;
 import de.uni_mannheim.informatik.web_data_integration.model.VideoGame;
 import de.uni_mannheim.informatik.web_data_integration.model.VideoGameXMLReader;
 
@@ -46,19 +46,25 @@ public class IR_using_linear_combination_lena {
         gsTest.loadFromCSVFile(new File("data/goldstandard/gold-standard_sales_steam.csv"));
 
 		// create a matching rule
-		LinearCombinationMatchingRule<VideoGame, Attribute> matchingRule = new LinearCombinationMatchingRule<>(0.7);
+		LinearCombinationMatchingRule<VideoGame, Attribute> matchingRule = new LinearCombinationMatchingRule<>(0.76);
 		matchingRule.activateDebugReport("data/output/sales_steam_linear/debugResultsMatchingRule.csv", 1000, gsTest);
 
 		// add comparators
-		// -- Title --
-	    matchingRule.addComparator(new TitleComparator(new TokenizingJaccardSimilarity()), 0.5);
-	    matchingRule.addComparator(new PlatformComparatorAdvanced(new TokenizingJaccardSimilarity()),0.23);
-	    matchingRule.addComparator(new PublisherComparator(new JaroWinklerSimilarity()),0.1);
-        matchingRule.addComparator(new PubDateComparator(10), 0.17);
+//	    matchingRule.addComparator(new TitleComparator(new TokenizingJaccardSimilarity()), 0.5);
+//	    matchingRule.addComparator(new PlatformComparatorAdvanced(new TokenizingJaccardSimilarity()),0.23);
+//	    matchingRule.addComparator(new PublisherComparator(new JaroWinklerSimilarity()),0.1);
+//        matchingRule.addComparator(new PubDateComparator(10), 0.17);
+
+		matchingRule.addComparator(new TitleComparator(new MaximumOfTokenContainment()), 0.25);
+		matchingRule.addComparator(new PlatformComparatorAdvanced(new MaximumOfTokenContainment()), 0.25);
+		matchingRule.addComparator(new PublisherComparator(new JaroWinklerSimilarity()), 0.1);
+		matchingRule.addComparator(new PubDateComparator(1), 0.4);
 
 
 		// creating a blocker
-        SortedNeighbourhoodBlocker<VideoGame, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new VideoGameBlockingKeyByTitleGenerator(), 20);
+//        SortedNeighbourhoodBlocker<VideoGame, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new VideoGameBlockingKeyByTitleGenerator(), 20);
+		StandardRecordBlocker<VideoGame, Attribute> blocker = new StandardRecordBlocker<VideoGame, Attribute>(
+				new VideoGameBlockingKeyByTitleAndPlatformGenerator());
 
 		blocker.setMeasureBlockSizes(true);
 		blocker.collectBlockSizeData("data/output/sales_steam_linear/debugResultsBlocking.csv", 100);

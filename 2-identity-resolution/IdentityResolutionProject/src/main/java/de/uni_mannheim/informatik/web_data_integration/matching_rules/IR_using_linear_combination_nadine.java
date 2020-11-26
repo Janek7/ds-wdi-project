@@ -2,7 +2,10 @@ package de.uni_mannheim.informatik.web_data_integration.matching_rules;
 
 import java.io.File;
 
+import de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardRecordBlocker;
 import de.uni_mannheim.informatik.dws.winter.similarity.string.LevenshteinSimilarity;
+import de.uni_mannheim.informatik.dws.winter.similarity.string.MaximumOfTokenContainment;
+import de.uni_mannheim.informatik.web_data_integration.blocking.VideoGameBlockingKeyByTitleAndPlatformGenerator;
 import de.uni_mannheim.informatik.web_data_integration.comparator.*;
 import de.uni_mannheim.informatik.web_data_integration.comparator.PlatformComparatorAdvanced;
 import de.uni_mannheim.informatik.web_data_integration.comparator.custom_similarity_measure.JaroSimilarity;
@@ -47,29 +50,27 @@ public class IR_using_linear_combination_nadine {
 		gsTest.loadFromCSVFile(new File("data/goldstandard/steam_wikidata/gold-standard_steam_wikidata.csv"));
 
 		// create a matching rule
-		LinearCombinationMatchingRule<VideoGame, Attribute> matchingRule = new LinearCombinationMatchingRule<>(0.7);
-		matchingRule.activateDebugReport("data/output/steam_wikidata/debugResultsMatchingRule.csv", 1000, gsTest);
+		LinearCombinationMatchingRule<VideoGame, Attribute> matchingRule = new LinearCombinationMatchingRule<>(0.76);
+		matchingRule.activateDebugReport("data/output/steam_wikidata_linear/debugResultsMatchingRule.csv", 1000, gsTest);
 
 		// add comparators
-        matchingRule.addComparator(new TitleComparator(new JaroSimilarity()), 0.4);
-		matchingRule.addComparator(new PlatformComparatorAdvanced(new LevenshteinSimilarity()), 0.4);
-		matchingRule.addComparator(new DeveloperComparator(new JaroWinklerSimilarity()), 0.1);
-		//matchingRule.addComparator(new PublisherComparator(new JaroWinklerSimilarity()), 0.1);
-        /*matchingRule.addComparator(new PlatformComparatorAdvanced(new TokenizingJaccardSimilarity()), 1);
-        matchingRule.addComparator(new PublisherComparator(new TokenizingJaccardSimilarity()), 1);
-        matchingRule.addComparator(new PubDateComparator(1), 1);
-        matchingRule.addComparator(new DeveloperComparator(new LevenshteinSimilarity()), 1);*/
-		matchingRule.addComparator(new PubDateComparator(1), 0.1);
-		
+//        matchingRule.addComparator(new TitleComparator(new JaroSimilarity()), 0.4);
+//		matchingRule.addComparator(new PlatformComparatorAdvanced(new LevenshteinSimilarity()), 0.4);
+//		matchingRule.addComparator(new DeveloperComparator(new JaroWinklerSimilarity()), 0.1);
+//		matchingRule.addComparator(new PubDateComparator(1), 0.1);
+		matchingRule.addComparator(new TitleComparator(new MaximumOfTokenContainment()), 0.25);
+		matchingRule.addComparator(new PlatformComparatorAdvanced(new MaximumOfTokenContainment()), 0.25);
+		matchingRule.addComparator(new PublisherComparator(new JaroWinklerSimilarity()), 0.1);
+		matchingRule.addComparator(new PubDateComparator(1), 0.4);
+
 		// creating a blocker
-		//SortedNeighbourhoodBlocker<VideoGame, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new VideoGameBlockingKeyByTitleGenerator(), 75);
-		/*StandardRecordBlocker<VideoGame, Attribute> blocker = new StandardRecordBlocker<VideoGame, Attribute>(
-				new VideoGameBlockingKeyByTitleGenerator());
+		StandardRecordBlocker<VideoGame, Attribute> blocker = new StandardRecordBlocker<VideoGame, Attribute>(
+				new VideoGameBlockingKeyByTitleAndPlatformGenerator());
 		blocker.setMeasureBlockSizes(true);
-		blocker.collectBlockSizeData("data/output/debugResultsBlocking.csv", 100);*/
-		 SortedNeighbourhoodBlocker<VideoGame, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new VideoGameBlockingKeyByTitleGenerator(), 100);
-	        blocker.setMeasureBlockSizes(true);
-	        blocker.collectBlockSizeData("data/output/wikidata_sales/debugResultsBlocking.csv", 100);
+		blocker.collectBlockSizeData("data/output/steam_wikidata_linear/debugResultsBlocking.csv", 100);
+//		 SortedNeighbourhoodBlocker<VideoGame, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new VideoGameBlockingKeyByTitleGenerator(), 100);
+//	        blocker.setMeasureBlockSizes(true);
+//	        blocker.collectBlockSizeData("data/output/steam_wikidata_linear/debugResultsBlocking.csv", 100);
 
 		// Initialize Matching Engine
 		MatchingEngine<VideoGame, Attribute> engine = new MatchingEngine<>();
@@ -80,7 +81,7 @@ public class IR_using_linear_combination_nadine {
 				.runIdentityResolution(dataVideoGameSteam, dataVideoGameWikidata, null, matchingRule, blocker);
 
 		// write the correspondences to the output file
-		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/steam_wikidata_correspondences.csv"),
+		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/steam_wikidata_linear/steam_wikidata_correspondences.csv"),
 				correspondences);
 
 		System.out.println("*\n*\tEvaluating result\n*");

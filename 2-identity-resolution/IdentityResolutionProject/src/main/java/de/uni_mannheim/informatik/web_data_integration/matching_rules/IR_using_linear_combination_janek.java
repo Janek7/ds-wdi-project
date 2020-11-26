@@ -2,7 +2,7 @@ package de.uni_mannheim.informatik.web_data_integration.matching_rules;
 
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEngine;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator;
-import de.uni_mannheim.informatik.dws.winter.matching.blockers.SortedNeighbourhoodBlocker;
+import de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardRecordBlocker;
 import de.uni_mannheim.informatik.dws.winter.matching.rules.LinearCombinationMatchingRule;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.HashedDataSet;
@@ -11,15 +11,11 @@ import de.uni_mannheim.informatik.dws.winter.model.Performance;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.model.io.CSVCorrespondenceFormatter;
 import de.uni_mannheim.informatik.dws.winter.processing.Processable;
-import de.uni_mannheim.informatik.dws.winter.similarity.string.JaccardOnNGramsSimilarity;
-import de.uni_mannheim.informatik.dws.winter.similarity.string.LevenshteinSimilarity;
 import de.uni_mannheim.informatik.dws.winter.similarity.string.MaximumOfTokenContainment;
-import de.uni_mannheim.informatik.dws.winter.similarity.string.TokenizingJaccardSimilarity;
 import de.uni_mannheim.informatik.dws.winter.utils.WinterLogManager;
 import de.uni_mannheim.informatik.web_data_integration.blocking.ExecutionResult;
-import de.uni_mannheim.informatik.web_data_integration.blocking.VideoGameBlockingKeyByTitleGenerator;
+import de.uni_mannheim.informatik.web_data_integration.blocking.VideoGameBlockingKeyByTitleAndPlatformGenerator;
 import de.uni_mannheim.informatik.web_data_integration.comparator.*;
-import de.uni_mannheim.informatik.web_data_integration.comparator.custom_similarity_measure.JaroSimilarity;
 import de.uni_mannheim.informatik.web_data_integration.comparator.custom_similarity_measure.JaroWinklerSimilarity;
 import de.uni_mannheim.informatik.web_data_integration.model.VideoGame;
 import de.uni_mannheim.informatik.web_data_integration.model.VideoGameXMLReader;
@@ -54,21 +50,25 @@ public class IR_using_linear_combination_janek {
         gsTest.loadFromCSVFile(new File("data/goldstandard/wikidata_sales/gold-standard_wikidata_sales.csv"));
 
         // create a matching rule
-        LinearCombinationMatchingRule<VideoGame, Attribute> matchingRule = new LinearCombinationMatchingRule<>(0.7);
+        LinearCombinationMatchingRule<VideoGame, Attribute> matchingRule = new LinearCombinationMatchingRule<>(0.76);
         matchingRule.activateDebugReport("data/output/wikidata_sales/debugWikidataSalesResultsMatchingRule.csv", 1000, gsTest);
 
         // add comparators
-        matchingRule.addComparator(new TitleComparator(new MaximumOfTokenContainment()), 0.4);
-        matchingRule.addComparator(new PlatformComparatorAdvanced(new MaximumOfTokenContainment()), 0.3);
-        matchingRule.addComparator(new PublisherComparator(new JaroWinklerSimilarity()), 0.15);
-        matchingRule.addComparator(new PubDateComparator(7), 0.15);
+//        matchingRule.addComparator(new TitleComparator(new MaximumOfTokenContainment()), 0.35);
+//        matchingRule.addComparator(new PlatformComparatorAdvanced(new MaximumOfTokenContainment()), 0.25);
+//        matchingRule.addComparator(new PublisherComparator(new JaroWinklerSimilarity()), 0.1);
+//        matchingRule.addComparator(new PubDateComparator(1), 0.3);
+        matchingRule.addComparator(new TitleComparator(new MaximumOfTokenContainment()), 0.25);
+        matchingRule.addComparator(new PlatformComparatorAdvanced(new MaximumOfTokenContainment()), 0.25);
+        matchingRule.addComparator(new PublisherComparator(new JaroWinklerSimilarity()), 0.1);
+        matchingRule.addComparator(new PubDateComparator(1), 0.4);
 
         // creating a blocker
-//        StandardRecordBlocker<VideoGame, Attribute> blocker = new StandardRecordBlocker<VideoGame, Attribute>(
-//                new VideoGameBlockingKeyByTitleGenerator());
-        SortedNeighbourhoodBlocker<VideoGame, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new VideoGameBlockingKeyByTitleGenerator(), blockingNeighborHoodSize);
+        StandardRecordBlocker<VideoGame, Attribute> blocker = new StandardRecordBlocker<VideoGame, Attribute>(
+                new VideoGameBlockingKeyByTitleAndPlatformGenerator());
+//        SortedNeighbourhoodBlocker<VideoGame, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new VideoGameBlockingKeyByTitleGenerator(), blockingNeighborHoodSize);
         blocker.setMeasureBlockSizes(true);
-        blocker.collectBlockSizeData("data/output/wikidata_sales/debugResultsBlocking.csv", 100);
+        blocker.collectBlockSizeData("data/output/wikidata_sales_linear/debugResultsBlocking.csv", 100);
 
         // Initialize Matching Engine
         MatchingEngine<VideoGame, Attribute> engine = new MatchingEngine<>();
