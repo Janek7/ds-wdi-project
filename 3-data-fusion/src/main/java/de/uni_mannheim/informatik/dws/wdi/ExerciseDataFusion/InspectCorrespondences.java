@@ -5,6 +5,7 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model_new.VideoGame
 import de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet;
 import de.uni_mannheim.informatik.dws.winter.model.FusibleDataSet;
 import de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet;
+import de.uni_mannheim.informatik.dws.winter.model.RecordGroup;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import org.xml.sax.SAXException;
 
@@ -12,6 +13,7 @@ import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.xpath.XPathExpressionException;
 import java.io.File;
 import java.io.IOException;
+import java.util.Collection;
 
 public class InspectCorrespondences {
 
@@ -33,13 +35,24 @@ public class InspectCorrespondences {
         System.out.println("*\n*\tLoading correspondences\n*");
         CorrespondenceSet<VideoGame, Attribute> correspondences = new CorrespondenceSet<>();
         correspondences.loadCorrespondences(new File("data/correspondences/sales_steam_correspondences.csv"), dsSteam, dsSales);
-//        correspondences.loadCorrespondences(new File("data/correspondences/steam_wikidata_correspondences.csv"), dsSteam, dsWikidata);
-//        correspondences.loadCorrespondences(new File("data/correspondences/wikidata_sales_correspondences.csv"), dsWikidata, dsSales);
+        correspondences.loadCorrespondences(new File("data/correspondences/steam_wikidata_correspondences.csv"), dsSteam, dsWikidata);
+        correspondences.loadCorrespondences(new File("data/correspondences/wikidata_sales_correspondences.csv"), dsWikidata, dsSales);
 
         // write group size distribution
         correspondences.printGroupSizeDistribution();
-        System.out.println(correspondences.getRecordGroups());
-
+        // System.out.println(correspondences.getRecordGroups());
+        Collection<RecordGroup<VideoGame, Attribute>> recordGroups = correspondences.getRecordGroups();
+        for (RecordGroup<VideoGame,Attribute> recordGroup : recordGroups) {
+                try {
+                        if (recordGroup.getRecords().size() > 100) {
+                                System.out.println(recordGroup.getRecords());
+                                System.out.println("");
+                                
+                        }
+                } catch (Exception e) {
+                        //TODO: handle exception
+                }
+        }
     }
 
 }
