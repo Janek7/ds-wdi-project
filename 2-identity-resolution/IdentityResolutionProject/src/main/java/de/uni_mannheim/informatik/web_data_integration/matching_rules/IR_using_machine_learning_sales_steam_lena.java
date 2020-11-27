@@ -12,6 +12,7 @@ import de.uni_mannheim.informatik.dws.winter.matching.MatchingEngine;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator;
 import de.uni_mannheim.informatik.dws.winter.matching.algorithms.RuleLearner;
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.SortedNeighbourhoodBlocker;
+import de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardRecordBlocker;
 import de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.HashedDataSet;
@@ -22,8 +23,10 @@ import de.uni_mannheim.informatik.dws.winter.model.io.CSVCorrespondenceFormatter
 import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 import de.uni_mannheim.informatik.dws.winter.similarity.string.JaccardOnNGramsSimilarity;
 import de.uni_mannheim.informatik.dws.winter.similarity.string.LevenshteinSimilarity;
+import de.uni_mannheim.informatik.dws.winter.similarity.string.MaximumOfTokenContainment;
 import de.uni_mannheim.informatik.dws.winter.similarity.string.TokenizingJaccardSimilarity;
 import de.uni_mannheim.informatik.dws.winter.utils.WinterLogManager;
+import de.uni_mannheim.informatik.web_data_integration.blocking.VideoGameBlockingKeyByTitleAndPlatformGenerator;
 import de.uni_mannheim.informatik.web_data_integration.blocking.VideoGameBlockingKeyByTitleGenerator;
 import de.uni_mannheim.informatik.web_data_integration.comparator.PlatformComparator;
 import de.uni_mannheim.informatik.web_data_integration.comparator.PubDateComparator;
@@ -54,14 +57,15 @@ private static final Logger logger = WinterLogManager.activateLogger("default");
 		// create a matching rule
 		String options[] = new String[] { "-S" };
 		String modelType = "SimpleLogistic"; // use a logistic regression
-		WekaMatchingRule<VideoGame, Attribute> matchingRule = new WekaMatchingRule<>(0.7, modelType, options);
-		matchingRule.activateDebugReport("data/output/sales_steam/debugResultsMatchingRule.csv", 1000, gsTraining);
+		WekaMatchingRule<VideoGame, Attribute> matchingRule = new WekaMatchingRule<>(0.76, modelType, options);
+		matchingRule.activateDebugReport("data/output/sales_steam_ml/debugResultsMatchingRule.csv", 1000, gsTraining);
 		
 		// add comparators
-		matchingRule.addComparator(new TitleComparator(new TokenizingJaccardSimilarity())); 
-        matchingRule.addComparator(new PlatformComparatorAdvanced(new TokenizingJaccardSimilarity()));
-        matchingRule.addComparator(new PublisherComparator(new JaroWinklerSimilarity()));
-        matchingRule.addComparator(new PubDateComparator(10));
+		matchingRule.addComparator(new TitleComparator(new MaximumOfTokenContainment())); 
+        matchingRule.addComparator(new PlatformComparatorAdvanced(new MaximumOfTokenContainment()));
+		matchingRule.addComparator(new PublisherComparator(new JaroWinklerSimilarity()));
+		matchingRule.addComparator(new PubDateComparator(2));
+
 
 		
 		// train the matching rule's model
@@ -71,9 +75,9 @@ private static final Logger logger = WinterLogManager.activateLogger("default");
 		System.out.println(String.format("Matching rule is:\n%s", matchingRule.getModelDescription()));
 		
 		// create a blocker (blocking strategy)
-        SortedNeighbourhoodBlocker<VideoGame, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new VideoGameBlockingKeyByTitleGenerator(), 20);
-
-        blocker.collectBlockSizeData("data/output/sales_steam/debugResultsBlocking.csv", 100);
+		StandardRecordBlocker<VideoGame, Attribute> blocker = new StandardRecordBlocker<VideoGame, Attribute>(
+				new VideoGameBlockingKeyByTitleAndPlatformGenerator());
+        blocker.collectBlockSizeData("data/output/sales_steam_ml/debugResultsBlocking.csv", 100);
 		
 		// Initialize Matching Engine
 		MatchingEngine<VideoGame, Attribute> engine = new MatchingEngine<>();
@@ -85,8 +89,7 @@ private static final Logger logger = WinterLogManager.activateLogger("default");
 				blocker);
 
 		// write the correspondences to the output file
-		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/sales_steam/sales_steam_correspondences.csv"), correspondences);	
-		
+		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/sales_steam_ml/sales_steam_correspondences.csv"), correspondences);	
 		
 	
 		// load the gold standard (test set)
