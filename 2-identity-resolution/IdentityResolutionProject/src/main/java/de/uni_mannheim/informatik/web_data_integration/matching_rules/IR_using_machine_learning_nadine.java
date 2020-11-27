@@ -4,6 +4,7 @@ import java.io.File;
 
 import de.uni_mannheim.informatik.dws.winter.similarity.string.JaccardOnNGramsSimilarity;
 import de.uni_mannheim.informatik.dws.winter.similarity.string.LevenshteinSimilarity;
+import de.uni_mannheim.informatik.dws.winter.similarity.string.MaximumOfTokenContainment;
 import de.uni_mannheim.informatik.dws.winter.similarity.string.TokenizingJaccardSimilarity;
 import de.uni_mannheim.informatik.web_data_integration.comparator.DeveloperComparator;
 import de.uni_mannheim.informatik.web_data_integration.comparator.PlatformComparatorAdvanced;
@@ -20,6 +21,7 @@ import de.uni_mannheim.informatik.dws.winter.matching.MatchingEngine;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator;
 import de.uni_mannheim.informatik.dws.winter.matching.algorithms.RuleLearner;
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.SortedNeighbourhoodBlocker;
+import de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardRecordBlocker;
 import de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.HashedDataSet;
@@ -79,7 +81,6 @@ private static final Logger logger = WinterLogManager.activateLogger("trace");
 		
 		
 		
-		
 		// train the matching rule's model
 		System.out.println("*\n*\tLearning matching rule\n*");
 		RuleLearner<VideoGame, Attribute> learner = new RuleLearner<>();
@@ -87,9 +88,10 @@ private static final Logger logger = WinterLogManager.activateLogger("trace");
 		System.out.println(String.format("Matching rule is:\n%s", matchingRule.getModelDescription()));
 		
 		// create a blocker (blocking strategy)
-		//StandardRecordBlocker<VideoGame, Attribute> blocker = new StandardRecordBlocker<VideoGame, Attribute>(new VideoGameBlockingKeyByTitleGenerator());
+		StandardRecordBlocker<VideoGame, Attribute> blocker = new StandardRecordBlocker<VideoGame, Attribute>(new VideoGameBlockingKeyByTitleAndPlatformGenerator());
 		//NoBlocker<VideoGame, Attribute> blocker = new NoBlocker<>();
-		SortedNeighbourhoodBlocker<VideoGame, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new VideoGameBlockingKeyByTitleAndPlatformGenerator(), 75);
+		//SortedNeighbourhoodBlocker<VideoGame, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new VideoGameBlockingKeyByTitleAndPlatformGenerator(), 75);
+		blocker.setMeasureBlockSizes(true);
 		blocker.collectBlockSizeData("data/output/steam_wikidata/debugResultsBlocking.csv", 100);
 		
 		// Initialize Matching Engine

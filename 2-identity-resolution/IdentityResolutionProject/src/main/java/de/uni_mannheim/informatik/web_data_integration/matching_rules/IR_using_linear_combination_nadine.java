@@ -31,7 +31,7 @@ import de.uni_mannheim.informatik.web_data_integration.model.VideoGameXMLReader;
 
 public class IR_using_linear_combination_nadine {
 
-	private static final Logger logger = WinterLogManager.activateLogger("default");
+	private static final Logger logger = WinterLogManager.activateLogger("trace");
 
 	public static void main(String[] args) throws Exception {
 		// loading data
@@ -58,10 +58,11 @@ public class IR_using_linear_combination_nadine {
 //		matchingRule.addComparator(new PlatformComparatorAdvanced(new LevenshteinSimilarity()), 0.4);
 //		matchingRule.addComparator(new DeveloperComparator(new JaroWinklerSimilarity()), 0.1);
 //		matchingRule.addComparator(new PubDateComparator(1), 0.1);
-		matchingRule.addComparator(new TitleComparator(new MaximumOfTokenContainment()), 0.25);
-		matchingRule.addComparator(new PlatformComparatorAdvanced(new MaximumOfTokenContainment()), 0.25);
+		matchingRule.addComparator(new TitleComparator(new MaximumOfTokenContainment()), 0.35);
+		matchingRule.addComparator(new PlatformComparatorAdvanced(new MaximumOfTokenContainment()), 0.3);
 		matchingRule.addComparator(new PublisherComparator(new JaroWinklerSimilarity()), 0.1);
-		matchingRule.addComparator(new PubDateComparator(1), 0.4);
+		//matchingRule.addComparator(new DeveloperComparator(new JaroWinklerSimilarity()), 0.1);
+		matchingRule.addComparator(new PubDateComparator(3), 0.25);
 
 		// creating a blocker
 		StandardRecordBlocker<VideoGame, Attribute> blocker = new StandardRecordBlocker<VideoGame, Attribute>(
