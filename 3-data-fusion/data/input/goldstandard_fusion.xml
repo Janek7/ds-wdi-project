@@ -1,0 +1,216 @@
+<!-- gold standard for data fusion project -->
+<videogames>
+    <!-- Assassin's Creed IV: Black Flag -->
+    <videogame>
+        <id>wikidata_14267</id>
+        <title>Assassin's Creed IV: Black Flag</title>
+        <platform>PC</platform>
+        <publisher>Ubisoft</publisher>
+        <publishingdate>2013</publishingdate>
+        <developer>Ubisoft Montreal</developer>
+        <age>18</age>
+        <usk_rating>USK 16</usk_rating>
+        <pegi_rating>PEGI 18</pegi_rating>
+        <gamemodes>
+            <gamemode>Single-player</gamemode>
+            <gamemode>Multiplayer</gamemode>
+            <gamemode>Co-operative</gamemode>
+        </gamemodes>
+        <price>19.95</price>
+        <genres>
+            <genre>Adventure</genre>
+            <genre>Action</genre>
+        </genres>
+    </videogame>
+    <!-- Call of Duty 4: Modern Warfare -->
+    <videogame>
+        <id>vg_sales_1770</id>
+        <title>Call of Duty 4: Modern Warfare</title>
+        <platform>PC</platform>
+        <publisher>Activision</publisher>
+        <publishingdate>2007</publishingdate>
+        <developer>Treyarch</developer>
+        <age>18</age>
+        <usk_rating>USK 18</usk_rating>
+        <pegi_rating>PEGI 16</pegi_rating>
+        <gamemodes>
+            <gamemode>Single-player</gamemode>
+            <gamemode>Multiplayer</gamemode>
+            <gamemode>Split screen</gamemode>
+        </gamemodes>
+        <price>19.99</price>
+        <genres>
+            <genre>Shooter</genre>
+            <genre>Simulation</genre>
+        </genres>
+    </videogame>
+    <!-- Duke Nukem Forever -->
+    <videogame>
+        <id>wikidata_21803</id>
+        <title>Duke Nukem Forever</title>
+        <platform>PC</platform>
+        <publisher>2K Games</publisher>
+        <publishingdate>2011</publishingdate>
+        <developer>3D Realms</developer>
+        <age>18</age>
+        <usk_rating>USK 18</usk_rating>
+        <pegi_rating>PEGI 18</pegi_rating>
+        <gamemodes>
+            <gamemode>Single-player</gamemode>
+            <gamemode>Multiplayer</gamemode>
+        </gamemodes>
+        <price>14.99</price>
+        <genres>
+            <genre>Shooter</genre>
+            <genre>Adventure</genre>
+        </genres>
+    </videogame>
+    <!-- Mafia II -->
+    <videogame>
+        <id>wikidata_18532</id>
+        <title>Mafia II</title>
+        <platform>PC</platform>
+        <publisher>2K Games</publisher>
+        <publishingdate>2010</publishingdate>
+        <developer>2K Czech</developer>
+        <age>18</age>
+        <usk_rating>USK 18</usk_rating>
+        <pegi_rating>PEGI 18</pegi_rating>
+        <gamemodes>
+            <gamemode>Single-player</gamemode>
+        </gamemodes>
+        <price>19.99</price>
+        <genres>
+            <genre>Action</genre>
+            <genre>Adventure</genre>
+            <genre>Shooter</genre>
+        </genres>
+    </videogame>
+    <!-- The Sims 3 -->
+    <videogame>
+        <id>vg_sales_84</id>
+        <title>The Sims 3</title>
+        <platform>PC</platform>
+        <publisher>Electronic Arts</publisher>
+        <publishingdate>2009</publishingdate>
+        <developer>The Sims Studio</developer>
+        <age>12</age>
+        <usk_rating>USK 6</usk_rating>
+        <pegi_rating>PEGI 12</pegi_rating>
+        <gamemodes>
+            <gamemode>Single-player</gamemode>
+            <gamemode>Multiplayer</gamemode>
+        </gamemodes>
+        <price>24.99</price>
+        <genres>
+            <genre>Simulation</genre>
+            <genre>Strategy</genre>
+        </genres>
+    </videogame>
+    <!-- The Witcher 3: Wild Hunt -->
+    <videogame>
+        <id>vg_sales_3027</id>
+        <title>The Witcher 3: Wild Hunt</title>
+        <platform>PC</platform>
+        <publisher>Namco Bandai Games</publisher>
+        <publishingdate>2015</publishingdate>
+        <developer>CD Project RED</developer>
+        <age>18</age>
+        <usk_rating>USK 18</usk_rating>
+        <pegi_rating>PEGI 18</pegi_rating>
+        <gamemodes>
+            <gamemode>Single-player</gamemode>
+        </gamemodes>
+        <price>24.99</price>
+        <genres>
+            <genre>Role-playing</genre>
+            <genre>Adventure</genre>
+        </genres>
+    </videogame>
+    <!-- Super Mario Galaxy -->
+    <videogame>
+        <id>wikidata_13643</id>
+        <title>Super Mario Galaxy</title>
+        <platform>Nintendo Wii</platform>
+        <publisher>Nintendo</publisher>
+        <publishingdate>2007</publishingdate>
+        <developer>Nintendo EAD</developer>
+        <age>6</age>
+        <usk_rating>USK 6</usk_rating>
+        <pegi_rating>PEGI 3</pegi_rating>
+        <gamemodes>
+            <gamemode>Single-player</gamemode>
+            <gamemode>Co-operative</gamemode>
+        </gamemodes>
+        <price>44.90</price>
+        <genres>
+            <genre>Platform</genre>
+            <genre>Adventure</genre>
+        </genres>
+    </videogame>
+    <!-- Lost Planet 2 -->
+    <videogame>
+        <id>wikidata_21488</id>
+        <title>Lost Planet 2</title>
+        <platform>Xbox 360</platform>
+        <publisher>Capcom</publisher>
+        <publishingdate>2010</publishingdate>
+        <developer>Capcom</developer>
+        <age>16</age>
+        <usk_rating>USK 16</usk_rating>
+        <pegi_rating>PEGI 16</pegi_rating>
+        <gamemodes>
+            <gamemode>Single-player</gamemode>
+            <gamemode>Multiplayer</gamemode>
+            <gamemode>Co-operative</gamemode>
+        </gamemodes>
+        <price>29.90</price>
+        <genres>
+            <genre>Shooter</genre>
+            <genre>Adventure</genre>
+        </genres>
+    </videogame>
+    <!-- Rise of the Tomb Raider -->
+    <videogame>
+        <id>wikidata_14828</id>
+        <title>Rise of the Tomb Raider</title>
+        <platform>Xbox One</platform>
+        <publisher>Square Enix</publisher>
+        <publishingdate>2015</publishingdate>
+        <developer>Crystal Dynamics</developer>
+        <age>18</age>
+        <usk_rating>USK 16</usk_rating>
+        <pegi_rating>PEGI 18</pegi_rating>
+        <gamemodes>
+            <gamemode>Single-player</gamemode>
+            <gamemode>Co-operative</gamemode>
+        </gamemodes>
+        <price>29.00</price>
+        <genres>
+            <genre>Adventure</genre>
+            <genre>Shooter</genre>
+        </genres>
+    </videogame>
+    <!-- Watch Dogs -->
+    <videogame>
+        <id>vg_sales_892</id>
+        <title>Watch Dogs</title>
+        <platform>PlayStation 3</platform>
+        <publisher>Ubisoft</publisher>
+        <publishingdate>2015</publishingdate>
+        <developer>Ubisoft Montreal</developer>
+        <age>18</age>
+        <usk_rating>USK 18</usk_rating>
+        <pegi_rating>PEGI 18</pegi_rating>
+        <gamemodes>
+            <gamemode>Single-player</gamemode>
+            <gamemode>Multiplayer</gamemode>
+            <gamemode>Co-operative</gamemode>
+        </gamemodes>
+        <price>20.80</price>
+        <genres>
+            <genre>Adventure</genre>
+            <genre>Shooter</genre>
+        </genres>
+    </videogame>
+</videogames>
