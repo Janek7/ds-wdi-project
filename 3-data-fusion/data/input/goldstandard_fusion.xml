@@ -1,0 +1,425 @@
+<!-- gold standard for data fusion project -->
+<videogames>
+    <!-- Assassin's Creed IV: Black Flag -->
+    <videogame>
+        <id>wikidata_14267</id>
+        <title>Assassin's Creed IV: Black Flag</title>
+        <platform>PC</platform>
+        <publisher>Ubisoft</publisher>
+        <publishingdate>2013</publishingdate>
+        <developer>Ubisoft Montreal</developer>
+        <age>18</age>
+        <usk_rating>USK 16</usk_rating>
+        <pegi_rating>PEGI 18</pegi_rating>
+        <gamemodes>
+            <gamemode>Single-player</gamemode>
+            <gamemode>Multiplayer</gamemode>
+            <gamemode>Co-operative</gamemode>
+        </gamemodes>
+        <price>19.95</price>
+        <genres>
+            <genre>Adventure</genre>
+            <genre>Action</genre>
+        </genres>
+    </videogame>
+    <!-- Call of Duty 4: Modern Warfare -->
+    <videogame>
+        <id>vg_sales_1770</id>
+        <title>Call of Duty 4: Modern Warfare</title>
+        <platform>PC</platform>
+        <publisher>Activision</publisher>
+        <publishingdate>2007</publishingdate>
+        <developer>Treyarch</developer>
+        <age>18</age>
+        <usk_rating>USK 18</usk_rating>
+        <pegi_rating>PEGI 16</pegi_rating>
+        <gamemodes>
+            <gamemode>Single-player</gamemode>
+            <gamemode>Multiplayer</gamemode>
+            <gamemode>Split screen</gamemode>
+        </gamemodes>
+        <price>19.99</price>
+        <genres>
+            <genre>Shooter</genre>
+            <genre>Simulation</genre>
+        </genres>
+    </videogame>
+    <!-- Duke Nukem Forever -->
+    <videogame>
+        <id>wikidata_21803</id>
+        <title>Duke Nukem Forever</title>
+        <platform>PC</platform>
+        <publisher>2K Games</publisher>
+        <publishingdate>2011</publishingdate>
+        <developer>3D Realms</developer>
+        <age>18</age>
+        <usk_rating>USK 18</usk_rating>
+        <pegi_rating>PEGI 18</pegi_rating>
+        <gamemodes>
+            <gamemode>Single-player</gamemode>
+            <gamemode>Multiplayer</gamemode>
+        </gamemodes>
+        <price>14.99</price>
+        <genres>
+            <genre>Shooter</genre>
+            <genre>Adventure</genre>
+        </genres>
+    </videogame>
+    <!-- Mafia II -->
+    <videogame>
+        <id>wikidata_18532</id>
+        <title>Mafia II</title>
+        <platform>PC</platform>
+        <publisher>2K Games</publisher>
+        <publishingdate>2010</publishingdate>
+        <developer>2K Czech</developer>
+        <age>18</age>
+        <usk_rating>USK 18</usk_rating>
+        <pegi_rating>PEGI 18</pegi_rating>
+        <gamemodes>
+            <gamemode>Single-player</gamemode>
+        </gamemodes>
+        <price>19.99</price>
+        <genres>
+            <genre>Action</genre>
+            <genre>Adventure</genre>
+            <genre>Shooter</genre>
+        </genres>
+    </videogame>
+    <!-- The Sims 3 -->
+    <videogame>
+        <id>vg_sales_84</id>
+        <title>The Sims 3</title>
+        <platform>PC</platform>
+        <publisher>Electronic Arts</publisher>
+        <publishingdate>2009</publishingdate>
+        <developer>The Sims Studio</developer>
+        <age>12</age>
+        <usk_rating>USK 6</usk_rating>
+        <pegi_rating>PEGI 12</pegi_rating>
+        <gamemodes>
+            <gamemode>Single-player</gamemode>
+            <gamemode>Multiplayer</gamemode>
+        </gamemodes>
+        <price>24.99</price>
+        <genres>
+            <genre>Simulation</genre>
+            <genre>Strategy</genre>
+        </genres>
+    </videogame>
+    <!-- The Witcher 3: Wild Hunt -->
+    <videogame>
+        <id>vg_sales_3027</id>
+        <title>The Witcher 3: Wild Hunt</title>
+        <platform>PC</platform>
+        <publisher>Namco Bandai Games</publisher>
+        <publishingdate>2015</publishingdate>
+        <developer>CD Project RED</developer>
+        <age>18</age>
+        <usk_rating>USK 18</usk_rating>
+        <pegi_rating>PEGI 18</pegi_rating>
+        <gamemodes>
+            <gamemode>Single-player</gamemode>
+        </gamemodes>
+        <price>24.99</price>
+        <genres>
+            <genre>Role-playing</genre>
+            <genre>Adventure</genre>
+        </genres>
+    </videogame>
+    <!-- Super Mario Galaxy -->
+    <videogame>
+        <id>wikidata_13643</id>
+        <title>Super Mario Galaxy</title>
+        <platform>Nintendo Wii</platform>
+        <publisher>Nintendo</publisher>
+        <publishingdate>2007</publishingdate>
+        <developer>Nintendo EAD</developer>
+        <age>6</age>
+        <usk_rating>USK 6</usk_rating>
+        <pegi_rating>PEGI 3</pegi_rating>
+        <gamemodes>
+            <gamemode>Single-player</gamemode>
+            <gamemode>Co-operative</gamemode>
+        </gamemodes>
+        <price>44.90</price>
+        <genres>
+            <genre>Platform</genre>
+            <genre>Adventure</genre>
+        </genres>
+    </videogame>
+    <!-- Lost Planet 2 -->
+    <videogame>
+        <id>wikidata_21488</id>
+        <title>Lost Planet 2</title>
+        <platform>Xbox 360</platform>
+        <publisher>Capcom</publisher>
+        <publishingdate>2010</publishingdate>
+        <developer>Capcom</developer>
+        <age>16</age>
+        <usk_rating>USK 16</usk_rating>
+        <pegi_rating>PEGI 16</pegi_rating>
+        <gamemodes>
+            <gamemode>Single-player</gamemode>
+            <gamemode>Multiplayer</gamemode>
+            <gamemode>Co-operative</gamemode>
+        </gamemodes>
+        <price>29.90</price>
+        <genres>
+            <genre>Shooter</genre>
+            <genre>Adventure</genre>
+        </genres>
+    </videogame>
+    <!-- Rise of the Tomb Raider -->
+    <videogame>
+        <id>wikidata_14828</id>
+        <title>Rise of the Tomb Raider</title>
+        <platform>Xbox One</platform>
+        <publisher>Square Enix</publisher>
+        <publishingdate>2015</publishingdate>
+        <developer>Crystal Dynamics</developer>
+        <age>18</age>
+        <usk_rating>USK 16</usk_rating>
+        <pegi_rating>PEGI 18</pegi_rating>
+        <gamemodes>
+            <gamemode>Single-player</gamemode>
+            <gamemode>Co-operative</gamemode>
+        </gamemodes>
+        <price>29.00</price>
+        <genres>
+            <genre>Adventure</genre>
+            <genre>Shooter</genre>
+        </genres>
+    </videogame>
+    <!-- Watch Dogs -->
+    <videogame>
+        <id>vg_sales_892</id>
+        <title>Watch Dogs</title>
+        <platform>PlayStation 3</platform>
+        <publisher>Ubisoft</publisher>
+        <publishingdate>2015</publishingdate>
+        <developer>Ubisoft Montreal</developer>
+        <age>18</age>
+        <usk_rating>USK 18</usk_rating>
+        <pegi_rating>PEGI 18</pegi_rating>
+        <gamemodes>
+            <gamemode>Single-player</gamemode>
+            <gamemode>Multiplayer</gamemode>
+            <gamemode>Co-operative</gamemode>
+        </gamemodes>
+        <price>20.80</price>
+        <genres>
+            <genre>Adventure</genre>
+            <genre>Shooter</genre>
+        </genres>
+    </videogame>
+    <!-- Overwatch -->
+    <videogame>
+        <id>wikidata_30915</id>
+        <title>Overwatch</title>
+        <platform>PlayStation 4</platform>
+        <publisher>Blizzard Entertainment</publisher>
+        <publishingdate>2016</publishingdate>
+        <developer>Blizzard Entertainment</developer>
+        <age>16</age>
+        <usk_rating>USK 16</usk_rating>
+        <pegi_rating>PEGI 12</pegi_rating>
+        <gamemodes>
+            <gamemode>Multiplayer</gamemode>
+        </gamemodes>
+        <price>49.99</price>
+        <genres>
+            <genre>Shooter</genre>
+            <genre>Strategy</genre>
+        </genres>
+    </videogame>
+    <!-- Anno 2070 -->
+    <videogame>
+        <id>wikidata_18728</id>
+        <title>Anno 2070</title>
+        <platform>PC</platform>
+        <publisher>Ubisoft</publisher>
+        <publishingdate>2011</publishingdate>
+        <developer>Related Design</developer>
+        <age>7</age>
+        <usk_rating>USK 6</usk_rating>
+        <pegi_rating>PEGI 7</pegi_rating>
+        <gamemodes>
+            <gamemode>Single-player</gamemode>
+            <gamemode>Multiplayer</gamemode>
+            <gamemode>Co-operative</gamemode>
+        </gamemodes>
+        <price>16.99</price>
+        <genres>
+            <genre>Strategy</genre>
+            <genre>Real Time Strategy</genre>
+            <genre>Simulator</genre>
+        </genres>
+    </videogame>
+    <!-- Phoenix Wright: Ace Attorney - Dual Destinies -->
+    <videogame>
+        <id>wikidata_26514</id>
+        <title>Phoenix Wright: Ace Attorney - Dual Destinies</title>
+        <platform>Nintendo 3DS</platform>
+        <publisher>Capcom</publisher>
+        <publishingdate>2013</publishingdate>
+        <developer>Capcom</developer>
+        <age>16</age>
+        <usk_rating>USK 12</usk_rating>
+        <pegi_rating>PEGI 16</pegi_rating>
+        <gamemodes>
+            <gamemode>Single-player</gamemode>
+        </gamemodes>
+        <price>24.99</price>
+        <genres>
+            <genre>Adventure</genre>
+            <genre>Puzzle</genre>
+            <genre>Visual Novel</genre>
+        </genres>
+    </videogame>
+    <!-- Fallout 4 -->
+    <videogame>
+        <id>vg_sales_1631</id>
+        <title>Fallout 4</title>
+        <platform>PC</platform>
+        <publisher>Bethesda Softworks</publisher>
+        <publishingdate>2015</publishingdate>
+        <developer>Bethesda Game Studios</developer>
+        <age>18</age>
+        <usk_rating>USK 18</usk_rating>
+        <pegi_rating>PEGI 18</pegi_rating>
+        <gamemodes>
+            <gamemode>Single-player</gamemode>
+        </gamemodes>
+        <price>19.99</price>
+        <genres>
+            <genre>Role-playing</genre>
+            <genre>Shooter</genre>
+        </genres>
+    </videogame>
+    <!-- Life is Strange 2 -->
+    <videogame>
+        <id>steam_games_18411</id>
+        <title>Life is Strange 2</title>
+        <platform>PC</platform>
+        <publisher>Square Enix</publisher>
+        <publishingdate>2018</publishingdate>
+        <developer>Dontnod Entertainment</developer>
+        <age>18</age>
+        <usk_rating>USK 12</usk_rating>
+        <pegi_rating>PEGI 18</pegi_rating>
+        <gamemodes>
+            <gamemode>Single-player</gamemode>
+        </gamemodes>
+        <price>6.49</price>
+        <genres>
+            <genre>Adventure</genre>
+        </genres>
+    </videogame>
+    <!-- Grid 2-->
+    <videogame>
+        <id>wikidata_20912</id>
+        <title>Grid 2</title>
+        <platform>PC</platform>
+        <publisher>Codemasters</publisher>
+        <publishingdate>2013</publishingdate>
+        <developer>Codemasters</developer>
+        <age>6</age>
+        <usk_rating>USK 6</usk_rating>
+        <pegi_rating>PEGI 3</pegi_rating>
+        <gamemodes>
+            <gamemode>Single-player</gamemode>
+            <gamemode>Multiplayer</gamemode>
+        </gamemodes>
+        <price>19.98</price>
+        <genres>
+            <genre>Racing</genre>
+        </genres>
+    </videogame>
+    <!-- Left 4 Dead-->
+    <videogame>
+        <id>vg_sales_15090</id>
+        <title>Left 4 Dead</title>
+        <platform>PC</platform>
+        <publisher>Valve Corporation</publisher>
+        <publishingdate>2008</publishingdate>
+        <developer>Valve Corporation</developer>
+        <age>18</age>
+        <usk_rating>USK 18</usk_rating>
+        <pegi_rating>PEGI 18</pegi_rating>
+        <gamemodes>
+            <gamemode>Single-player</gamemode>
+            <gamemode>Multiplayer</gamemode>
+            <gamemode>Co-operative</gamemode>
+        </gamemodes>
+        <price>7.19</price>
+        <genres>
+            <genre>Shooter</genre>
+        </genres>
+    </videogame>
+    <!-- No Man's Sky-->
+    <videogame>
+        <id>steam_games_4143</id>
+        <title>No Man's Sky</title>
+        <platform>PC</platform>
+        <publisher>Hello Games</publisher>
+        <publishingdate>2016</publishingdate>
+        <developer>Hello Games</developer>
+        <age>7</age>
+        <usk_rating>USK 6</usk_rating>
+        <pegi_rating>PEGI 7</pegi_rating>
+        <gamemodes>
+            <gamemode>Single-player</gamemode>
+            <gamemode>Multiplayer</gamemode>
+            <gamemode>Co-operative</gamemode>
+        </gamemodes>
+        <price>39.99</price>
+        <genres>
+            <genre>Adventure</genre>
+            <genre>Action</genre>
+            <genre>Survival</genre>
+        </genres>
+    </videogame>
+    <!-- Devil May Cry 5-->
+    <videogame>
+        <id>wikidata_16139</id>
+        <title>Devil May Cry 5</title>
+        <platform>PC</platform>
+        <publisher>Capcom</publisher>
+        <publishingdate>2019</publishingdate>
+        <developer>Capcom</developer>
+        <age>18</age>
+        <usk_rating>USK 16</usk_rating>
+        <pegi_rating>PEGI 18</pegi_rating>
+        <gamemodes>
+            <gamemode>Single-player</gamemode>
+            <gamemode>Multiplayer</gamemode>
+            <gamemode>Co-operative</gamemode>
+        </gamemodes>
+        <price>44.99</price>
+        <genres>
+            <genre>Action</genre>
+            <genre>Hack and slash</genre>
+        </genres>
+    </videogame>
+    <!-- Tetris 5-->
+    <videogame>
+        <id>vg_sales_769</id>
+        <title>Tetris DS</title>
+        <platform>Nintendo DS</platform>
+        <publisher>Nintendo</publisher>
+        <publishingdate>2006</publishingdate>
+        <developer>Nintendo</developer>
+        <age>3</age>
+        <usk_rating>USK 0</usk_rating>
+        <pegi_rating>PEGI 3</pegi_rating>
+        <gamemodes>
+            <gamemode>Single-player</gamemode>
+            <gamemode>Multiplayer</gamemode>
+        </gamemodes>
+        <price>18.29</price>
+        <genres>
+            <genre>Puzzle</genre>
+        </genres>
+    </videogame>
+</videogames>
