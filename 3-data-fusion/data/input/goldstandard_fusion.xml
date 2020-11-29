@@ -316,4 +316,110 @@
             <genre>Adventure</genre>
         </genres>
     </videogame>
+    <!-- Grid 2-->
+    <videogame>
+        <id>wikidata_20912</id>
+        <title>Grid 2</title>
+        <platform>PC</platform>
+        <publisher>Codemasters</publisher>
+        <publishingdate>2013</publishingdate>
+        <developer>Codemasters</developer>
+        <age>6</age>
+        <usk_rating>USK 6</usk_rating>
+        <pegi_rating>PEGI 3</pegi_rating>
+        <gamemodes>
+            <gamemode>Single-player</gamemode>
+            <gamemode>Multiplayer</gamemode>
+        </gamemodes>
+        <price>19.98</price>
+        <genres>
+            <genre>Racing</genre>
+        </genres>
+    </videogame>
+    <!-- Left 4 Dead-->
+    <videogame>
+        <id>vg_sales_15090</id>
+        <title>Left 4 Dead</title>
+        <platform>PC</platform>
+        <publisher>Valve Corporation</publisher>
+        <publishingdate>2008</publishingdate>
+        <developer>Valve Corporation</developer>
+        <age>18</age>
+        <usk_rating>USK 18</usk_rating>
+        <pegi_rating>PEGI 18</pegi_rating>
+        <gamemodes>
+            <gamemode>Single-player</gamemode>
+            <gamemode>Multiplayer</gamemode>
+            <gamemode>Co-operative</gamemode>
+        </gamemodes>
+        <price>7.19</price>
+        <genres>
+            <genre>Shooter</genre>
+        </genres>
+    </videogame>
+    <!-- No Man's Sky-->
+    <videogame>
+        <id>steam_games_4143</id>
+        <title>No Man's Sky</title>
+        <platform>PC</platform>
+        <publisher>Hello Games</publisher>
+        <publishingdate>2016</publishingdate>
+        <developer>Hello Games</developer>
+        <age>7</age>
+        <usk_rating>USK 6</usk_rating>
+        <pegi_rating>PEGI 7</pegi_rating>
+        <gamemodes>
+            <gamemode>Single-player</gamemode>
+            <gamemode>Multiplayer</gamemode>
+            <gamemode>Co-operative</gamemode>
+        </gamemodes>
+        <price>39.99</price>
+        <genres>
+            <genre>Adventure</genre>
+            <genre>Action</genre>
+            <genre>Survival</genre>
+        </genres>
+    </videogame>
+    <!-- Devil May Cry 5-->
+    <videogame>
+        <id>wikidata_16139</id>
+        <title>Devil May Cry 5</title>
+        <platform>PC</platform>
+        <publisher>Capcom</publisher>
+        <publishingdate>2019</publishingdate>
+        <developer>Capcom</developer>
+        <age>18</age>
+        <usk_rating>USK 16</usk_rating>
+        <pegi_rating>PEGI 18</pegi_rating>
+        <gamemodes>
+            <gamemode>Single-player</gamemode>
+            <gamemode>Multiplayer</gamemode>
+            <gamemode>Co-operative</gamemode>
+        </gamemodes>
+        <price>44.99</price>
+        <genres>
+            <genre>Action</genre>
+            <genre>Hack and slash</genre>
+        </genres>
+    </videogame>
+    <!-- Tetris 5-->
+    <videogame>
+        <id>vg_sales_769</id>
+        <title>Tetris DS</title>
+        <platform>Nintendo DS</platform>
+        <publisher>Nintendo</publisher>
+        <publishingdate>2006</publishingdate>
+        <developer>Nintendo</developer>
+        <age>3</age>
+        <usk_rating>USK 0</usk_rating>
+        <pegi_rating>PEGI 3</pegi_rating>
+        <gamemodes>
+            <gamemode>Single-player</gamemode>
+            <gamemode>Multiplayer</gamemode>
+        </gamemodes>
+        <price>18.29</price>
+        <genres>
+            <genre>Puzzle</genre>
+        </genres>
+    </videogame>
 </videogames>
