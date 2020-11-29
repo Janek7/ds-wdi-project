@@ -62,18 +62,18 @@ private static final Logger logger = WinterLogManager.activateLogger("trace");
 		matchingRule.activateDebugReport("data/output/steam_wikidata/debugResultsMatchingRule.csv", 1000, gsTraining);
 		
 		// add comparators
-		//comparators tested best with machine learning --> F1: 0,92
 		matchingRule.addComparator(new PlatformComparatorAdvanced(new TokenizingJaccardSimilarity()));
 		matchingRule.addComparator(new TitleComparator(new TokenizingJaccardSimilarity()));
 		matchingRule.addComparator(new DeveloperComparator(new LevenshteinSimilarity()));
 		matchingRule.addComparator(new PubDateComparator(1));
-		matchingRule.addComparator(new PublisherComparator(new JaroWinklerSimilarity()));
+		//matchingRule.addComparator(new PublisherComparator(new LevenshteinSimilarity()));
 		
-		// comparators that were best in linear --> F1: 0,8660
-		/*matchingRule.addComparator(new TitleComparator(new JaroSimilarity()));
-		matchingRule.addComparator(new PlatformComparatorAdvanced(new LevenshteinSimilarity()));
+		// comparators that were best in linear --> F1: 0,6747
+		/*matchingRule.addComparator(new TitleComparator(new MaximumOfTokenContainment()));
+		matchingRule.addComparator(new PlatformComparatorAdvanced(new MaximumOfTokenContainment()));
+		matchingRule.addComparator(new PublisherComparator(new JaroWinklerSimilarity()));
 		matchingRule.addComparator(new DeveloperComparator(new JaroWinklerSimilarity()));
-		matchingRule.addComparator(new PubDateComparator(1));*/
+		matchingRule.addComparator(new PubDateComparator(3));*/
 		
 		
 		

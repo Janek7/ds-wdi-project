@@ -3,11 +3,12 @@ package de.uni_mannheim.informatik.web_data_integration.matching_rules;
 import java.io.File;
 
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardRecordBlocker;
+import de.uni_mannheim.informatik.dws.winter.similarity.string.JaccardOnNGramsSimilarity;
 import de.uni_mannheim.informatik.dws.winter.similarity.string.LevenshteinSimilarity;
 import de.uni_mannheim.informatik.dws.winter.similarity.string.MaximumOfTokenContainment;
+import de.uni_mannheim.informatik.dws.winter.similarity.string.TokenizingJaccardSimilarity;
 import de.uni_mannheim.informatik.web_data_integration.blocking.VideoGameBlockingKeyByTitleAndPlatformGenerator;
 import de.uni_mannheim.informatik.web_data_integration.comparator.*;
-import de.uni_mannheim.informatik.web_data_integration.comparator.PlatformComparatorAdvanced;
 import de.uni_mannheim.informatik.web_data_integration.comparator.custom_similarity_measure.JaroSimilarity;
 import de.uni_mannheim.informatik.web_data_integration.comparator.custom_similarity_measure.JaroWinklerSimilarity;
 
@@ -54,16 +55,23 @@ public class IR_using_linear_combination_nadine {
 		matchingRule.activateDebugReport("data/output/steam_wikidata_linear/debugResultsMatchingRule.csv", 1000, gsTest);
 
 		// add comparators
-//        matchingRule.addComparator(new TitleComparator(new JaroSimilarity()), 0.4);
-//		matchingRule.addComparator(new PlatformComparatorAdvanced(new LevenshteinSimilarity()), 0.4);
-//		matchingRule.addComparator(new DeveloperComparator(new JaroWinklerSimilarity()), 0.1);
-//		matchingRule.addComparator(new PubDateComparator(1), 0.1);
+		//final comparators with best weights
+		
+		//F1 = 0,7647 threshold=0,76
+		/*matchingRule.addComparator(new TitleComparator(new MaximumOfTokenContainment()), 0.35);
+		matchingRule.addComparator(new PlatformComparatorAdvanced(new MaximumOfTokenContainment()), 0.25);
+		matchingRule.addComparator(new PublisherComparator(new JaroWinklerSimilarity()), 0.1);
+		matchingRule.addComparator(new DeveloperComparator(new JaroWinklerSimilarity()), 0.1);
+		matchingRule.addComparator(new PubDateComparator(3), 0.20);*/
+		
+		//F1 = 0,8000 threshold=0,76
 		matchingRule.addComparator(new TitleComparator(new MaximumOfTokenContainment()), 0.35);
 		matchingRule.addComparator(new PlatformComparatorAdvanced(new MaximumOfTokenContainment()), 0.3);
-		matchingRule.addComparator(new PublisherComparator(new JaroWinklerSimilarity()), 0.1);
-		//matchingRule.addComparator(new DeveloperComparator(new JaroWinklerSimilarity()), 0.1);
-		matchingRule.addComparator(new PubDateComparator(3), 0.25);
-
+		matchingRule.addComparator(new PublisherComparator(new JaroWinklerSimilarity()), 0.05);
+		matchingRule.addComparator(new DeveloperComparator(new JaroWinklerSimilarity()), 0.1);
+		matchingRule.addComparator(new PubDateComparator(3), 0.2);
+		
+		
 		// creating a blocker
 		StandardRecordBlocker<VideoGame, Attribute> blocker = new StandardRecordBlocker<VideoGame, Attribute>(
 				new VideoGameBlockingKeyByTitleAndPlatformGenerator());
