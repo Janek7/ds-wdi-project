@@ -41,7 +41,6 @@ public class DataFusion_Nadine {
      */
 
     private static final Logger logger = WinterLogManager.activateLogger("traceFile");
-
     public static void main(String[] args) throws Exception {
         // Load the Data into FusibleDataSet
         System.out.println("*\n*\tLoading datasets\n*");
@@ -89,7 +88,7 @@ public class DataFusion_Nadine {
         // load the gold standard
         System.out.println("*\n*\tEvaluating results\n*");
         DataSet<VideoGame, Attribute> gs = new FusibleHashedDataSet<>();
-        // new VideoGameXMLReader().loadFromXML(new File("data/goldstandard/gold.xml"), "/videogames/videogame", gs);
+        new VideoGameXMLReader().loadFromXML(new File("data/input/goldstandard_fusion.xml"), "/videogames/videogame", gs);
 
         // define the fusion strategy
         DataFusionStrategy<VideoGame, Attribute> strategy = new DataFusionStrategy<>(new VideoGameXMLReader());

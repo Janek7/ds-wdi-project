@@ -40,7 +40,7 @@ public class VideoGame extends AbstractRecord<Attribute> implements Serializable
 	private String title;
 	private String platform;
 	private String publisher;
-	private LocalDateTime publishingDate;
+	private LocalDateTime publishingdate;
 	private List<Genre> genres;
 	private List<GameMode> gameModes;
 	private String developer;
@@ -183,11 +183,11 @@ public class VideoGame extends AbstractRecord<Attribute> implements Serializable
 	}
 
 	public LocalDateTime getPublishingDate() {
-		return publishingDate;
+		return publishingdate;
 	}
 
 	public void setPublishingDate(LocalDateTime publishingDate) {
-		this.publishingDate = publishingDate;
+		this.publishingdate = publishingDate;
 	}
 
 	public List<Genre> getGenres() {
@@ -249,7 +249,6 @@ public class VideoGame extends AbstractRecord<Attribute> implements Serializable
 	public void setPegiRating(String pegiRating) {
 		this.pegiRating = pegiRating;
 	}
-	
 	
 	
 }
