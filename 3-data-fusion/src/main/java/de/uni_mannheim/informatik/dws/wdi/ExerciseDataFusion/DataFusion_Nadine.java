@@ -123,7 +123,7 @@ public class DataFusion_Nadine {
         FusibleDataSet<VideoGame, Attribute> fusedDataSet = engine.run(correspondences, null);
 
         // write the result
-        new VideoGameXMLFormatter().writeXML(new File("data/output/fused.xml"), fusedDataSet);
+        new VideoGameXMLFormatter().writeXML(new File("data/output/fused_videogame.xml"), fusedDataSet);
 
         // evaluate
         DataFusionEvaluator<VideoGame, Attribute> evaluator = new DataFusionEvaluator<>(strategy, new RecordGroupFactory<>());

@@ -24,6 +24,17 @@ public class VideoGameXMLReader extends XMLMatchableReader<VideoGame, Attribute>
     @Override
     protected void initialiseDataset(DataSet<VideoGame, Attribute> dataset) {
         super.initialiseDataset(dataset);
+    dataset.addAttribute(VideoGame.TITLE);
+    dataset.addAttribute(VideoGame.PLATFORM);
+    dataset.addAttribute(VideoGame.PUBLISHER);
+    dataset.addAttribute(VideoGame.PUBLISHING_DATE);
+    dataset.addAttribute(VideoGame.DEVELOPER);
+    dataset.addAttribute(VideoGame.AGE);
+    dataset.addAttribute(VideoGame.USK_RATING);
+    dataset.addAttribute(VideoGame.PEGI_RATING);
+    dataset.addAttribute(VideoGame.GENRES);
+    dataset.addAttribute(VideoGame.GAME_MODES);
+    dataset.addAttribute(VideoGame.PRICE);
     }
 
     @Override
