@@ -15,6 +15,7 @@ import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.strin
 import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.string.ShortestString;
 import org.apache.logging.log4j.Logger;
 
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.PublisherEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.TitleEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model_new.VideoGame;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model_new.VideoGameXMLFormatter;
@@ -93,7 +94,7 @@ public class DataFusion_Main {
         // load the gold standard
         System.out.println("*\n*\tEvaluating results\n*");
         DataSet<VideoGame, Attribute> gs = new FusibleHashedDataSet<>();
-        // new VideoGameXMLReader().loadFromXML(new File("data/goldstandard/gold.xml"), "/videogames/videogame", gs);
+        new VideoGameXMLReader().loadFromXML(new File("data/input/goldstandard_fusion.xml"), "/videogames/videogame", gs);
 
         // define the fusion strategy
         DataFusionStrategy<VideoGame, Attribute> strategy = new DataFusionStrategy<>(new VideoGameXMLReader());
@@ -103,7 +104,7 @@ public class DataFusion_Main {
 
         // add attribute fusers
         strategy.addAttributeFuser(VideoGame.TITLE, new TitleFuser(new ShortestString()), new TitleEvaluationRule());
-//        strategy.addAttributeFuser(VideoGame.PLATFORM, new PlatformFuser(new LongestString()), null);
+        //strategy.addAttributeFuser(VideoGame.PLATFORM, new PlatformFuser(new LongestString()), null);
 //        strategy.addAttributeFuser(VideoGame.PUBLISHER, new PublisherFuser(new LongestString()), null);
 //        strategy.addAttributeFuser(VideoGame.PUBLISHING_DATE, new PublishingDateFuser(new MostRecent()), null);
 //        strategy.addAttributeFuser(VideoGame.DEVELOPER, new DeveloperFuser(new LongestString()), null);
