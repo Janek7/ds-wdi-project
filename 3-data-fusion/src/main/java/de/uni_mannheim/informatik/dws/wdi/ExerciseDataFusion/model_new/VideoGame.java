@@ -16,7 +16,7 @@ import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import org.apache.commons.lang3.StringUtils;
 
 import java.io.Serializable;
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 import java.util.*;
 
 
@@ -40,7 +40,7 @@ public class VideoGame extends AbstractRecord<Attribute> implements Serializable
 	private String title;
 	private String platform;
 	private String publisher;
-	private LocalDateTime publishingdate;
+	private LocalDate publishingdate;
 	private List<Genre> genres;
 	private List<GameMode> gameModes;
 	private String developer;
@@ -102,9 +102,10 @@ public class VideoGame extends AbstractRecord<Attribute> implements Serializable
 	}
 
     @Override
-    public String toString() {
-        return String.format("[VideoGame %s: %s / %s / %s / %s / %s / %s]\n", getIdentifier(), getTitle(),
-                getPlatform(), getPublishingDate().toString(), getGenres().toString(), getUskRating(), getPegiRating());
+    public String toString(){
+        /*return String.format("[VideoGame %s: %s / %s / %s / %s / %s / %s]\n", getIdentifier(), getTitle(),
+                getPlatform(), getPublishingDate().toString(), getGenres().toString(), getUskRating(), getPegiRating());*/
+    	return getIdentifier();
     }
 
     @Override
@@ -182,11 +183,11 @@ public class VideoGame extends AbstractRecord<Attribute> implements Serializable
 		this.publisher = publisher;
 	}
 
-	public LocalDateTime getPublishingDate() {
+	public LocalDate getPublishingDate() {
 		return publishingdate;
 	}
 
-	public void setPublishingDate(LocalDateTime publishingDate) {
+	public void setPublishingDate(LocalDate publishingDate) {
 		this.publishingdate = publishingDate;
 	}
 

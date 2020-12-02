@@ -9,13 +9,18 @@ import java.util.Locale;
 
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.*;
 import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.list.Intersection;
+import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.list.Union;
 import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.meta.MostRecent;
 import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.numeric.Average;
 import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.string.LongestString;
 import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.string.ShortestString;
 import org.apache.logging.log4j.Logger;
 
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.DeveloperEvaluationRule;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.GenreEvaluationRule;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.PlatformEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.PublisherEvaluationRule;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.PublishingDateEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.TitleEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model_new.VideoGame;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model_new.VideoGameXMLFormatter;
@@ -104,11 +109,11 @@ public class DataFusion_Main {
 
         // add attribute fusers
         strategy.addAttributeFuser(VideoGame.TITLE, new TitleFuser(new ShortestString()), new TitleEvaluationRule());
-        //strategy.addAttributeFuser(VideoGame.PLATFORM, new PlatformFuser(new LongestString()), null);
-//        strategy.addAttributeFuser(VideoGame.PUBLISHER, new PublisherFuser(new LongestString()), null);
-//        strategy.addAttributeFuser(VideoGame.PUBLISHING_DATE, new PublishingDateFuser(new MostRecent()), null);
-//        strategy.addAttributeFuser(VideoGame.DEVELOPER, new DeveloperFuser(new LongestString()), null);
-//        strategy.addAttributeFuser(VideoGame.GENRES, new GenreFuser(new Intersection()), null);
+        strategy.addAttributeFuser(VideoGame.PLATFORM, new PlatformFuser(new ShortestString()), new PlatformEvaluationRule());
+        strategy.addAttributeFuser(VideoGame.PUBLISHER, new PublisherFuser(new LongestString()), new PublisherEvaluationRule());
+        strategy.addAttributeFuser(VideoGame.PUBLISHING_DATE, new PublishingDateFuser(new MostRecent()), new PublishingDateEvaluationRule());
+        strategy.addAttributeFuser(VideoGame.DEVELOPER, new DeveloperFuser(new LongestString()), new DeveloperEvaluationRule());
+        strategy.addAttributeFuser(VideoGame.GENRES, new GenreFuser(new Union()), new GenreEvaluationRule());
 //        strategy.addAttributeFuser(VideoGame.GAME_MODES, new GameModeFuser(new Intersection()), null);
 //        strategy.addAttributeFuser(VideoGame.PRICE, new PriceFuser(new Average()), null);
 //        strategy.addAttributeFuser(VideoGame.AGE, new AgeFuser(new Average()), null);

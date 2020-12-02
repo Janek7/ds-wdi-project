@@ -69,7 +69,7 @@ public class VideoGameXMLReader extends XMLMatchableReader<VideoGame, Attribute>
                         .parseDefaulting(ChronoField.MINUTE_OF_HOUR, 0).parseDefaulting(ChronoField.SECOND_OF_MINUTE, 0)
                         .toFormatter(Locale.ENGLISH);
                 LocalDateTime y = LocalDateTime.parse(year, formatter);
-                videoGame.setPublishingDate(y);
+                videoGame.setPublishingDate(y.toLocalDate());
             }
         } catch (Exception e) {
             // e.printStackTrace();

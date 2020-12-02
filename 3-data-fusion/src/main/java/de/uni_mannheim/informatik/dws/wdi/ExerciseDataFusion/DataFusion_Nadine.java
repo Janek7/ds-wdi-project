@@ -9,7 +9,17 @@ import java.util.Locale;
 
 import org.apache.logging.log4j.Logger;
 
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.DeveloperEvaluationRule;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.GenreEvaluationRule;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.PlatformEvaluationRule;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.PublisherEvaluationRule;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.PublishingDateEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.TitleEvaluationRule;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.DeveloperFuser;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.GenreFuser;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.PlatformFuser;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.PublisherFuser;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.PublishingDateFuser;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.TitleFuser;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model_new.VideoGame;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model_new.VideoGameXMLFormatter;
@@ -18,6 +28,9 @@ import de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet;
 import de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine;
 import de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator;
 import de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionStrategy;
+import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.list.Union;
+import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.meta.MostRecent;
+import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.string.LongestString;
 import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.string.ShortestString;
 import de.uni_mannheim.informatik.dws.winter.model.DataSet;
 import de.uni_mannheim.informatik.dws.winter.model.FusibleDataSet;
@@ -41,6 +54,7 @@ public class DataFusion_Nadine {
      */
 
     private static final Logger logger = WinterLogManager.activateLogger("traceFile");
+
     public static void main(String[] args) throws Exception {
         // Load the Data into FusibleDataSet
         System.out.println("*\n*\tLoading datasets\n*");
@@ -98,11 +112,11 @@ public class DataFusion_Nadine {
 
         // add attribute fusers
         strategy.addAttributeFuser(VideoGame.TITLE, new TitleFuser(new ShortestString()), new TitleEvaluationRule());
-//        strategy.addAttributeFuser(VideoGame.PLATFORM, new PlatformFuser(new LongestString()), null);
-//        strategy.addAttributeFuser(VideoGame.PUBLISHER, new PublisherFuser(new LongestString()), null);
-//        strategy.addAttributeFuser(VideoGame.PUBLISHING_DATE, new PublishingDateFuser(new MostRecent()), null);
-//        strategy.addAttributeFuser(VideoGame.DEVELOPER, new DeveloperFuser(new LongestString()), null);
-//        strategy.addAttributeFuser(VideoGame.GENRES, new GenreFuser(new Intersection()), null);
+        strategy.addAttributeFuser(VideoGame.PLATFORM, new PlatformFuser(new ShortestString()), new PlatformEvaluationRule());
+        strategy.addAttributeFuser(VideoGame.PUBLISHER, new PublisherFuser(new LongestString()), new PublisherEvaluationRule());
+        strategy.addAttributeFuser(VideoGame.PUBLISHING_DATE, new PublishingDateFuser(new MostRecent()), new PublishingDateEvaluationRule());
+        strategy.addAttributeFuser(VideoGame.DEVELOPER, new DeveloperFuser(new LongestString()), new DeveloperEvaluationRule());
+        strategy.addAttributeFuser(VideoGame.GENRES, new GenreFuser(new Union()), new GenreEvaluationRule());
 //        strategy.addAttributeFuser(VideoGame.GAME_MODES, new GameModeFuser(new Intersection()), null);
 //        strategy.addAttributeFuser(VideoGame.PRICE, new PriceFuser(new Average()), null);
 //        strategy.addAttributeFuser(VideoGame.AGE, new AgeFuser(new Average()), null);
@@ -123,7 +137,7 @@ public class DataFusion_Nadine {
         FusibleDataSet<VideoGame, Attribute> fusedDataSet = engine.run(correspondences, null);
 
         // write the result
-        new VideoGameXMLFormatter().writeXML(new File("data/output/fused_videogame.xml"), fusedDataSet);
+        new VideoGameXMLFormatter().writeXML(new File("data/output/fused.xml"), fusedDataSet);
 
         // evaluate
         DataFusionEvaluator<VideoGame, Attribute> evaluator = new DataFusionEvaluator<>(strategy, new RecordGroupFactory<>());

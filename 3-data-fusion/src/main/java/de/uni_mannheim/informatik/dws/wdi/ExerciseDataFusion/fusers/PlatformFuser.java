@@ -33,7 +33,7 @@ public class PlatformFuser extends AttributeValueFuser<String, VideoGame, Attrib
 
 		// get the fused value
 		FusedValue<String, VideoGame, Attribute> fused = getFusedValue(group, schemaCorrespondences, schemaElement);
-
+		
 		// set the value for the fused record
 		fusedRecord.setPlatform(fused.getValue());
 

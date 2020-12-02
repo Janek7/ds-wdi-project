@@ -11,6 +11,7 @@
  */
 package de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers;
 
+
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model_new.VideoGame;
 import de.uni_mannheim.informatik.dws.winter.datafusion.AttributeValueFuser;
 import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.ConflictResolutionFunction;
@@ -21,10 +22,10 @@ import de.uni_mannheim.informatik.dws.winter.model.RecordGroup;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 
 
-public class PublishingDateFuser extends AttributeValueFuser<LocalDateTime, VideoGame, Attribute> {
+public class PublishingDateFuser extends AttributeValueFuser<LocalDate, VideoGame, Attribute> {
 
 	public PublishingDateFuser(ConflictResolutionFunction resolutionFunction) {
 		super(resolutionFunction);
@@ -34,7 +35,7 @@ public class PublishingDateFuser extends AttributeValueFuser<LocalDateTime, Vide
 	public void fuse(RecordGroup<VideoGame, Attribute> group, VideoGame fusedRecord, Processable<Correspondence<Attribute, Matchable>> schemaCorrespondences, Attribute schemaElement) {
 
 		// get the fused value
-		FusedValue<LocalDateTime, VideoGame, Attribute> fused = getFusedValue(group, schemaCorrespondences, schemaElement);
+		FusedValue<LocalDate, VideoGame, Attribute> fused = getFusedValue(group, schemaCorrespondences, schemaElement);
 
 		// set the value for the fused record
 		fusedRecord.setPublishingDate(fused.getValue());
@@ -49,7 +50,7 @@ public class PublishingDateFuser extends AttributeValueFuser<LocalDateTime, Vide
 	}
 
 	@Override
-	public LocalDateTime getValue(VideoGame record, Correspondence<Attribute, Matchable> correspondence) {
+	public LocalDate getValue(VideoGame record, Correspondence<Attribute, Matchable> correspondence) {
 		return record.getPublishingDate();
 	}
 
