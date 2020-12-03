@@ -21,8 +21,18 @@ import de.uni_mannheim.informatik.dws.winter.model.RecordGroup;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
 
 public class PlatformFuser extends AttributeValueFuser<String, VideoGame, Attribute> {
+
+    private static List<PlatformBlockingKeyPair> platformBlockingKeyPairList = loadPlatformBlockingKeyList();
+    private static List<BlockingKeyTargetValuePair> blockingKeyTargetValuePairList = loadBlockingKeyTargetValueList();
 
 	public PlatformFuser(ConflictResolutionFunction resolutionFunction) {
 		super(resolutionFunction);
@@ -48,7 +58,115 @@ public class PlatformFuser extends AttributeValueFuser<String, VideoGame, Attrib
 
 	@Override
 	public String getValue(VideoGame record, Correspondence<Attribute, Matchable> correspondence) {
-		return record.getPlatform();
+		return getPlatformTargetValue(record.getPlatform());
+	}
+
+	// helper stuff
+
+    /**
+     * looks if there is a custom blocking key for the platform values, if yes retrieve the associated target value for
+     * fusion
+     * @param platformSourceValue platform source value
+     * @return target value
+     */
+    private static String getPlatformTargetValue(String platformSourceValue) {
+
+	    // lookup blocking key
+	    String blockingKey = null;
+	    for (PlatformBlockingKeyPair platformBlockingKeyPair : platformBlockingKeyPairList) {
+	        if (platformBlockingKeyPair.platform.equals(platformSourceValue)) {
+	            blockingKey = platformBlockingKeyPair.blockingKey;
+	            break;
+            }
+        }
+
+        if (blockingKey != null) {
+
+            //lookup target value
+            String targetValue = null;
+            for (BlockingKeyTargetValuePair blockingKeyTargetValuePair : blockingKeyTargetValuePairList) {
+                if (blockingKeyTargetValuePair.blockingKey.equals(blockingKey)) {
+                    targetValue = blockingKeyTargetValuePair.targetValue;
+                }
+            }
+
+            if (targetValue != null) {
+                return targetValue;
+            } else {
+                return platformSourceValue;
+            }
+
+
+        } else {
+            return platformSourceValue;
+        }
+
+    }
+
+    // helper classes
+
+	private static class PlatformBlockingKeyPair {
+
+		private String platform;
+		private String blockingKey;
+
+		private PlatformBlockingKeyPair(String platform, String blockingKey) {
+			this.platform = platform;
+			this.blockingKey = blockingKey;
+		}
+
+	}
+
+	private static List<PlatformBlockingKeyPair> loadPlatformBlockingKeyList() {
+
+		List<PlatformBlockingKeyPair> platformBlockingKeyPairList = new ArrayList<>();
+
+		try (BufferedReader br = new BufferedReader(new FileReader("data/platform/platform_blocking_keys.csv"))) {
+			String line;
+			while ((line = br.readLine()) != null) {
+				String[] elements = line.split(";");
+				platformBlockingKeyPairList.add(new PlatformBlockingKeyPair(elements[0], elements[1]));
+			}
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+		return platformBlockingKeyPairList;
+
+	}
+
+	private static class BlockingKeyTargetValuePair {
+
+		private String blockingKey;
+		private String targetValue;
+
+		private BlockingKeyTargetValuePair(String blockingKey, String targetValue) {
+			this.blockingKey = blockingKey;
+			this.targetValue = targetValue;
+		}
+
+	}
+
+	private static List<BlockingKeyTargetValuePair> loadBlockingKeyTargetValueList() {
+
+		List<BlockingKeyTargetValuePair> blockingKeyTargetValuePairList = new ArrayList<>();
+
+		try (BufferedReader br = new BufferedReader(new FileReader("data/platform/platform_blocking_keys.csv"))) {
+			String line;
+			while ((line = br.readLine()) != null) {
+				String[] elements = line.split(";");
+				blockingKeyTargetValuePairList.add(new BlockingKeyTargetValuePair(elements[0], elements[1]));
+			}
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+		return blockingKeyTargetValuePairList;
+
 	}
 
 }
