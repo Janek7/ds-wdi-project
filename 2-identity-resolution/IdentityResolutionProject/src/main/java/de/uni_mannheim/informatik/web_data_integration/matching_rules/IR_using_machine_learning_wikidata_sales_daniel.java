@@ -13,6 +13,7 @@ import de.uni_mannheim.informatik.dws.winter.matching.MatchingEngine;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator;
 import de.uni_mannheim.informatik.dws.winter.matching.algorithms.RuleLearner;
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.SortedNeighbourhoodBlocker;
+import de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardRecordBlocker;
 import de.uni_mannheim.informatik.dws.winter.matching.rules.Comparator;
 import de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
@@ -25,8 +26,10 @@ import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 import de.uni_mannheim.informatik.dws.winter.similarity.SimilarityMeasure;
 import de.uni_mannheim.informatik.dws.winter.similarity.string.JaccardOnNGramsSimilarity;
 import de.uni_mannheim.informatik.dws.winter.similarity.string.LevenshteinSimilarity;
+import de.uni_mannheim.informatik.dws.winter.similarity.string.MaximumOfTokenContainment;
 import de.uni_mannheim.informatik.dws.winter.similarity.string.TokenizingJaccardSimilarity;
 import de.uni_mannheim.informatik.dws.winter.utils.WinterLogManager;
+import de.uni_mannheim.informatik.web_data_integration.blocking.VideoGameBlockingKeyByTitleAndPlatformGenerator;
 import de.uni_mannheim.informatik.web_data_integration.blocking.VideoGameBlockingKeyByTitleGenerator;
 import de.uni_mannheim.informatik.web_data_integration.model.VideoGame;
 import de.uni_mannheim.informatik.web_data_integration.model.VideoGameXMLReader;
@@ -36,35 +39,6 @@ public class IR_using_machine_learning_wikidata_sales_daniel {
 	private static final Logger logger = WinterLogManager.activateLogger("trace");
 
 	public static void main(String[] args) throws Exception {
-
-		ArrayList<SimilarityMeasure<String>> simMeasuresString = new ArrayList<>();
-		simMeasuresString.add(new LevenshteinSimilarity());
-		simMeasuresString.add(new TokenizingJaccardSimilarity());
-		simMeasuresString.add(new JaccardOnNGramsSimilarity(2));
-
-		ArrayList<Comparator<VideoGame, Attribute>> pubDateComparators = new ArrayList<>();
-		pubDateComparators.add(new PubDateComparator(1));
-
-		FileWriter fileWriter = new FileWriter("data/output/wikidata_sales_ml/analyze_ml_output.txt");
-		PrintWriter printWriter = new PrintWriter(fileWriter);
-
-		for (int i = 0; i < simMeasuresString.size(); i++) {
-			for (int j = 0; j < simMeasuresString.size(); j++) {
-				for (int k = 0; k < simMeasuresString.size(); k++) {
-					for (int l = 0; l < pubDateComparators.size(); l++) {
-						printWriter.printf("Title - %d: %s\n", i + 1, simMeasuresString.get(i));
-						printWriter.printf("Platform - %d: %s\n", j + 1, simMeasuresString.get(j));
-						printWriter.printf("Publisher - %d: %s\n", k + 1, simMeasuresString.get(k));
-						printWriter.printf("PubDate - %d: %s\n", l + 1, pubDateComparators.get(l));
-						printWriter.print("\n");
-					}
-				}
-
-			}
-		}
-		printWriter.close();
-		fileWriter.close();
-		System.exit(0);
 
 		// loading data
 		System.out.println("*\n*\tLoading datasets\n*");
@@ -78,33 +52,30 @@ public class IR_using_machine_learning_wikidata_sales_daniel {
 		// load the training set
 		MatchingGoldStandard gsTraining = new MatchingGoldStandard();
 		gsTraining.loadFromCSVFile(
-				new File("data/goldstandard/wikidata_sales/gold-standard_wikidata_sales_training_66_33.csv"));
+				new File("data/goldstandard/wikidata_sales/gold-standard_wikidata_sales_test_80_20.csv"));
 
 		// create a matching rule
-		String options[] = new String[] { "-S" };
-		String modelType = "SimpleLogistic"; // use a logistic regression
+		String options[] = new String[] { "-U" };
+		String modelType = "J48"; // use a logistic regression
 		WekaMatchingRule<VideoGame, Attribute> matchingRule = new WekaMatchingRule<>(0.7, modelType, options);
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", 1000, gsTraining);
 
 		// add comparators
-		matchingRule.addComparator(new TitleComparator(new JaccardOnNGramsSimilarity(3)));
-		matchingRule.addComparator(new PlatformComparatorAdvanced(new LevenshteinSimilarity()));
+		matchingRule.addComparator(new TitleComparator(new TokenizingJaccardSimilarity()));
+		matchingRule.addComparator(new PlatformComparatorAdvanced(new MaximumOfTokenContainment()));
 		matchingRule.addComparator(new PublisherComparator(new JaroSimilarity()));
-		matchingRule.addComparator(new PubDateComparator(7));
+		matchingRule.addComparator(new PubDateComparator(10));
 
 		// train the matching rule's model
 		System.out.println("*\n*\tLearning matching rule\n*");
 		RuleLearner<VideoGame, Attribute> learner = new RuleLearner<>();
-		learner.learnMatchingRule(dataVideoGameSales, dataVideoGameWikidata, null, matchingRule, gsTraining);
+		learner.learnMatchingRule(dataVideoGameWikidata, dataVideoGameSales, null, matchingRule, gsTraining);
 		System.out.println(String.format("Matching rule is:\n%s", matchingRule.getModelDescription()));
 
 		// create a blocker (blocking strategy)
-		// StandardRecordBlocker<VideoGame, Attribute> blocker = new
-		// StandardRecordBlocker<VideoGame, Attribute>(
-		// new VideoGameBlockingKeyByTitleGenerator());
-		// sorted doesn't work? only 0 scores
-		SortedNeighbourhoodBlocker<VideoGame, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(
-				new VideoGameBlockingKeyByTitleGenerator(), 75);
+		StandardRecordBlocker<VideoGame, Attribute> blocker = new StandardRecordBlocker<VideoGame, Attribute>(new VideoGameBlockingKeyByTitleAndPlatformGenerator());
+		// SortedNeighbourhoodBlocker<VideoGame, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(
+		// 		new VideoGameBlockingKeyByTitleGenerator(), 75);
 		blocker.collectBlockSizeData("data/output/debugResultsBlocking.csv", 100);
 
 		// Initialize Matching Engine
@@ -113,7 +84,7 @@ public class IR_using_machine_learning_wikidata_sales_daniel {
 		// Execute the matching
 		System.out.println("*\n*\tRunning identity resolution\n*");
 		Processable<Correspondence<VideoGame, Attribute>> correspondences = engine
-				.runIdentityResolution(dataVideoGameSales, dataVideoGameWikidata, null, matchingRule, blocker);
+				.runIdentityResolution(dataVideoGameWikidata, dataVideoGameSales, null, matchingRule, blocker);
 
 		// write the correspondences to the output file
 		new CSVCorrespondenceFormatter().writeCSV(
@@ -124,7 +95,7 @@ public class IR_using_machine_learning_wikidata_sales_daniel {
 		System.out.println("*\n*\tLoading gold standard\n*");
 		MatchingGoldStandard gsTest = new MatchingGoldStandard();
 		gsTest.loadFromCSVFile(
-				new File("data/goldstandard/wikidata_sales/gold-standard_wikidata_sales_test_66_33.csv"));
+				new File("data/goldstandard/wikidata_sales/gold-standard_wikidata_sales_training_80_20.csv"));
 
 		// evaluate your result
 		System.out.println("*\n*\tEvaluating result\n*");
