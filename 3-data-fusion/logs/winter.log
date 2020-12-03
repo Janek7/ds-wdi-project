@@ -7167,3 +7167,690 @@
 [TRACE] 2020-12-03 11:11:14.629 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	Age: 0,55
 [TRACE] 2020-12-03 11:11:14.629 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	Platform: 0,50
 [TRACE] 2020-12-03 11:11:14.629 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	Genres: 0,00
+[INFO ] 2020-12-03 11:24:06.766 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 36062 elements from wikidata_mapping_output.xml
+[INFO ] 2020-12-03 11:24:07.167 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - DataSet density: 0,69
+[INFO ] 2020-12-03 11:24:07.168 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - Attributes densities:
+[INFO ] 2020-12-03 11:24:07.230 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Developer: 0,86
+[INFO ] 2020-12-03 11:24:07.230 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	GameModes: 0,86
+[INFO ] 2020-12-03 11:24:07.231 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	PegiRating: 0,39
+[INFO ] 2020-12-03 11:24:07.231 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Title: 1,00
+[INFO ] 2020-12-03 11:24:07.231 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Publisher: 0,86
+[INFO ] 2020-12-03 11:24:07.231 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	UskRating: 0,32
+[INFO ] 2020-12-03 11:24:07.231 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	price: 0,00
+[INFO ] 2020-12-03 11:24:07.232 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	PublishingDate: 0,96
+[INFO ] 2020-12-03 11:24:07.232 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Age: 0,44
+[INFO ] 2020-12-03 11:24:07.232 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Platform: 1,00
+[INFO ] 2020-12-03 11:24:07.232 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Genres: 0,94
+[INFO ] 2020-12-03 11:24:08.446 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 40371 elements from steam_mapping_output.xml
+[INFO ] 2020-12-03 11:24:08.627 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - DataSet density: 0,82
+[INFO ] 2020-12-03 11:24:08.627 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - Attributes densities:
+[INFO ] 2020-12-03 11:24:08.746 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Developer: 1,00
+[INFO ] 2020-12-03 11:24:08.746 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	GameModes: 1,00
+[INFO ] 2020-12-03 11:24:08.747 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	PegiRating: 0,00
+[INFO ] 2020-12-03 11:24:08.747 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Title: 1,00
+[INFO ] 2020-12-03 11:24:08.747 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Publisher: 1,00
+[INFO ] 2020-12-03 11:24:08.747 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	UskRating: 0,00
+[INFO ] 2020-12-03 11:24:08.747 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	price: 1,00
+[INFO ] 2020-12-03 11:24:08.747 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	PublishingDate: 1,00
+[INFO ] 2020-12-03 11:24:08.748 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Age: 1,00
+[INFO ] 2020-12-03 11:24:08.748 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Platform: 1,00
+[INFO ] 2020-12-03 11:24:08.748 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Genres: 1,00
+[INFO ] 2020-12-03 11:24:08.859 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 16598 elements from sales_mapping_output.xml
+[INFO ] 2020-12-03 11:24:09.038 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - DataSet density: 0,45
+[INFO ] 2020-12-03 11:24:09.038 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - Attributes densities:
+[INFO ] 2020-12-03 11:24:09.060 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Developer: 0,00
+[INFO ] 2020-12-03 11:24:09.060 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	GameModes: 0,00
+[INFO ] 2020-12-03 11:24:09.060 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	PegiRating: 0,00
+[INFO ] 2020-12-03 11:24:09.061 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Title: 1,00
+[INFO ] 2020-12-03 11:24:09.061 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Publisher: 1,00
+[INFO ] 2020-12-03 11:24:09.061 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	UskRating: 0,00
+[INFO ] 2020-12-03 11:24:09.061 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	price: 0,00
+[INFO ] 2020-12-03 11:24:09.062 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	PublishingDate: 0,98
+[INFO ] 2020-12-03 11:24:09.062 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Age: 0,00
+[INFO ] 2020-12-03 11:24:09.062 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Platform: 1,00
+[INFO ] 2020-12-03 11:24:09.062 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Genres: 1,00
+[INFO ] 2020-12-03 11:24:09.149 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - Group Size Distribtion of 7416 groups:
+[INFO ] 2020-12-03 11:24:09.149 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	Group Size 	| Frequency 
+[INFO ] 2020-12-03 11:24:09.149 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	————————————————————————————
+[INFO ] 2020-12-03 11:24:09.151 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		2	| 	5196
+[INFO ] 2020-12-03 11:24:09.151 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		3	| 	1135
+[INFO ] 2020-12-03 11:24:09.151 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		4	| 	418
+[INFO ] 2020-12-03 11:24:09.151 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		5	| 	187
+[INFO ] 2020-12-03 11:24:09.151 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		6	| 	126
+[INFO ] 2020-12-03 11:24:09.151 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		7	| 	100
+[INFO ] 2020-12-03 11:24:09.151 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		8	| 	65
+[INFO ] 2020-12-03 11:24:09.152 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		9	| 	35
+[INFO ] 2020-12-03 11:24:09.152 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		10	| 	30
+[INFO ] 2020-12-03 11:24:09.152 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		11	| 	27
+[INFO ] 2020-12-03 11:24:09.152 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		12	| 	15
+[INFO ] 2020-12-03 11:24:09.152 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		13	| 	16
+[INFO ] 2020-12-03 11:24:09.152 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		14	| 	10
+[INFO ] 2020-12-03 11:24:09.152 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		15	| 	13
+[INFO ] 2020-12-03 11:24:09.152 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		16	| 	7
+[INFO ] 2020-12-03 11:24:09.153 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		17	| 	5
+[INFO ] 2020-12-03 11:24:09.153 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		18	| 	3
+[INFO ] 2020-12-03 11:24:09.153 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		19	| 	5
+[INFO ] 2020-12-03 11:24:09.153 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		20	| 	6
+[INFO ] 2020-12-03 11:24:09.153 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		21	| 	2
+[INFO ] 2020-12-03 11:24:09.153 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		22	| 	5
+[INFO ] 2020-12-03 11:24:09.153 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		23	| 	1
+[INFO ] 2020-12-03 11:24:09.153 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		24	| 	1
+[INFO ] 2020-12-03 11:24:09.153 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		25	| 	4
+[INFO ] 2020-12-03 11:24:09.154 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		26	| 	1
+[INFO ] 2020-12-03 11:24:09.154 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		27	| 	2
+[INFO ] 2020-12-03 11:24:09.154 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		38	| 	1
+[INFO ] 2020-12-03 11:24:09.158 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 20 elements from goldstandard_fusion.xml
+[INFO ] 2020-12-03 11:24:09.163 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - Attribute Consistencies:
+[INFO ] 2020-12-03 11:24:09.628 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Platform: 0,18
+[INFO ] 2020-12-03 11:24:09.628 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	PublishingDate: 0,77
+[INFO ] 2020-12-03 11:24:09.628 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	price: 0,95
+[INFO ] 2020-12-03 11:24:09.629 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Developer: 0,92
+[INFO ] 2020-12-03 11:24:09.629 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Title: 0,86
+[INFO ] 2020-12-03 11:24:09.629 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Publisher: 0,61
+[INFO ] 2020-12-03 11:24:09.629 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Genres: 0,22
+[INFO ] 2020-12-03 11:24:09.629 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Age: 0,91
+[INFO ] 2020-12-03 11:24:10.721 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionStrategy] - Debug results written to file: data/output/debugResultsDatafusion.csv
+[TRACE] 2020-12-03 11:24:10.885 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Developer': steam_games_1169+vg_sales_1321+wikidata_18728 <> wikidata_18728
+[TRACE] 2020-12-03 11:24:10.885 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': steam_games_1169+vg_sales_1321+wikidata_18728 <> wikidata_18728
+[TRACE] 2020-12-03 11:24:10.886 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'price': vg_sales_892+wikidata_15072 <> vg_sales_892
+[TRACE] 2020-12-03 11:24:10.886 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'PublishingDate': vg_sales_892+wikidata_15072 <> vg_sales_892
+[TRACE] 2020-12-03 11:24:10.886 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Platform': vg_sales_892+wikidata_15072 <> vg_sales_892
+[TRACE] 2020-12-03 11:24:10.886 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': vg_sales_892+wikidata_15072 <> vg_sales_892
+[TRACE] 2020-12-03 11:24:10.886 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Developer': steam_games_21964+wikidata_16139 <> wikidata_16139
+[TRACE] 2020-12-03 11:24:10.886 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Publisher': steam_games_21964+wikidata_16139 <> wikidata_16139
+[TRACE] 2020-12-03 11:24:10.886 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Platform': steam_games_21964+wikidata_16139 <> wikidata_16139
+[TRACE] 2020-12-03 11:24:10.887 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': steam_games_21964+wikidata_16139 <> wikidata_16139
+[TRACE] 2020-12-03 11:24:10.887 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Developer': vg_sales_49+wikidata_13643 <> wikidata_13643
+[TRACE] 2020-12-03 11:24:10.887 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'price': vg_sales_49+wikidata_13643 <> wikidata_13643
+[TRACE] 2020-12-03 11:24:10.887 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Platform': vg_sales_49+wikidata_13643 <> wikidata_13643
+[TRACE] 2020-12-03 11:24:10.887 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': vg_sales_49+wikidata_13643 <> wikidata_13643
+[TRACE] 2020-12-03 11:24:10.887 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'price': steam_games_2742+vg_sales_2962+wikidata_14261+wikidata_14267+wikidata_32089 <> wikidata_14267
+[TRACE] 2020-12-03 11:24:10.887 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Age': steam_games_2742+vg_sales_2962+wikidata_14261+wikidata_14267+wikidata_32089 <> wikidata_14267
+[TRACE] 2020-12-03 11:24:10.887 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': steam_games_2742+vg_sales_2962+wikidata_14261+wikidata_14267+wikidata_32089 <> wikidata_14267
+[TRACE] 2020-12-03 11:24:10.888 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': steam_games_10045+vg_sales_1631 <> vg_sales_1631
+[TRACE] 2020-12-03 11:24:10.888 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'price': vg_sales_2698+wikidata_21488 <> wikidata_21488
+[TRACE] 2020-12-03 11:24:10.888 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Platform': vg_sales_2698+wikidata_21488 <> wikidata_21488
+[TRACE] 2020-12-03 11:24:10.888 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': vg_sales_2698+wikidata_21488 <> wikidata_21488
+[TRACE] 2020-12-03 11:24:10.888 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'price': vg_sales_769+wikidata_13541 <> vg_sales_769
+[TRACE] 2020-12-03 11:24:10.889 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Age': vg_sales_769+wikidata_13541 <> vg_sales_769
+[TRACE] 2020-12-03 11:24:10.889 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Platform': vg_sales_769+wikidata_13541 <> vg_sales_769
+[TRACE] 2020-12-03 11:24:10.889 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': vg_sales_769+wikidata_13541 <> vg_sales_769
+[TRACE] 2020-12-03 11:24:10.889 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Developer': steam_games_304+steam_games_305+vg_sales_1770+wikidata_13733+wikidata_13735 <> vg_sales_1770
+[TRACE] 2020-12-03 11:24:10.889 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Publisher': steam_games_304+steam_games_305+vg_sales_1770+wikidata_13733+wikidata_13735 <> vg_sales_1770
+[TRACE] 2020-12-03 11:24:10.890 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Age': steam_games_304+steam_games_305+vg_sales_1770+wikidata_13733+wikidata_13735 <> vg_sales_1770
+[TRACE] 2020-12-03 11:24:10.890 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': steam_games_304+steam_games_305+vg_sales_1770+wikidata_13733+wikidata_13735 <> vg_sales_1770
+[TRACE] 2020-12-03 11:24:10.890 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Developer': steam_games_1249+steam_games_1250+vg_sales_4763+wikidata_21801+wikidata_21803 <> wikidata_21803
+[TRACE] 2020-12-03 11:24:10.890 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Publisher': steam_games_1249+steam_games_1250+vg_sales_4763+wikidata_21801+wikidata_21803 <> wikidata_21803
+[TRACE] 2020-12-03 11:24:10.890 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': steam_games_1249+steam_games_1250+vg_sales_4763+wikidata_21801+wikidata_21803 <> wikidata_21803
+[TRACE] 2020-12-03 11:24:10.890 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Age': steam_games_1161+vg_sales_84+wikidata_29443+wikidata_29446 <> vg_sales_84
+[TRACE] 2020-12-03 11:24:10.890 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': steam_games_1161+vg_sales_84+wikidata_29443+wikidata_29446 <> vg_sales_84
+[TRACE] 2020-12-03 11:24:10.890 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Developer': steam_games_1079+vg_sales_12101+wikidata_20906+wikidata_20912 <> wikidata_20912
+[TRACE] 2020-12-03 11:24:10.890 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Publisher': steam_games_1079+vg_sales_12101+wikidata_20906+wikidata_20912 <> wikidata_20912
+[TRACE] 2020-12-03 11:24:10.890 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Age': steam_games_1079+vg_sales_12101+wikidata_20906+wikidata_20912 <> wikidata_20912
+[TRACE] 2020-12-03 11:24:10.891 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': steam_games_1079+vg_sales_12101+wikidata_20906+wikidata_20912 <> wikidata_20912
+[TRACE] 2020-12-03 11:24:10.891 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Developer': steam_games_4841+vg_sales_3027+wikidata_29013 <> vg_sales_3027
+[TRACE] 2020-12-03 11:24:10.891 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Age': steam_games_4841+vg_sales_3027+wikidata_29013 <> vg_sales_3027
+[TRACE] 2020-12-03 11:24:10.891 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': steam_games_4841+vg_sales_3027+wikidata_29013 <> vg_sales_3027
+[TRACE] 2020-12-03 11:24:10.891 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Title': vg_sales_15830+vg_sales_5022+wikidata_26508+wikidata_26511+wikidata_26514 <> wikidata_26514
+[TRACE] 2020-12-03 11:24:10.891 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'price': vg_sales_15830+vg_sales_5022+wikidata_26508+wikidata_26511+wikidata_26514 <> wikidata_26514
+[TRACE] 2020-12-03 11:24:10.891 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Platform': vg_sales_15830+vg_sales_5022+wikidata_26508+wikidata_26511+wikidata_26514 <> wikidata_26514
+[TRACE] 2020-12-03 11:24:10.891 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': vg_sales_15830+vg_sales_5022+wikidata_26508+wikidata_26511+wikidata_26514 <> wikidata_26514
+[TRACE] 2020-12-03 11:24:10.892 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Publisher': steam_games_4143+wikidata_31155 <> steam_games_4143
+[TRACE] 2020-12-03 11:24:10.892 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Age': steam_games_4143+wikidata_31155 <> steam_games_4143
+[TRACE] 2020-12-03 11:24:10.892 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Platform': steam_games_4143+wikidata_31155 <> steam_games_4143
+[TRACE] 2020-12-03 11:24:10.892 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': steam_games_4143+wikidata_31155 <> steam_games_4143
+[TRACE] 2020-12-03 11:24:10.892 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'price': vg_sales_1027+wikidata_30915 <> wikidata_30915
+[TRACE] 2020-12-03 11:24:10.892 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Platform': vg_sales_1027+wikidata_30915 <> wikidata_30915
+[TRACE] 2020-12-03 11:24:10.893 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': vg_sales_1027+wikidata_30915 <> wikidata_30915
+[TRACE] 2020-12-03 11:24:10.893 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Developer': steam_games_1193+steam_games_1194+steam_games_8885+vg_sales_4840+wikidata_18530+wikidata_18532+wikidata_18536 <> wikidata_18532
+[TRACE] 2020-12-03 11:24:10.893 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Publisher': steam_games_1193+steam_games_1194+steam_games_8885+vg_sales_4840+wikidata_18530+wikidata_18532+wikidata_18536 <> wikidata_18532
+[TRACE] 2020-12-03 11:24:10.893 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': steam_games_1193+steam_games_1194+steam_games_8885+vg_sales_4840+wikidata_18530+wikidata_18532+wikidata_18536 <> wikidata_18532
+[TRACE] 2020-12-03 11:24:10.893 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'price': vg_sales_1525+wikidata_14828 <> wikidata_14828
+[TRACE] 2020-12-03 11:24:10.893 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Platform': vg_sales_1525+wikidata_14828 <> wikidata_14828
+[TRACE] 2020-12-03 11:24:10.894 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': vg_sales_1525+wikidata_14828 <> wikidata_14828
+[TRACE] 2020-12-03 11:24:10.894 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Age': steam_games_61+steam_games_62+vg_sales_15090+wikidata_29040 <> vg_sales_15090
+[TRACE] 2020-12-03 11:24:10.894 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': steam_games_61+steam_games_62+vg_sales_15090+wikidata_29040 <> vg_sales_15090
+[TRACE] 2020-12-03 11:24:10.894 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Publisher': steam_games_18411+wikidata_35092 <> steam_games_18411
+[TRACE] 2020-12-03 11:24:10.894 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Age': steam_games_18411+wikidata_35092 <> steam_games_18411
+[TRACE] 2020-12-03 11:24:10.895 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Platform': steam_games_18411+wikidata_35092 <> steam_games_18411
+[TRACE] 2020-12-03 11:24:10.895 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': steam_games_18411+wikidata_35092 <> steam_games_18411
+[TRACE] 2020-12-03 11:24:10.895 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Attribute-specific Accuracy:
+[TRACE] 2020-12-03 11:24:10.895 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	Developer: 0,60
+[TRACE] 2020-12-03 11:24:10.895 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	Title: 0,95
+[TRACE] 2020-12-03 11:24:10.896 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	Publisher: 0,65
+[TRACE] 2020-12-03 11:24:10.896 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	price: 0,60
+[TRACE] 2020-12-03 11:24:10.896 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	PublishingDate: 0,95
+[TRACE] 2020-12-03 11:24:10.896 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	Age: 0,55
+[TRACE] 2020-12-03 11:24:10.896 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	Platform: 0,50
+[TRACE] 2020-12-03 11:24:10.897 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	Genres: 0,00
+[INFO ] 2020-12-03 11:27:50.385 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 36062 elements from wikidata_mapping_output.xml
+[INFO ] 2020-12-03 11:27:50.774 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - DataSet density: 0,69
+[INFO ] 2020-12-03 11:27:50.774 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - Attributes densities:
+[INFO ] 2020-12-03 11:27:50.830 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	price: 0,00
+[INFO ] 2020-12-03 11:27:50.830 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	PublishingDate: 0,96
+[INFO ] 2020-12-03 11:27:50.830 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Title: 1,00
+[INFO ] 2020-12-03 11:27:50.830 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Genres: 0,94
+[INFO ] 2020-12-03 11:27:50.831 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Platform: 1,00
+[INFO ] 2020-12-03 11:27:50.831 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	PegiRating: 0,39
+[INFO ] 2020-12-03 11:27:50.831 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Publisher: 0,86
+[INFO ] 2020-12-03 11:27:50.831 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Age: 0,44
+[INFO ] 2020-12-03 11:27:50.831 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	UskRating: 0,32
+[INFO ] 2020-12-03 11:27:50.831 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	GameModes: 0,86
+[INFO ] 2020-12-03 11:27:50.832 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Developer: 0,86
+[INFO ] 2020-12-03 11:27:51.994 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 40371 elements from steam_mapping_output.xml
+[INFO ] 2020-12-03 11:27:52.182 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - DataSet density: 0,82
+[INFO ] 2020-12-03 11:27:52.182 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - Attributes densities:
+[INFO ] 2020-12-03 11:27:52.296 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	price: 1,00
+[INFO ] 2020-12-03 11:27:52.296 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	PublishingDate: 1,00
+[INFO ] 2020-12-03 11:27:52.297 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Title: 1,00
+[INFO ] 2020-12-03 11:27:52.297 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Genres: 1,00
+[INFO ] 2020-12-03 11:27:52.297 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Platform: 1,00
+[INFO ] 2020-12-03 11:27:52.297 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	PegiRating: 0,00
+[INFO ] 2020-12-03 11:27:52.297 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Publisher: 1,00
+[INFO ] 2020-12-03 11:27:52.297 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Age: 1,00
+[INFO ] 2020-12-03 11:27:52.297 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	UskRating: 0,00
+[INFO ] 2020-12-03 11:27:52.298 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	GameModes: 1,00
+[INFO ] 2020-12-03 11:27:52.298 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Developer: 1,00
+[INFO ] 2020-12-03 11:27:52.401 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 16598 elements from sales_mapping_output.xml
+[INFO ] 2020-12-03 11:27:52.456 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - DataSet density: 0,45
+[INFO ] 2020-12-03 11:27:52.456 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - Attributes densities:
+[INFO ] 2020-12-03 11:27:52.475 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	price: 0,00
+[INFO ] 2020-12-03 11:27:52.476 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	PublishingDate: 0,98
+[INFO ] 2020-12-03 11:27:52.476 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Title: 1,00
+[INFO ] 2020-12-03 11:27:52.476 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Genres: 1,00
+[INFO ] 2020-12-03 11:27:52.476 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Platform: 1,00
+[INFO ] 2020-12-03 11:27:52.476 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	PegiRating: 0,00
+[INFO ] 2020-12-03 11:27:52.477 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Publisher: 1,00
+[INFO ] 2020-12-03 11:27:52.477 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Age: 0,00
+[INFO ] 2020-12-03 11:27:52.477 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	UskRating: 0,00
+[INFO ] 2020-12-03 11:27:52.477 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	GameModes: 0,00
+[INFO ] 2020-12-03 11:27:52.477 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Developer: 0,00
+[INFO ] 2020-12-03 11:27:52.628 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - Group Size Distribtion of 7416 groups:
+[INFO ] 2020-12-03 11:27:52.629 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	Group Size 	| Frequency 
+[INFO ] 2020-12-03 11:27:52.629 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	————————————————————————————
+[INFO ] 2020-12-03 11:27:52.630 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		2	| 	5196
+[INFO ] 2020-12-03 11:27:52.630 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		3	| 	1135
+[INFO ] 2020-12-03 11:27:52.630 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		4	| 	418
+[INFO ] 2020-12-03 11:27:52.630 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		5	| 	187
+[INFO ] 2020-12-03 11:27:52.630 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		6	| 	126
+[INFO ] 2020-12-03 11:27:52.631 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		7	| 	100
+[INFO ] 2020-12-03 11:27:52.631 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		8	| 	65
+[INFO ] 2020-12-03 11:27:52.631 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		9	| 	35
+[INFO ] 2020-12-03 11:27:52.631 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		10	| 	30
+[INFO ] 2020-12-03 11:27:52.631 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		11	| 	27
+[INFO ] 2020-12-03 11:27:52.631 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		12	| 	15
+[INFO ] 2020-12-03 11:27:52.631 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		13	| 	16
+[INFO ] 2020-12-03 11:27:52.631 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		14	| 	10
+[INFO ] 2020-12-03 11:27:52.631 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		15	| 	13
+[INFO ] 2020-12-03 11:27:52.631 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		16	| 	7
+[INFO ] 2020-12-03 11:27:52.632 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		17	| 	5
+[INFO ] 2020-12-03 11:27:52.632 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		18	| 	3
+[INFO ] 2020-12-03 11:27:52.632 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		19	| 	5
+[INFO ] 2020-12-03 11:27:52.632 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		20	| 	6
+[INFO ] 2020-12-03 11:27:52.632 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		21	| 	2
+[INFO ] 2020-12-03 11:27:52.632 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		22	| 	5
+[INFO ] 2020-12-03 11:27:52.632 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		23	| 	1
+[INFO ] 2020-12-03 11:27:52.633 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		24	| 	1
+[INFO ] 2020-12-03 11:27:52.633 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		25	| 	4
+[INFO ] 2020-12-03 11:27:52.633 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		26	| 	1
+[INFO ] 2020-12-03 11:27:52.633 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		27	| 	2
+[INFO ] 2020-12-03 11:27:52.633 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		38	| 	1
+[INFO ] 2020-12-03 11:27:52.638 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 20 elements from goldstandard_fusion.xml
+[INFO ] 2020-12-03 11:27:52.642 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - Attribute Consistencies:
+[INFO ] 2020-12-03 11:28:10.006 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 36062 elements from wikidata_mapping_output.xml
+[INFO ] 2020-12-03 11:28:10.394 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - DataSet density: 0,69
+[INFO ] 2020-12-03 11:28:10.394 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - Attributes densities:
+[INFO ] 2020-12-03 11:28:10.465 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Developer: 0,86
+[INFO ] 2020-12-03 11:28:10.466 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	GameModes: 0,86
+[INFO ] 2020-12-03 11:28:10.466 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	PegiRating: 0,39
+[INFO ] 2020-12-03 11:28:10.466 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Title: 1,00
+[INFO ] 2020-12-03 11:28:10.466 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Publisher: 0,86
+[INFO ] 2020-12-03 11:28:10.466 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	UskRating: 0,32
+[INFO ] 2020-12-03 11:28:10.466 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	price: 0,00
+[INFO ] 2020-12-03 11:28:10.467 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	PublishingDate: 0,96
+[INFO ] 2020-12-03 11:28:10.467 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Age: 0,44
+[INFO ] 2020-12-03 11:28:10.467 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Platform: 1,00
+[INFO ] 2020-12-03 11:28:10.467 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Genres: 0,94
+[INFO ] 2020-12-03 11:28:11.571 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 40371 elements from steam_mapping_output.xml
+[INFO ] 2020-12-03 11:28:11.846 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - DataSet density: 0,82
+[INFO ] 2020-12-03 11:28:11.847 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - Attributes densities:
+[INFO ] 2020-12-03 11:28:11.980 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Developer: 1,00
+[INFO ] 2020-12-03 11:28:11.980 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	GameModes: 1,00
+[INFO ] 2020-12-03 11:28:11.981 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	PegiRating: 0,00
+[INFO ] 2020-12-03 11:28:11.981 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Title: 1,00
+[INFO ] 2020-12-03 11:28:11.981 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Publisher: 1,00
+[INFO ] 2020-12-03 11:28:11.981 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	UskRating: 0,00
+[INFO ] 2020-12-03 11:28:11.981 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	price: 1,00
+[INFO ] 2020-12-03 11:28:11.981 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	PublishingDate: 1,00
+[INFO ] 2020-12-03 11:28:11.982 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Age: 1,00
+[INFO ] 2020-12-03 11:28:11.982 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Platform: 1,00
+[INFO ] 2020-12-03 11:28:11.982 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Genres: 1,00
+[INFO ] 2020-12-03 11:28:12.087 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 16598 elements from sales_mapping_output.xml
+[INFO ] 2020-12-03 11:28:12.155 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - DataSet density: 0,45
+[INFO ] 2020-12-03 11:28:12.155 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - Attributes densities:
+[INFO ] 2020-12-03 11:28:12.184 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Developer: 0,00
+[INFO ] 2020-12-03 11:28:12.184 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	GameModes: 0,00
+[INFO ] 2020-12-03 11:28:12.185 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	PegiRating: 0,00
+[INFO ] 2020-12-03 11:28:12.185 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Title: 1,00
+[INFO ] 2020-12-03 11:28:12.185 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Publisher: 1,00
+[INFO ] 2020-12-03 11:28:12.185 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	UskRating: 0,00
+[INFO ] 2020-12-03 11:28:12.186 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	price: 0,00
+[INFO ] 2020-12-03 11:28:12.186 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	PublishingDate: 0,98
+[INFO ] 2020-12-03 11:28:12.186 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Age: 0,00
+[INFO ] 2020-12-03 11:28:12.186 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Platform: 1,00
+[INFO ] 2020-12-03 11:28:12.186 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Genres: 1,00
+[INFO ] 2020-12-03 11:28:12.358 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - Group Size Distribtion of 7416 groups:
+[INFO ] 2020-12-03 11:28:12.358 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	Group Size 	| Frequency 
+[INFO ] 2020-12-03 11:28:12.358 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	————————————————————————————
+[INFO ] 2020-12-03 11:28:12.359 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		2	| 	5196
+[INFO ] 2020-12-03 11:28:12.360 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		3	| 	1135
+[INFO ] 2020-12-03 11:28:12.360 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		4	| 	418
+[INFO ] 2020-12-03 11:28:12.360 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		5	| 	187
+[INFO ] 2020-12-03 11:28:12.360 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		6	| 	126
+[INFO ] 2020-12-03 11:28:12.360 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		7	| 	100
+[INFO ] 2020-12-03 11:28:12.360 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		8	| 	65
+[INFO ] 2020-12-03 11:28:12.360 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		9	| 	35
+[INFO ] 2020-12-03 11:28:12.360 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		10	| 	30
+[INFO ] 2020-12-03 11:28:12.361 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		11	| 	27
+[INFO ] 2020-12-03 11:28:12.361 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		12	| 	15
+[INFO ] 2020-12-03 11:28:12.361 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		13	| 	16
+[INFO ] 2020-12-03 11:28:12.361 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		14	| 	10
+[INFO ] 2020-12-03 11:28:12.361 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		15	| 	13
+[INFO ] 2020-12-03 11:28:12.361 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		16	| 	7
+[INFO ] 2020-12-03 11:28:12.361 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		17	| 	5
+[INFO ] 2020-12-03 11:28:12.361 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		18	| 	3
+[INFO ] 2020-12-03 11:28:12.361 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		19	| 	5
+[INFO ] 2020-12-03 11:28:12.362 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		20	| 	6
+[INFO ] 2020-12-03 11:28:12.362 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		21	| 	2
+[INFO ] 2020-12-03 11:28:12.362 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		22	| 	5
+[INFO ] 2020-12-03 11:28:12.362 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		23	| 	1
+[INFO ] 2020-12-03 11:28:12.362 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		24	| 	1
+[INFO ] 2020-12-03 11:28:12.362 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		25	| 	4
+[INFO ] 2020-12-03 11:28:12.362 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		26	| 	1
+[INFO ] 2020-12-03 11:28:12.362 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		27	| 	2
+[INFO ] 2020-12-03 11:28:12.362 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		38	| 	1
+[INFO ] 2020-12-03 11:28:12.367 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 20 elements from goldstandard_fusion.xml
+[INFO ] 2020-12-03 11:28:12.371 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - Attribute Consistencies:
+[INFO ] 2020-12-03 11:29:04.901 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 36062 elements from wikidata_mapping_output.xml
+[INFO ] 2020-12-03 11:29:05.266 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - DataSet density: 0,69
+[INFO ] 2020-12-03 11:29:05.266 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - Attributes densities:
+[INFO ] 2020-12-03 11:29:05.332 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Genres: 0,94
+[INFO ] 2020-12-03 11:29:05.333 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	GameModes: 0,86
+[INFO ] 2020-12-03 11:29:05.333 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Age: 0,44
+[INFO ] 2020-12-03 11:29:05.333 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	UskRating: 0,32
+[INFO ] 2020-12-03 11:29:05.334 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	PublishingDate: 0,96
+[INFO ] 2020-12-03 11:29:05.334 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	PegiRating: 0,39
+[INFO ] 2020-12-03 11:29:05.334 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Platform: 1,00
+[INFO ] 2020-12-03 11:29:05.335 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Title: 1,00
+[INFO ] 2020-12-03 11:29:05.335 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Developer: 0,86
+[INFO ] 2020-12-03 11:29:05.335 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Publisher: 0,86
+[INFO ] 2020-12-03 11:29:05.335 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	price: 0,00
+[INFO ] 2020-12-03 11:29:16.492 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 36062 elements from wikidata_mapping_output.xml
+[INFO ] 2020-12-03 11:29:16.861 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - DataSet density: 0,69
+[INFO ] 2020-12-03 11:29:16.861 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - Attributes densities:
+[INFO ] 2020-12-03 11:29:16.916 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Developer: 0,86
+[INFO ] 2020-12-03 11:29:16.916 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	GameModes: 0,86
+[INFO ] 2020-12-03 11:29:16.917 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	PegiRating: 0,39
+[INFO ] 2020-12-03 11:29:16.917 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Title: 1,00
+[INFO ] 2020-12-03 11:29:16.917 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Publisher: 0,86
+[INFO ] 2020-12-03 11:29:16.917 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	UskRating: 0,32
+[INFO ] 2020-12-03 11:29:16.918 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	price: 0,00
+[INFO ] 2020-12-03 11:29:16.918 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	PublishingDate: 0,96
+[INFO ] 2020-12-03 11:29:16.918 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Age: 0,44
+[INFO ] 2020-12-03 11:29:16.918 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Platform: 1,00
+[INFO ] 2020-12-03 11:29:16.918 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Genres: 0,94
+[INFO ] 2020-12-03 11:29:18.068 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 40371 elements from steam_mapping_output.xml
+[INFO ] 2020-12-03 11:29:18.251 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - DataSet density: 0,82
+[INFO ] 2020-12-03 11:29:18.251 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - Attributes densities:
+[INFO ] 2020-12-03 11:29:18.370 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Developer: 1,00
+[INFO ] 2020-12-03 11:29:18.371 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	GameModes: 1,00
+[INFO ] 2020-12-03 11:29:18.371 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	PegiRating: 0,00
+[INFO ] 2020-12-03 11:29:18.371 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Title: 1,00
+[INFO ] 2020-12-03 11:29:18.371 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Publisher: 1,00
+[INFO ] 2020-12-03 11:29:18.371 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	UskRating: 0,00
+[INFO ] 2020-12-03 11:29:18.371 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	price: 1,00
+[INFO ] 2020-12-03 11:29:18.372 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	PublishingDate: 1,00
+[INFO ] 2020-12-03 11:29:18.372 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Age: 1,00
+[INFO ] 2020-12-03 11:29:18.372 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Platform: 1,00
+[INFO ] 2020-12-03 11:29:18.372 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Genres: 1,00
+[INFO ] 2020-12-03 11:29:18.491 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 16598 elements from sales_mapping_output.xml
+[INFO ] 2020-12-03 11:29:18.640 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - DataSet density: 0,45
+[INFO ] 2020-12-03 11:29:18.641 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - Attributes densities:
+[INFO ] 2020-12-03 11:29:18.658 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Developer: 0,00
+[INFO ] 2020-12-03 11:29:18.658 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	GameModes: 0,00
+[INFO ] 2020-12-03 11:29:18.658 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	PegiRating: 0,00
+[INFO ] 2020-12-03 11:29:18.658 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Title: 1,00
+[INFO ] 2020-12-03 11:29:18.659 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Publisher: 1,00
+[INFO ] 2020-12-03 11:29:18.659 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	UskRating: 0,00
+[INFO ] 2020-12-03 11:29:18.659 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	price: 0,00
+[INFO ] 2020-12-03 11:29:18.659 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	PublishingDate: 0,98
+[INFO ] 2020-12-03 11:29:18.659 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Age: 0,00
+[INFO ] 2020-12-03 11:29:18.659 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Platform: 1,00
+[INFO ] 2020-12-03 11:29:18.660 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Genres: 1,00
+[INFO ] 2020-12-03 11:29:18.739 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - Group Size Distribtion of 7416 groups:
+[INFO ] 2020-12-03 11:29:18.740 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	Group Size 	| Frequency 
+[INFO ] 2020-12-03 11:29:18.740 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	————————————————————————————
+[INFO ] 2020-12-03 11:29:18.741 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		2	| 	5196
+[INFO ] 2020-12-03 11:29:18.741 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		3	| 	1135
+[INFO ] 2020-12-03 11:29:18.741 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		4	| 	418
+[INFO ] 2020-12-03 11:29:18.741 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		5	| 	187
+[INFO ] 2020-12-03 11:29:18.741 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		6	| 	126
+[INFO ] 2020-12-03 11:29:18.742 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		7	| 	100
+[INFO ] 2020-12-03 11:29:18.742 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		8	| 	65
+[INFO ] 2020-12-03 11:29:18.742 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		9	| 	35
+[INFO ] 2020-12-03 11:29:18.742 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		10	| 	30
+[INFO ] 2020-12-03 11:29:18.742 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		11	| 	27
+[INFO ] 2020-12-03 11:29:18.742 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		12	| 	15
+[INFO ] 2020-12-03 11:29:18.743 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		13	| 	16
+[INFO ] 2020-12-03 11:29:18.743 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		14	| 	10
+[INFO ] 2020-12-03 11:29:18.743 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		15	| 	13
+[INFO ] 2020-12-03 11:29:18.743 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		16	| 	7
+[INFO ] 2020-12-03 11:29:18.743 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		17	| 	5
+[INFO ] 2020-12-03 11:29:18.743 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		18	| 	3
+[INFO ] 2020-12-03 11:29:18.744 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		19	| 	5
+[INFO ] 2020-12-03 11:29:18.744 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		20	| 	6
+[INFO ] 2020-12-03 11:29:18.744 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		21	| 	2
+[INFO ] 2020-12-03 11:29:18.744 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		22	| 	5
+[INFO ] 2020-12-03 11:29:18.744 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		23	| 	1
+[INFO ] 2020-12-03 11:29:18.745 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		24	| 	1
+[INFO ] 2020-12-03 11:29:18.745 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		25	| 	4
+[INFO ] 2020-12-03 11:29:18.745 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		26	| 	1
+[INFO ] 2020-12-03 11:29:18.745 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		27	| 	2
+[INFO ] 2020-12-03 11:29:18.745 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		38	| 	1
+[INFO ] 2020-12-03 11:29:18.750 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 20 elements from goldstandard_fusion.xml
+[INFO ] 2020-12-03 11:29:18.755 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - Attribute Consistencies:
+[INFO ] 2020-12-03 11:29:19.234 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	GameModes: 0,84
+[INFO ] 2020-12-03 11:29:19.235 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Platform: 0,18
+[INFO ] 2020-12-03 11:29:19.235 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	PublishingDate: 0,77
+[INFO ] 2020-12-03 11:29:19.235 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	price: 0,95
+[INFO ] 2020-12-03 11:29:19.235 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Developer: 0,92
+[INFO ] 2020-12-03 11:29:19.235 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Title: 0,86
+[INFO ] 2020-12-03 11:29:19.236 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Publisher: 0,61
+[INFO ] 2020-12-03 11:29:19.236 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Genres: 0,22
+[INFO ] 2020-12-03 11:29:19.236 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Age: 0,91
+[INFO ] 2020-12-03 11:29:20.439 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionStrategy] - Debug results written to file: data/output/debugResultsDatafusion.csv
+[TRACE] 2020-12-03 11:29:20.597 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Developer': steam_games_1169+vg_sales_1321+wikidata_18728 <> wikidata_18728
+[TRACE] 2020-12-03 11:29:20.597 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'GameModes': steam_games_1169+vg_sales_1321+wikidata_18728 <> wikidata_18728
+[TRACE] 2020-12-03 11:29:20.597 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': steam_games_1169+vg_sales_1321+wikidata_18728 <> wikidata_18728
+[TRACE] 2020-12-03 11:29:20.597 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'GameModes': vg_sales_892+wikidata_15072 <> vg_sales_892
+[TRACE] 2020-12-03 11:29:20.597 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'price': vg_sales_892+wikidata_15072 <> vg_sales_892
+[TRACE] 2020-12-03 11:29:20.598 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'PublishingDate': vg_sales_892+wikidata_15072 <> vg_sales_892
+[TRACE] 2020-12-03 11:29:20.598 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Platform': vg_sales_892+wikidata_15072 <> vg_sales_892
+[TRACE] 2020-12-03 11:29:20.598 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': vg_sales_892+wikidata_15072 <> vg_sales_892
+[TRACE] 2020-12-03 11:29:20.598 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Developer': steam_games_21964+wikidata_16139 <> wikidata_16139
+[TRACE] 2020-12-03 11:29:20.598 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'GameModes': steam_games_21964+wikidata_16139 <> wikidata_16139
+[TRACE] 2020-12-03 11:29:20.598 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Publisher': steam_games_21964+wikidata_16139 <> wikidata_16139
+[TRACE] 2020-12-03 11:29:20.598 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Platform': steam_games_21964+wikidata_16139 <> wikidata_16139
+[TRACE] 2020-12-03 11:29:20.598 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': steam_games_21964+wikidata_16139 <> wikidata_16139
+[TRACE] 2020-12-03 11:29:20.598 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Developer': vg_sales_49+wikidata_13643 <> wikidata_13643
+[TRACE] 2020-12-03 11:29:20.598 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'GameModes': vg_sales_49+wikidata_13643 <> wikidata_13643
+[TRACE] 2020-12-03 11:29:20.599 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'price': vg_sales_49+wikidata_13643 <> wikidata_13643
+[TRACE] 2020-12-03 11:29:20.599 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Platform': vg_sales_49+wikidata_13643 <> wikidata_13643
+[TRACE] 2020-12-03 11:29:20.599 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': vg_sales_49+wikidata_13643 <> wikidata_13643
+[TRACE] 2020-12-03 11:29:20.599 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'GameModes': steam_games_2742+vg_sales_2962+wikidata_14261+wikidata_14267+wikidata_32089 <> wikidata_14267
+[TRACE] 2020-12-03 11:29:20.599 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'price': steam_games_2742+vg_sales_2962+wikidata_14261+wikidata_14267+wikidata_32089 <> wikidata_14267
+[TRACE] 2020-12-03 11:29:20.599 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Age': steam_games_2742+vg_sales_2962+wikidata_14261+wikidata_14267+wikidata_32089 <> wikidata_14267
+[TRACE] 2020-12-03 11:29:20.599 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': steam_games_2742+vg_sales_2962+wikidata_14261+wikidata_14267+wikidata_32089 <> wikidata_14267
+[TRACE] 2020-12-03 11:29:20.599 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'GameModes': steam_games_10045+vg_sales_1631 <> vg_sales_1631
+[TRACE] 2020-12-03 11:29:20.599 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': steam_games_10045+vg_sales_1631 <> vg_sales_1631
+[TRACE] 2020-12-03 11:29:20.599 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'GameModes': vg_sales_2698+wikidata_21488 <> wikidata_21488
+[TRACE] 2020-12-03 11:29:20.600 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'price': vg_sales_2698+wikidata_21488 <> wikidata_21488
+[TRACE] 2020-12-03 11:29:20.600 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Platform': vg_sales_2698+wikidata_21488 <> wikidata_21488
+[TRACE] 2020-12-03 11:29:20.600 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': vg_sales_2698+wikidata_21488 <> wikidata_21488
+[TRACE] 2020-12-03 11:29:20.600 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'GameModes': vg_sales_769+wikidata_13541 <> vg_sales_769
+[TRACE] 2020-12-03 11:29:20.600 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'price': vg_sales_769+wikidata_13541 <> vg_sales_769
+[TRACE] 2020-12-03 11:29:20.600 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Age': vg_sales_769+wikidata_13541 <> vg_sales_769
+[TRACE] 2020-12-03 11:29:20.600 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Platform': vg_sales_769+wikidata_13541 <> vg_sales_769
+[TRACE] 2020-12-03 11:29:20.601 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': vg_sales_769+wikidata_13541 <> vg_sales_769
+[TRACE] 2020-12-03 11:29:20.601 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Developer': steam_games_304+steam_games_305+vg_sales_1770+wikidata_13733+wikidata_13735 <> vg_sales_1770
+[TRACE] 2020-12-03 11:29:20.601 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'GameModes': steam_games_304+steam_games_305+vg_sales_1770+wikidata_13733+wikidata_13735 <> vg_sales_1770
+[TRACE] 2020-12-03 11:29:20.601 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Publisher': steam_games_304+steam_games_305+vg_sales_1770+wikidata_13733+wikidata_13735 <> vg_sales_1770
+[TRACE] 2020-12-03 11:29:20.601 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Age': steam_games_304+steam_games_305+vg_sales_1770+wikidata_13733+wikidata_13735 <> vg_sales_1770
+[TRACE] 2020-12-03 11:29:20.601 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': steam_games_304+steam_games_305+vg_sales_1770+wikidata_13733+wikidata_13735 <> vg_sales_1770
+[TRACE] 2020-12-03 11:29:20.601 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Developer': steam_games_1249+steam_games_1250+vg_sales_4763+wikidata_21801+wikidata_21803 <> wikidata_21803
+[TRACE] 2020-12-03 11:29:20.601 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'GameModes': steam_games_1249+steam_games_1250+vg_sales_4763+wikidata_21801+wikidata_21803 <> wikidata_21803
+[TRACE] 2020-12-03 11:29:20.601 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Publisher': steam_games_1249+steam_games_1250+vg_sales_4763+wikidata_21801+wikidata_21803 <> wikidata_21803
+[TRACE] 2020-12-03 11:29:20.602 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': steam_games_1249+steam_games_1250+vg_sales_4763+wikidata_21801+wikidata_21803 <> wikidata_21803
+[TRACE] 2020-12-03 11:29:20.602 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'GameModes': steam_games_1161+vg_sales_84+wikidata_29443+wikidata_29446 <> vg_sales_84
+[TRACE] 2020-12-03 11:29:20.602 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Age': steam_games_1161+vg_sales_84+wikidata_29443+wikidata_29446 <> vg_sales_84
+[TRACE] 2020-12-03 11:29:20.602 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': steam_games_1161+vg_sales_84+wikidata_29443+wikidata_29446 <> vg_sales_84
+[TRACE] 2020-12-03 11:29:20.602 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Developer': steam_games_1079+vg_sales_12101+wikidata_20906+wikidata_20912 <> wikidata_20912
+[TRACE] 2020-12-03 11:29:20.602 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'GameModes': steam_games_1079+vg_sales_12101+wikidata_20906+wikidata_20912 <> wikidata_20912
+[TRACE] 2020-12-03 11:29:20.602 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Publisher': steam_games_1079+vg_sales_12101+wikidata_20906+wikidata_20912 <> wikidata_20912
+[TRACE] 2020-12-03 11:29:20.602 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Age': steam_games_1079+vg_sales_12101+wikidata_20906+wikidata_20912 <> wikidata_20912
+[TRACE] 2020-12-03 11:29:20.602 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': steam_games_1079+vg_sales_12101+wikidata_20906+wikidata_20912 <> wikidata_20912
+[TRACE] 2020-12-03 11:29:20.603 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Developer': steam_games_4841+vg_sales_3027+wikidata_29013 <> vg_sales_3027
+[TRACE] 2020-12-03 11:29:20.603 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'GameModes': steam_games_4841+vg_sales_3027+wikidata_29013 <> vg_sales_3027
+[TRACE] 2020-12-03 11:29:20.603 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Age': steam_games_4841+vg_sales_3027+wikidata_29013 <> vg_sales_3027
+[TRACE] 2020-12-03 11:29:20.603 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': steam_games_4841+vg_sales_3027+wikidata_29013 <> vg_sales_3027
+[TRACE] 2020-12-03 11:29:20.603 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'GameModes': vg_sales_15830+vg_sales_5022+wikidata_26508+wikidata_26511+wikidata_26514 <> wikidata_26514
+[TRACE] 2020-12-03 11:29:20.603 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Title': vg_sales_15830+vg_sales_5022+wikidata_26508+wikidata_26511+wikidata_26514 <> wikidata_26514
+[TRACE] 2020-12-03 11:29:20.603 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'price': vg_sales_15830+vg_sales_5022+wikidata_26508+wikidata_26511+wikidata_26514 <> wikidata_26514
+[TRACE] 2020-12-03 11:29:20.603 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Platform': vg_sales_15830+vg_sales_5022+wikidata_26508+wikidata_26511+wikidata_26514 <> wikidata_26514
+[TRACE] 2020-12-03 11:29:20.603 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': vg_sales_15830+vg_sales_5022+wikidata_26508+wikidata_26511+wikidata_26514 <> wikidata_26514
+[TRACE] 2020-12-03 11:29:20.603 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'GameModes': steam_games_4143+wikidata_31155 <> steam_games_4143
+[TRACE] 2020-12-03 11:29:20.603 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Publisher': steam_games_4143+wikidata_31155 <> steam_games_4143
+[TRACE] 2020-12-03 11:29:20.603 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Age': steam_games_4143+wikidata_31155 <> steam_games_4143
+[TRACE] 2020-12-03 11:29:20.603 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Platform': steam_games_4143+wikidata_31155 <> steam_games_4143
+[TRACE] 2020-12-03 11:29:20.603 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': steam_games_4143+wikidata_31155 <> steam_games_4143
+[TRACE] 2020-12-03 11:29:20.603 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'GameModes': vg_sales_1027+wikidata_30915 <> wikidata_30915
+[TRACE] 2020-12-03 11:29:20.603 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'price': vg_sales_1027+wikidata_30915 <> wikidata_30915
+[TRACE] 2020-12-03 11:29:20.603 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Platform': vg_sales_1027+wikidata_30915 <> wikidata_30915
+[TRACE] 2020-12-03 11:29:20.603 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': vg_sales_1027+wikidata_30915 <> wikidata_30915
+[TRACE] 2020-12-03 11:29:20.603 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Developer': steam_games_1193+steam_games_1194+steam_games_8885+vg_sales_4840+wikidata_18530+wikidata_18532+wikidata_18536 <> wikidata_18532
+[TRACE] 2020-12-03 11:29:20.604 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'GameModes': steam_games_1193+steam_games_1194+steam_games_8885+vg_sales_4840+wikidata_18530+wikidata_18532+wikidata_18536 <> wikidata_18532
+[TRACE] 2020-12-03 11:29:20.604 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Publisher': steam_games_1193+steam_games_1194+steam_games_8885+vg_sales_4840+wikidata_18530+wikidata_18532+wikidata_18536 <> wikidata_18532
+[TRACE] 2020-12-03 11:29:20.604 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': steam_games_1193+steam_games_1194+steam_games_8885+vg_sales_4840+wikidata_18530+wikidata_18532+wikidata_18536 <> wikidata_18532
+[TRACE] 2020-12-03 11:29:20.604 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'GameModes': vg_sales_1525+wikidata_14828 <> wikidata_14828
+[TRACE] 2020-12-03 11:29:20.604 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'price': vg_sales_1525+wikidata_14828 <> wikidata_14828
+[TRACE] 2020-12-03 11:29:20.604 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Platform': vg_sales_1525+wikidata_14828 <> wikidata_14828
+[TRACE] 2020-12-03 11:29:20.604 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': vg_sales_1525+wikidata_14828 <> wikidata_14828
+[TRACE] 2020-12-03 11:29:20.604 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'GameModes': steam_games_61+steam_games_62+vg_sales_15090+wikidata_29040 <> vg_sales_15090
+[TRACE] 2020-12-03 11:29:20.604 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Age': steam_games_61+steam_games_62+vg_sales_15090+wikidata_29040 <> vg_sales_15090
+[TRACE] 2020-12-03 11:29:20.604 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': steam_games_61+steam_games_62+vg_sales_15090+wikidata_29040 <> vg_sales_15090
+[TRACE] 2020-12-03 11:29:20.605 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'GameModes': steam_games_18411+wikidata_35092 <> steam_games_18411
+[TRACE] 2020-12-03 11:29:20.605 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Publisher': steam_games_18411+wikidata_35092 <> steam_games_18411
+[TRACE] 2020-12-03 11:29:20.605 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Age': steam_games_18411+wikidata_35092 <> steam_games_18411
+[TRACE] 2020-12-03 11:29:20.605 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Platform': steam_games_18411+wikidata_35092 <> steam_games_18411
+[TRACE] 2020-12-03 11:29:20.605 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': steam_games_18411+wikidata_35092 <> steam_games_18411
+[TRACE] 2020-12-03 11:29:20.605 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Attribute-specific Accuracy:
+[TRACE] 2020-12-03 11:29:20.605 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	Developer: 0,60
+[TRACE] 2020-12-03 11:29:20.605 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	GameModes: 0,00
+[TRACE] 2020-12-03 11:29:20.605 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	Title: 0,95
+[TRACE] 2020-12-03 11:29:20.606 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	Publisher: 0,65
+[TRACE] 2020-12-03 11:29:20.606 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	price: 0,60
+[TRACE] 2020-12-03 11:29:20.606 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	PublishingDate: 0,95
+[TRACE] 2020-12-03 11:29:20.606 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	Age: 0,55
+[TRACE] 2020-12-03 11:29:20.606 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	Platform: 0,50
+[TRACE] 2020-12-03 11:29:20.606 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	Genres: 0,00
+[INFO ] 2020-12-03 11:31:54.576 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 36062 elements from wikidata_mapping_output.xml
+[INFO ] 2020-12-03 11:31:54.955 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - DataSet density: 0,69
+[INFO ] 2020-12-03 11:31:54.955 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - Attributes densities:
+[INFO ] 2020-12-03 11:31:55.022 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Developer: 0,86
+[INFO ] 2020-12-03 11:31:55.022 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	GameModes: 0,86
+[INFO ] 2020-12-03 11:31:55.022 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	PegiRating: 0,39
+[INFO ] 2020-12-03 11:31:55.022 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Title: 1,00
+[INFO ] 2020-12-03 11:31:55.023 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Publisher: 0,86
+[INFO ] 2020-12-03 11:31:55.023 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	UskRating: 0,32
+[INFO ] 2020-12-03 11:31:55.023 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	price: 0,00
+[INFO ] 2020-12-03 11:31:55.023 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	PublishingDate: 0,96
+[INFO ] 2020-12-03 11:31:55.023 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Age: 0,44
+[INFO ] 2020-12-03 11:31:55.023 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Platform: 1,00
+[INFO ] 2020-12-03 11:31:55.024 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Genres: 0,94
+[INFO ] 2020-12-03 11:31:56.220 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 40371 elements from steam_mapping_output.xml
+[INFO ] 2020-12-03 11:31:56.393 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - DataSet density: 0,82
+[INFO ] 2020-12-03 11:31:56.393 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - Attributes densities:
+[INFO ] 2020-12-03 11:31:56.433 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Developer: 1,00
+[INFO ] 2020-12-03 11:31:56.433 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	GameModes: 1,00
+[INFO ] 2020-12-03 11:31:56.433 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	PegiRating: 0,00
+[INFO ] 2020-12-03 11:31:56.433 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Title: 1,00
+[INFO ] 2020-12-03 11:31:56.434 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Publisher: 1,00
+[INFO ] 2020-12-03 11:31:56.434 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	UskRating: 0,00
+[INFO ] 2020-12-03 11:31:56.434 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	price: 1,00
+[INFO ] 2020-12-03 11:31:56.434 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	PublishingDate: 1,00
+[INFO ] 2020-12-03 11:31:56.435 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Age: 1,00
+[INFO ] 2020-12-03 11:31:56.435 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Platform: 1,00
+[INFO ] 2020-12-03 11:31:56.435 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Genres: 1,00
+[INFO ] 2020-12-03 11:31:56.639 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 16598 elements from sales_mapping_output.xml
+[INFO ] 2020-12-03 11:31:56.784 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - DataSet density: 0,45
+[INFO ] 2020-12-03 11:31:56.784 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - Attributes densities:
+[INFO ] 2020-12-03 11:31:56.826 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Developer: 0,00
+[INFO ] 2020-12-03 11:31:56.826 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	GameModes: 0,00
+[INFO ] 2020-12-03 11:31:56.826 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	PegiRating: 0,00
+[INFO ] 2020-12-03 11:31:56.826 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Title: 1,00
+[INFO ] 2020-12-03 11:31:56.827 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Publisher: 1,00
+[INFO ] 2020-12-03 11:31:56.827 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	UskRating: 0,00
+[INFO ] 2020-12-03 11:31:56.827 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	price: 0,00
+[INFO ] 2020-12-03 11:31:56.827 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	PublishingDate: 0,98
+[INFO ] 2020-12-03 11:31:56.827 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Age: 0,00
+[INFO ] 2020-12-03 11:31:56.828 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Platform: 1,00
+[INFO ] 2020-12-03 11:31:56.828 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Genres: 1,00
+[INFO ] 2020-12-03 11:31:56.913 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - Group Size Distribtion of 7416 groups:
+[INFO ] 2020-12-03 11:31:56.913 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	Group Size 	| Frequency 
+[INFO ] 2020-12-03 11:31:56.914 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	————————————————————————————
+[INFO ] 2020-12-03 11:31:56.915 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		2	| 	5196
+[INFO ] 2020-12-03 11:31:56.915 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		3	| 	1135
+[INFO ] 2020-12-03 11:31:56.915 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		4	| 	418
+[INFO ] 2020-12-03 11:31:56.915 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		5	| 	187
+[INFO ] 2020-12-03 11:31:56.915 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		6	| 	126
+[INFO ] 2020-12-03 11:31:56.915 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		7	| 	100
+[INFO ] 2020-12-03 11:31:56.916 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		8	| 	65
+[INFO ] 2020-12-03 11:31:56.916 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		9	| 	35
+[INFO ] 2020-12-03 11:31:56.916 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		10	| 	30
+[INFO ] 2020-12-03 11:31:56.916 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		11	| 	27
+[INFO ] 2020-12-03 11:31:56.916 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		12	| 	15
+[INFO ] 2020-12-03 11:31:56.916 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		13	| 	16
+[INFO ] 2020-12-03 11:31:56.917 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		14	| 	10
+[INFO ] 2020-12-03 11:31:56.917 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		15	| 	13
+[INFO ] 2020-12-03 11:31:56.917 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		16	| 	7
+[INFO ] 2020-12-03 11:31:56.917 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		17	| 	5
+[INFO ] 2020-12-03 11:31:56.917 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		18	| 	3
+[INFO ] 2020-12-03 11:31:56.917 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		19	| 	5
+[INFO ] 2020-12-03 11:31:56.918 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		20	| 	6
+[INFO ] 2020-12-03 11:31:56.918 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		21	| 	2
+[INFO ] 2020-12-03 11:31:56.918 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		22	| 	5
+[INFO ] 2020-12-03 11:31:56.918 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		23	| 	1
+[INFO ] 2020-12-03 11:31:56.918 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		24	| 	1
+[INFO ] 2020-12-03 11:31:56.918 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		25	| 	4
+[INFO ] 2020-12-03 11:31:56.919 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		26	| 	1
+[INFO ] 2020-12-03 11:31:56.919 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		27	| 	2
+[INFO ] 2020-12-03 11:31:56.919 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		38	| 	1
+[INFO ] 2020-12-03 11:31:56.925 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 20 elements from goldstandard_fusion.xml
+[INFO ] 2020-12-03 11:31:56.930 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - Attribute Consistencies:
+[INFO ] 2020-12-03 11:31:57.414 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	GameModes: 0,84
+[INFO ] 2020-12-03 11:31:57.414 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	PegiRating: 0,97
+[INFO ] 2020-12-03 11:31:57.415 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Platform: 0,18
+[INFO ] 2020-12-03 11:31:57.415 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	PublishingDate: 0,77
+[INFO ] 2020-12-03 11:31:57.415 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	price: 0,95
+[INFO ] 2020-12-03 11:31:57.415 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Developer: 0,92
+[INFO ] 2020-12-03 11:31:57.415 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Title: 0,86
+[INFO ] 2020-12-03 11:31:57.415 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Publisher: 0,61
+[INFO ] 2020-12-03 11:31:57.415 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Genres: 0,22
+[INFO ] 2020-12-03 11:31:57.415 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Age: 0,91
+[INFO ] 2020-12-03 11:31:57.416 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	UskRating: 0,97
+[INFO ] 2020-12-03 11:31:58.564 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionStrategy] - Debug results written to file: data/output/debugResultsDatafusion.csv
+[TRACE] 2020-12-03 11:31:58.721 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Developer': steam_games_1169+vg_sales_1321+wikidata_18728 <> wikidata_18728
+[TRACE] 2020-12-03 11:31:58.722 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'GameModes': steam_games_1169+vg_sales_1321+wikidata_18728 <> wikidata_18728
+[TRACE] 2020-12-03 11:31:58.722 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': steam_games_1169+vg_sales_1321+wikidata_18728 <> wikidata_18728
+[TRACE] 2020-12-03 11:31:58.722 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'GameModes': vg_sales_892+wikidata_15072 <> vg_sales_892
+[TRACE] 2020-12-03 11:31:58.722 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'price': vg_sales_892+wikidata_15072 <> vg_sales_892
+[TRACE] 2020-12-03 11:31:58.722 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'PublishingDate': vg_sales_892+wikidata_15072 <> vg_sales_892
+[TRACE] 2020-12-03 11:31:58.723 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Platform': vg_sales_892+wikidata_15072 <> vg_sales_892
+[TRACE] 2020-12-03 11:31:58.723 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': vg_sales_892+wikidata_15072 <> vg_sales_892
+[TRACE] 2020-12-03 11:31:58.723 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Developer': steam_games_21964+wikidata_16139 <> wikidata_16139
+[TRACE] 2020-12-03 11:31:58.723 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'GameModes': steam_games_21964+wikidata_16139 <> wikidata_16139
+[TRACE] 2020-12-03 11:31:58.723 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'PegiRating': steam_games_21964+wikidata_16139 <> wikidata_16139
+[TRACE] 2020-12-03 11:31:58.723 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Publisher': steam_games_21964+wikidata_16139 <> wikidata_16139
+[TRACE] 2020-12-03 11:31:58.723 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'UskRating': steam_games_21964+wikidata_16139 <> wikidata_16139
+[TRACE] 2020-12-03 11:31:58.724 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Platform': steam_games_21964+wikidata_16139 <> wikidata_16139
+[TRACE] 2020-12-03 11:31:58.724 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': steam_games_21964+wikidata_16139 <> wikidata_16139
+[TRACE] 2020-12-03 11:31:58.724 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Developer': vg_sales_49+wikidata_13643 <> wikidata_13643
+[TRACE] 2020-12-03 11:31:58.724 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'GameModes': vg_sales_49+wikidata_13643 <> wikidata_13643
+[TRACE] 2020-12-03 11:31:58.724 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'price': vg_sales_49+wikidata_13643 <> wikidata_13643
+[TRACE] 2020-12-03 11:31:58.724 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Platform': vg_sales_49+wikidata_13643 <> wikidata_13643
+[TRACE] 2020-12-03 11:31:58.725 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': vg_sales_49+wikidata_13643 <> wikidata_13643
+[TRACE] 2020-12-03 11:31:58.725 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'GameModes': steam_games_2742+vg_sales_2962+wikidata_14261+wikidata_14267+wikidata_32089 <> wikidata_14267
+[TRACE] 2020-12-03 11:31:58.725 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'price': steam_games_2742+vg_sales_2962+wikidata_14261+wikidata_14267+wikidata_32089 <> wikidata_14267
+[TRACE] 2020-12-03 11:31:58.725 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Age': steam_games_2742+vg_sales_2962+wikidata_14261+wikidata_14267+wikidata_32089 <> wikidata_14267
+[TRACE] 2020-12-03 11:31:58.725 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': steam_games_2742+vg_sales_2962+wikidata_14261+wikidata_14267+wikidata_32089 <> wikidata_14267
+[TRACE] 2020-12-03 11:31:58.725 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'GameModes': steam_games_10045+vg_sales_1631 <> vg_sales_1631
+[TRACE] 2020-12-03 11:31:58.726 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'PegiRating': steam_games_10045+vg_sales_1631 <> vg_sales_1631
+[TRACE] 2020-12-03 11:31:58.726 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'UskRating': steam_games_10045+vg_sales_1631 <> vg_sales_1631
+[TRACE] 2020-12-03 11:31:58.726 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': steam_games_10045+vg_sales_1631 <> vg_sales_1631
+[TRACE] 2020-12-03 11:31:58.726 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'GameModes': vg_sales_2698+wikidata_21488 <> wikidata_21488
+[TRACE] 2020-12-03 11:31:58.726 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'price': vg_sales_2698+wikidata_21488 <> wikidata_21488
+[TRACE] 2020-12-03 11:31:58.726 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Platform': vg_sales_2698+wikidata_21488 <> wikidata_21488
+[TRACE] 2020-12-03 11:31:58.726 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': vg_sales_2698+wikidata_21488 <> wikidata_21488
+[TRACE] 2020-12-03 11:31:58.727 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'GameModes': vg_sales_769+wikidata_13541 <> vg_sales_769
+[TRACE] 2020-12-03 11:31:58.727 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'PegiRating': vg_sales_769+wikidata_13541 <> vg_sales_769
+[TRACE] 2020-12-03 11:31:58.727 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'UskRating': vg_sales_769+wikidata_13541 <> vg_sales_769
+[TRACE] 2020-12-03 11:31:58.727 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'price': vg_sales_769+wikidata_13541 <> vg_sales_769
+[TRACE] 2020-12-03 11:31:58.727 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Age': vg_sales_769+wikidata_13541 <> vg_sales_769
+[TRACE] 2020-12-03 11:31:58.727 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Platform': vg_sales_769+wikidata_13541 <> vg_sales_769
+[TRACE] 2020-12-03 11:31:58.728 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': vg_sales_769+wikidata_13541 <> vg_sales_769
+[TRACE] 2020-12-03 11:31:58.728 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Developer': steam_games_304+steam_games_305+vg_sales_1770+wikidata_13733+wikidata_13735 <> vg_sales_1770
+[TRACE] 2020-12-03 11:31:58.728 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'GameModes': steam_games_304+steam_games_305+vg_sales_1770+wikidata_13733+wikidata_13735 <> vg_sales_1770
+[TRACE] 2020-12-03 11:31:58.728 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Publisher': steam_games_304+steam_games_305+vg_sales_1770+wikidata_13733+wikidata_13735 <> vg_sales_1770
+[TRACE] 2020-12-03 11:31:58.728 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Age': steam_games_304+steam_games_305+vg_sales_1770+wikidata_13733+wikidata_13735 <> vg_sales_1770
+[TRACE] 2020-12-03 11:31:58.729 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': steam_games_304+steam_games_305+vg_sales_1770+wikidata_13733+wikidata_13735 <> vg_sales_1770
+[TRACE] 2020-12-03 11:31:58.729 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Developer': steam_games_1249+steam_games_1250+vg_sales_4763+wikidata_21801+wikidata_21803 <> wikidata_21803
+[TRACE] 2020-12-03 11:31:58.729 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'GameModes': steam_games_1249+steam_games_1250+vg_sales_4763+wikidata_21801+wikidata_21803 <> wikidata_21803
+[TRACE] 2020-12-03 11:31:58.729 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Publisher': steam_games_1249+steam_games_1250+vg_sales_4763+wikidata_21801+wikidata_21803 <> wikidata_21803
+[TRACE] 2020-12-03 11:31:58.729 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': steam_games_1249+steam_games_1250+vg_sales_4763+wikidata_21801+wikidata_21803 <> wikidata_21803
+[TRACE] 2020-12-03 11:31:58.729 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'GameModes': steam_games_1161+vg_sales_84+wikidata_29443+wikidata_29446 <> vg_sales_84
+[TRACE] 2020-12-03 11:31:58.729 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Age': steam_games_1161+vg_sales_84+wikidata_29443+wikidata_29446 <> vg_sales_84
+[TRACE] 2020-12-03 11:31:58.730 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': steam_games_1161+vg_sales_84+wikidata_29443+wikidata_29446 <> vg_sales_84
+[TRACE] 2020-12-03 11:31:58.730 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Developer': steam_games_1079+vg_sales_12101+wikidata_20906+wikidata_20912 <> wikidata_20912
+[TRACE] 2020-12-03 11:31:58.730 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'GameModes': steam_games_1079+vg_sales_12101+wikidata_20906+wikidata_20912 <> wikidata_20912
+[TRACE] 2020-12-03 11:31:58.730 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Publisher': steam_games_1079+vg_sales_12101+wikidata_20906+wikidata_20912 <> wikidata_20912
+[TRACE] 2020-12-03 11:31:58.730 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'UskRating': steam_games_1079+vg_sales_12101+wikidata_20906+wikidata_20912 <> wikidata_20912
+[TRACE] 2020-12-03 11:31:58.730 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Age': steam_games_1079+vg_sales_12101+wikidata_20906+wikidata_20912 <> wikidata_20912
+[TRACE] 2020-12-03 11:31:58.730 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': steam_games_1079+vg_sales_12101+wikidata_20906+wikidata_20912 <> wikidata_20912
+[TRACE] 2020-12-03 11:31:58.731 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Developer': steam_games_4841+vg_sales_3027+wikidata_29013 <> vg_sales_3027
+[TRACE] 2020-12-03 11:31:58.731 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'GameModes': steam_games_4841+vg_sales_3027+wikidata_29013 <> vg_sales_3027
+[TRACE] 2020-12-03 11:31:58.731 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Age': steam_games_4841+vg_sales_3027+wikidata_29013 <> vg_sales_3027
+[TRACE] 2020-12-03 11:31:58.731 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': steam_games_4841+vg_sales_3027+wikidata_29013 <> vg_sales_3027
+[TRACE] 2020-12-03 11:31:58.731 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'GameModes': vg_sales_15830+vg_sales_5022+wikidata_26508+wikidata_26511+wikidata_26514 <> wikidata_26514
+[TRACE] 2020-12-03 11:31:58.731 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Title': vg_sales_15830+vg_sales_5022+wikidata_26508+wikidata_26511+wikidata_26514 <> wikidata_26514
+[TRACE] 2020-12-03 11:31:58.732 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'price': vg_sales_15830+vg_sales_5022+wikidata_26508+wikidata_26511+wikidata_26514 <> wikidata_26514
+[TRACE] 2020-12-03 11:31:58.732 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Platform': vg_sales_15830+vg_sales_5022+wikidata_26508+wikidata_26511+wikidata_26514 <> wikidata_26514
+[TRACE] 2020-12-03 11:31:58.732 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': vg_sales_15830+vg_sales_5022+wikidata_26508+wikidata_26511+wikidata_26514 <> wikidata_26514
+[TRACE] 2020-12-03 11:31:58.732 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'GameModes': steam_games_4143+wikidata_31155 <> steam_games_4143
+[TRACE] 2020-12-03 11:31:58.732 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Publisher': steam_games_4143+wikidata_31155 <> steam_games_4143
+[TRACE] 2020-12-03 11:31:58.732 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Age': steam_games_4143+wikidata_31155 <> steam_games_4143
+[TRACE] 2020-12-03 11:31:58.733 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Platform': steam_games_4143+wikidata_31155 <> steam_games_4143
+[TRACE] 2020-12-03 11:31:58.733 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': steam_games_4143+wikidata_31155 <> steam_games_4143
+[TRACE] 2020-12-03 11:31:58.733 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'GameModes': vg_sales_1027+wikidata_30915 <> wikidata_30915
+[TRACE] 2020-12-03 11:31:58.733 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'PegiRating': vg_sales_1027+wikidata_30915 <> wikidata_30915
+[TRACE] 2020-12-03 11:31:58.733 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'price': vg_sales_1027+wikidata_30915 <> wikidata_30915
+[TRACE] 2020-12-03 11:31:58.733 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Platform': vg_sales_1027+wikidata_30915 <> wikidata_30915
+[TRACE] 2020-12-03 11:31:58.733 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': vg_sales_1027+wikidata_30915 <> wikidata_30915
+[TRACE] 2020-12-03 11:31:58.734 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Developer': steam_games_1193+steam_games_1194+steam_games_8885+vg_sales_4840+wikidata_18530+wikidata_18532+wikidata_18536 <> wikidata_18532
+[TRACE] 2020-12-03 11:31:58.734 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'GameModes': steam_games_1193+steam_games_1194+steam_games_8885+vg_sales_4840+wikidata_18530+wikidata_18532+wikidata_18536 <> wikidata_18532
+[TRACE] 2020-12-03 11:31:58.734 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Publisher': steam_games_1193+steam_games_1194+steam_games_8885+vg_sales_4840+wikidata_18530+wikidata_18532+wikidata_18536 <> wikidata_18532
+[TRACE] 2020-12-03 11:31:58.734 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': steam_games_1193+steam_games_1194+steam_games_8885+vg_sales_4840+wikidata_18530+wikidata_18532+wikidata_18536 <> wikidata_18532
+[TRACE] 2020-12-03 11:31:58.734 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'GameModes': vg_sales_1525+wikidata_14828 <> wikidata_14828
+[TRACE] 2020-12-03 11:31:58.734 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'price': vg_sales_1525+wikidata_14828 <> wikidata_14828
+[TRACE] 2020-12-03 11:31:58.735 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Platform': vg_sales_1525+wikidata_14828 <> wikidata_14828
+[TRACE] 2020-12-03 11:31:58.735 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': vg_sales_1525+wikidata_14828 <> wikidata_14828
+[TRACE] 2020-12-03 11:31:58.735 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'GameModes': steam_games_61+steam_games_62+vg_sales_15090+wikidata_29040 <> vg_sales_15090
+[TRACE] 2020-12-03 11:31:58.735 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Age': steam_games_61+steam_games_62+vg_sales_15090+wikidata_29040 <> vg_sales_15090
+[TRACE] 2020-12-03 11:31:58.735 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': steam_games_61+steam_games_62+vg_sales_15090+wikidata_29040 <> vg_sales_15090
+[TRACE] 2020-12-03 11:31:58.735 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'GameModes': steam_games_18411+wikidata_35092 <> steam_games_18411
+[TRACE] 2020-12-03 11:31:58.735 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'PegiRating': steam_games_18411+wikidata_35092 <> steam_games_18411
+[TRACE] 2020-12-03 11:31:58.736 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Publisher': steam_games_18411+wikidata_35092 <> steam_games_18411
+[TRACE] 2020-12-03 11:31:58.736 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Age': steam_games_18411+wikidata_35092 <> steam_games_18411
+[TRACE] 2020-12-03 11:31:58.736 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Platform': steam_games_18411+wikidata_35092 <> steam_games_18411
+[TRACE] 2020-12-03 11:31:58.736 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': steam_games_18411+wikidata_35092 <> steam_games_18411
+[TRACE] 2020-12-03 11:31:58.736 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Attribute-specific Accuracy:
+[TRACE] 2020-12-03 11:31:58.736 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	Developer: 0,60
+[TRACE] 2020-12-03 11:31:58.737 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	GameModes: 0,00
+[TRACE] 2020-12-03 11:31:58.737 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	PegiRating: 0,75
+[TRACE] 2020-12-03 11:31:58.737 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	Title: 0,95
+[TRACE] 2020-12-03 11:31:58.737 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	Publisher: 0,65
+[TRACE] 2020-12-03 11:31:58.737 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	UskRating: 0,80
+[TRACE] 2020-12-03 11:31:58.737 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	price: 0,60
+[TRACE] 2020-12-03 11:31:58.738 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	PublishingDate: 0,95
+[TRACE] 2020-12-03 11:31:58.738 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	Age: 0,55
+[TRACE] 2020-12-03 11:31:58.738 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	Platform: 0,50
+[TRACE] 2020-12-03 11:31:58.738 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	Genres: 0,00

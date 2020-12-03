@@ -18,12 +18,15 @@ import org.apache.logging.log4j.Logger;
 
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.AgeEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.DeveloperEvaluationRule;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.GameModeEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.GenreEvaluationRule;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.PegiEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.PlatformEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.PriceEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.PublisherEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.PublishingDateEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.TitleEvaluationRule;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.UskEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model_new.VideoGame;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model_new.VideoGameXMLFormatter;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model_new.VideoGameXMLReader;
@@ -116,11 +119,11 @@ public class DataFusion_Main {
         strategy.addAttributeFuser(VideoGame.PUBLISHING_DATE, new PublishingDateFuser(new MostRecent()), new PublishingDateEvaluationRule());
         strategy.addAttributeFuser(VideoGame.DEVELOPER, new DeveloperFuser(new LongestString()), new DeveloperEvaluationRule());
         strategy.addAttributeFuser(VideoGame.GENRES, new GenreFuser(new Union()), new GenreEvaluationRule());
-//        strategy.addAttributeFuser(VideoGame.GAME_MODES, new GameModeFuser(new Intersection()), null);
+        strategy.addAttributeFuser(VideoGame.GAME_MODES, new GameModeFuser(new Union()), new GameModeEvaluationRule());
         strategy.addAttributeFuser(VideoGame.PRICE, new PriceFuser(new ShortestString()), new PriceEvaluationRule());
         strategy.addAttributeFuser(VideoGame.AGE, new AgeFuser(new ShortestString() ), new AgeEvaluationRule());
-//        strategy.addAttributeFuser(VideoGame.USK_RATING, new UskRatingFuser(), null);
-//        strategy.addAttributeFuser(VideoGame.PEGI_RATING, new PegiRatingFuser(), null);
+        strategy.addAttributeFuser(VideoGame.USK_RATING, new UskRatingFuser(), new UskEvaluationRule());
+        strategy.addAttributeFuser(VideoGame.PEGI_RATING, new PegiRatingFuser(), new PegiEvaluationRule());
 
         // create the fusion engine
         DataFusionEngine<VideoGame, Attribute> engine = new DataFusionEngine<>(strategy);
