@@ -21,6 +21,9 @@ import de.uni_mannheim.informatik.dws.winter.model.RecordGroup;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 
 public class TitleFuser extends AttributeValueFuser<String, VideoGame, Attribute> {
 
@@ -48,7 +51,39 @@ public class TitleFuser extends AttributeValueFuser<String, VideoGame, Attribute
 
 	@Override
 	public String getValue(VideoGame record, Correspondence<Attribute, Matchable> correspondence) {
-		return record.getTitle();
+		return removeLastBracketToken(record.getTitle());
+	}
+
+	private static String removeLastBracketToken(String title) {
+
+		Pattern bracketsPattern = Pattern.compile(".*(\\((.+)\\))$");
+		Matcher bracketsMatcher = bracketsPattern.matcher(title);
+
+		if (bracketsMatcher.find()) {
+
+			String matchWithBrackets = bracketsMatcher.group(1);
+			String matchInsideBrackets = bracketsMatcher.group(2);
+
+			// check if content of the brackets is not only numbers -> then we keep it (sometimes its the year in the title)
+			if (!matchInsideBrackets.matches("[-+]?\\d*\\.?\\d+")) {
+				return title.replace(matchWithBrackets, "").trim();
+			}
+
+		}
+		return title.trim();
+	}
+
+	// only for test
+
+	public static void main(String[] args) {
+
+	    String title1 = "Need for Speed: Most Wanted (videojoc del 2005)";
+        System.out.println(title1);
+		System.out.println(removeLastBracketToken(title1));
+
+        String title2 = "Need for Speed: Most Wanted (2005)";
+        System.out.println(title2);
+		System.out.println(removeLastBracketToken(title2));
 	}
 
 }
