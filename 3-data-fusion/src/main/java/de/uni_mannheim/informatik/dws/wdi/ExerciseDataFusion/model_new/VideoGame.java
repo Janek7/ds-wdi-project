@@ -44,10 +44,13 @@ public class VideoGame extends AbstractRecord<Attribute> implements Serializable
 	private List<Genre> genres;
 	private List<GameMode> gameModes;
 	private String developer;
-	private int age;
-	private double price;
+	private Integer age;
+	private Double price;
 	private String uskRating;
 	private String pegiRating;
+
+	private boolean ageWasRead = false;
+	private boolean priceWasRead = false;
 
     private Map<Attribute, Collection<String>> provenance = new HashMap<>();
     private Collection<String> recordProvenance;
@@ -89,9 +92,9 @@ public class VideoGame extends AbstractRecord<Attribute> implements Serializable
         else if(attribute == GAME_MODES)
             return getGameModes() != null && getGameModes().size() > 0;
         else if(attribute == PRICE)
-            return getPrice() != 0;
+            return getPrice() != null;
         else if(attribute == AGE)
-            return getAge() != 0;
+            return getAge() != null;
         else if(attribute == USK_RATING)
             return getUskRating() != null && !getUskRating().isEmpty();
         else if(attribute == PEGI_RATING)
@@ -215,19 +218,19 @@ public class VideoGame extends AbstractRecord<Attribute> implements Serializable
 		this.developer = developer;
 	}
 
-	public int getAge() {
+	public Integer getAge() {
 		return age;
 	}
 
-	public void setAge(int age) {
+	public void setAge(Integer age) {
 		this.age = age;
 	}
 
-	public double getPrice() {
+	public Double getPrice() {
 		return price;
 	}
 
-	public void setPrice(double price) {
+	public void setPrice(Double price) {
 		this.price = price;
 	}
 
@@ -250,6 +253,21 @@ public class VideoGame extends AbstractRecord<Attribute> implements Serializable
 	public void setPegiRating(String pegiRating) {
 		this.pegiRating = pegiRating;
 	}
-	
-	
+
+
+	public boolean isAgeWasRead() {
+		return ageWasRead;
+	}
+
+	public void setAgeWasRead(boolean ageWasRead) {
+		this.ageWasRead = ageWasRead;
+	}
+
+	public boolean isPriceWasRead() {
+		return priceWasRead;
+	}
+
+	public void setPriceWasRead(boolean priceWasRead) {
+		this.priceWasRead = priceWasRead;
+	}
 }

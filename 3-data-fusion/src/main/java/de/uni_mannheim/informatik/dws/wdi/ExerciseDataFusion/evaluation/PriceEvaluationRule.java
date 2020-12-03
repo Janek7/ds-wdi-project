@@ -6,17 +6,22 @@ import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.Matchable;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.similarity.SimilarityMeasure;
+import de.uni_mannheim.informatik.dws.winter.similarity.numeric.NormalisedNumericSimilarity;
 import de.uni_mannheim.informatik.dws.winter.similarity.string.TokenizingJaccardSimilarity;
 
 public class PriceEvaluationRule extends EvaluationRule<VideoGame, Attribute>{
 
-	SimilarityMeasure<String> sim = new TokenizingJaccardSimilarity();
+	SimilarityMeasure<Double> sim = new NormalisedNumericSimilarity();
 
 	@Override
 	public boolean isEqual(VideoGame record1, VideoGame record2, Attribute schemaElement) {
 		// the title is correct if all tokens are there, but the order does not
 		// matter
-		return sim.calculate(record1.getPrice(), record2.getPrice()) >= 0.7;
+		if (record1.getPrice() != null && record2.getPrice() != null) {
+			return sim.calculate(Double.valueOf(String.valueOf(record1.getPrice())), Double.valueOf(String.valueOf(record2.getPrice()))) >= 0.7;
+		} else {
+			return true;
+		}
 	}
 
 	/* (non-Javadoc)
