@@ -8,6 +8,7 @@ import java.time.temporal.ChronoField;
 import java.util.Locale;
 
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.*;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.resolution_functions.Max;
 import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.list.Intersection;
 import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.list.Union;
 import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.meta.MostRecent;
@@ -120,8 +121,8 @@ public class DataFusion_Main {
         strategy.addAttributeFuser(VideoGame.DEVELOPER, new DeveloperFuser(new LongestString()), new DeveloperEvaluationRule());
         strategy.addAttributeFuser(VideoGame.GENRES, new GenreFuser(new Union()), new GenreEvaluationRule());
         strategy.addAttributeFuser(VideoGame.GAME_MODES, new GameModeFuser(new Union()), new GameModeEvaluationRule());
-        strategy.addAttributeFuser(VideoGame.PRICE, new PriceFuser(new ShortestString()), new PriceEvaluationRule());
-        strategy.addAttributeFuser(VideoGame.AGE, new AgeFuser(new ShortestString() ), new AgeEvaluationRule());
+        strategy.addAttributeFuser(VideoGame.PRICE, new PriceFuser(new Average()), new PriceEvaluationRule());
+        strategy.addAttributeFuser(VideoGame.AGE, new AgeFuser(new Max() ), new AgeEvaluationRule());
         strategy.addAttributeFuser(VideoGame.USK_RATING, new UskRatingFuser(), new UskEvaluationRule());
         strategy.addAttributeFuser(VideoGame.PEGI_RATING, new PegiRatingFuser(), new PegiEvaluationRule());
 

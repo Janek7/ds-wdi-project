@@ -22,20 +22,24 @@ import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 
 
-public class AgeFuser extends AttributeValueFuser<String, VideoGame, Attribute> {
+public class AgeFuser extends AttributeValueFuser<Double, VideoGame, Attribute> {
 
 	public AgeFuser(ConflictResolutionFunction resolutionFunction) {
 		super(resolutionFunction);
 	}
 
 	@Override
-	public void fuse(RecordGroup<VideoGame, Attribute> group, VideoGame fusedRecord, Processable<Correspondence<Attribute, Matchable>> schemaCorrespondences, Attribute schemaElement) {
+	public void fuse(RecordGroup<VideoGame, Attribute> group,
+                     VideoGame fusedRecord,
+                     Processable<Correspondence<Attribute, Matchable>> schemaCorrespondences,
+                     Attribute schemaElement) {
 
 		// get the fused value
-		FusedValue<String, VideoGame, Attribute> fused = getFusedValue(group, schemaCorrespondences, schemaElement);
+		FusedValue<Double, VideoGame, Attribute> fused = getFusedValue(group, schemaCorrespondences, schemaElement);
 		try {
 			// set the value for the fused record
-			fusedRecord.setAge(fused.getValue());
+            String ageFormatted = String.valueOf((int) Math.round(fused.getValue()));
+			fusedRecord.setAge(ageFormatted);
 		}
 		catch (Exception e) {
 			System.out.println(e.getMessage());
@@ -52,8 +56,8 @@ public class AgeFuser extends AttributeValueFuser<String, VideoGame, Attribute> 
 	}
 
 	@Override
-	public String getValue(VideoGame record, Correspondence<Attribute, Matchable> correspondence) {
-		return record.getAge();
+	public Double getValue(VideoGame record, Correspondence<Attribute, Matchable> correspondence) {
+		return Double.valueOf(record.getAge());
 	}
 
 }
