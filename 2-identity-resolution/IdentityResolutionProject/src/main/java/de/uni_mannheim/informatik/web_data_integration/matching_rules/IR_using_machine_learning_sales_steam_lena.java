@@ -55,16 +55,16 @@ private static final Logger logger = WinterLogManager.activateLogger("default");
 
 
 		// create a matching rule
-		String options[] = new String[] { "-S" };
-		String modelType = "SimpleLogistic"; // use a logistic regression
-		WekaMatchingRule<VideoGame, Attribute> matchingRule = new WekaMatchingRule<>(0.76, modelType, options);
+		String options[] = new String[] { "-U" };
+		String modelType = "J48"; // use a logistic regression
+		WekaMatchingRule<VideoGame, Attribute> matchingRule = new WekaMatchingRule<>(0.7, modelType, options);
 		matchingRule.activateDebugReport("data/output/sales_steam_ml/debugResultsMatchingRule.csv", 1000, gsTraining);
 		
 		// add comparators
 		matchingRule.addComparator(new TitleComparator(new MaximumOfTokenContainment())); 
         matchingRule.addComparator(new PlatformComparatorAdvanced(new MaximumOfTokenContainment()));
 		matchingRule.addComparator(new PublisherComparator(new JaroWinklerSimilarity()));
-		matchingRule.addComparator(new PubDateComparator(2));
+		matchingRule.addComparator(new PubDateComparator(1));
 
 
 		
