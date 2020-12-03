@@ -53,7 +53,7 @@ public class VideoGameBlockingKeyByTitleAndPlatformGenerator extends RecordBlock
         // first 4 tokens
         String[] tokens = titleShort.split(" ");
         String blockingKeyValue = "";
-        for (int i = 0; i <= 3 && i < tokens.length; i++) {
+        for (int i = 0; i < tokens.length; i++) {
             blockingKeyValue += tokens[i].substring(0, Math.min(2, tokens[i].length())).toUpperCase();
         }
 
@@ -72,7 +72,9 @@ public class VideoGameBlockingKeyByTitleAndPlatformGenerator extends RecordBlock
         }
 
         // append last number token
-        String lastToken = tokens[tokens.length - 1];
+        String titleShortWithoutBracketsToken = removeLastBracketToken(titleShort);
+        String[] titleShortWithoutBracketsTokenTokens = titleShortWithoutBracketsToken.split(" ");
+        String lastToken = titleShortWithoutBracketsTokenTokens[titleShortWithoutBracketsTokenTokens.length - 1];
         if (lastToken != null) {
             Pattern lastNumberPattern = Pattern.compile("\\d+|(?=[MDCLXVI])M*(C[MD]|D?C*)(X[CL]|L?X*)(I[XV]|V?I*)$");
             Matcher lastNumberMatch = lastNumberPattern.matcher(lastToken);
@@ -88,6 +90,25 @@ public class VideoGameBlockingKeyByTitleAndPlatformGenerator extends RecordBlock
     }
 
     // read platform lists
+
+    private static String removeLastBracketToken(String title) {
+
+        Pattern bracketsPattern = Pattern.compile(".*(\\((.+)\\))$");
+        Matcher bracketsMatcher = bracketsPattern.matcher(title);
+
+        if (bracketsMatcher.find()) {
+
+            String matchWithBrackets = bracketsMatcher.group(1);
+            String matchInsideBrackets = bracketsMatcher.group(2);
+
+            // check if content of the brackets is not only numbers -> then we keep it (sometimes its the year in the title)
+            if (!matchInsideBrackets.matches("[-+]?\\d*\\.?\\d+")) {
+                return title.replace(matchWithBrackets, "").trim();
+            }
+
+        }
+        return title.trim();
+    }
 
     private static List<PlatformKey> readFileIntoList() {
 

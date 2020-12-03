@@ -1,6 +1,6 @@
 Nintendo DS;DS
 Nintendo 3DS family;3DS
-Nintendo Dsi;DS
+Nintendo Dsi;DSI
 PlayStation 2;PS2
 PlayStation 3;PS3
 Nintendo Wii;Wii
@@ -24,9 +24,9 @@ x86;PC
 Xbox;XB
 Xbox Live;XB
 Xbox Live Arcade;XB
-Xbox One X;XB
-Xbox Series X;XB
-Xbox Series X and Series S;XB
+Xbox One X;XBOX
+Xbox Series X;XBSX
+Xbox Series X and Series S;XBSXS
 Game Boy Advance;GBA
 Nintendo GameCube;GC
 Nintendo 3DS;3DS
@@ -34,10 +34,10 @@ PlayStation Vita;PSV
 PlayStation 4;PS4
 Nintendo 64;N64
 Super Nintendo Entertainment System;SNES
-Xbox One;XOne
+Xbox One;XBO
 Wii U;WiiU
 Nintendo Entertainment System;NES
-Game Boy Color;GB
+Game Boy Color;GBC
 Game Boy;GB
 Dreamcast;DC
 Game Gear;GG
@@ -57,7 +57,7 @@ PSV;PSV
 PS4;PS4
 N64;N64
 SNES;SNES
-XOne;XOne
+XOne;XBO
 WiiU;WiiU
 NES;NES
 GB;GB

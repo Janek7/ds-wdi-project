@@ -64,7 +64,7 @@ public class IR_using_machine_learning_wikidata_sales_daniel {
 		matchingRule.addComparator(new TitleComparator(new TokenizingJaccardSimilarity()));
 		matchingRule.addComparator(new PlatformComparatorAdvanced(new MaximumOfTokenContainment()));
 		matchingRule.addComparator(new PublisherComparator(new JaroSimilarity()));
-		matchingRule.addComparator(new PubDateComparator(10));
+		matchingRule.addComparator(new PubDateComparator(10));  // wird vom ml ignoriert
 
 		// train the matching rule's model
 		System.out.println("*\n*\tLearning matching rule\n*");
@@ -88,7 +88,7 @@ public class IR_using_machine_learning_wikidata_sales_daniel {
 
 		// write the correspondences to the output file
 		new CSVCorrespondenceFormatter().writeCSV(
-				new File("data/output/wikidata_sales_ml/sales_wikidata_correspondences_daniel.csv"), correspondences);
+				new File("data/output/wikidata_sales_ml/wikidata_sales_correspondences.csv"), correspondences);
 
 		// load the gold standard (test set)
 		// hier momentan noch selber goldstandard wie oben ???
