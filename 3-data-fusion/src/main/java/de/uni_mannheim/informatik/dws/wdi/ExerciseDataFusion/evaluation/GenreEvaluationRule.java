@@ -14,31 +14,39 @@ public class GenreEvaluationRule extends EvaluationRule<VideoGame, Attribute> {
 
 	@Override
 	public boolean isEqual(VideoGame record1, VideoGame record2, Attribute schemaElement) {
-		Set<String> games1 = new HashSet<>();
+		Set<String> genre1 = new HashSet<>();
+		Set<String> genre2 = new HashSet<>();
 
-		for (Genre a : record1.getGenres()) {
-			// note: evaluating using the actor's name only suffices for simple
-			// lists
-			// in your project, you should have actor ids which you use here
-			// (and in the identity resolution)
-			games1.add(a.getGenre());
+		for (Genre g : record1.getGenres()) {
+			genre1.add(g.getGenre());
 		}
 
-		Set<String> games2 = new HashSet<>();
-		for (Genre a : record2.getGenres()) {
-			games2.add(a.getGenre());
+		for (Genre g : record2.getGenres()) {
+			genre2.add(g.getGenre());
 		}
 
-		return games1.containsAll(games2) && games2.containsAll(games1);
+		// return gameModes1.containsAll(gameModes2) &&
+		// gameModes2.containsAll(gameModes1);
+		if (genre1.size() < genre2.size()) {
+			return genre2.containsAll(genre1);
+		} else if (genre1.size() > genre2.size()) {
+			return genre1.containsAll(genre2);
+		}
+		return genre1.containsAll(genre2) && genre2.containsAll(genre1);
 	}
 
-	/* (non-Javadoc)
-	 * @see de.uni_mannheim.informatik.wdi.datafusion.EvaluationRule#isEqual(java.lang.Object, java.lang.Object, de.uni_mannheim.informatik.wdi.model.Correspondence)
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see
+	 * de.uni_mannheim.informatik.wdi.datafusion.EvaluationRule#isEqual(java.lang.
+	 * Object, java.lang.Object,
+	 * de.uni_mannheim.informatik.wdi.model.Correspondence)
 	 */
 	@Override
 	public boolean isEqual(VideoGame record1, VideoGame record2,
 			Correspondence<Attribute, Matchable> schemaCorrespondence) {
-		return isEqual(record1, record2, (Attribute)null);
+		return isEqual(record1, record2, (Attribute) null);
 	}
 
 }

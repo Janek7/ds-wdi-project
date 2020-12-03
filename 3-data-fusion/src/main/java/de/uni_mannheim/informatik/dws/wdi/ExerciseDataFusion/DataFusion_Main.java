@@ -8,6 +8,8 @@ import java.time.temporal.ChronoField;
 import java.util.Locale;
 
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.*;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.custom_conflict_resolution_functions.GameModeResolution;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.custom_conflict_resolution_functions.GenreResolution;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.resolution_functions.Max;
 import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.Voting;
 import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.list.Intersection;
@@ -120,8 +122,8 @@ public class DataFusion_Main {
         strategy.addAttributeFuser(VideoGame.PUBLISHER, new PublisherFuser(new LongestString()), new PublisherEvaluationRule());
         strategy.addAttributeFuser(VideoGame.PUBLISHING_DATE, new PublishingDateFuser(new MostRecent()), new PublishingDateEvaluationRule());
         strategy.addAttributeFuser(VideoGame.DEVELOPER, new DeveloperFuser(new LongestString()), new DeveloperEvaluationRule());
-        strategy.addAttributeFuser(VideoGame.GENRES, new GenreFuser(new Union()), new GenreEvaluationRule());
-        strategy.addAttributeFuser(VideoGame.GAME_MODES, new GameModeFuser(new Union()), new GameModeEvaluationRule());
+        strategy.addAttributeFuser(VideoGame.GENRES, new GenreFuser(new GenreResolution()), new GenreEvaluationRule());
+        strategy.addAttributeFuser(VideoGame.GAME_MODES, new GameModeFuser(new GameModeResolution()), new GameModeEvaluationRule());
         strategy.addAttributeFuser(VideoGame.PRICE, new PriceFuser(new Average()), new PriceEvaluationRule());
         strategy.addAttributeFuser(VideoGame.AGE, new AgeFuser(new Max() ), new AgeEvaluationRule());
         strategy.addAttributeFuser(VideoGame.USK_RATING, new UskRatingFuser(), new UskEvaluationRule());

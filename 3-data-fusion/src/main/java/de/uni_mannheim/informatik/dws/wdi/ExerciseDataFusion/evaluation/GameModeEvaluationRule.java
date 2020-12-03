@@ -15,31 +15,39 @@ public class GameModeEvaluationRule extends EvaluationRule<VideoGame, Attribute>
 
 	@Override
 	public boolean isEqual(VideoGame record1, VideoGame record2, Attribute schemaElement) {
-		Set<String> games1 = new HashSet<>();
+		Set<String> gameModes1 = new HashSet<>();
+		Set<String> gameModes2 = new HashSet<>();
 
-		for (GameMode a : record1.getGameModes()) {
-			// note: evaluating using the actor's name only suffices for simple
-			// lists
-			// in your project, you should have actor ids which you use here
-			// (and in the identity resolution)
-			games1.add(a.getGameMode());
+		for (GameMode g : record1.getGameModes()) {
+			gameModes1.add(g.getGameMode());
 		}
 
-		Set<String> games2 = new HashSet<>();
-		for (GameMode a : record2.getGameModes()) {
-			games2.add(a.getGameMode());
+		for (GameMode g : record2.getGameModes()) {
+			gameModes2.add(g.getGameMode());
 		}
 
-		return games1.containsAll(games2) && games2.containsAll(games1);
+		// return gameModes1.containsAll(gameModes2) &&
+		// gameModes2.containsAll(gameModes1);
+		if (gameModes1.size() < gameModes2.size()) {
+			return gameModes2.containsAll(gameModes1);
+		} else if (gameModes1.size() > gameModes2.size()) {
+			return gameModes1.containsAll(gameModes2);
+		}
+		return gameModes1.containsAll(gameModes2) && gameModes2.containsAll(gameModes1);
 	}
 
-	/* (non-Javadoc)
-	 * @see de.uni_mannheim.informatik.wdi.datafusion.EvaluationRule#isEqual(java.lang.Object, java.lang.Object, de.uni_mannheim.informatik.wdi.model.Correspondence)
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see
+	 * de.uni_mannheim.informatik.wdi.datafusion.EvaluationRule#isEqual(java.lang.
+	 * Object, java.lang.Object,
+	 * de.uni_mannheim.informatik.wdi.model.Correspondence)
 	 */
 	@Override
 	public boolean isEqual(VideoGame record1, VideoGame record2,
 			Correspondence<Attribute, Matchable> schemaCorrespondence) {
-		return isEqual(record1, record2, (Attribute)null);
+		return isEqual(record1, record2, (Attribute) null);
 	}
 
 }
