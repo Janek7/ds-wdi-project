@@ -1,4 +1,43 @@
 ﻿Wikidata;Steam
 Microsoft Windows;windows
+Windows 10;windows
+Windows 2000;windows
+Windows 3.1;windows
+Windows 3.x;windows
+Windows 7;windows
+Windows 8;windows
+Windows 8.1;windows
+Windows 98;windows
+Windows 9x;windows
+Windows XP;windows
 macOS;mac
 Linux;linux
+-;-
+Microsoft Windows;mac
+Windows 10;mac
+Windows 2000;mac
+Windows 3.1;mac
+Windows 3.x;mac
+Windows 7;mac
+Windows 8;mac
+Windows 8.1;mac
+Windows 98;mac
+Windows 9x;mac
+Windows XP;mac
+-;-
+Microsoft Windows;linux
+Windows 10;linux
+Windows 2000;linux
+Windows 3.1;linux
+Windows 3.x;linux
+Windows 7;linux
+Windows 8;linux
+Windows 8.1;linux
+Windows 98;linux
+Windows 9x;linux
+Windows XP;linux
+-;-
+macOS;windows
+macOS;linux
+Linux;windows
+Linux;mac

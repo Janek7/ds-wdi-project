@@ -55,13 +55,13 @@ public class IR_using_machine_learning_wikidata_sales_daniel {
 				new File("data/goldstandard/wikidata_sales/gold-standard_wikidata_sales_test_80_20.csv"));
 
 		// create a matching rule
-		String options[] = new String[] { "-U" };
-		String modelType = "J48"; // use a logistic regression
+		String options[] = new String[] { "-S" };
+		String modelType = "SimpleLogistic"; // use a logistic regression
 		WekaMatchingRule<VideoGame, Attribute> matchingRule = new WekaMatchingRule<>(0.7, modelType, options);
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", 1000, gsTraining);
 
 		// add comparators
-		matchingRule.addComparator(new TitleComparator(new TokenizingJaccardSimilarity()));
+		matchingRule.addComparator(new TitleComparator(new MaximumOfTokenContainment()));
 		matchingRule.addComparator(new PlatformComparatorAdvanced(new MaximumOfTokenContainment()));
 		matchingRule.addComparator(new PublisherComparator(new JaroSimilarity()));
 		matchingRule.addComparator(new PubDateComparator(10));  // wird vom ml ignoriert

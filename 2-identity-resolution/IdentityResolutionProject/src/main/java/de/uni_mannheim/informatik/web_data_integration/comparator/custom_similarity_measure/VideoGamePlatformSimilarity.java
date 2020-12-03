@@ -43,6 +43,7 @@ public class VideoGamePlatformSimilarity extends SimilarityMeasure<VideoGame> {
                         return checkPair(wikidataSalesCorrespondences, first, second);
                     case STEAM:
                         return checkPair(wikidataSteamCorrespondences, first, second);
+//                        return 1;
                     default:
                         return 0;
                 }
@@ -63,6 +64,7 @@ public class VideoGamePlatformSimilarity extends SimilarityMeasure<VideoGame> {
                 switch (second.getSource()) {
                     case WIKIDATA:
                         return checkPair(wikidataSteamCorrespondences, second, first);
+//                        return 1;
                     case SALES:
                         return checkPair(salesSteamCorrespondences, second, first);
                     default:

@@ -56,8 +56,8 @@ private static final Logger logger = WinterLogManager.activateLogger("trace");
 		gsTraining.loadFromCSVFile(new File("data/goldstandard/steam_wikidata/gold-standard_training_steam_wikidata.csv"));
 
 		// create a matching rule
-		String options[] = new String[] { "-S" };
-		String modelType = "SimpleLogistic"; // use a logistic regression
+		String options[] = new String[] { "-U" };
+		String modelType = "J48"; // use a logistic regression
 		WekaMatchingRule<VideoGame, Attribute> matchingRule = new WekaMatchingRule<>(0.7, modelType, options);
 		matchingRule.activateDebugReport("data/output/steam_wikidata/debugResultsMatchingRule.csv", 1000, gsTraining);
 		

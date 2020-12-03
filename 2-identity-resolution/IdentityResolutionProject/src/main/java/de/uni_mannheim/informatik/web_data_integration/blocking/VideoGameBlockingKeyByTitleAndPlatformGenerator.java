@@ -32,7 +32,7 @@ public class VideoGameBlockingKeyByTitleAndPlatformGenerator extends RecordBlock
     public void generateBlockingKeys(VideoGame record, Processable<Correspondence<Attribute, Matchable>> correspondences,
                                      DataIterator<Pair<String, VideoGame>> resultCollector) {
 
-        String title = record.getTitle();
+        String title = record.getTitle().toLowerCase();
 
         // "The" remove
         char[] titleAsChars = new char[title.length()];
@@ -82,6 +82,10 @@ public class VideoGameBlockingKeyByTitleAndPlatformGenerator extends RecordBlock
             if (lastNumberMatch.find()) {
                 blockingKeyValue += lastToken;
             }
+        }
+
+        if (title.toLowerCase().equals("EVE Online".toLowerCase())) {
+            System.out.println(blockingKeyValue + " " + record.toString());
         }
 
 
