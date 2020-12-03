@@ -16,9 +16,11 @@ import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.strin
 import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.string.ShortestString;
 import org.apache.logging.log4j.Logger;
 
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.AgeEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.DeveloperEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.GenreEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.PlatformEvaluationRule;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.PriceEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.PublisherEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.PublishingDateEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.TitleEvaluationRule;
@@ -115,8 +117,8 @@ public class DataFusion_Main {
         strategy.addAttributeFuser(VideoGame.DEVELOPER, new DeveloperFuser(new LongestString()), new DeveloperEvaluationRule());
         strategy.addAttributeFuser(VideoGame.GENRES, new GenreFuser(new Union()), new GenreEvaluationRule());
 //        strategy.addAttributeFuser(VideoGame.GAME_MODES, new GameModeFuser(new Intersection()), null);
-//        strategy.addAttributeFuser(VideoGame.PRICE, new PriceFuser(new Average()), null);
-//        strategy.addAttributeFuser(VideoGame.AGE, new AgeFuser(new Average()), null);
+//        strategy.addAttributeFuser(VideoGame.PRICE, new PriceFuser(new Average()), new PriceEvaluationRule());
+//        strategy.addAttributeFuser(VideoGame.AGE, new AgeFuser(new Average()), new AgeEvaluationRule());
 //        strategy.addAttributeFuser(VideoGame.USK_RATING, new UskRatingFuser(), null);
 //        strategy.addAttributeFuser(VideoGame.PEGI_RATING, new PegiRatingFuser(), null);
 
