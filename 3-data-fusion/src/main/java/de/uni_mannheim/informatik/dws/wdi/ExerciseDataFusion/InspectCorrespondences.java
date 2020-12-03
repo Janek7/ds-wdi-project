@@ -35,14 +35,15 @@ public class InspectCorrespondences {
         System.out.println("*\n*\tLoading correspondences\n*");
         CorrespondenceSet<VideoGame, Attribute> correspondences = new CorrespondenceSet<>();
         correspondences.loadCorrespondences(new File("data/correspondences/sales_steam_correspondences.csv"), dsSteam, dsSales);
-//        correspondences.loadCorrespondences(new File("data/correspondences/steam_wikidata_correspondences.csv"), dsSteam, dsWikidata);
-//        correspondences.loadCorrespondences(new File("data/correspondences/wikidata_sales_correspondences.csv"), dsWikidata, dsSales);
+        correspondences.loadCorrespondences(new File("data/correspondences/steam_wikidata_correspondences.csv"), dsSteam, dsWikidata);
+        correspondences.loadCorrespondences(new File("data/correspondences/wikidata_sales_correspondences.csv"), dsWikidata, dsSales);
 
         // System.out.println(correspondences.getRecordGroups());
         Collection<RecordGroup<VideoGame, Attribute>> recordGroups = correspondences.getRecordGroups();
         for (RecordGroup<VideoGame,Attribute> recordGroup : recordGroups) {
                 try {
                         if (recordGroup.getRecords().size() > 10) {
+
                                 System.out.println(recordGroup.getRecords());
                                 System.out.println("");
                                 

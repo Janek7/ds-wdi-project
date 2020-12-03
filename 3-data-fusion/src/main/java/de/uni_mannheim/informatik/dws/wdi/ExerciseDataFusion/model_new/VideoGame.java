@@ -106,9 +106,9 @@ public class VideoGame extends AbstractRecord<Attribute> implements Serializable
 
     @Override
     public String toString(){
-        /*return String.format("[VideoGame %s: %s / %s / %s / %s / %s / %s]\n", getIdentifier(), getTitle(),
-                getPlatform(), getPublishingDate().toString(), getGenres().toString(), getUskRating(), getPegiRating());*/
-    	return getIdentifier();
+        return String.format("[VideoGame %s: %s / %s / %s / %s]\n", getIdentifier(), getTitle(),
+                getPlatform(), getPublishingDate().toString(), getGenres().toString());
+//    	return getIdentifier();
     }
 
     @Override
