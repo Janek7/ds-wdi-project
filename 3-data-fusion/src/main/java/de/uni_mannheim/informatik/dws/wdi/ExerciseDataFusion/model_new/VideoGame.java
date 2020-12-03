@@ -44,8 +44,8 @@ public class VideoGame extends AbstractRecord<Attribute> implements Serializable
 	private List<Genre> genres;
 	private List<GameMode> gameModes;
 	private String developer;
-	private int age;
-	private double price;
+	private String age;
+	private String price;
 	private String uskRating;
 	private String pegiRating;
 
@@ -89,9 +89,9 @@ public class VideoGame extends AbstractRecord<Attribute> implements Serializable
         else if(attribute == GAME_MODES)
             return getGameModes() != null && getGameModes().size() > 0;
         else if(attribute == PRICE)
-            return getPrice() != 0;
+            return getPrice() != null && !getPrice().isEmpty();
         else if(attribute == AGE)
-            return getAge() != 0;
+            return getAge() != null && !getAge().isEmpty();
         else if(attribute == USK_RATING)
             return getUskRating() != null && !getUskRating().isEmpty();
         else if(attribute == PEGI_RATING)
@@ -215,19 +215,19 @@ public class VideoGame extends AbstractRecord<Attribute> implements Serializable
 		this.developer = developer;
 	}
 
-	public int getAge() {
+	public String getAge() {
 		return age;
 	}
 
-	public void setAge(int age) {
+	public void setAge(String age) {
 		this.age = age;
 	}
 
-	public double getPrice() {
+	public String getPrice() {
 		return price;
 	}
 
-	public void setPrice(double price) {
+	public void setPrice(String price) {
 		this.price = price;
 	}
 

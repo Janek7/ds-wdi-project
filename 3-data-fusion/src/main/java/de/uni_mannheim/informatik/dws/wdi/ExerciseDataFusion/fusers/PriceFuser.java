@@ -22,7 +22,7 @@ import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 
 
-public class PriceFuser extends AttributeValueFuser<Double, VideoGame, Attribute> {
+public class PriceFuser extends AttributeValueFuser<String, VideoGame, Attribute> {
 
 	public PriceFuser(ConflictResolutionFunction resolutionFunction) {
 		super(resolutionFunction);
@@ -32,10 +32,16 @@ public class PriceFuser extends AttributeValueFuser<Double, VideoGame, Attribute
 	public void fuse(RecordGroup<VideoGame, Attribute> group, VideoGame fusedRecord, Processable<Correspondence<Attribute, Matchable>> schemaCorrespondences, Attribute schemaElement) {
 
 		// get the fused value
-		FusedValue<Double, VideoGame, Attribute> fused = getFusedValue(group, schemaCorrespondences, schemaElement);
+		FusedValue<String, VideoGame, Attribute> fused = getFusedValue(group, schemaCorrespondences, schemaElement);
 
-		// set the value for the fused record
-		fusedRecord.setPrice(fused.getValue());
+		try {
+			// set the value for the fused record
+			fusedRecord.setPrice(fused.getValue());
+		}
+		catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
+		
 
 		// add provenance info
 		fusedRecord.setAttributeProvenance(VideoGame.PRICE, fused.getOriginalIds());
@@ -47,7 +53,7 @@ public class PriceFuser extends AttributeValueFuser<Double, VideoGame, Attribute
 	}
 
 	@Override
-	public Double getValue(VideoGame record, Correspondence<Attribute, Matchable> correspondence) {
+	public String getValue(VideoGame record, Correspondence<Attribute, Matchable> correspondence) {
 		return record.getPrice();
 	}
 

@@ -6,6 +6,7 @@ import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.Matchable;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.similarity.SimilarityMeasure;
+import de.uni_mannheim.informatik.dws.winter.similarity.numeric.PercentageSimilarity;
 import de.uni_mannheim.informatik.dws.winter.similarity.string.TokenizingJaccardSimilarity;
 
 public class PriceEvaluationRule extends EvaluationRule<VideoGame, Attribute>{
