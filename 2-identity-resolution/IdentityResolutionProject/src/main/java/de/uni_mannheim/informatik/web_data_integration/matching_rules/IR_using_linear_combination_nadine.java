@@ -57,20 +57,20 @@ public class IR_using_linear_combination_nadine {
 		// add comparators
 		//final comparators with best weights
 		
-		//F1 = 0,7647 threshold=0,76
-		/*matchingRule.addComparator(new TitleComparator(new MaximumOfTokenContainment()), 0.35);
-		matchingRule.addComparator(new PlatformComparatorAdvanced(new MaximumOfTokenContainment()), 0.25);
-		matchingRule.addComparator(new PublisherComparator(new JaroWinklerSimilarity()), 0.1);
-		matchingRule.addComparator(new DeveloperComparator(new JaroWinklerSimilarity()), 0.1);
-		matchingRule.addComparator(new PubDateComparator(3), 0.20);*/
 		
 		//F1 = 0,8000 threshold=0,76
-		matchingRule.addComparator(new TitleComparator(new MaximumOfTokenContainment()), 0.35);
-		matchingRule.addComparator(new PlatformComparatorAdvanced(new MaximumOfTokenContainment()), 0.3);
-		matchingRule.addComparator(new PublisherComparator(new JaroWinklerSimilarity()), 0.05);
-		matchingRule.addComparator(new DeveloperComparator(new JaroWinklerSimilarity()), 0.1);
-		matchingRule.addComparator(new PubDateComparator(3), 0.2);
+//		matchingRule.addComparator(new TitleComparator(new MaximumOfTokenContainment()), 0.35);
+//		matchingRule.addComparator(new PlatformComparatorAdvanced(new MaximumOfTokenContainment()), 0.35);
+//		matchingRule.addComparator(new PublisherComparator(new JaroWinklerSimilarity()), 0.05);
+//		matchingRule.addComparator(new DeveloperComparator(new JaroWinklerSimilarity()), 0.1);
+//		matchingRule.addComparator(new PubDateComparator(3), 0.15);
 		
+		//blue table tests
+		matchingRule.addComparator(new TitleComparator(new MaximumOfTokenContainment()), 0.25);
+		matchingRule.addComparator(new PlatformComparatorAdvanced(new MaximumOfTokenContainment()), 0.25);
+		//matchingRule.addComparator(new PublisherComparator(new JaroWinklerSimilarity()), 0.25);
+		matchingRule.addComparator(new DeveloperComparator(new JaroWinklerSimilarity()), 0.25);
+		matchingRule.addComparator(new PubDateComparator(3), 0.25);
 		
 		// creating a blocker
 		StandardRecordBlocker<VideoGame, Attribute> blocker = new StandardRecordBlocker<VideoGame, Attribute>(

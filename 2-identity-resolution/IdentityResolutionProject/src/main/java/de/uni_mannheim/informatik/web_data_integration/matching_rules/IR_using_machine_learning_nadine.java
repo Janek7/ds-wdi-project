@@ -55,11 +55,17 @@ private static final Logger logger = WinterLogManager.activateLogger("trace");
 		MatchingGoldStandard gsTraining = new MatchingGoldStandard();
 		gsTraining.loadFromCSVFile(new File("data/goldstandard/steam_wikidata/gold-standard_training_steam_wikidata.csv"));
 
-		// create a matching rule
-		String options[] = new String[] { "-U" };
-		String modelType = "J48"; // use a logistic regression
+		// create a matching rule logistic
+		String options[] = new String[] { "-S" };
+		String modelType = "SimpleLogistic"; // use a logistic regression
 		WekaMatchingRule<VideoGame, Attribute> matchingRule = new WekaMatchingRule<>(0.7, modelType, options);
 		matchingRule.activateDebugReport("data/output/steam_wikidata/debugResultsMatchingRule.csv", 1000, gsTraining);
+		
+		// create a matching rule tree
+//		String options[] = new String[] { "-U" };
+//		String modelType = "J48"; // use a logistic regression
+//		WekaMatchingRule<VideoGame, Attribute> matchingRule = new WekaMatchingRule<>(0.7, modelType, options);
+//		matchingRule.activateDebugReport("data/output/steam_wikidata/debugResultsMatchingRule.csv", 1000, gsTraining);
 		
 		// add comparators
 		matchingRule.addComparator(new PlatformComparatorAdvanced(new TokenizingJaccardSimilarity()));
@@ -68,12 +74,12 @@ private static final Logger logger = WinterLogManager.activateLogger("trace");
 		matchingRule.addComparator(new PubDateComparator(1));
 		//matchingRule.addComparator(new PublisherComparator(new LevenshteinSimilarity()));
 		
-		// comparators that were best in linear --> F1: 0,6747
-		/*matchingRule.addComparator(new TitleComparator(new MaximumOfTokenContainment()));
-		matchingRule.addComparator(new PlatformComparatorAdvanced(new MaximumOfTokenContainment()));
-		matchingRule.addComparator(new PublisherComparator(new JaroWinklerSimilarity()));
-		matchingRule.addComparator(new DeveloperComparator(new JaroWinklerSimilarity()));
-		matchingRule.addComparator(new PubDateComparator(3));*/
+		// comparators that were best in linear
+//		matchingRule.addComparator(new TitleComparator(new MaximumOfTokenContainment()));
+//		matchingRule.addComparator(new PlatformComparatorAdvanced(new MaximumOfTokenContainment()));
+//		matchingRule.addComparator(new PublisherComparator(new JaroWinklerSimilarity()));
+//		matchingRule.addComparator(new DeveloperComparator(new JaroWinklerSimilarity()));
+//		matchingRule.addComparator(new PubDateComparator(3));
 		
 		
 		
