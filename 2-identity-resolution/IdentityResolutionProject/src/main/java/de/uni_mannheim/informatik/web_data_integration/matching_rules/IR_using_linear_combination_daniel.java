@@ -4,6 +4,8 @@ import java.io.File;
 
 import de.uni_mannheim.informatik.dws.winter.similarity.string.LevenshteinSimilarity;
 import de.uni_mannheim.informatik.web_data_integration.comparator.*;
+import de.uni_mannheim.informatik.web_data_integration.comparator.custom_similarity_measure.JaroSimilarity;
+
 import org.slf4j.Logger;
 
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEngine;
@@ -20,6 +22,7 @@ import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 import de.uni_mannheim.informatik.dws.winter.similarity.string.MaximumOfTokenContainment;
 import de.uni_mannheim.informatik.dws.winter.similarity.string.TokenizingJaccardSimilarity;
 import de.uni_mannheim.informatik.dws.winter.utils.WinterLogManager;
+import de.uni_mannheim.informatik.web_data_integration.blocking.VideoGameBlockingKeyByTitleAndPlatformGenerator;
 import de.uni_mannheim.informatik.web_data_integration.blocking.VideoGameBlockingKeyByTitleGenerator;
 import de.uni_mannheim.informatik.web_data_integration.model.VideoGame;
 import de.uni_mannheim.informatik.web_data_integration.model.VideoGameXMLReader;
@@ -50,7 +53,7 @@ public class IR_using_linear_combination_daniel {
                 // load the gold standard (test set)
                 System.out.println("*\n*\tLoading gold standard\n*");
                 MatchingGoldStandard gsTest = new MatchingGoldStandard();
-                gsTest.loadFromCSVFile(new File("data/goldstandard/gold-standard_wikidata_sales.csv"));
+                gsTest.loadFromCSVFile(new File("data/goldstandard/wikidata_sales/gold-standard_wikidata_sales.csv"));
 
                 // create a matching rule
                 LinearCombinationMatchingRule<VideoGame, Attribute> matchingRule = new LinearCombinationMatchingRule<>(
@@ -59,15 +62,14 @@ public class IR_using_linear_combination_daniel {
                                 1000, gsTest);
 
                 // add comparators
-                matchingRule.addComparator(new TitleComparator(new MaximumOfTokenContainment()), 0.4);
-                matchingRule.addComparator(new PlatformComparatorAdvanced(new TokenizingJaccardSimilarity()), 0.3);
-                matchingRule.addComparator(new PublisherComparator(new TokenizingJaccardSimilarity()), 0.1);
-                matchingRule.addComparator(new PubDateComparator(1), 0.1);
-                matchingRule.addComparator(new DeveloperComparator(new LevenshteinSimilarity()), 0.1);
+                matchingRule.addComparator(new TitleComparator(new TokenizingJaccardSimilarity()), 0.4);
+                matchingRule.addComparator(new PlatformComparatorAdvanced(new MaximumOfTokenContainment()), 0.3);
+                matchingRule.addComparator(new PublisherComparator(new JaroSimilarity()), 0.15);
+                matchingRule.addComparator(new PubDateComparator(10), 0.15);
 
                 // creating a blocker
                 StandardRecordBlocker<VideoGame, Attribute> blocker = new StandardRecordBlocker<VideoGame, Attribute>(
-                                new VideoGameBlockingKeyByTitleGenerator());
+                                new VideoGameBlockingKeyByTitleAndPlatformGenerator());
                 blocker.setMeasureBlockSizes(true);
                 blocker.collectBlockSizeData("data/output/wikidata_sales/debugResultsBlocking.csv", 100);
 
