@@ -36,7 +36,7 @@ public class PriceFuser extends AttributeValueFuser<Double, VideoGame, Attribute
 
 		try {
 			// set the value for the fused record
-			fusedRecord.setPrice(String.valueOf(fused.getValue()));
+			fusedRecord.setPrice(fused.getValue() == null ? "" : String.valueOf(fused.getValue()));
 		}
 		catch (Exception e) {
 			System.out.println(e.getMessage());

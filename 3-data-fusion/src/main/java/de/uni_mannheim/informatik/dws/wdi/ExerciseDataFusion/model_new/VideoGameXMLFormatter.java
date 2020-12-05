@@ -20,15 +20,16 @@ public class VideoGameXMLFormatter extends XMLFormatter<VideoGame> {
         Element videoGame = doc.createElement("videogame");
 
         videoGame.appendChild(createTextElement("id", record.getIdentifier(), doc));
-        videoGame.appendChild(createTextElement("title", record.getTitle(), doc));
-        videoGame.appendChild(createTextElement("platform", record.getPlatform(), doc));
-        videoGame.appendChild(createTextElement("publisher", record.getPublisher(), doc));
-        videoGame.appendChild(createTextElement("publishingdate", record.getPublishingDate()!=null ? record.getPublishingDate().toString() : "", doc));
-        videoGame.appendChild(createTextElement("developer", record.getDeveloper(), doc));
-        videoGame.appendChild(createTextElement("usk_rating", record.getUskRating(), doc));
-        videoGame.appendChild(createTextElement("pegi_rating", record.getPegiRating(), doc));
-        videoGame.appendChild(createTextElement("age", record.getAge(), doc));
-        videoGame.appendChild(createTextElement("price", record.getPrice(), doc));
+        videoGame.appendChild(createTextElementWithProvenance("title", record.getTitle(), record.getMergedAttributeProvenance(VideoGame.TITLE), doc));
+        videoGame.appendChild(createTextElementWithProvenance("platform", record.getPlatform(), record.getMergedAttributeProvenance(VideoGame.PLATFORM), doc));
+        videoGame.appendChild(createTextElementWithProvenance("publisher", record.getPublisher(), record.getMergedAttributeProvenance(VideoGame.PUBLISHER), doc));
+        videoGame.appendChild(createTextElementWithProvenance("publishingdate", record.getPublishingDate()!=null ? record.getPublishingDate().toString() : "",
+                record.getMergedAttributeProvenance(VideoGame.PUBLISHING_DATE), doc));
+        videoGame.appendChild(createTextElementWithProvenance("developer", record.getDeveloper(), record.getMergedAttributeProvenance(VideoGame.DEVELOPER), doc));
+        videoGame.appendChild(createTextElementWithProvenance("usk_rating", record.getUskRating(), record.getMergedAttributeProvenance(VideoGame.USK_RATING), doc));
+        videoGame.appendChild(createTextElementWithProvenance("pegi_rating", record.getPegiRating(), record.getMergedAttributeProvenance(VideoGame.PEGI_RATING), doc));
+        videoGame.appendChild(createTextElementWithProvenance("age", record.getAge(), record.getMergedAttributeProvenance(VideoGame.AGE), doc));
+        videoGame.appendChild(createTextElementWithProvenance("price", record.getPrice(), record.getMergedAttributeProvenance(VideoGame.PRICE), doc));
         videoGame.appendChild(createGenresElement(record, doc));
         videoGame.appendChild(createGameModesElement(record, doc));
         // videoGame.appendChild(createTextElement(name, value, doc));
