@@ -23,8 +23,15 @@ public class VideoGameXMLFormatter extends XMLFormatter<VideoGame> {
         videoGame.appendChild(createTextElementWithProvenance("title", record.getTitle(), record.getMergedAttributeProvenance(VideoGame.TITLE), doc));
         videoGame.appendChild(createTextElementWithProvenance("platform", record.getPlatform(), record.getMergedAttributeProvenance(VideoGame.PLATFORM), doc));
         videoGame.appendChild(createTextElementWithProvenance("publisher", record.getPublisher(), record.getMergedAttributeProvenance(VideoGame.PUBLISHER), doc));
-        videoGame.appendChild(createTextElementWithProvenance("publishingdate", record.getPublishingDate()!=null ? record.getPublishingDate().toString() : "",
-                record.getMergedAttributeProvenance(VideoGame.PUBLISHING_DATE), doc));
+        if (record.getPublishingDate()!=null) {
+        	String[] pubDate = record.getPublishingDate().toString().split("-");
+            String pubDateYear = pubDate[0];
+            
+            videoGame.appendChild(createTextElementWithProvenance("publishingdate",pubDateYear, record.getMergedAttributeProvenance(VideoGame.PUBLISHING_DATE), doc));
+        }
+        else {
+        	videoGame.appendChild(createTextElementWithProvenance("publishingdate","", record.getMergedAttributeProvenance(VideoGame.PUBLISHING_DATE), doc));
+        }
         videoGame.appendChild(createTextElementWithProvenance("developer", record.getDeveloper(), record.getMergedAttributeProvenance(VideoGame.DEVELOPER), doc));
         videoGame.appendChild(createTextElementWithProvenance("usk_rating", record.getUskRating(), record.getMergedAttributeProvenance(VideoGame.USK_RATING), doc));
         videoGame.appendChild(createTextElementWithProvenance("pegi_rating", record.getPegiRating(), record.getMergedAttributeProvenance(VideoGame.PEGI_RATING), doc));
@@ -32,7 +39,6 @@ public class VideoGameXMLFormatter extends XMLFormatter<VideoGame> {
         videoGame.appendChild(createTextElementWithProvenance("price", record.getPrice(), record.getMergedAttributeProvenance(VideoGame.PRICE), doc));
         videoGame.appendChild(createGenresElement(record, doc));
         videoGame.appendChild(createGameModesElement(record, doc));
-        // videoGame.appendChild(createTextElement(name, value, doc));
         return videoGame;
     }
 

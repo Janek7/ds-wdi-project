@@ -3,6 +3,8 @@ package de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion;
 import java.io.File;
 import java.util.Collection;
 
+import org.apache.logging.log4j.Logger;
+
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model_new.VideoGame;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model_new.VideoGameXMLReader;
 import de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet;
@@ -10,12 +12,20 @@ import de.uni_mannheim.informatik.dws.winter.model.FusibleDataSet;
 import de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet;
 import de.uni_mannheim.informatik.dws.winter.model.RecordGroup;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
+import de.uni_mannheim.informatik.dws.winter.utils.WinterLogManager;
 
 public class InspectCorrespondencesNadine {
 	
+	private static final Logger logger = WinterLogManager.activateLogger("traceFile");
+	
 	public static void main(String[] args) throws Exception {
 
-	    FusibleDataSet<VideoGame, Attribute> dsWikidata = new FusibleHashedDataSet<>();
+		
+		FusibleDataSet<VideoGame, Attribute> fused = new FusibleHashedDataSet<>();
+        new VideoGameXMLReader().loadFromXML(new File("data/output/fused.xml"), "/videogames/videogame", fused);
+        fused.printDataSetDensityReport();
+		
+/*	    FusibleDataSet<VideoGame, Attribute> dsWikidata = new FusibleHashedDataSet<>();
 	    new VideoGameXMLReader().loadFromXML(new File("data/input/wikidata_mapping_output.xml"), "/videogames/videogame", dsWikidata);
 	    //dsWikidata.printDataSetDensityReport();
 	
@@ -48,7 +58,7 @@ public class InspectCorrespondencesNadine {
         }
         
      // write group size distribution
-	    correspondences.printGroupSizeDistribution();
+	    correspondences.printGroupSizeDistribution();*/
 	    
 	
 	}
