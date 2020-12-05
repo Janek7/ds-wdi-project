@@ -134,6 +134,7 @@ public class DataFusion_Main {
         DataFusionEngine<VideoGame, Attribute> engine = new DataFusionEngine<>(strategy);
 
         // print consistency report
+        System.out.println("consistencies");
         engine.printClusterConsistencyReport(correspondences, null);
 
         // print record groups sorted by consistency

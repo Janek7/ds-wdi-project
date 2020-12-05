@@ -32,11 +32,11 @@ public class VideoGameXMLFormatter extends XMLFormatter<VideoGame> {
         else {
         	videoGame.appendChild(createTextElementWithProvenance("publishingdate","", record.getMergedAttributeProvenance(VideoGame.PUBLISHING_DATE), doc));
         }
-        videoGame.appendChild(createTextElementWithProvenance("developer", record.getDeveloper(), record.getMergedAttributeProvenance(VideoGame.DEVELOPER), doc));
-        videoGame.appendChild(createTextElementWithProvenance("usk_rating", record.getUskRating(), record.getMergedAttributeProvenance(VideoGame.USK_RATING), doc));
-        videoGame.appendChild(createTextElementWithProvenance("pegi_rating", record.getPegiRating(), record.getMergedAttributeProvenance(VideoGame.PEGI_RATING), doc));
-        videoGame.appendChild(createTextElementWithProvenance("age", record.getAge(), record.getMergedAttributeProvenance(VideoGame.AGE), doc));
-        videoGame.appendChild(createTextElementWithProvenance("price", record.getPrice(), record.getMergedAttributeProvenance(VideoGame.PRICE), doc));
+        videoGame.appendChild(createTextElement("developer", record.getDeveloper(), doc));
+        videoGame.appendChild(createTextElement("usk_rating", record.getUskRating(), doc));
+        videoGame.appendChild(createTextElement("pegi_rating", record.getPegiRating(), doc));
+        videoGame.appendChild(createTextElement("age", record.getAge(), doc));
+        videoGame.appendChild(createTextElement("price", record.getPrice(), doc));
         videoGame.appendChild(createGenresElement(record, doc));
         videoGame.appendChild(createGameModesElement(record, doc));
         return videoGame;
