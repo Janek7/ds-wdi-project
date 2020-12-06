@@ -12,13 +12,15 @@ import de.uni_mannheim.informatik.dws.winter.similarity.string.TokenizingJaccard
 
 public class AgeEvaluationRule extends EvaluationRule<VideoGame, Attribute>{
 
-	SimilarityMeasure<String> sim = new TokenizingJaccardSimilarity();
 
 	@Override
 	public boolean isEqual(VideoGame record1, VideoGame record2, Attribute schemaElement) {
-		// the title is correct if all tokens are there, but the order does not
-		// matter
-		return sim.calculate(record1.getAge(), record2.getAge()) >= 0.7;
+		if(record1.getAge()==null && record2.getAge()==null)
+			return true;
+		else if(record1.getAge()==null ^ record2.getAge()==null)
+			return false;
+		else
+			return record1.getAge().equals(record2.getAge());
 	}
 
 	/* (non-Javadoc)

@@ -11,13 +11,17 @@ import de.uni_mannheim.informatik.dws.winter.similarity.string.TokenizingJaccard
 
 public class PriceEvaluationRule extends EvaluationRule<VideoGame, Attribute>{
 
-	SimilarityMeasure<String> sim = new TokenizingJaccardSimilarity();
+	SimilarityMeasure<Double> sim = new PercentageSimilarity(0.25);
 
 	@Override
 	public boolean isEqual(VideoGame record1, VideoGame record2, Attribute schemaElement) {
 		// the title is correct if all tokens are there, but the order does not
 		// matter
-		return sim.calculate(record1.getPrice(), record2.getPrice()) >= 0.7;
+		if (!record1.getPrice().equals("") && !record2.getPrice().equals("")) {
+			return sim.calculate(Double.valueOf(record1.getPrice()), Double.valueOf(record2.getPrice())) >= 0.7;
+		} else {
+			return false;
+		}
 	}
 
 	/* (non-Javadoc)

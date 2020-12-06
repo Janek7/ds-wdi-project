@@ -14,6 +14,7 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.custom_confl
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.custom_conflict_resolution_functions.MostRecentDate;
 import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.meta.FavourSources;
 import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.meta.MostRecent;
+import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.numeric.Average;
 import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.string.LongestString;
 import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.string.ShortestString;
 import org.apache.logging.log4j.Logger;
@@ -118,10 +119,10 @@ public class DataFusion_Main {
 
         // add attribute fusers
         strategy.addAttributeFuser(VideoGame.TITLE, new TitleFuser(new LongestString()), new TitleEvaluationRule());
-        strategy.addAttributeFuser(VideoGame.PLATFORM, new PlatformFuser(new ShortestString()), new PlatformEvaluationRule());
-        strategy.addAttributeFuser(VideoGame.PUBLISHER, new PublisherFuser(new LongestString()), new PublisherEvaluationRule());
+        strategy.addAttributeFuser(VideoGame.PLATFORM, new PlatformFuser(new LongestString()), new PlatformEvaluationRule());
+        strategy.addAttributeFuser(VideoGame.PUBLISHER, new PublisherFuser(new ShortestString()), new PublisherEvaluationRule());
         strategy.addAttributeFuser(VideoGame.PUBLISHING_DATE, new PublishingDateFuser(new MostRecentDate()), new PublishingDateEvaluationRule());
-        strategy.addAttributeFuser(VideoGame.DEVELOPER, new DeveloperFuser(new LongestString()), new DeveloperEvaluationRule());
+        strategy.addAttributeFuser(VideoGame.DEVELOPER, new DeveloperFuser(new ShortestString()), new DeveloperEvaluationRule());
 
         strategy.addAttributeFuser(VideoGame.GENRES, new GenreFuser(new GenreResolution()), new GenreEvaluationRule());
         strategy.addAttributeFuser(VideoGame.GAME_MODES, new GameModeFuser(new GameModeResolution()), new GameModeEvaluationRule());

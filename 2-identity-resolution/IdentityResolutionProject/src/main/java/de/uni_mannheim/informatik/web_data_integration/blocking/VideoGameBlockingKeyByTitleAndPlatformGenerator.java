@@ -84,10 +84,6 @@ public class VideoGameBlockingKeyByTitleAndPlatformGenerator extends RecordBlock
             }
         }
 
-        if (title.toLowerCase().equals("EVE Online".toLowerCase())) {
-            System.out.println(blockingKeyValue + " " + record.toString());
-        }
-
 
         // save result
         resultCollector.next(new Pair<>(blockingKeyValue, record));

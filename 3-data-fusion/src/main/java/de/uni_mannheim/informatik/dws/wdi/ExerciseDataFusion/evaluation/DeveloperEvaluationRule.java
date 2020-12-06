@@ -1,16 +1,18 @@
 package de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation;
 
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.custom_similarity_measures.JaroWinklerSimilarity;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model_new.VideoGame;
 import de.uni_mannheim.informatik.dws.winter.datafusion.EvaluationRule;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.Matchable;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.similarity.SimilarityMeasure;
+import de.uni_mannheim.informatik.dws.winter.similarity.string.MaximumOfTokenContainment;
 import de.uni_mannheim.informatik.dws.winter.similarity.string.TokenizingJaccardSimilarity;
 
 public class DeveloperEvaluationRule extends EvaluationRule<VideoGame, Attribute> {
 
-	SimilarityMeasure<String> sim = new TokenizingJaccardSimilarity();
+	SimilarityMeasure<String> sim = new JaroWinklerSimilarity();
 
 	@Override
 	public boolean isEqual(VideoGame record1, VideoGame record2, Attribute schemaElement) {

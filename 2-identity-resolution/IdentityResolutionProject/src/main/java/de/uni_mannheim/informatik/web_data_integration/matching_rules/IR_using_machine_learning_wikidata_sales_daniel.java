@@ -73,9 +73,9 @@ public class IR_using_machine_learning_wikidata_sales_daniel {
 		System.out.println(String.format("Matching rule is:\n%s", matchingRule.getModelDescription()));
 
 		// create a blocker (blocking strategy)
-		StandardRecordBlocker<VideoGame, Attribute> blocker = new StandardRecordBlocker<VideoGame, Attribute>(new VideoGameBlockingKeyByTitleAndPlatformGenerator());
-		// SortedNeighbourhoodBlocker<VideoGame, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(
-		// 		new VideoGameBlockingKeyByTitleGenerator(), 75);
+//		StandardRecordBlocker<VideoGame, Attribute> blocker = new StandardRecordBlocker<VideoGame, Attribute>(new VideoGameBlockingKeyByTitleAndPlatformGenerator());
+		 SortedNeighbourhoodBlocker<VideoGame, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(
+		 		new VideoGameBlockingKeyByTitleAndPlatformGenerator(), 75);
 		blocker.collectBlockSizeData("data/output/debugResultsBlocking.csv", 100);
 
 		// Initialize Matching Engine

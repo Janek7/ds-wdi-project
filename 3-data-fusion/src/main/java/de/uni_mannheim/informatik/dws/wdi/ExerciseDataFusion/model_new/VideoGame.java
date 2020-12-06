@@ -139,7 +139,11 @@ public class VideoGame extends AbstractRecord<Attribute> implements Serializable
 
     public void setAttributeProvenance(Attribute attribute,
                                        Collection<String> provenance) {
-        this.provenance.put(attribute, provenance);
+        if (attribute == PUBLISHING_DATE) {
+//        if (true) {
+//			System.out.println("test");
+		}
+		this.provenance.put(attribute, provenance);
     }
 
     public String getMergedAttributeProvenance(Attribute attribute) {
