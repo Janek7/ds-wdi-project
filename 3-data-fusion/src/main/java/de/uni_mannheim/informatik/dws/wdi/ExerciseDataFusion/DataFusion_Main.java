@@ -149,9 +149,10 @@ public class DataFusion_Main {
         // write the result
         new VideoGameXMLFormatter().writeXML(new File("data/output/fused.xml"), fusedDataSet);
 
+        fusedDataSet.printDataSetDensityReport();
+
         // evaluate
         DataFusionEvaluator<VideoGame, Attribute> evaluator = new DataFusionEvaluator<>(strategy, new RecordGroupFactory<>());
-
         double accuracy = evaluator.evaluate(fusedDataSet, gs, null);
 
         System.out.println(String.format("Accuracy: %.2f", accuracy));

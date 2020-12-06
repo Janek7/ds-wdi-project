@@ -18,23 +18,20 @@ public class MostRecentDate<RecordType extends Matchable & Fusible<SchemaElement
 
     public FusedValue<LocalDate, RecordType, SchemaElementType> resolveConflict(Collection<FusibleValue<LocalDate, RecordType, SchemaElementType>> values) {
 
-        if (values.size() == 0) {
-            return new FusedValue((Object)null);
-        } else {
-            LocalDate max = null;
-            double count = 0.0D;
+        FusibleValue<LocalDate, RecordType, SchemaElementType> mostRecentDate = null;
+        Iterator var4 = values.iterator();
 
-            for(Iterator var7 = values.iterator(); var7.hasNext(); ++count) {
-                FusibleValue<LocalDate, RecordType, SchemaElementType> value = (FusibleValue)var7.next();
-                LocalDate dateValue = value.getValue();
-                if (max == null) {
-                    max = dateValue;
-                } else {
-                    max = dateValue.compareTo(max) > 0 ? dateValue : max;
+        while(true) {
+            FusibleValue<LocalDate, RecordType, SchemaElementType> value;
+            do {
+                if (!var4.hasNext()) {
+                    return new FusedValue(mostRecentDate);
                 }
-            }
 
-            return new FusedValue(max);
+                value = (FusibleValue)var4.next();
+            } while(mostRecentDate != null && !value.getValue().isAfter(mostRecentDate.getValue()));
+
+            mostRecentDate = value;
         }
 
     }

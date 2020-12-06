@@ -30,7 +30,7 @@ public class VideoGame extends AbstractRecord<Attribute> implements Serializable
     public static final Attribute DEVELOPER = new Attribute("Developer");
     public static final Attribute GENRES = new Attribute("Genres");
     public static final Attribute GAME_MODES = new Attribute("GameModes");
-    public static final Attribute PRICE = new Attribute("price");
+    public static final Attribute PRICE = new Attribute("Price");
     public static final Attribute AGE = new Attribute("Age");
     public static final Attribute USK_RATING = new Attribute("UskRating");
     public static final Attribute PEGI_RATING = new Attribute("PegiRating");

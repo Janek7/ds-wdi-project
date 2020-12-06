@@ -15,19 +15,22 @@ public class Max<RecordType extends Matchable & Fusible<SchemaElementType>, Sche
     }
 
     public FusedValue<Double, RecordType, SchemaElementType> resolveConflict(Collection<FusibleValue<Double, RecordType, SchemaElementType>> values) {
-        if (values.size() == 0) {
-            return new FusedValue((Object)null);
-        } else {
-            double max = 0.0D;
-            double count = 0.0D;
 
-            for(Iterator var7 = values.iterator(); var7.hasNext(); ++count) {
-                FusibleValue<Double, RecordType, SchemaElementType> value = (FusibleValue)var7.next();
-                double doubleValue = (Double)value.getValue();
-                max = doubleValue > max ? doubleValue : max;
-            }
+        FusibleValue<Double, RecordType, SchemaElementType> max = null;
+        Iterator var4 = values.iterator();
 
-            return new FusedValue(max);
+        while(true) {
+            FusibleValue<Double, RecordType, SchemaElementType> value;
+            do {
+                if (!var4.hasNext()) {
+                    return new FusedValue(max);
+                }
+
+                value = (FusibleValue)var4.next();
+            } while(max != null && Double.valueOf(String.valueOf(value.getValue())) <= max.getValue());
+
+            max = value;
         }
+
     }
 }
