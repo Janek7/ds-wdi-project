@@ -1,0 +1,2018 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<videogames>
+  <videogame>
+    <id>vg_sales_4073+wikidata_25660</id>
+    <title provenance="wikidata_25660">Steel Diver</title>
+    <platform provenance="wikidata_25660">Nintendo 3DS</platform>
+    <publisher provenance="wikidata_25660">Nintendo</publisher>
+    <publishingdate provenance="wikidata_25660">2011</publishingdate>
+    <developer provenance="wikidata_25660">Nintendo Entertainment Analysis &amp; Development</developer>
+    <usk_rating provenance=""/>
+    <pegi_rating provenance="wikidata_25660">PEGI 7</pegi_rating>
+    <age provenance="wikidata_25660">7</age>
+    <price provenance=""/>
+    <genres provenance="wikidata_25660+vg_sales_4073">
+      <genre>simulation video game</genre>
+      <genre>Action</genre>
+    </genres>
+    <gamemodes provenance="wikidata_25660">
+      <gamemode>Single-player</gamemode>
+      <gamemode>Multi-player</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>vg_sales_2037+wikidata_20275</id>
+    <title provenance="wikidata_20275">Ace Combat 6: Fires of Liberation</title>
+    <platform provenance="wikidata_20275">Xbox 360</platform>
+    <publisher provenance="vg_sales_2037">Atari</publisher>
+    <publishingdate provenance="wikidata_20275">2007</publishingdate>
+    <developer provenance="wikidata_20275">Namco</developer>
+    <usk_rating provenance=""/>
+    <pegi_rating provenance="wikidata_20275">PEGI 12</pegi_rating>
+    <age provenance="wikidata_20275">12</age>
+    <price provenance=""/>
+    <genres provenance="wikidata_20275+vg_sales_2037">
+      <genre>combat flight simulator</genre>
+      <genre>Simulation</genre>
+    </genres>
+    <gamemodes provenance="wikidata_20275">
+      <gamemode>Single-player</gamemode>
+      <gamemode>Multi-player</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>vg_sales_11120+wikidata_27995</id>
+    <title provenance="wikidata_27995">Sniper Elite</title>
+    <platform provenance="wikidata_27995">Xbox</platform>
+    <publisher provenance="vg_sales_11120">Ubisoft</publisher>
+    <publishingdate provenance="wikidata_27995">2005</publishingdate>
+    <developer provenance="wikidata_27995">Rebellion Developments</developer>
+    <usk_rating provenance=""/>
+    <pegi_rating provenance="wikidata_27995">PEGI 16</pegi_rating>
+    <age provenance="wikidata_27995">16</age>
+    <price provenance=""/>
+    <genres provenance="wikidata_27995+vg_sales_11120">
+      <genre>Shooter</genre>
+      <genre>tactical shooter</genre>
+    </genres>
+    <gamemodes provenance="wikidata_27995">
+      <gamemode>Single-player</gamemode>
+      <gamemode>Multi-player</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>vg_sales_6533+wikidata_33918</id>
+    <title provenance="wikidata_33918">Indiana Jones and the Staff of Kings</title>
+    <platform provenance="wikidata_33918">PlayStation Portable</platform>
+    <publisher provenance="wikidata_33918">LucasArts</publisher>
+    <publishingdate provenance="wikidata_33918">2009</publishingdate>
+    <developer provenance="wikidata_33918">Behaviour Interactive</developer>
+    <usk_rating provenance="wikidata_33918">USK 12</usk_rating>
+    <pegi_rating provenance=""/>
+    <age provenance="wikidata_33918">12</age>
+    <price provenance=""/>
+    <genres provenance="wikidata_33918+vg_sales_6533">
+      <genre>Action</genre>
+      <genre>action-adventure game</genre>
+    </genres>
+    <gamemodes provenance="wikidata_33918">
+      <gamemode>Single-player</gamemode>
+      <gamemode>Multi-player</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>vg_sales_15992+wikidata_19070</id>
+    <title provenance="vg_sales_15992">Donkey Kong Jungle Beat</title>
+    <platform provenance="vg_sales_15992">Nintendo Wii</platform>
+    <publisher provenance="vg_sales_15992">Nintendo</publisher>
+    <publishingdate provenance="vg_sales_15992">2008</publishingdate>
+    <developer provenance="wikidata_19070">Nintendo Entertainment Analysis &amp; Development</developer>
+    <usk_rating provenance="wikidata_19070">USK 0</usk_rating>
+    <pegi_rating provenance="wikidata_19070">PEGI 3</pegi_rating>
+    <age provenance="wikidata_19070">3</age>
+    <price provenance=""/>
+    <genres provenance="vg_sales_15992+wikidata_19070">
+      <genre>Platform</genre>
+      <genre>platform game</genre>
+    </genres>
+    <gamemodes provenance="wikidata_19070">
+      <gamemode>Single-player</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>steam_games_23542+wikidata_33568</id>
+    <title provenance="wikidata_33568">Yakuza 0</title>
+    <platform provenance="wikidata_33568">PC</platform>
+    <publisher provenance="wikidata_33568">Sega</publisher>
+    <publishingdate provenance="steam_games_23542">2018</publishingdate>
+    <developer provenance="wikidata_33568">Sega</developer>
+    <usk_rating provenance="wikidata_33568">USK 18</usk_rating>
+    <pegi_rating provenance=""/>
+    <age provenance="wikidata_33568">18</age>
+    <price provenance="steam_games_23542">14.99</price>
+    <genres provenance="wikidata_33568+steam_games_23542">
+      <genre>Adventure</genre>
+      <genre>Action</genre>
+      <genre>action role-playing game</genre>
+      <genre>RPG</genre>
+    </genres>
+    <gamemodes provenance="wikidata_33568+steam_games_23542">
+      <gamemode>Online Multi-Player</gamemode>
+      <gamemode>Single-player</gamemode>
+      <gamemode>Multi-player</gamemode>
+      <gamemode>Steam Achievements</gamemode>
+      <gamemode>Full controller support</gamemode>
+      <gamemode>Steam Cloud</gamemode>
+      <gamemode>Steam Trading Cards</gamemode>
+      <gamemode>Local Multi-Player</gamemode>
+      <gamemode>Steam Leaderboards</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>vg_sales_11131+wikidata_19362</id>
+    <title provenance="wikidata_19362">El Tigre: The Adventures of Manny Rivera</title>
+    <platform provenance="wikidata_19362">Nintendo DS</platform>
+    <publisher provenance="vg_sales_11131">THQ</publisher>
+    <publishingdate provenance="wikidata_19362">2007</publishingdate>
+    <developer provenance="wikidata_19362">Blue Tongue Entertainment</developer>
+    <usk_rating provenance=""/>
+    <pegi_rating provenance=""/>
+    <age provenance=""/>
+    <price provenance=""/>
+    <genres provenance="wikidata_19362+vg_sales_11131">
+      <genre>Platform</genre>
+      <genre>action game</genre>
+    </genres>
+    <gamemodes provenance=""/>
+  </videogame>
+  <videogame>
+    <id>steam_games_5638+wikidata_35261</id>
+    <title provenance="steam_games_5638">Fractured Soul</title>
+    <platform provenance="steam_games_5638">PC</platform>
+    <publisher provenance="steam_games_5638">Endgame Studios</publisher>
+    <publishingdate provenance="steam_games_5638">2015</publishingdate>
+    <developer provenance="steam_games_5638">Endgame Studios</developer>
+    <usk_rating provenance=""/>
+    <pegi_rating provenance=""/>
+    <age provenance="steam_games_5638">0</age>
+    <price provenance="steam_games_5638">6.99</price>
+    <genres provenance="steam_games_5638+wikidata_35261">
+      <genre>Adventure</genre>
+      <genre>Action</genre>
+      <genre>Indie</genre>
+      <genre>indie game</genre>
+    </genres>
+    <gamemodes provenance="steam_games_5638+wikidata_35261">
+      <gamemode>Single-player</gamemode>
+      <gamemode>Steam Achievements</gamemode>
+      <gamemode>Full controller support</gamemode>
+      <gamemode>Steam Cloud</gamemode>
+      <gamemode>Multi-player</gamemode>
+      <gamemode>Stats</gamemode>
+      <gamemode>Steam Leaderboards</gamemode>
+      <gamemode>Shared/Split Screen</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>vg_sales_4961+wikidata_24176</id>
+    <title provenance="wikidata_24176">Super Famista 3</title>
+    <platform provenance="wikidata_24176">Super Nintendo Entertainment System</platform>
+    <publisher provenance="vg_sales_4961">Namco Bandai Games</publisher>
+    <publishingdate provenance="wikidata_24176">1994</publishingdate>
+    <developer provenance=""/>
+    <usk_rating provenance=""/>
+    <pegi_rating provenance=""/>
+    <age provenance=""/>
+    <price provenance=""/>
+    <genres provenance="vg_sales_4961">
+      <genre>Sports</genre>
+    </genres>
+    <gamemodes provenance=""/>
+  </videogame>
+  <videogame>
+    <id>vg_sales_2142+wikidata_20239</id>
+    <title provenance="vg_sales_2142">LEGO The Lord of the Rings</title>
+    <platform provenance="vg_sales_2142">Nintendo Wii</platform>
+    <publisher provenance="vg_sales_2142">Warner Bros. Interactive Entertainment</publisher>
+    <publishingdate provenance="vg_sales_2142">2012</publishingdate>
+    <developer provenance="wikidata_20239">Traveller's Tales</developer>
+    <usk_rating provenance="wikidata_20239">USK 12</usk_rating>
+    <pegi_rating provenance="wikidata_20239">PEGI 7</pegi_rating>
+    <age provenance="wikidata_20239">12</age>
+    <price provenance=""/>
+    <genres provenance="vg_sales_2142+wikidata_20239">
+      <genre>Action</genre>
+      <genre>action-adventure game</genre>
+    </genres>
+    <gamemodes provenance="wikidata_20239">
+      <gamemode>Single-player</gamemode>
+      <gamemode>Multi-player</gamemode>
+      <gamemode>cooperative gameplay</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>vg_sales_6749+wikidata_18732</id>
+    <title provenance="vg_sales_6749">Hasbro Family Game Night 3</title>
+    <platform provenance="vg_sales_6749">PlayStation 3</platform>
+    <publisher provenance="vg_sales_6749">Electronic Arts</publisher>
+    <publishingdate provenance="vg_sales_6749">2010</publishingdate>
+    <developer provenance=""/>
+    <usk_rating provenance=""/>
+    <pegi_rating provenance=""/>
+    <age provenance=""/>
+    <price provenance=""/>
+    <genres provenance="vg_sales_6749">
+      <genre>Misc</genre>
+    </genres>
+    <gamemodes provenance=""/>
+  </videogame>
+  <videogame>
+    <id>vg_sales_9180+wikidata_16800</id>
+    <title provenance="wikidata_16800">Detective Barbie: The Mystery Cruise</title>
+    <platform provenance="wikidata_16800">PlayStation</platform>
+    <publisher provenance="vg_sales_9180">Mattel Interactive</publisher>
+    <publishingdate provenance="vg_sales_9180">1999</publishingdate>
+    <developer provenance=""/>
+    <usk_rating provenance=""/>
+    <pegi_rating provenance=""/>
+    <age provenance=""/>
+    <price provenance=""/>
+    <genres provenance="vg_sales_9180">
+      <genre>Adventure</genre>
+    </genres>
+    <gamemodes provenance=""/>
+  </videogame>
+  <videogame>
+    <id>steam_games_26200+wikidata_30017</id>
+    <title provenance="wikidata_30017">Tennis World Tour</title>
+    <platform provenance="wikidata_30017">PC</platform>
+    <publisher provenance="steam_games_26200">Bigben Interactive</publisher>
+    <publishingdate provenance="wikidata_30017">2018</publishingdate>
+    <developer provenance="steam_games_26200">Breakpoint</developer>
+    <usk_rating provenance=""/>
+    <pegi_rating provenance=""/>
+    <age provenance="steam_games_26200">0</age>
+    <price provenance="steam_games_26200">39.99</price>
+    <genres provenance="steam_games_26200">
+      <genre>Sports</genre>
+    </genres>
+    <gamemodes provenance="wikidata_30017+steam_games_26200">
+      <gamemode>Single-player</gamemode>
+      <gamemode>Multi-player</gamemode>
+      <gamemode>Steam Achievements</gamemode>
+      <gamemode>Full controller support</gamemode>
+      <gamemode>Local Multi-Player</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>vg_sales_4267+wikidata_21333</id>
+    <title provenance="wikidata_21333">EA Sports UFC</title>
+    <platform provenance="wikidata_21333">Xbox One</platform>
+    <publisher provenance="wikidata_21333">EA Sports</publisher>
+    <publishingdate provenance="wikidata_21333">2014</publishingdate>
+    <developer provenance="wikidata_21333">EA Vancouver</developer>
+    <usk_rating provenance=""/>
+    <pegi_rating provenance=""/>
+    <age provenance=""/>
+    <price provenance=""/>
+    <genres provenance="wikidata_21333+vg_sales_4267">
+      <genre>Sports</genre>
+      <genre>fighting game</genre>
+    </genres>
+    <gamemodes provenance="wikidata_21333">
+      <gamemode>Single-player</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>vg_sales_68+wikidata_13669</id>
+    <title provenance="vg_sales_68">Call of Duty: Ghosts</title>
+    <platform provenance="vg_sales_68">PlayStation 3</platform>
+    <publisher provenance="vg_sales_68">Activision</publisher>
+    <publishingdate provenance="vg_sales_68">2013</publishingdate>
+    <developer provenance="wikidata_13669">Infinity Ward</developer>
+    <usk_rating provenance="wikidata_13669">USK 18</usk_rating>
+    <pegi_rating provenance="wikidata_13669">PEGI 16</pegi_rating>
+    <age provenance="wikidata_13669">18</age>
+    <price provenance=""/>
+    <genres provenance="vg_sales_68+wikidata_13669">
+      <genre>Shooter</genre>
+    </genres>
+    <gamemodes provenance="wikidata_13669">
+      <gamemode>Single-player</gamemode>
+      <gamemode>Multi-player</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>steam_games_16137+steam_games_16138+wikidata_19982+wikidata_19983</id>
+    <title provenance="wikidata_19982">Momonga Pinball Adventures</title>
+    <platform provenance="wikidata_19982">PC</platform>
+    <publisher provenance="steam_games_16138">Plug In Digital</publisher>
+    <publishingdate provenance="steam_games_16138">2016</publishingdate>
+    <developer provenance="steam_games_16138">Paladin Studios;Seaven Studio</developer>
+    <usk_rating provenance=""/>
+    <pegi_rating provenance=""/>
+    <age provenance="steam_games_16138">0</age>
+    <price provenance="steam_games_16138">4.79</price>
+    <genres provenance="steam_games_16138+steam_games_16137">
+      <genre>Indie</genre>
+      <genre>Casual</genre>
+    </genres>
+    <gamemodes provenance="steam_games_16138+steam_games_16137">
+      <gamemode>Single-player</gamemode>
+      <gamemode>Steam Achievements</gamemode>
+      <gamemode>Steam Trading Cards</gamemode>
+      <gamemode>Stats</gamemode>
+      <gamemode>Steam Leaderboards</gamemode>
+      <gamemode>Partial Controller Support</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>steam_games_2543+steam_games_2544+wikidata_21264</id>
+    <title provenance="steam_games_2543">Prime World: Defenders</title>
+    <platform provenance="steam_games_2543">PC</platform>
+    <publisher provenance="steam_games_2543">Nival</publisher>
+    <publishingdate provenance="steam_games_2543">2013</publishingdate>
+    <developer provenance="steam_games_2543">Nival</developer>
+    <usk_rating provenance=""/>
+    <pegi_rating provenance=""/>
+    <age provenance="steam_games_2543">0</age>
+    <price provenance="steam_games_2543">6.99</price>
+    <genres provenance="steam_games_2543+wikidata_21264+steam_games_2544">
+      <genre>Indie</genre>
+      <genre>tower defense</genre>
+      <genre>RPG</genre>
+      <genre>Casual</genre>
+      <genre>Strategy</genre>
+    </genres>
+    <gamemodes provenance="steam_games_2543+wikidata_21264+steam_games_2544">
+      <gamemode>Single-player</gamemode>
+      <gamemode>Steam Achievements</gamemode>
+      <gamemode>Steam Trading Cards</gamemode>
+      <gamemode>Stats</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>vg_sales_1785+wikidata_20777+wikidata_20779</id>
+    <title provenance="vg_sales_1785">Shadow of the Colossus</title>
+    <platform provenance="vg_sales_1785">PlayStation 2</platform>
+    <publisher provenance="vg_sales_1785">Sony Computer Entertainment</publisher>
+    <publishingdate provenance="vg_sales_1785">2005</publishingdate>
+    <developer provenance="wikidata_20779">Team Ico</developer>
+    <usk_rating provenance="wikidata_20779">USK 12</usk_rating>
+    <pegi_rating provenance="wikidata_20779">PEGI 12</pegi_rating>
+    <age provenance="wikidata_20779">12</age>
+    <price provenance=""/>
+    <genres provenance="vg_sales_1785+wikidata_20779+wikidata_20777">
+      <genre>Action</genre>
+      <genre>action-adventure game</genre>
+    </genres>
+    <gamemodes provenance="wikidata_20779+wikidata_20777">
+      <gamemode>Single-player</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>vg_sales_1275+wikidata_29444</id>
+    <title provenance="wikidata_29444">The Sims 3</title>
+    <platform provenance="wikidata_29444">Nintendo Wii</platform>
+    <publisher provenance="wikidata_29444">Electronic Arts</publisher>
+    <publishingdate provenance="vg_sales_1275">2010</publishingdate>
+    <developer provenance="wikidata_29444">Edge of Reality</developer>
+    <usk_rating provenance="wikidata_29444">USK 6</usk_rating>
+    <pegi_rating provenance="wikidata_29444">PEGI 12</pegi_rating>
+    <age provenance="wikidata_29444">12</age>
+    <price provenance=""/>
+    <genres provenance="wikidata_29444+vg_sales_1275">
+      <genre>video game with LGBT character</genre>
+      <genre>Simulation</genre>
+      <genre>life simulation game</genre>
+    </genres>
+    <gamemodes provenance="wikidata_29444">
+      <gamemode>Single-player</gamemode>
+      <gamemode>Multi-player</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>vg_sales_2031+wikidata_17821</id>
+    <title provenance="vg_sales_2031">Shrek 2</title>
+    <platform provenance="vg_sales_2031">Nintendo GameCube</platform>
+    <publisher provenance="vg_sales_2031">Activision</publisher>
+    <publishingdate provenance="vg_sales_2031">2004</publishingdate>
+    <developer provenance="wikidata_17821">KnowWonder</developer>
+    <usk_rating provenance=""/>
+    <pegi_rating provenance="wikidata_17821">PEGI 3</pegi_rating>
+    <age provenance="wikidata_17821">3</age>
+    <price provenance=""/>
+    <genres provenance="vg_sales_2031+wikidata_17821">
+      <genre>Platform</genre>
+      <genre>action-adventure game</genre>
+    </genres>
+    <gamemodes provenance="wikidata_17821">
+      <gamemode>Single-player</gamemode>
+      <gamemode>Multi-player</gamemode>
+      <gamemode>cooperative gameplay</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>steam_games_800+wikidata_376+wikidata_382</id>
+    <title provenance="steam_games_800">LEGO® Star Wars™ III - The Clone Wars™</title>
+    <platform provenance="wikidata_382">PC</platform>
+    <publisher provenance="wikidata_382">LucasArts</publisher>
+    <publishingdate provenance="wikidata_382">2011</publishingdate>
+    <developer provenance="wikidata_382">Traveller's Tales</developer>
+    <usk_rating provenance="wikidata_382">USK 6</usk_rating>
+    <pegi_rating provenance="wikidata_382">PEGI 7</pegi_rating>
+    <age provenance="wikidata_382">7</age>
+    <price provenance="steam_games_800">15.49</price>
+    <genres provenance="wikidata_382+steam_games_800+wikidata_376">
+      <genre>Adventure</genre>
+      <genre>Action</genre>
+      <genre>platform game</genre>
+      <genre>action-adventure game</genre>
+    </genres>
+    <gamemodes provenance="wikidata_382+steam_games_800+wikidata_376">
+      <gamemode>Single-player</gamemode>
+      <gamemode>Steam Cloud</gamemode>
+      <gamemode>Multi-player</gamemode>
+      <gamemode>cooperative gameplay</gamemode>
+      <gamemode>Local Co-op</gamemode>
+      <gamemode>Partial Controller Support</gamemode>
+      <gamemode>Shared/Split Screen</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>vg_sales_3703+wikidata_22514</id>
+    <title provenance="vg_sales_3703">Two Worlds II</title>
+    <platform provenance="vg_sales_3703">Xbox 360</platform>
+    <publisher provenance="vg_sales_3703">Unknown</publisher>
+    <publishingdate provenance="vg_sales_3703">2011</publishingdate>
+    <developer provenance="wikidata_22514">Reality Pump Studios</developer>
+    <usk_rating provenance="wikidata_22514">USK 16</usk_rating>
+    <pegi_rating provenance="wikidata_22514">PEGI 16</pegi_rating>
+    <age provenance="wikidata_22514">16</age>
+    <price provenance=""/>
+    <genres provenance="vg_sales_3703+wikidata_22514">
+      <genre>Role-Playing</genre>
+      <genre>action role-playing game</genre>
+    </genres>
+    <gamemodes provenance="wikidata_22514">
+      <gamemode>Single-player</gamemode>
+      <gamemode>Multi-player</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>vg_sales_14739+wikidata_17995</id>
+    <title provenance="vg_sales_14739">Pro Evolution Soccer 2017</title>
+    <platform provenance="vg_sales_14739">Xbox One</platform>
+    <publisher provenance="wikidata_17995">Konami</publisher>
+    <publishingdate provenance="vg_sales_14739">2016</publishingdate>
+    <developer provenance="wikidata_17995">Konami</developer>
+    <usk_rating provenance=""/>
+    <pegi_rating provenance=""/>
+    <age provenance=""/>
+    <price provenance=""/>
+    <genres provenance="vg_sales_14739+wikidata_17995">
+      <genre>Sports</genre>
+      <genre>sports video game</genre>
+    </genres>
+    <gamemodes provenance="wikidata_17995">
+      <gamemode>Single-player</gamemode>
+      <gamemode>Multi-player</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>steam_games_14822+wikidata_28173</id>
+    <title provenance="steam_games_14822">Rocket Riot</title>
+    <platform provenance="steam_games_14822">PC</platform>
+    <publisher provenance="wikidata_28173">THQ</publisher>
+    <publishingdate provenance="steam_games_14822">2016</publishingdate>
+    <developer provenance="steam_games_14822">Codeglue</developer>
+    <usk_rating provenance=""/>
+    <pegi_rating provenance=""/>
+    <age provenance="steam_games_14822">0</age>
+    <price provenance="steam_games_14822">6.99</price>
+    <genres provenance="steam_games_14822+wikidata_28173">
+      <genre>Action</genre>
+      <genre>Indie</genre>
+      <genre>shooter game</genre>
+      <genre>Casual</genre>
+    </genres>
+    <gamemodes provenance="steam_games_14822+wikidata_28173">
+      <gamemode>Single-player</gamemode>
+      <gamemode>Steam Achievements</gamemode>
+      <gamemode>Full controller support</gamemode>
+      <gamemode>Steam Cloud</gamemode>
+      <gamemode>Multi-player</gamemode>
+      <gamemode>Steam Trading Cards</gamemode>
+      <gamemode>Stats</gamemode>
+      <gamemode>Steam Leaderboards</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>steam_games_132+wikidata_21+wikidata_22+wikidata_426+wikidata_427</id>
+    <title provenance="steam_games_132">Call of Duty®</title>
+    <platform provenance="wikidata_427">PC</platform>
+    <publisher provenance="wikidata_426">Aspyr</publisher>
+    <publishingdate provenance="steam_games_132">2006</publishingdate>
+    <developer provenance="wikidata_427">Nokia</developer>
+    <usk_rating provenance="wikidata_427">USK 18</usk_rating>
+    <pegi_rating provenance="wikidata_427">PEGI 12</pegi_rating>
+    <age provenance="wikidata_427">18</age>
+    <price provenance="steam_games_132">14.99</price>
+    <genres provenance="wikidata_427+wikidata_22+steam_games_132+wikidata_21+wikidata_426">
+      <genre>Shooter</genre>
+      <genre>Action</genre>
+    </genres>
+    <gamemodes provenance="wikidata_427+wikidata_22+steam_games_132+wikidata_21+wikidata_426">
+      <gamemode>Single-player</gamemode>
+      <gamemode>Multi-player</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>vg_sales_3678+wikidata_25290</id>
+    <title provenance="vg_sales_3678">Dynasty Warriors: Gundam 3</title>
+    <platform provenance="vg_sales_3678">PlayStation 3</platform>
+    <publisher provenance="vg_sales_3678">Tecmo Koei</publisher>
+    <publishingdate provenance="vg_sales_3678">2010</publishingdate>
+    <developer provenance="wikidata_25290">Koei</developer>
+    <usk_rating provenance=""/>
+    <pegi_rating provenance=""/>
+    <age provenance=""/>
+    <price provenance=""/>
+    <genres provenance="vg_sales_3678+wikidata_25290">
+      <genre>Action</genre>
+      <genre>action game</genre>
+      <genre>mecha</genre>
+    </genres>
+    <gamemodes provenance="wikidata_25290">
+      <gamemode>Single-player</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>vg_sales_4257+wikidata_26398</id>
+    <title provenance="wikidata_26398">Scooby-Doo</title>
+    <platform provenance="wikidata_26398">Game Boy Advance</platform>
+    <publisher provenance="wikidata_26398">THQ</publisher>
+    <publishingdate provenance="wikidata_26398">2002</publishingdate>
+    <developer provenance="wikidata_26398">Helixe</developer>
+    <usk_rating provenance=""/>
+    <pegi_rating provenance=""/>
+    <age provenance=""/>
+    <price provenance=""/>
+    <genres provenance="vg_sales_4257">
+      <genre>Platform</genre>
+    </genres>
+    <gamemodes provenance=""/>
+  </videogame>
+  <videogame>
+    <id>vg_sales_165+wikidata_23047</id>
+    <title provenance="wikidata_23047">Super Mario World</title>
+    <platform provenance="wikidata_23047">Game Boy Advance</platform>
+    <publisher provenance="wikidata_23047">Nintendo</publisher>
+    <publishingdate provenance="vg_sales_165">2001</publishingdate>
+    <developer provenance="wikidata_23047">Nintendo Entertainment Analysis &amp; Development</developer>
+    <usk_rating provenance="wikidata_23047">USK 0</usk_rating>
+    <pegi_rating provenance="wikidata_23047">PEGI 3</pegi_rating>
+    <age provenance="wikidata_23047">3</age>
+    <price provenance=""/>
+    <genres provenance="wikidata_23047+vg_sales_165">
+      <genre>Platform</genre>
+      <genre>platform game</genre>
+    </genres>
+    <gamemodes provenance="wikidata_23047">
+      <gamemode>Single-player</gamemode>
+      <gamemode>hotseat</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>vg_sales_5812+wikidata_4353</id>
+    <title provenance="wikidata_4353">Bruce Lee: Quest of the Dragon</title>
+    <platform provenance="wikidata_4353">Xbox</platform>
+    <publisher provenance="wikidata_4353">Vivendi</publisher>
+    <publishingdate provenance="wikidata_4353">2002</publishingdate>
+    <developer provenance=""/>
+    <usk_rating provenance=""/>
+    <pegi_rating provenance=""/>
+    <age provenance=""/>
+    <price provenance=""/>
+    <genres provenance="wikidata_4353+vg_sales_5812">
+      <genre>Fighting</genre>
+      <genre>beat 'em up</genre>
+    </genres>
+    <gamemodes provenance="wikidata_4353">
+      <gamemode>Single-player</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>vg_sales_1731+wikidata_33098</id>
+    <title provenance="wikidata_33098">Cabela's Dangerous Hunts</title>
+    <platform provenance="wikidata_33098">PlayStation 2</platform>
+    <publisher provenance="wikidata_33098">Activision Publishing</publisher>
+    <publishingdate provenance="wikidata_33098">2003</publishingdate>
+    <developer provenance="wikidata_33098">Fun Labs</developer>
+    <usk_rating provenance=""/>
+    <pegi_rating provenance=""/>
+    <age provenance=""/>
+    <price provenance=""/>
+    <genres provenance="wikidata_33098+vg_sales_1731">
+      <genre>Sports</genre>
+      <genre>Shooter</genre>
+      <genre>simulation video game</genre>
+      <genre>hunting</genre>
+      <genre>action game</genre>
+    </genres>
+    <gamemodes provenance=""/>
+  </videogame>
+  <videogame>
+    <id>steam_games_3076+steam_games_3077+steam_games_3078+wikidata_12245+wikidata_12246</id>
+    <title provenance="steam_games_3077">7 Days to Die</title>
+    <platform provenance="steam_games_3077">PC</platform>
+    <publisher provenance="steam_games_3077">The Fun Pimps Entertainment LLC</publisher>
+    <publishingdate provenance="steam_games_3077">2013</publishingdate>
+    <developer provenance="steam_games_3077">The Fun Pimps</developer>
+    <usk_rating provenance="wikidata_12245">USK 16</usk_rating>
+    <pegi_rating provenance=""/>
+    <age provenance="wikidata_12245">16</age>
+    <price provenance="steam_games_3077">18.99</price>
+    <genres provenance="steam_games_3077+wikidata_12245+steam_games_3078+wikidata_12246+steam_games_3076">
+      <genre>Adventure</genre>
+      <genre>Action</genre>
+      <genre>survival horror</genre>
+      <genre>Indie</genre>
+      <genre>Nudity</genre>
+      <genre>RPG</genre>
+      <genre>Simulation</genre>
+      <genre>Early Access</genre>
+      <genre>Gore</genre>
+      <genre>Strategy</genre>
+      <genre>Violent</genre>
+    </genres>
+    <gamemodes provenance="steam_games_3077+wikidata_12245+steam_games_3078+wikidata_12246+steam_games_3076">
+      <gamemode>Single-player</gamemode>
+      <gamemode>Multi-player</gamemode>
+      <gamemode>Steam Achievements</gamemode>
+      <gamemode>Full controller support</gamemode>
+      <gamemode>Steam Trading Cards</gamemode>
+      <gamemode>Cross-Platform Multiplayer</gamemode>
+      <gamemode>Co-operative</gamemode>
+      <gamemode>Includes level editor</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>vg_sales_3005+wikidata_33893</id>
+    <title provenance="wikidata_33893">Turok</title>
+    <platform provenance="wikidata_33893">PlayStation 3</platform>
+    <publisher provenance="vg_sales_3005">Touchstone</publisher>
+    <publishingdate provenance="wikidata_33893">2008</publishingdate>
+    <developer provenance="wikidata_33893">Propaganda Games</developer>
+    <usk_rating provenance=""/>
+    <pegi_rating provenance=""/>
+    <age provenance=""/>
+    <price provenance=""/>
+    <genres provenance="wikidata_33893+vg_sales_3005">
+      <genre>Action</genre>
+      <genre>action-adventure game</genre>
+    </genres>
+    <gamemodes provenance="wikidata_33893">
+      <gamemode>cooperative gameplay</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>vg_sales_14394+wikidata_36005</id>
+    <title provenance="vg_sales_14394">Dr. Muto</title>
+    <platform provenance="vg_sales_14394">Nintendo GameCube</platform>
+    <publisher provenance="vg_sales_14394">Midway Games</publisher>
+    <publishingdate provenance="vg_sales_14394">2002</publishingdate>
+    <developer provenance="wikidata_36005">Midway Games</developer>
+    <usk_rating provenance=""/>
+    <pegi_rating provenance=""/>
+    <age provenance=""/>
+    <price provenance=""/>
+    <genres provenance="vg_sales_14394+wikidata_36005">
+      <genre>Platform</genre>
+      <genre>platform game</genre>
+    </genres>
+    <gamemodes provenance="wikidata_36005">
+      <gamemode>Single-player</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>vg_sales_7693+wikidata_27959</id>
+    <title provenance="vg_sales_7693">Looney Tunes: Space Race</title>
+    <platform provenance="vg_sales_7693">PlayStation 2</platform>
+    <publisher provenance="vg_sales_7693">Infogrames</publisher>
+    <publishingdate provenance="vg_sales_7693">2002</publishingdate>
+    <developer provenance="wikidata_27959">Krome Studios Melbourne</developer>
+    <usk_rating provenance=""/>
+    <pegi_rating provenance=""/>
+    <age provenance=""/>
+    <price provenance=""/>
+    <genres provenance="vg_sales_7693+wikidata_27959">
+      <genre>racing video game</genre>
+      <genre>Racing</genre>
+    </genres>
+    <gamemodes provenance="wikidata_27959">
+      <gamemode>Single-player</gamemode>
+      <gamemode>Multi-player</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>vg_sales_16284+wikidata_35458+wikidata_35460</id>
+    <title provenance="vg_sales_16284">The Chronicles of Riddick: Assault on Dark Athena</title>
+    <platform provenance="vg_sales_16284">PC</platform>
+    <publisher provenance="wikidata_35458">Atari</publisher>
+    <publishingdate provenance="vg_sales_16284">2009</publishingdate>
+    <developer provenance="wikidata_35458">Starbreeze Studios</developer>
+    <usk_rating provenance="wikidata_35458">USK 18</usk_rating>
+    <pegi_rating provenance="wikidata_35458">PEGI 16</pegi_rating>
+    <age provenance="wikidata_35458">18</age>
+    <price provenance=""/>
+    <genres provenance="vg_sales_16284+wikidata_35458+wikidata_35460">
+      <genre>Shooter</genre>
+    </genres>
+    <gamemodes provenance="wikidata_35458+wikidata_35460">
+      <gamemode>Single-player</gamemode>
+      <gamemode>Multi-player</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>vg_sales_7491+wikidata_15629</id>
+    <title provenance="vg_sales_7491">Kung Fu Rider</title>
+    <platform provenance="vg_sales_7491">PlayStation 3</platform>
+    <publisher provenance="vg_sales_7491">Sony Computer Entertainment</publisher>
+    <publishingdate provenance="vg_sales_7491">2010</publishingdate>
+    <developer provenance="wikidata_15629">SIE Japan Studio</developer>
+    <usk_rating provenance=""/>
+    <pegi_rating provenance=""/>
+    <age provenance=""/>
+    <price provenance=""/>
+    <genres provenance="vg_sales_7491+wikidata_15629">
+      <genre>Action</genre>
+      <genre>fighting game</genre>
+    </genres>
+    <gamemodes provenance="wikidata_15629">
+      <gamemode>Single-player</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>vg_sales_1056+wikidata_30964</id>
+    <title provenance="wikidata_30964">Ben 10: Protector of Earth</title>
+    <platform provenance="wikidata_30964">Nintendo DS</platform>
+    <publisher provenance="vg_sales_1056">D3Publisher</publisher>
+    <publishingdate provenance="wikidata_30964">2007</publishingdate>
+    <developer provenance="wikidata_30964">High Voltage Software</developer>
+    <usk_rating provenance=""/>
+    <pegi_rating provenance="wikidata_30964">PEGI 7</pegi_rating>
+    <age provenance="wikidata_30964">7</age>
+    <price provenance=""/>
+    <genres provenance="wikidata_30964+vg_sales_1056">
+      <genre>Action</genre>
+      <genre>action-adventure game</genre>
+    </genres>
+    <gamemodes provenance="wikidata_30964">
+      <gamemode>Single-player</gamemode>
+      <gamemode>Multi-player</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>vg_sales_3919+wikidata_20307</id>
+    <title provenance="vg_sales_3919">Ace Combat Zero: The Belkan War</title>
+    <platform provenance="vg_sales_3919">PlayStation 2</platform>
+    <publisher provenance="vg_sales_3919">Namco Bandai Games</publisher>
+    <publishingdate provenance="vg_sales_3919">2006</publishingdate>
+    <developer provenance="wikidata_20307">Namco</developer>
+    <usk_rating provenance=""/>
+    <pegi_rating provenance=""/>
+    <age provenance=""/>
+    <price provenance=""/>
+    <genres provenance="vg_sales_3919+wikidata_20307">
+      <genre>combat flight simulator</genre>
+      <genre>Simulation</genre>
+    </genres>
+    <gamemodes provenance="wikidata_20307">
+      <gamemode>Single-player</gamemode>
+      <gamemode>Multi-player</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>vg_sales_2792+wikidata_33924</id>
+    <title provenance="vg_sales_2792">Harvest Moon DS: Island of Happiness</title>
+    <platform provenance="vg_sales_2792">Nintendo DS</platform>
+    <publisher provenance="vg_sales_2792">Rising Star Games</publisher>
+    <publishingdate provenance="vg_sales_2792">2007</publishingdate>
+    <developer provenance="wikidata_33924">Marvelous Entertainment</developer>
+    <usk_rating provenance=""/>
+    <pegi_rating provenance=""/>
+    <age provenance=""/>
+    <price provenance=""/>
+    <genres provenance="vg_sales_2792+wikidata_33924">
+      <genre>simulation video game</genre>
+      <genre>Simulation</genre>
+    </genres>
+    <gamemodes provenance="wikidata_33924">
+      <gamemode>Single-player</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>vg_sales_6196+wikidata_22737</id>
+    <title provenance="vg_sales_6196">The Chronicles of Narnia: The Lion, The Witch and The Wardrobe</title>
+    <platform provenance="vg_sales_6196">Nintendo GameCube</platform>
+    <publisher provenance="vg_sales_6196">Disney Interactive Studios</publisher>
+    <publishingdate provenance="wikidata_22737">2005</publishingdate>
+    <developer provenance="wikidata_22737">Traveller's Tales</developer>
+    <usk_rating provenance="wikidata_22737">USK 12</usk_rating>
+    <pegi_rating provenance="wikidata_22737">PEGI 12</pegi_rating>
+    <age provenance="wikidata_22737">12</age>
+    <price provenance=""/>
+    <genres provenance="vg_sales_6196+wikidata_22737">
+      <genre>Action</genre>
+      <genre>action-adventure game</genre>
+    </genres>
+    <gamemodes provenance="wikidata_22737">
+      <gamemode>Single-player</gamemode>
+      <gamemode>Multi-player</gamemode>
+      <gamemode>cooperative gameplay</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>steam_games_1691+steam_games_1692+steam_games_1693+wikidata_23126+wikidata_23127</id>
+    <title provenance="steam_games_1692">Superbrothers: Sword &amp; Sworcery EP</title>
+    <platform provenance="steam_games_1692">PC</platform>
+    <publisher provenance="steam_games_1692">Capybara Games</publisher>
+    <publishingdate provenance="steam_games_1692">2012</publishingdate>
+    <developer provenance="wikidata_23126">Capybara Games</developer>
+    <usk_rating provenance=""/>
+    <pegi_rating provenance=""/>
+    <age provenance="steam_games_1692">0</age>
+    <price provenance="steam_games_1692">4.99</price>
+    <genres provenance="steam_games_1692+steam_games_1691+wikidata_23126+steam_games_1693+wikidata_23127">
+      <genre>adventure game</genre>
+      <genre>Adventure</genre>
+      <genre>Indie</genre>
+    </genres>
+    <gamemodes provenance="steam_games_1692+steam_games_1691+wikidata_23126+steam_games_1693+wikidata_23127">
+      <gamemode>Single-player</gamemode>
+      <gamemode>Steam Achievements</gamemode>
+      <gamemode>Steam Cloud</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>vg_sales_11155+wikidata_20040</id>
+    <title provenance="wikidata_20040">Digimon World 4</title>
+    <platform provenance="wikidata_20040">Nintendo GameCube</platform>
+    <publisher provenance="vg_sales_11155">Namco Bandai Games</publisher>
+    <publishingdate provenance="wikidata_20040">2005</publishingdate>
+    <developer provenance="wikidata_20040">Bandai Co., Ltd.</developer>
+    <usk_rating provenance=""/>
+    <pegi_rating provenance="wikidata_20040">PEGI 12</pegi_rating>
+    <age provenance="wikidata_20040">12</age>
+    <price provenance=""/>
+    <genres provenance="wikidata_20040+vg_sales_11155">
+      <genre>Role-Playing</genre>
+      <genre>action role-playing game</genre>
+    </genres>
+    <gamemodes provenance="wikidata_20040">
+      <gamemode>Single-player</gamemode>
+      <gamemode>Multi-player</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>vg_sales_4393+wikidata_29591</id>
+    <title provenance="vg_sales_4393">NBA Live 2005</title>
+    <platform provenance="vg_sales_4393">Nintendo GameCube</platform>
+    <publisher provenance="vg_sales_4393">Electronic Arts</publisher>
+    <publishingdate provenance="vg_sales_4393">2004</publishingdate>
+    <developer provenance="wikidata_29591">EA Vancouver</developer>
+    <usk_rating provenance=""/>
+    <pegi_rating provenance="wikidata_29591">PEGI 3</pegi_rating>
+    <age provenance="wikidata_29591">3</age>
+    <price provenance=""/>
+    <genres provenance="vg_sales_4393+wikidata_29591">
+      <genre>Sports</genre>
+      <genre>basketball video game</genre>
+    </genres>
+    <gamemodes provenance="wikidata_29591">
+      <gamemode>Single-player</gamemode>
+      <gamemode>Multi-player</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>steam_games_1510+steam_games_1511+wikidata_24643+wikidata_24644</id>
+    <title provenance="wikidata_24643">Storm in a Teacup</title>
+    <platform provenance="wikidata_24643">PC</platform>
+    <publisher provenance="steam_games_1511">Cobra Mobile</publisher>
+    <publishingdate provenance="steam_games_1511">2012</publishingdate>
+    <developer provenance="steam_games_1511">Cobra Mobile</developer>
+    <usk_rating provenance=""/>
+    <pegi_rating provenance=""/>
+    <age provenance="steam_games_1511">0</age>
+    <price provenance="steam_games_1511">2.99</price>
+    <genres provenance="steam_games_1511+steam_games_1510">
+      <genre>Indie</genre>
+      <genre>Casual</genre>
+    </genres>
+    <gamemodes provenance="steam_games_1511+steam_games_1510">
+      <gamemode>Single-player</gamemode>
+      <gamemode>Steam Achievements</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>vg_sales_6157+wikidata_9119</id>
+    <title provenance="vg_sales_6157">Yu-Gi-Oh! World Championship 2008</title>
+    <platform provenance="vg_sales_6157">Nintendo DS</platform>
+    <publisher provenance="wikidata_9119">Konami</publisher>
+    <publishingdate provenance="wikidata_9119">2008</publishingdate>
+    <developer provenance="wikidata_9119">Konami</developer>
+    <usk_rating provenance=""/>
+    <pegi_rating provenance=""/>
+    <age provenance=""/>
+    <price provenance=""/>
+    <genres provenance="vg_sales_6157+wikidata_9119">
+      <genre>card battle video game</genre>
+      <genre>Strategy</genre>
+    </genres>
+    <gamemodes provenance=""/>
+  </videogame>
+  <videogame>
+    <id>vg_sales_4624+wikidata_7312</id>
+    <title provenance="wikidata_7312">Dr. Mario 64</title>
+    <platform provenance="wikidata_7312">Nintendo 64</platform>
+    <publisher provenance="wikidata_7312">Nintendo</publisher>
+    <publishingdate provenance="wikidata_7312">2001</publishingdate>
+    <developer provenance="wikidata_7312">Nintendo</developer>
+    <usk_rating provenance=""/>
+    <pegi_rating provenance=""/>
+    <age provenance=""/>
+    <price provenance=""/>
+    <genres provenance="wikidata_7312+vg_sales_4624">
+      <genre>Puzzle</genre>
+      <genre>puzzle video game</genre>
+    </genres>
+    <gamemodes provenance="wikidata_7312">
+      <gamemode>Single-player</gamemode>
+      <gamemode>Multi-player</gamemode>
+      <gamemode>two-player video game</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>vg_sales_9541+wikidata_20084</id>
+    <title provenance="wikidata_20084">Green Lantern: Rise of the Manhunters</title>
+    <platform provenance="wikidata_20084">Nintendo 3DS</platform>
+    <publisher provenance="wikidata_20084">Warner Bros. Interactive Entertainment</publisher>
+    <publishingdate provenance="wikidata_20084">2011</publishingdate>
+    <developer provenance="wikidata_20084">Double Helix Games</developer>
+    <usk_rating provenance=""/>
+    <pegi_rating provenance=""/>
+    <age provenance=""/>
+    <price provenance=""/>
+    <genres provenance="wikidata_20084+vg_sales_9541">
+      <genre>Action</genre>
+      <genre>action-adventure game</genre>
+    </genres>
+    <gamemodes provenance="wikidata_20084">
+      <gamemode>Single-player</gamemode>
+      <gamemode>Multi-player</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>vg_sales_464+wikidata_16068+wikidata_16069</id>
+    <title provenance="vg_sales_464">Killzone 2</title>
+    <platform provenance="vg_sales_464">PlayStation 3</platform>
+    <publisher provenance="vg_sales_464">Sony Computer Entertainment</publisher>
+    <publishingdate provenance="vg_sales_464">2009</publishingdate>
+    <developer provenance="wikidata_16069">Guerrilla Games</developer>
+    <usk_rating provenance="wikidata_16069">USK 18</usk_rating>
+    <pegi_rating provenance="wikidata_16069">PEGI 18</pegi_rating>
+    <age provenance="wikidata_16069">18</age>
+    <price provenance=""/>
+    <genres provenance="vg_sales_464+wikidata_16069+wikidata_16068">
+      <genre>Shooter</genre>
+    </genres>
+    <gamemodes provenance="wikidata_16069+wikidata_16068">
+      <gamemode>Single-player</gamemode>
+      <gamemode>Multi-player</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>vg_sales_1379+wikidata_24061</id>
+    <title provenance="wikidata_24061">NASCAR 2005: Chase for the Cup</title>
+    <platform provenance="wikidata_24061">PlayStation 2</platform>
+    <publisher provenance="wikidata_24061">EA Sports</publisher>
+    <publishingdate provenance="wikidata_24061">2004</publishingdate>
+    <developer provenance="wikidata_24061">Electronic Arts</developer>
+    <usk_rating provenance=""/>
+    <pegi_rating provenance=""/>
+    <age provenance=""/>
+    <price provenance=""/>
+    <genres provenance="wikidata_24061+vg_sales_1379">
+      <genre>sim racing</genre>
+      <genre>Racing</genre>
+    </genres>
+    <gamemodes provenance="wikidata_24061">
+      <gamemode>Single-player</gamemode>
+      <gamemode>Multi-player</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>vg_sales_2932+wikidata_34030</id>
+    <title provenance="vg_sales_2932">Mafia</title>
+    <platform provenance="vg_sales_2932">PlayStation 2</platform>
+    <publisher provenance="vg_sales_2932">Illusion Softworks</publisher>
+    <publishingdate provenance="vg_sales_2932">2004</publishingdate>
+    <developer provenance="wikidata_34030">2K Czech</developer>
+    <usk_rating provenance="wikidata_34030">USK 16</usk_rating>
+    <pegi_rating provenance="wikidata_34030">PEGI 18</pegi_rating>
+    <age provenance="wikidata_34030">18</age>
+    <price provenance=""/>
+    <genres provenance="vg_sales_2932+wikidata_34030">
+      <genre>Action</genre>
+      <genre>vehicular combat game</genre>
+      <genre>third-person shooter</genre>
+    </genres>
+    <gamemodes provenance="wikidata_34030">
+      <gamemode>Single-player</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>vg_sales_3377+wikidata_20903</id>
+    <title provenance="wikidata_20903">Disney Infinity 2.0: Marvel Super Heroes</title>
+    <platform provenance="wikidata_20903">PlayStation 4</platform>
+    <publisher provenance="wikidata_20903">Disney Interactive Studios</publisher>
+    <publishingdate provenance="wikidata_20903">2014</publishingdate>
+    <developer provenance="wikidata_20903">Avalanche Software</developer>
+    <usk_rating provenance=""/>
+    <pegi_rating provenance=""/>
+    <age provenance=""/>
+    <price provenance=""/>
+    <genres provenance="wikidata_20903+vg_sales_3377">
+      <genre>fictional crossover</genre>
+      <genre>Action</genre>
+      <genre>action game</genre>
+      <genre>action-adventure game</genre>
+    </genres>
+    <gamemodes provenance="wikidata_20903">
+      <gamemode>Single-player</gamemode>
+      <gamemode>Multi-player</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>steam_games_6894+steam_games_6895+steam_games_6896+wikidata_12262+wikidata_12263+wikidata_12264</id>
+    <title provenance="steam_games_6896">2064: Read Only Memories</title>
+    <platform provenance="steam_games_6896">PC</platform>
+    <publisher provenance="wikidata_12263">MidBoss</publisher>
+    <publishingdate provenance="steam_games_6896">2015</publishingdate>
+    <developer provenance="wikidata_12263">MidBoss</developer>
+    <usk_rating provenance=""/>
+    <pegi_rating provenance="wikidata_12263">PEGI 16</pegi_rating>
+    <age provenance="wikidata_12263">16</age>
+    <price provenance="steam_games_6896">14.99</price>
+    <genres provenance="steam_games_6896+wikidata_12263+wikidata_12262+steam_games_6894+steam_games_6895+wikidata_12264">
+      <genre>cyberpunk</genre>
+      <genre>adventure game</genre>
+      <genre>Adventure</genre>
+      <genre>Indie</genre>
+      <genre>video game with LGBT character</genre>
+      <genre>indie game</genre>
+      <genre>LGBTI+ related video game</genre>
+    </genres>
+    <gamemodes provenance="steam_games_6896+wikidata_12263+wikidata_12262+steam_games_6894+steam_games_6895+wikidata_12264">
+      <gamemode>Single-player</gamemode>
+      <gamemode>Steam Achievements</gamemode>
+      <gamemode>Full controller support</gamemode>
+      <gamemode>Steam Cloud</gamemode>
+      <gamemode>Steam Trading Cards</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>steam_games_6302+wikidata_35924</id>
+    <title provenance="steam_games_6302">Moon Hunters</title>
+    <platform provenance="steam_games_6302">PC</platform>
+    <publisher provenance="steam_games_6302">Kitfox Games</publisher>
+    <publishingdate provenance="wikidata_35924">2017</publishingdate>
+    <developer provenance="steam_games_6302">Kitfox Games</developer>
+    <usk_rating provenance=""/>
+    <pegi_rating provenance=""/>
+    <age provenance="steam_games_6302">0</age>
+    <price provenance="steam_games_6302">11.39</price>
+    <genres provenance="steam_games_6302+wikidata_35924">
+      <genre>adventure game</genre>
+      <genre>Adventure</genre>
+      <genre>Indie</genre>
+      <genre>role-playing video game</genre>
+      <genre>RPG</genre>
+    </genres>
+    <gamemodes provenance="steam_games_6302+wikidata_35924">
+      <gamemode>Single-player</gamemode>
+      <gamemode>Multi-player</gamemode>
+      <gamemode>Steam Achievements</gamemode>
+      <gamemode>Full controller support</gamemode>
+      <gamemode>Steam Cloud</gamemode>
+      <gamemode>Steam Trading Cards</gamemode>
+      <gamemode>Captions available</gamemode>
+      <gamemode>cooperative gameplay</gamemode>
+      <gamemode>Co-operative</gamemode>
+      <gamemode>Shared/Split Screen</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>vg_sales_6437+wikidata_27629</id>
+    <title provenance="vg_sales_6437">Dragon Ball Z: Tenkaichi Tag Team</title>
+    <platform provenance="vg_sales_6437">PlayStation Portable</platform>
+    <publisher provenance="wikidata_27629">Shueisha</publisher>
+    <publishingdate provenance="vg_sales_6437">2010</publishingdate>
+    <developer provenance="wikidata_27629">Spike</developer>
+    <usk_rating provenance=""/>
+    <pegi_rating provenance="wikidata_27629">PEGI 12</pegi_rating>
+    <age provenance="wikidata_27629">12</age>
+    <price provenance=""/>
+    <genres provenance="vg_sales_6437+wikidata_27629">
+      <genre>Fighting</genre>
+      <genre>strategy guide</genre>
+      <genre>fighting game</genre>
+    </genres>
+    <gamemodes provenance="wikidata_27629">
+      <gamemode>Single-player</gamemode>
+      <gamemode>Multi-player</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>vg_sales_3447+wikidata_24986</id>
+    <title provenance="vg_sales_3447">NHL 15</title>
+    <platform provenance="vg_sales_3447">PlayStation 4</platform>
+    <publisher provenance="wikidata_24986">EA Sports</publisher>
+    <publishingdate provenance="vg_sales_3447">2014</publishingdate>
+    <developer provenance="wikidata_24986">EA Vancouver</developer>
+    <usk_rating provenance=""/>
+    <pegi_rating provenance=""/>
+    <age provenance=""/>
+    <price provenance=""/>
+    <genres provenance="vg_sales_3447+wikidata_24986">
+      <genre>Sports</genre>
+      <genre>sports video game</genre>
+      <genre>ice hockey video game</genre>
+    </genres>
+    <gamemodes provenance="wikidata_24986">
+      <gamemode>Single-player</gamemode>
+      <gamemode>Multi-player</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>vg_sales_5094+wikidata_34331</id>
+    <title provenance="wikidata_34331">Trivial Pursuit</title>
+    <platform provenance="wikidata_34331">Xbox 360</platform>
+    <publisher provenance="wikidata_34331">Electronic Arts</publisher>
+    <publishingdate provenance="wikidata_34331">2009</publishingdate>
+    <developer provenance="wikidata_34331">EA Bright Light</developer>
+    <usk_rating provenance=""/>
+    <pegi_rating provenance=""/>
+    <age provenance=""/>
+    <price provenance=""/>
+    <genres provenance="vg_sales_5094">
+      <genre>Misc</genre>
+    </genres>
+    <gamemodes provenance=""/>
+  </videogame>
+  <videogame>
+    <id>vg_sales_657+wikidata_17251</id>
+    <title provenance="vg_sales_657">Guitar Hero</title>
+    <platform provenance="vg_sales_657">PlayStation 2</platform>
+    <publisher provenance="vg_sales_657">RedOctane</publisher>
+    <publishingdate provenance="vg_sales_657">2005</publishingdate>
+    <developer provenance="wikidata_17251">Harmonix Music Systems</developer>
+    <usk_rating provenance=""/>
+    <pegi_rating provenance="wikidata_17251">PEGI 12</pegi_rating>
+    <age provenance="wikidata_17251">12</age>
+    <price provenance=""/>
+    <genres provenance="vg_sales_657+wikidata_17251">
+      <genre>rhythm game</genre>
+      <genre>Misc</genre>
+      <genre>music video game</genre>
+    </genres>
+    <gamemodes provenance="wikidata_17251">
+      <gamemode>Single-player</gamemode>
+      <gamemode>Multi-player</gamemode>
+      <gamemode>hotseat</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>vg_sales_40+wikidata_23052+wikidata_23053</id>
+    <title provenance="wikidata_23053">Super smash bros. brawl</title>
+    <platform provenance="wikidata_23053">Nintendo Wii</platform>
+    <publisher provenance="wikidata_23053">Nintendo</publisher>
+    <publishingdate provenance="wikidata_23053">2008</publishingdate>
+    <developer provenance="wikidata_23053">Sora Ltd.</developer>
+    <usk_rating provenance=""/>
+    <pegi_rating provenance="wikidata_23053">PEGI 12</pegi_rating>
+    <age provenance="wikidata_23053">12</age>
+    <price provenance=""/>
+    <genres provenance="wikidata_23053+wikidata_23052+vg_sales_40">
+      <genre>Fighting</genre>
+      <genre>video game with LGBT character</genre>
+      <genre>fighting game</genre>
+    </genres>
+    <gamemodes provenance="wikidata_23053+wikidata_23052">
+      <gamemode>Single-player</gamemode>
+      <gamemode>Multi-player</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>vg_sales_5701+wikidata_6092+wikidata_6096</id>
+    <title provenance="wikidata_6096">Might &amp; Magic: Heroes VI</title>
+    <platform provenance="wikidata_6096">PC</platform>
+    <publisher provenance="wikidata_6096">Ubisoft</publisher>
+    <publishingdate provenance="wikidata_6096">2011</publishingdate>
+    <developer provenance="wikidata_6096">Limbic Entertainment</developer>
+    <usk_rating provenance=""/>
+    <pegi_rating provenance="wikidata_6096">PEGI 16</pegi_rating>
+    <age provenance="wikidata_6096">16</age>
+    <price provenance=""/>
+    <genres provenance="wikidata_6096+vg_sales_5701+wikidata_6092">
+      <genre>turn-based strategy video game</genre>
+      <genre>Role-Playing</genre>
+    </genres>
+    <gamemodes provenance="wikidata_6096+wikidata_6092">
+      <gamemode>Single-player</gamemode>
+      <gamemode>Multi-player</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>vg_sales_7986+wikidata_33973</id>
+    <title provenance="wikidata_33973">Tiger Woods PGA Tour 07</title>
+    <platform provenance="wikidata_33973">Xbox</platform>
+    <publisher provenance="wikidata_33973">Electronic Arts</publisher>
+    <publishingdate provenance="wikidata_33973">2006</publishingdate>
+    <developer provenance="wikidata_33973">EA Sports</developer>
+    <usk_rating provenance=""/>
+    <pegi_rating provenance=""/>
+    <age provenance=""/>
+    <price provenance=""/>
+    <genres provenance="wikidata_33973+vg_sales_7986">
+      <genre>Sports</genre>
+      <genre>sports video game</genre>
+    </genres>
+    <gamemodes provenance="wikidata_33973">
+      <gamemode>Single-player</gamemode>
+      <gamemode>Multi-player</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>vg_sales_4473+wikidata_26664+wikidata_5139</id>
+    <title provenance="vg_sales_4473">Robert Ludlum's The Bourne Conspiracy</title>
+    <platform provenance="vg_sales_4473">Xbox 360</platform>
+    <publisher provenance="vg_sales_4473">Vivendi Games</publisher>
+    <publishingdate provenance="wikidata_5139">2008</publishingdate>
+    <developer provenance="wikidata_5139">High Moon Studios</developer>
+    <usk_rating provenance="wikidata_5139">USK 18</usk_rating>
+    <pegi_rating provenance="wikidata_5139">PEGI 16</pegi_rating>
+    <age provenance="wikidata_5139">18</age>
+    <price provenance=""/>
+    <genres provenance="vg_sales_4473+wikidata_5139+wikidata_26664">
+      <genre>Action</genre>
+      <genre>third-person shooter</genre>
+    </genres>
+    <gamemodes provenance="wikidata_5139+wikidata_26664">
+      <gamemode>Single-player</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>steam_games_17450+wikidata_8461+wikidata_8462+wikidata_8463</id>
+    <title provenance="steam_games_17450">18 Wheels of Steel: Haulin’</title>
+    <platform provenance="steam_games_17450">PC</platform>
+    <publisher provenance="steam_games_17450">Play Hard Games;ValuSoft</publisher>
+    <publishingdate provenance="steam_games_17450">2016</publishingdate>
+    <developer provenance="steam_games_17450">SCS Software</developer>
+    <usk_rating provenance=""/>
+    <pegi_rating provenance=""/>
+    <age provenance="steam_games_17450">0</age>
+    <price provenance="steam_games_17450">6.99</price>
+    <genres provenance="steam_games_17450+wikidata_8463+wikidata_8461+wikidata_8462">
+      <genre>truck simulator</genre>
+      <genre>Simulation</genre>
+    </genres>
+    <gamemodes provenance="steam_games_17450+wikidata_8463+wikidata_8461+wikidata_8462">
+      <gamemode>Single-player</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>vg_sales_1433+wikidata_31426</id>
+    <title provenance="vg_sales_1433">Dead to Rights</title>
+    <platform provenance="vg_sales_1433">PlayStation 2</platform>
+    <publisher provenance="wikidata_31426">Namco</publisher>
+    <publishingdate provenance="vg_sales_1433">2002</publishingdate>
+    <developer provenance="wikidata_31426">Namco</developer>
+    <usk_rating provenance=""/>
+    <pegi_rating provenance="wikidata_31426">PEGI 16</pegi_rating>
+    <age provenance="wikidata_31426">16</age>
+    <price provenance=""/>
+    <genres provenance="vg_sales_1433+wikidata_31426">
+      <genre>Shooter</genre>
+      <genre>action game</genre>
+      <genre>third-person shooter</genre>
+    </genres>
+    <gamemodes provenance="wikidata_31426">
+      <gamemode>Single-player</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>vg_sales_1294+wikidata_16870</id>
+    <title provenance="vg_sales_1294">Star Wars: The Force Unleashed II</title>
+    <platform provenance="vg_sales_1294">Xbox 360</platform>
+    <publisher provenance="vg_sales_1294">LucasArts</publisher>
+    <publishingdate provenance="vg_sales_1294">2010</publishingdate>
+    <developer provenance="wikidata_16870">LucasArts</developer>
+    <usk_rating provenance="wikidata_16870">USK 16</usk_rating>
+    <pegi_rating provenance=""/>
+    <age provenance="wikidata_16870">16</age>
+    <price provenance=""/>
+    <genres provenance="vg_sales_1294+wikidata_16870">
+      <genre>Action</genre>
+      <genre>action-adventure game</genre>
+    </genres>
+    <gamemodes provenance="wikidata_16870">
+      <gamemode>Single-player</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>vg_sales_11187+wikidata_19765</id>
+    <title provenance="vg_sales_11187">PAC-MAN and the Ghostly Adventures</title>
+    <platform provenance="vg_sales_11187">PlayStation 3</platform>
+    <publisher provenance="vg_sales_11187">Namco Bandai Games</publisher>
+    <publishingdate provenance="vg_sales_11187">2013</publishingdate>
+    <developer provenance="wikidata_19765">Monkey Bar Games</developer>
+    <usk_rating provenance=""/>
+    <pegi_rating provenance=""/>
+    <age provenance=""/>
+    <price provenance=""/>
+    <genres provenance="vg_sales_11187+wikidata_19765">
+      <genre>Platform</genre>
+      <genre>platform game</genre>
+    </genres>
+    <gamemodes provenance="wikidata_19765">
+      <gamemode>Single-player</gamemode>
+      <gamemode>Multi-player</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>vg_sales_12699+wikidata_22133</id>
+    <title provenance="vg_sales_12699">Zone of the Enders: The Fist of Mars</title>
+    <platform provenance="vg_sales_12699">Game Boy Advance</platform>
+    <publisher provenance="wikidata_22133">Konami</publisher>
+    <publishingdate provenance="vg_sales_12699">2001</publishingdate>
+    <developer provenance="wikidata_22133">Sunrise Interactive</developer>
+    <usk_rating provenance=""/>
+    <pegi_rating provenance=""/>
+    <age provenance=""/>
+    <price provenance=""/>
+    <genres provenance="vg_sales_12699+wikidata_22133">
+      <genre>action game</genre>
+      <genre>Role-Playing</genre>
+      <genre>tactical role-playing game</genre>
+    </genres>
+    <gamemodes provenance="wikidata_22133">
+      <gamemode>Single-player</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>vg_sales_7306+wikidata_27158</id>
+    <title provenance="wikidata_27158">Armored Core V</title>
+    <platform provenance="wikidata_27158">Xbox 360</platform>
+    <publisher provenance="vg_sales_7306">Namco Bandai Games</publisher>
+    <publishingdate provenance="wikidata_27158">2012</publishingdate>
+    <developer provenance="wikidata_27158">FromSoftware</developer>
+    <usk_rating provenance=""/>
+    <pegi_rating provenance=""/>
+    <age provenance=""/>
+    <price provenance=""/>
+    <genres provenance="wikidata_27158+vg_sales_7306">
+      <genre>simulation video game</genre>
+      <genre>third-person shooter</genre>
+      <genre>Simulation</genre>
+    </genres>
+    <gamemodes provenance="wikidata_27158">
+      <gamemode>Single-player</gamemode>
+      <gamemode>Multi-player</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>steam_games_5003+steam_games_5004+steam_games_5005+wikidata_35908</id>
+    <title provenance="steam_games_5003">Putt-Putt® Goes to the Moon</title>
+    <platform provenance="steam_games_5003">PC</platform>
+    <publisher provenance="steam_games_5003">Humongous Entertainment;Nightdive Studios</publisher>
+    <publishingdate provenance="steam_games_5003">2014</publishingdate>
+    <developer provenance="steam_games_5003">Humongous Entertainment</developer>
+    <usk_rating provenance=""/>
+    <pegi_rating provenance=""/>
+    <age provenance="steam_games_5003">0</age>
+    <price provenance="steam_games_5003">4.99</price>
+    <genres provenance="steam_games_5003+wikidata_35908+steam_games_5005+steam_games_5004">
+      <genre>adventure game</genre>
+      <genre>Adventure</genre>
+      <genre>Casual</genre>
+    </genres>
+    <gamemodes provenance="steam_games_5003+wikidata_35908+steam_games_5005+steam_games_5004">
+      <gamemode>Single-player</gamemode>
+      <gamemode>Steam Cloud</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>vg_sales_5187+wikidata_27066</id>
+    <title provenance="vg_sales_5187">The Incredibles: Rise of the Underminer</title>
+    <platform provenance="vg_sales_5187">PlayStation 2</platform>
+    <publisher provenance="vg_sales_5187">THQ</publisher>
+    <publishingdate provenance="vg_sales_5187">2005</publishingdate>
+    <developer provenance="wikidata_27066">Heavy Iron Studios</developer>
+    <usk_rating provenance=""/>
+    <pegi_rating provenance=""/>
+    <age provenance=""/>
+    <price provenance=""/>
+    <genres provenance="vg_sales_5187+wikidata_27066">
+      <genre>Action</genre>
+      <genre>action-adventure game</genre>
+    </genres>
+    <gamemodes provenance="wikidata_27066">
+      <gamemode>cooperative gameplay</gamemode>
+      <gamemode>two-player video game</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>vg_sales_7720+wikidata_20364</id>
+    <title provenance="vg_sales_7720">Marvel Super Hero Squad: Comic Combat</title>
+    <platform provenance="vg_sales_7720">Nintendo Wii</platform>
+    <publisher provenance="vg_sales_7720">THQ</publisher>
+    <publishingdate provenance="vg_sales_7720">2011</publishingdate>
+    <developer provenance="wikidata_20364">Griptonite Games</developer>
+    <usk_rating provenance=""/>
+    <pegi_rating provenance=""/>
+    <age provenance=""/>
+    <price provenance=""/>
+    <genres provenance="vg_sales_7720+wikidata_20364">
+      <genre>Action</genre>
+      <genre>art</genre>
+      <genre>beat 'em up</genre>
+      <genre>fighting game</genre>
+    </genres>
+    <gamemodes provenance="wikidata_20364">
+      <gamemode>Single-player</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>vg_sales_10825+wikidata_30897+wikidata_30899</id>
+    <title provenance="wikidata_30897">Disney's Aladdin in Nasira’s Revenge</title>
+    <platform provenance="wikidata_30897">PlayStation</platform>
+    <publisher provenance="wikidata_30897">Disney Interactive</publisher>
+    <publishingdate provenance="wikidata_30897">2000</publishingdate>
+    <developer provenance="wikidata_30897">Argonaut Games</developer>
+    <usk_rating provenance=""/>
+    <pegi_rating provenance=""/>
+    <age provenance=""/>
+    <price provenance=""/>
+    <genres provenance="wikidata_30897+vg_sales_10825+wikidata_30899">
+      <genre>Action</genre>
+      <genre>platform game</genre>
+    </genres>
+    <gamemodes provenance="wikidata_30897+wikidata_30899">
+      <gamemode>Single-player</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>vg_sales_1097+wikidata_18178</id>
+    <title provenance="vg_sales_1097">SpongeBob SquarePants: Battle for Bikini Bottom</title>
+    <platform provenance="vg_sales_1097">PlayStation 2</platform>
+    <publisher provenance="vg_sales_1097">THQ</publisher>
+    <publishingdate provenance="vg_sales_1097">2003</publishingdate>
+    <developer provenance="wikidata_18178">Heavy Iron Studios</developer>
+    <usk_rating provenance=""/>
+    <pegi_rating provenance=""/>
+    <age provenance=""/>
+    <price provenance=""/>
+    <genres provenance="vg_sales_1097+wikidata_18178">
+      <genre>Platform</genre>
+      <genre>platform game</genre>
+      <genre>action-adventure game</genre>
+    </genres>
+    <gamemodes provenance="wikidata_18178">
+      <gamemode>Single-player</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>vg_sales_7901+wikidata_28374</id>
+    <title provenance="vg_sales_7901">Tenchu: Fatal Shadows</title>
+    <platform provenance="vg_sales_7901">PlayStation 2</platform>
+    <publisher provenance="vg_sales_7901">Sega</publisher>
+    <publishingdate provenance="vg_sales_7901">2004</publishingdate>
+    <developer provenance="wikidata_28374">FromSoftware</developer>
+    <usk_rating provenance=""/>
+    <pegi_rating provenance=""/>
+    <age provenance=""/>
+    <price provenance=""/>
+    <genres provenance="vg_sales_7901+wikidata_28374">
+      <genre>Action</genre>
+      <genre>stealth game</genre>
+    </genres>
+    <gamemodes provenance="wikidata_28374">
+      <gamemode>Single-player</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>vg_sales_3961+wikidata_23500</id>
+    <title provenance="wikidata_23500">Dragon Ball Z: Supersonic Warriors 2</title>
+    <platform provenance="wikidata_23500">Nintendo DS</platform>
+    <publisher provenance="vg_sales_3961">Atari</publisher>
+    <publishingdate provenance="wikidata_23500">2005</publishingdate>
+    <developer provenance="wikidata_23500">Arc System Works</developer>
+    <usk_rating provenance=""/>
+    <pegi_rating provenance=""/>
+    <age provenance=""/>
+    <price provenance=""/>
+    <genres provenance="wikidata_23500+vg_sales_3961">
+      <genre>Fighting</genre>
+      <genre>fighting game</genre>
+    </genres>
+    <gamemodes provenance="wikidata_23500">
+      <gamemode>Single-player</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>vg_sales_7441+wikidata_25015</id>
+    <title provenance="wikidata_25015">Tales of Phantasia: Narikiri Dungeon X</title>
+    <platform provenance="wikidata_25015">PlayStation Portable</platform>
+    <publisher provenance="vg_sales_7441">Namco Bandai Games</publisher>
+    <publishingdate provenance="wikidata_25015">2010</publishingdate>
+    <developer provenance="wikidata_25015">Namco Tales Studio</developer>
+    <usk_rating provenance=""/>
+    <pegi_rating provenance=""/>
+    <age provenance=""/>
+    <price provenance=""/>
+    <genres provenance="wikidata_25015+vg_sales_7441">
+      <genre>role-playing video game</genre>
+      <genre>Role-Playing</genre>
+    </genres>
+    <gamemodes provenance="wikidata_25015">
+      <gamemode>Single-player</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>vg_sales_1695+wikidata_20647</id>
+    <title provenance="wikidata_20647">Kobe Bryant in NBA Courtside</title>
+    <platform provenance="wikidata_20647">Nintendo 64</platform>
+    <publisher provenance="wikidata_20647">Nintendo</publisher>
+    <publishingdate provenance="wikidata_20647">1998</publishingdate>
+    <developer provenance="wikidata_20647">Left Field Productions</developer>
+    <usk_rating provenance=""/>
+    <pegi_rating provenance=""/>
+    <age provenance=""/>
+    <price provenance=""/>
+    <genres provenance="wikidata_20647+vg_sales_1695">
+      <genre>Sports</genre>
+      <genre>sports video game</genre>
+    </genres>
+    <gamemodes provenance="wikidata_20647">
+      <gamemode>Single-player</gamemode>
+      <gamemode>Multi-player</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>steam_games_388+wikidata_3165+wikidata_3167</id>
+    <title provenance="wikidata_3165">Sherlock Holmes Versus Jack the Ripper</title>
+    <platform provenance="wikidata_3165">PC</platform>
+    <publisher provenance="steam_games_388">Frogwares</publisher>
+    <publishingdate provenance="wikidata_3165">2009</publishingdate>
+    <developer provenance="wikidata_3165">Frogwares</developer>
+    <usk_rating provenance="wikidata_3165">USK 12</usk_rating>
+    <pegi_rating provenance="wikidata_3165">PEGI 16</pegi_rating>
+    <age provenance="wikidata_3165">16</age>
+    <price provenance="steam_games_388">6.99</price>
+    <genres provenance="wikidata_3165+wikidata_3167+steam_games_388">
+      <genre>adventure game</genre>
+      <genre>Adventure</genre>
+      <genre>fictional crossover</genre>
+      <genre>RPG</genre>
+    </genres>
+    <gamemodes provenance="wikidata_3165+wikidata_3167+steam_games_388">
+      <gamemode>Single-player</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>vg_sales_1911+wikidata_20703</id>
+    <title provenance="vg_sales_1911">Spore Creatures</title>
+    <platform provenance="vg_sales_1911">Nintendo DS</platform>
+    <publisher provenance="vg_sales_1911">Electronic Arts</publisher>
+    <publishingdate provenance="vg_sales_1911">2008</publishingdate>
+    <developer provenance="wikidata_20703">Foundation 9 Entertainment</developer>
+    <usk_rating provenance=""/>
+    <pegi_rating provenance=""/>
+    <age provenance=""/>
+    <price provenance=""/>
+    <genres provenance="vg_sales_1911+wikidata_20703">
+      <genre>Simulation</genre>
+      <genre>life simulation game</genre>
+    </genres>
+    <gamemodes provenance="wikidata_20703">
+      <gamemode>Single-player</gamemode>
+      <gamemode>Multi-player</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>vg_sales_2676+wikidata_3388</id>
+    <title provenance="wikidata_3388">Star Wars Episode II: Attack of the Clones</title>
+    <platform provenance="wikidata_3388">Game Boy Advance</platform>
+    <publisher provenance="wikidata_3388">THQ</publisher>
+    <publishingdate provenance="wikidata_3388">2002</publishingdate>
+    <developer provenance="wikidata_3388">LucasArts</developer>
+    <usk_rating provenance=""/>
+    <pegi_rating provenance=""/>
+    <age provenance=""/>
+    <price provenance=""/>
+    <genres provenance="wikidata_3388+vg_sales_2676">
+      <genre>Action</genre>
+      <genre>action game</genre>
+    </genres>
+    <gamemodes provenance="wikidata_3388">
+      <gamemode>Single-player</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>vg_sales_4+wikidata_13470</id>
+    <title provenance="vg_sales_4">Wii Sports Resort</title>
+    <platform provenance="vg_sales_4">Nintendo Wii</platform>
+    <publisher provenance="vg_sales_4">Nintendo</publisher>
+    <publishingdate provenance="vg_sales_4">2009</publishingdate>
+    <developer provenance="wikidata_13470">Nintendo Entertainment Analysis &amp; Development</developer>
+    <usk_rating provenance="wikidata_13470">USK 6</usk_rating>
+    <pegi_rating provenance="wikidata_13470">PEGI 7</pegi_rating>
+    <age provenance="wikidata_13470">7</age>
+    <price provenance=""/>
+    <genres provenance="vg_sales_4+wikidata_13470">
+      <genre>Sports</genre>
+      <genre>sports video game</genre>
+    </genres>
+    <gamemodes provenance="wikidata_13470">
+      <gamemode>Single-player</gamemode>
+      <gamemode>Multi-player</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>steam_games_502+wikidata_7487+wikidata_7489</id>
+    <title provenance="steam_games_502">Luxor 3</title>
+    <platform provenance="steam_games_502">PC</platform>
+    <publisher provenance="steam_games_502">MumboJumbo</publisher>
+    <publishingdate provenance="steam_games_502">2008</publishingdate>
+    <developer provenance="steam_games_502">MumboJumbo</developer>
+    <usk_rating provenance=""/>
+    <pegi_rating provenance=""/>
+    <age provenance="steam_games_502">0</age>
+    <price provenance="steam_games_502">5.99</price>
+    <genres provenance="steam_games_502+wikidata_7487+wikidata_7489">
+      <genre>Casual</genre>
+      <genre>puzzle video game</genre>
+    </genres>
+    <gamemodes provenance="steam_games_502+wikidata_7487+wikidata_7489">
+      <gamemode>Single-player</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>vg_sales_1003+wikidata_17911</id>
+    <title provenance="wikidata_17911">Star Wars: Starfighter</title>
+    <platform provenance="wikidata_17911">PlayStation 2</platform>
+    <publisher provenance="wikidata_17911">LucasArts</publisher>
+    <publishingdate provenance="wikidata_17911">2001</publishingdate>
+    <developer provenance="wikidata_17911">LucasArts</developer>
+    <usk_rating provenance=""/>
+    <pegi_rating provenance=""/>
+    <age provenance=""/>
+    <price provenance=""/>
+    <genres provenance="wikidata_17911+vg_sales_1003">
+      <genre>action game</genre>
+      <genre>Simulation</genre>
+    </genres>
+    <gamemodes provenance="wikidata_17911">
+      <gamemode>Single-player</gamemode>
+      <gamemode>Multi-player</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>vg_sales_1034+wikidata_18091</id>
+    <title provenance="wikidata_18091">The Order: 1886</title>
+    <platform provenance="wikidata_18091">PlayStation 4</platform>
+    <publisher provenance="vg_sales_1034">Sony Computer Entertainment</publisher>
+    <publishingdate provenance="wikidata_18091">2015</publishingdate>
+    <developer provenance="wikidata_18091">Ready at Dawn</developer>
+    <usk_rating provenance="wikidata_18091">USK 18</usk_rating>
+    <pegi_rating provenance="wikidata_18091">PEGI 18</pegi_rating>
+    <age provenance="wikidata_18091">18</age>
+    <price provenance=""/>
+    <genres provenance="wikidata_18091+vg_sales_1034">
+      <genre>Shooter</genre>
+      <genre>action-adventure game</genre>
+      <genre>third-person shooter</genre>
+    </genres>
+    <gamemodes provenance="wikidata_18091">
+      <gamemode>Single-player</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>vg_sales_9517+wikidata_11850+wikidata_11851</id>
+    <title provenance="wikidata_11850">Warcraft III: Reign of Chaos</title>
+    <platform provenance="wikidata_11850">PC</platform>
+    <publisher provenance="vg_sales_9517">Vivendi Games</publisher>
+    <publishingdate provenance="wikidata_11850">2002</publishingdate>
+    <developer provenance="wikidata_11850">Blizzard Entertainment</developer>
+    <usk_rating provenance="wikidata_11850">USK 12</usk_rating>
+    <pegi_rating provenance="wikidata_11850">PEGI 12</pegi_rating>
+    <age provenance="wikidata_11850">12</age>
+    <price provenance=""/>
+    <genres provenance="wikidata_11850+wikidata_11851+vg_sales_9517">
+      <genre>real-time strategy</genre>
+      <genre>Strategy</genre>
+    </genres>
+    <gamemodes provenance="wikidata_11850+wikidata_11851">
+      <gamemode>Single-player</gamemode>
+      <gamemode>Multi-player</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>vg_sales_564+wikidata_13873</id>
+    <title provenance="wikidata_13873">Final Fantasy XIII-2</title>
+    <platform provenance="wikidata_13873">PlayStation 3</platform>
+    <publisher provenance="wikidata_13873">Square Enix</publisher>
+    <publishingdate provenance="wikidata_13873">2011</publishingdate>
+    <developer provenance="wikidata_13873">Square Enix</developer>
+    <usk_rating provenance="wikidata_13873">USK 12</usk_rating>
+    <pegi_rating provenance="wikidata_13873">PEGI 16</pegi_rating>
+    <age provenance="wikidata_13873">16</age>
+    <price provenance=""/>
+    <genres provenance="wikidata_13873+vg_sales_564">
+      <genre>role-playing video game</genre>
+      <genre>Role-Playing</genre>
+    </genres>
+    <gamemodes provenance="wikidata_13873">
+      <gamemode>Single-player</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>vg_sales_5941+wikidata_17316</id>
+    <title provenance="wikidata_17316">Guitar Hero: Van Halen</title>
+    <platform provenance="wikidata_17316">Xbox 360</platform>
+    <publisher provenance="vg_sales_5941">Activision</publisher>
+    <publishingdate provenance="wikidata_17316">2009</publishingdate>
+    <developer provenance="wikidata_17316">Neversoft</developer>
+    <usk_rating provenance=""/>
+    <pegi_rating provenance=""/>
+    <age provenance=""/>
+    <price provenance=""/>
+    <genres provenance="wikidata_17316+vg_sales_5941">
+      <genre>Misc</genre>
+      <genre>music video game</genre>
+    </genres>
+    <gamemodes provenance="wikidata_17316">
+      <gamemode>Single-player</gamemode>
+      <gamemode>Multi-player</gamemode>
+      <gamemode>cooperative gameplay</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>vg_sales_1612+wikidata_15034</id>
+    <title provenance="wikidata_15034">Frogger: The Great Quest</title>
+    <platform provenance="wikidata_15034">PlayStation 2</platform>
+    <publisher provenance="wikidata_15034">Konami</publisher>
+    <publishingdate provenance="wikidata_15034">2001</publishingdate>
+    <developer provenance=""/>
+    <usk_rating provenance=""/>
+    <pegi_rating provenance=""/>
+    <age provenance=""/>
+    <price provenance=""/>
+    <genres provenance="wikidata_15034+vg_sales_1612">
+      <genre>adventure game</genre>
+      <genre>Platform</genre>
+    </genres>
+    <gamemodes provenance="wikidata_15034">
+      <gamemode>Single-player</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>vg_sales_1863+wikidata_21021</id>
+    <title provenance="wikidata_21021">Nerf N-Strike</title>
+    <platform provenance="wikidata_21021">Nintendo Wii</platform>
+    <publisher provenance="wikidata_21021">Electronic Arts</publisher>
+    <publishingdate provenance="wikidata_21021">2008</publishingdate>
+    <developer provenance="wikidata_21021">EA Salt Lake</developer>
+    <usk_rating provenance=""/>
+    <pegi_rating provenance=""/>
+    <age provenance=""/>
+    <price provenance=""/>
+    <genres provenance="wikidata_21021+vg_sales_1863">
+      <genre>Shooter</genre>
+    </genres>
+    <gamemodes provenance=""/>
+  </videogame>
+  <videogame>
+    <id>vg_sales_2074+wikidata_21421</id>
+    <title provenance="vg_sales_2074">Zoo Tycoon DS</title>
+    <platform provenance="vg_sales_2074">Nintendo DS</platform>
+    <publisher provenance="vg_sales_2074">THQ</publisher>
+    <publishingdate provenance="vg_sales_2074">2005</publishingdate>
+    <developer provenance="wikidata_21421">THQ</developer>
+    <usk_rating provenance=""/>
+    <pegi_rating provenance=""/>
+    <age provenance=""/>
+    <price provenance=""/>
+    <genres provenance="vg_sales_2074+wikidata_21421">
+      <genre>business simulation game</genre>
+      <genre>Strategy</genre>
+    </genres>
+    <gamemodes provenance="wikidata_21421">
+      <gamemode>Single-player</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>vg_sales_10813+wikidata_27043</id>
+    <title provenance="wikidata_27043">Minority Report: Everybody Runs</title>
+    <platform provenance="wikidata_27043">Xbox</platform>
+    <publisher provenance="vg_sales_10813">Activision</publisher>
+    <publishingdate provenance="wikidata_27043">2002</publishingdate>
+    <developer provenance="wikidata_27043">Treyarch</developer>
+    <usk_rating provenance=""/>
+    <pegi_rating provenance=""/>
+    <age provenance=""/>
+    <price provenance=""/>
+    <genres provenance="wikidata_27043+vg_sales_10813">
+      <genre>Action</genre>
+      <genre>beat 'em up</genre>
+    </genres>
+    <gamemodes provenance="wikidata_27043">
+      <gamemode>Single-player</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>steam_games_2251+steam_games_2252+vg_sales_14057</id>
+    <title provenance="steam_games_2252">Clockwork Empires</title>
+    <platform provenance="steam_games_2252">PC</platform>
+    <publisher provenance="vg_sales_14057">Unknown</publisher>
+    <publishingdate provenance="steam_games_2252">2016</publishingdate>
+    <developer provenance="steam_games_2252">Gaslamp Games, Inc.</developer>
+    <usk_rating provenance=""/>
+    <pegi_rating provenance=""/>
+    <age provenance="steam_games_2252">0</age>
+    <price provenance="steam_games_2252">22.99</price>
+    <genres provenance="steam_games_2252+steam_games_2251+vg_sales_14057">
+      <genre>Indie</genre>
+      <genre>Simulation</genre>
+      <genre>Strategy</genre>
+    </genres>
+    <gamemodes provenance="steam_games_2252+steam_games_2251">
+      <gamemode>Single-player</gamemode>
+      <gamemode>Steam Achievements</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>vg_sales_2772+wikidata_22196</id>
+    <title provenance="wikidata_22196">Mario &amp; Luigi: Paper Jam</title>
+    <platform provenance="wikidata_22196">Nintendo 3DS</platform>
+    <publisher provenance="wikidata_22196">Nintendo</publisher>
+    <publishingdate provenance="wikidata_22196">2015</publishingdate>
+    <developer provenance="wikidata_22196">AlphaDream</developer>
+    <usk_rating provenance="wikidata_22196">USK 0</usk_rating>
+    <pegi_rating provenance="wikidata_22196">PEGI 3</pegi_rating>
+    <age provenance="wikidata_22196">3</age>
+    <price provenance=""/>
+    <genres provenance="wikidata_22196+vg_sales_2772">
+      <genre>fictional crossover</genre>
+      <genre>role-playing video game</genre>
+      <genre>Role-Playing</genre>
+    </genres>
+    <gamemodes provenance="wikidata_22196">
+      <gamemode>Single-player</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>vg_sales_3135+wikidata_33801</id>
+    <title provenance="vg_sales_3135">Harry Potter and the Half-Blood Prince</title>
+    <platform provenance="vg_sales_3135">PlayStation 2</platform>
+    <publisher provenance="vg_sales_3135">Electronic Arts</publisher>
+    <publishingdate provenance="vg_sales_3135">2009</publishingdate>
+    <developer provenance="wikidata_33801">Electronic Arts</developer>
+    <usk_rating provenance=""/>
+    <pegi_rating provenance="wikidata_33801">PEGI 16</pegi_rating>
+    <age provenance="wikidata_33801">16</age>
+    <price provenance=""/>
+    <genres provenance="vg_sales_3135+wikidata_33801">
+      <genre>Action</genre>
+      <genre>action-adventure game</genre>
+    </genres>
+    <gamemodes provenance="wikidata_33801">
+      <gamemode>Single-player</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>vg_sales_8554+wikidata_36013</id>
+    <title provenance="wikidata_36013">Alone in the Dark: The New Nightmare</title>
+    <platform provenance="wikidata_36013">PlayStation</platform>
+    <publisher provenance="wikidata_36013">Infogrames</publisher>
+    <publishingdate provenance="wikidata_36013">2001</publishingdate>
+    <developer provenance="wikidata_36013">Darkworks</developer>
+    <usk_rating provenance="wikidata_36013">USK 12</usk_rating>
+    <pegi_rating provenance="wikidata_36013">PEGI 12</pegi_rating>
+    <age provenance="wikidata_36013">12</age>
+    <price provenance=""/>
+    <genres provenance="wikidata_36013+vg_sales_8554">
+      <genre>Adventure</genre>
+      <genre>survival horror</genre>
+    </genres>
+    <gamemodes provenance="wikidata_36013">
+      <gamemode>Single-player</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>vg_sales_4075+wikidata_30077+wikidata_30088</id>
+    <title provenance="wikidata_30088">Simcity 2000</title>
+    <platform provenance="wikidata_30088">Super Nintendo Entertainment System</platform>
+    <publisher provenance="vg_sales_4075">THQ</publisher>
+    <publishingdate provenance="vg_sales_4075">1995</publishingdate>
+    <developer provenance="wikidata_30088">Maxis</developer>
+    <usk_rating provenance=""/>
+    <pegi_rating provenance="wikidata_30088">PEGI 3</pegi_rating>
+    <age provenance="wikidata_30088">3</age>
+    <price provenance=""/>
+    <genres provenance="wikidata_30088+vg_sales_4075+wikidata_30077">
+      <genre>city-building game</genre>
+      <genre>Simulation</genre>
+    </genres>
+    <gamemodes provenance="wikidata_30088+wikidata_30077">
+      <gamemode>Single-player</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>vg_sales_8016+wikidata_31804</id>
+    <title provenance="wikidata_31804">Reel Fishing II</title>
+    <platform provenance="wikidata_31804">PlayStation</platform>
+    <publisher provenance="wikidata_31804">Natsume</publisher>
+    <publishingdate provenance="wikidata_31804">2000</publishingdate>
+    <developer provenance="wikidata_31804">Victor Interactive Software</developer>
+    <usk_rating provenance=""/>
+    <pegi_rating provenance=""/>
+    <age provenance=""/>
+    <price provenance=""/>
+    <genres provenance="vg_sales_8016">
+      <genre>Sports</genre>
+    </genres>
+    <gamemodes provenance=""/>
+  </videogame>
+  <videogame>
+    <id>vg_sales_1058+wikidata_30966+wikidata_30967</id>
+    <title provenance="wikidata_30967">Socom 3: U.S. Navy Seals</title>
+    <platform provenance="wikidata_30967">PlayStation 2</platform>
+    <publisher provenance="vg_sales_1058">Sony Computer Entertainment</publisher>
+    <publishingdate provenance="wikidata_30967">2005</publishingdate>
+    <developer provenance="wikidata_30967">Zipper Interactive</developer>
+    <usk_rating provenance=""/>
+    <pegi_rating provenance=""/>
+    <age provenance=""/>
+    <price provenance=""/>
+    <genres provenance="wikidata_30967+vg_sales_1058+wikidata_30966">
+      <genre>Shooter</genre>
+      <genre>third-person shooter</genre>
+    </genres>
+    <gamemodes provenance="wikidata_30967+wikidata_30966">
+      <gamemode>Single-player</gamemode>
+      <gamemode>Multi-player</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>vg_sales_4025+wikidata_15416+wikidata_15417</id>
+    <title provenance="vg_sales_4025">MotorStorm: Apocalypse</title>
+    <platform provenance="vg_sales_4025">PlayStation 3</platform>
+    <publisher provenance="vg_sales_4025">Sony Computer Entertainment</publisher>
+    <publishingdate provenance="vg_sales_4025">2011</publishingdate>
+    <developer provenance="wikidata_15416">Evolution Studios</developer>
+    <usk_rating provenance=""/>
+    <pegi_rating provenance="wikidata_15416">PEGI 18</pegi_rating>
+    <age provenance="wikidata_15416">18</age>
+    <price provenance=""/>
+    <genres provenance="vg_sales_4025+wikidata_15416+wikidata_15417">
+      <genre>racing video game</genre>
+      <genre>Racing</genre>
+    </genres>
+    <gamemodes provenance="wikidata_15416+wikidata_15417">
+      <gamemode>Single-player</gamemode>
+      <gamemode>Multi-player</gamemode>
+    </gamemodes>
+  </videogame>
+  <videogame>
+    <id>vg_sales_95+wikidata_13941</id>
+    <title provenance="wikidata_13941">The Legend of Zelda: Ocarina of Time</title>
+    <platform provenance="wikidata_13941">Nintendo 64</platform>
+    <publisher provenance="wikidata_13941">Nintendo</publisher>
+    <publishingdate provenance="wikidata_13941">1998</publishingdate>
+    <developer provenance="wikidata_13941">Nintendo Entertainment Analysis &amp; Development</developer>
+    <usk_rating provenance="wikidata_13941">USK 6</usk_rating>
+    <pegi_rating provenance="wikidata_13941">PEGI 12</pegi_rating>
+    <age provenance="wikidata_13941">12</age>
+    <price provenance=""/>
+    <genres provenance="wikidata_13941+vg_sales_95">
+      <genre>Action</genre>
+      <genre>action-adventure game</genre>
+    </genres>
+    <gamemodes provenance="wikidata_13941">
+      <gamemode>Single-player</gamemode>
+    </gamemodes>
+  </videogame>
+</videogames>

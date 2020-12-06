@@ -25837,3 +25837,507 @@
 [TRACE] 2020-12-06 17:36:14.543 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	Platform: 0,95
 [TRACE] 2020-12-06 17:36:14.543 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	Genres: 0,30
 [TRACE] 2020-12-06 17:36:14.543 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	GameModes: 0,25
+[INFO ] 2020-12-06 18:44:15.132 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 36062 elements from wikidata_mapping_output.xml
+[INFO ] 2020-12-06 18:44:15.466 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - DataSet density: 0,69
+[INFO ] 2020-12-06 18:44:15.466 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - Attributes densities:
+[INFO ] 2020-12-06 18:44:15.523 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Developer: 0,86
+[INFO ] 2020-12-06 18:44:15.523 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Publisher: 0,86
+[INFO ] 2020-12-06 18:44:15.524 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Price: 0,00
+[INFO ] 2020-12-06 18:44:15.524 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	PegiRating: 0,39
+[INFO ] 2020-12-06 18:44:15.524 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	PublishingDate: 0,96
+[INFO ] 2020-12-06 18:44:15.524 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Age: 0,44
+[INFO ] 2020-12-06 18:44:15.524 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	UskRating: 0,32
+[INFO ] 2020-12-06 18:44:15.524 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Title: 1,00
+[INFO ] 2020-12-06 18:44:15.525 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Platform: 1,00
+[INFO ] 2020-12-06 18:44:15.525 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	GameModes: 0,86
+[INFO ] 2020-12-06 18:44:15.525 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Genres: 0,94
+[INFO ] 2020-12-06 18:44:16.641 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 40371 elements from steam_mapping_output.xml
+[INFO ] 2020-12-06 18:44:16.822 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - DataSet density: 0,82
+[INFO ] 2020-12-06 18:44:16.822 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - Attributes densities:
+[INFO ] 2020-12-06 18:44:16.880 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Developer: 1,00
+[INFO ] 2020-12-06 18:44:16.881 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Publisher: 1,00
+[INFO ] 2020-12-06 18:44:16.881 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Price: 1,00
+[INFO ] 2020-12-06 18:44:16.881 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	PegiRating: 0,00
+[INFO ] 2020-12-06 18:44:16.881 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	PublishingDate: 1,00
+[INFO ] 2020-12-06 18:44:16.881 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Age: 1,00
+[INFO ] 2020-12-06 18:44:16.881 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	UskRating: 0,00
+[INFO ] 2020-12-06 18:44:16.881 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Title: 1,00
+[INFO ] 2020-12-06 18:44:16.882 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Platform: 1,00
+[INFO ] 2020-12-06 18:44:16.882 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	GameModes: 1,00
+[INFO ] 2020-12-06 18:44:16.882 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Genres: 1,00
+[INFO ] 2020-12-06 18:44:17.042 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 16598 elements from sales_mapping_output.xml
+[INFO ] 2020-12-06 18:44:17.092 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - DataSet density: 0,45
+[INFO ] 2020-12-06 18:44:17.093 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - Attributes densities:
+[INFO ] 2020-12-06 18:44:17.103 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Developer: 0,00
+[INFO ] 2020-12-06 18:44:17.103 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Publisher: 1,00
+[INFO ] 2020-12-06 18:44:17.103 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Price: 0,00
+[INFO ] 2020-12-06 18:44:17.103 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	PegiRating: 0,00
+[INFO ] 2020-12-06 18:44:17.103 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	PublishingDate: 0,98
+[INFO ] 2020-12-06 18:44:17.104 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Age: 0,00
+[INFO ] 2020-12-06 18:44:17.104 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	UskRating: 0,00
+[INFO ] 2020-12-06 18:44:17.104 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Title: 1,00
+[INFO ] 2020-12-06 18:44:17.104 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Platform: 1,00
+[INFO ] 2020-12-06 18:44:17.104 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	GameModes: 0,00
+[INFO ] 2020-12-06 18:44:17.104 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Genres: 1,00
+[INFO ] 2020-12-06 18:44:17.155 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - Group Size Distribtion of 7184 groups:
+[INFO ] 2020-12-06 18:44:17.155 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	Group Size 	| Frequency 
+[INFO ] 2020-12-06 18:44:17.155 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	————————————————————————————
+[INFO ] 2020-12-06 18:44:17.156 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		2	| 	5674
+[INFO ] 2020-12-06 18:44:17.157 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		3	| 	1015
+[INFO ] 2020-12-06 18:44:17.157 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		4	| 	278
+[INFO ] 2020-12-06 18:44:17.157 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		5	| 	86
+[INFO ] 2020-12-06 18:44:17.157 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		6	| 	93
+[INFO ] 2020-12-06 18:44:17.157 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		7	| 	24
+[INFO ] 2020-12-06 18:44:17.157 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		8	| 	3
+[INFO ] 2020-12-06 18:44:17.157 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		9	| 	4
+[INFO ] 2020-12-06 18:44:17.157 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		10	| 	4
+[INFO ] 2020-12-06 18:44:17.157 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		12	| 	1
+[INFO ] 2020-12-06 18:44:17.158 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		13	| 	1
+[INFO ] 2020-12-06 18:44:17.158 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		15	| 	1
+[INFO ] 2020-12-06 18:44:17.162 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 20 elements from goldstandard_fusion.xml
+[INFO ] 2020-12-06 18:44:17.173 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - Attribute Consistencies:
+[INFO ] 2020-12-06 18:44:17.632 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	GameModes: 0,91
+[INFO ] 2020-12-06 18:44:17.632 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	PegiRating: 1,00
+[INFO ] 2020-12-06 18:44:17.632 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Platform: 0,31
+[INFO ] 2020-12-06 18:44:17.632 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Price: 0,98
+[INFO ] 2020-12-06 18:44:17.633 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	PublishingDate: 0,85
+[INFO ] 2020-12-06 18:44:17.633 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Developer: 0,98
+[INFO ] 2020-12-06 18:44:17.633 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Title: 0,99
+[INFO ] 2020-12-06 18:44:17.633 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Publisher: 0,75
+[INFO ] 2020-12-06 18:44:17.633 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Genres: 0,19
+[INFO ] 2020-12-06 18:44:17.633 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Age: 0,95
+[INFO ] 2020-12-06 18:44:17.634 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	UskRating: 0,99
+[INFO ] 2020-12-06 18:44:19.091 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionStrategy] - Debug results written to file: data/output/debugResultsDatafusion.csv
+[INFO ] 2020-12-06 18:44:19.337 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - DataSet density: 0,76
+[INFO ] 2020-12-06 18:44:19.337 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - Attributes densities:
+[INFO ] 2020-12-06 18:44:19.348 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Developer: 0,94
+[INFO ] 2020-12-06 18:44:19.348 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Publisher: 1,00
+[INFO ] 2020-12-06 18:44:19.349 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Price: 0,16
+[INFO ] 2020-12-06 18:44:19.349 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	PegiRating: 0,43
+[INFO ] 2020-12-06 18:44:19.349 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	PublishingDate: 1,00
+[INFO ] 2020-12-06 18:44:19.349 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Age: 0,56
+[INFO ] 2020-12-06 18:44:19.349 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	UskRating: 0,31
+[INFO ] 2020-12-06 18:44:19.349 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Title: 1,00
+[INFO ] 2020-12-06 18:44:19.349 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Platform: 1,00
+[INFO ] 2020-12-06 18:44:19.349 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	GameModes: 0,92
+[INFO ] 2020-12-06 18:44:19.349 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Genres: 1,00
+[TRACE] 2020-12-06 18:44:19.350 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Price': [VideoGame vg_sales_1321+wikidata_18728: Anno 2070 / PC / Ubisoft / Related Designs / 2011-01-01 / [Genre [genre=city-building game], Genre [genre=real-time strategy], Genre [genre=Strategy]]]
+ <> [VideoGame wikidata_18728: Anno 2070 / PC / Ubisoft / Related Design / 2011-01-01 / [Genre [genre=Strategy], Genre [genre=Real Time Strategy], Genre [genre=Simulator]]]
+
+[TRACE] 2020-12-06 18:44:19.350 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': [VideoGame vg_sales_1321+wikidata_18728: Anno 2070 / PC / Ubisoft / Related Designs / 2011-01-01 / [Genre [genre=city-building game], Genre [genre=real-time strategy], Genre [genre=Strategy]]]
+ <> [VideoGame wikidata_18728: Anno 2070 / PC / Ubisoft / Related Design / 2011-01-01 / [Genre [genre=Strategy], Genre [genre=Real Time Strategy], Genre [genre=Simulator]]]
+
+[TRACE] 2020-12-06 18:44:19.350 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'GameModes': [VideoGame vg_sales_1321+wikidata_18728: Anno 2070 / PC / Ubisoft / Related Designs / 2011-01-01 / [Genre [genre=city-building game], Genre [genre=real-time strategy], Genre [genre=Strategy]]]
+ <> [VideoGame wikidata_18728: Anno 2070 / PC / Ubisoft / Related Design / 2011-01-01 / [Genre [genre=Strategy], Genre [genre=Real Time Strategy], Genre [genre=Simulator]]]
+
+[TRACE] 2020-12-06 18:44:19.351 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Price': [VideoGame vg_sales_892+wikidata_15072: Watch Dogs / PlayStation 3 / Ubisoft / Ubisoft Montreal / 2014-01-01 / [Genre [genre=cyberpunk], Genre [genre=Action], Genre [genre=action-adventure game]]]
+ <> [VideoGame vg_sales_892: Watch Dogs / PlayStation 3 / Ubisoft / Ubisoft Montreal / 2015-01-01 / [Genre [genre=Adventure], Genre [genre=Shooter]]]
+
+[TRACE] 2020-12-06 18:44:19.351 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'PublishingDate': [VideoGame vg_sales_892+wikidata_15072: Watch Dogs / PlayStation 3 / Ubisoft / Ubisoft Montreal / 2014-01-01 / [Genre [genre=cyberpunk], Genre [genre=Action], Genre [genre=action-adventure game]]]
+ <> [VideoGame vg_sales_892: Watch Dogs / PlayStation 3 / Ubisoft / Ubisoft Montreal / 2015-01-01 / [Genre [genre=Adventure], Genre [genre=Shooter]]]
+
+[TRACE] 2020-12-06 18:44:19.351 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': [VideoGame vg_sales_892+wikidata_15072: Watch Dogs / PlayStation 3 / Ubisoft / Ubisoft Montreal / 2014-01-01 / [Genre [genre=cyberpunk], Genre [genre=Action], Genre [genre=action-adventure game]]]
+ <> [VideoGame vg_sales_892: Watch Dogs / PlayStation 3 / Ubisoft / Ubisoft Montreal / 2015-01-01 / [Genre [genre=Adventure], Genre [genre=Shooter]]]
+
+[TRACE] 2020-12-06 18:44:19.353 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'GameModes': [VideoGame vg_sales_892+wikidata_15072: Watch Dogs / PlayStation 3 / Ubisoft / Ubisoft Montreal / 2014-01-01 / [Genre [genre=cyberpunk], Genre [genre=Action], Genre [genre=action-adventure game]]]
+ <> [VideoGame vg_sales_892: Watch Dogs / PlayStation 3 / Ubisoft / Ubisoft Montreal / 2015-01-01 / [Genre [genre=Adventure], Genre [genre=Shooter]]]
+
+[TRACE] 2020-12-06 18:44:19.353 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'PegiRating': [VideoGame steam_games_21964+wikidata_16139: Devil May Cry 5 / PC / Capcom / Capcom / 2019-01-01 / [Genre [genre=hack and slash], Genre [genre=Action], Genre [genre=action-adventure game]]]
+ <> [VideoGame wikidata_16139: Devil May Cry 5 / PC / Capcom / Capcom / 2019-01-01 / [Genre [genre=Action], Genre [genre=Hack and slash]]]
+
+[TRACE] 2020-12-06 18:44:19.353 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'UskRating': [VideoGame steam_games_21964+wikidata_16139: Devil May Cry 5 / PC / Capcom / Capcom / 2019-01-01 / [Genre [genre=hack and slash], Genre [genre=Action], Genre [genre=action-adventure game]]]
+ <> [VideoGame wikidata_16139: Devil May Cry 5 / PC / Capcom / Capcom / 2019-01-01 / [Genre [genre=Action], Genre [genre=Hack and slash]]]
+
+[TRACE] 2020-12-06 18:44:19.353 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': [VideoGame steam_games_21964+wikidata_16139: Devil May Cry 5 / PC / Capcom / Capcom / 2019-01-01 / [Genre [genre=hack and slash], Genre [genre=Action], Genre [genre=action-adventure game]]]
+ <> [VideoGame wikidata_16139: Devil May Cry 5 / PC / Capcom / Capcom / 2019-01-01 / [Genre [genre=Action], Genre [genre=Hack and slash]]]
+
+[TRACE] 2020-12-06 18:44:19.353 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'GameModes': [VideoGame steam_games_21964+wikidata_16139: Devil May Cry 5 / PC / Capcom / Capcom / 2019-01-01 / [Genre [genre=hack and slash], Genre [genre=Action], Genre [genre=action-adventure game]]]
+ <> [VideoGame wikidata_16139: Devil May Cry 5 / PC / Capcom / Capcom / 2019-01-01 / [Genre [genre=Action], Genre [genre=Hack and slash]]]
+
+[TRACE] 2020-12-06 18:44:19.353 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Price': [VideoGame vg_sales_49+wikidata_13643: Super Mario Galaxy / Nintendo Wii / Nintendo / Nintendo Entertainment Analysis & Development / 2007-01-01 / [Genre [genre=Platform], Genre [genre=platform game]]]
+ <> [VideoGame wikidata_13643: Super Mario Galaxy / Nintendo Wii / Nintendo / Nintendo EAD / 2007-01-01 / [Genre [genre=Platform], Genre [genre=Adventure]]]
+
+[TRACE] 2020-12-06 18:44:19.354 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': [VideoGame vg_sales_49+wikidata_13643: Super Mario Galaxy / Nintendo Wii / Nintendo / Nintendo Entertainment Analysis & Development / 2007-01-01 / [Genre [genre=Platform], Genre [genre=platform game]]]
+ <> [VideoGame wikidata_13643: Super Mario Galaxy / Nintendo Wii / Nintendo / Nintendo EAD / 2007-01-01 / [Genre [genre=Platform], Genre [genre=Adventure]]]
+
+[TRACE] 2020-12-06 18:44:19.354 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'GameModes': [VideoGame vg_sales_49+wikidata_13643: Super Mario Galaxy / Nintendo Wii / Nintendo / Nintendo Entertainment Analysis & Development / 2007-01-01 / [Genre [genre=Platform], Genre [genre=platform game]]]
+ <> [VideoGame wikidata_13643: Super Mario Galaxy / Nintendo Wii / Nintendo / Nintendo EAD / 2007-01-01 / [Genre [genre=Platform], Genre [genre=Adventure]]]
+
+[TRACE] 2020-12-06 18:44:19.354 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Price': [VideoGame steam_games_2742+vg_sales_2962+wikidata_14261+wikidata_14267+wikidata_32089: Assassin’s Creed® IV Black Flag™ / PC / Ubisoft / Ubisoft Quebec / 2013-01-01 / [Genre [genre=Adventure], Genre [genre=stealth game], Genre [genre=Action], Genre [genre=action-adventure game]]]
+ <> [VideoGame wikidata_14267: Assassin's Creed IV: Black Flag / PC / Ubisoft / Ubisoft Montreal / 2013-01-01 / [Genre [genre=Adventure], Genre [genre=Action]]]
+
+[TRACE] 2020-12-06 18:44:19.355 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'GameModes': [VideoGame steam_games_2742+vg_sales_2962+wikidata_14261+wikidata_14267+wikidata_32089: Assassin’s Creed® IV Black Flag™ / PC / Ubisoft / Ubisoft Quebec / 2013-01-01 / [Genre [genre=Adventure], Genre [genre=stealth game], Genre [genre=Action], Genre [genre=action-adventure game]]]
+ <> [VideoGame wikidata_14267: Assassin's Creed IV: Black Flag / PC / Ubisoft / Ubisoft Montreal / 2013-01-01 / [Genre [genre=Adventure], Genre [genre=Action]]]
+
+[TRACE] 2020-12-06 18:44:19.355 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'PegiRating': [VideoGame steam_games_10045+vg_sales_1631: Fallout 4 / PC / Bethesda Softworks / Bethesda Game Studios / 2015-01-01 / [Genre [genre=Role-Playing], Genre [genre=RPG]]]
+ <> [VideoGame vg_sales_1631: Fallout 4 / PC / Bethesda Softworks / Bethesda Game Studios / 2015-01-01 / [Genre [genre=Role-playing], Genre [genre=Shooter]]]
+
+[TRACE] 2020-12-06 18:44:19.355 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'UskRating': [VideoGame steam_games_10045+vg_sales_1631: Fallout 4 / PC / Bethesda Softworks / Bethesda Game Studios / 2015-01-01 / [Genre [genre=Role-Playing], Genre [genre=RPG]]]
+ <> [VideoGame vg_sales_1631: Fallout 4 / PC / Bethesda Softworks / Bethesda Game Studios / 2015-01-01 / [Genre [genre=Role-playing], Genre [genre=Shooter]]]
+
+[TRACE] 2020-12-06 18:44:19.355 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': [VideoGame steam_games_10045+vg_sales_1631: Fallout 4 / PC / Bethesda Softworks / Bethesda Game Studios / 2015-01-01 / [Genre [genre=Role-Playing], Genre [genre=RPG]]]
+ <> [VideoGame vg_sales_1631: Fallout 4 / PC / Bethesda Softworks / Bethesda Game Studios / 2015-01-01 / [Genre [genre=Role-playing], Genre [genre=Shooter]]]
+
+[TRACE] 2020-12-06 18:44:19.355 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Price': [VideoGame vg_sales_2698+wikidata_21488: Lost Planet 2 / Xbox 360 / Capcom / Capcom / 2010-01-01 / [Genre [genre=Shooter], Genre [genre=third-person shooter]]]
+ <> [VideoGame wikidata_21488: Lost Planet 2 / Xbox 360 / Capcom / Capcom / 2010-01-01 / [Genre [genre=Shooter], Genre [genre=Adventure]]]
+
+[TRACE] 2020-12-06 18:44:19.355 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': [VideoGame vg_sales_2698+wikidata_21488: Lost Planet 2 / Xbox 360 / Capcom / Capcom / 2010-01-01 / [Genre [genre=Shooter], Genre [genre=third-person shooter]]]
+ <> [VideoGame wikidata_21488: Lost Planet 2 / Xbox 360 / Capcom / Capcom / 2010-01-01 / [Genre [genre=Shooter], Genre [genre=Adventure]]]
+
+[TRACE] 2020-12-06 18:44:19.356 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'GameModes': [VideoGame vg_sales_2698+wikidata_21488: Lost Planet 2 / Xbox 360 / Capcom / Capcom / 2010-01-01 / [Genre [genre=Shooter], Genre [genre=third-person shooter]]]
+ <> [VideoGame wikidata_21488: Lost Planet 2 / Xbox 360 / Capcom / Capcom / 2010-01-01 / [Genre [genre=Shooter], Genre [genre=Adventure]]]
+
+[TRACE] 2020-12-06 18:44:19.356 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Price': [VideoGame vg_sales_769+wikidata_13541: Tetris DS / Nintendo DS / Nintendo / Nintendo / 2006-01-01 / [Genre [genre=Puzzle], Genre [genre=puzzle video game]]]
+ <> [VideoGame vg_sales_769: Tetris DS / Nintendo DS / Nintendo / Nintendo / 2006-01-01 / [Genre [genre=Puzzle]]]
+
+[TRACE] 2020-12-06 18:44:19.356 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'PegiRating': [VideoGame vg_sales_769+wikidata_13541: Tetris DS / Nintendo DS / Nintendo / Nintendo / 2006-01-01 / [Genre [genre=Puzzle], Genre [genre=puzzle video game]]]
+ <> [VideoGame vg_sales_769: Tetris DS / Nintendo DS / Nintendo / Nintendo / 2006-01-01 / [Genre [genre=Puzzle]]]
+
+[TRACE] 2020-12-06 18:44:19.356 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Age': [VideoGame vg_sales_769+wikidata_13541: Tetris DS / Nintendo DS / Nintendo / Nintendo / 2006-01-01 / [Genre [genre=Puzzle], Genre [genre=puzzle video game]]]
+ <> [VideoGame vg_sales_769: Tetris DS / Nintendo DS / Nintendo / Nintendo / 2006-01-01 / [Genre [genre=Puzzle]]]
+
+[TRACE] 2020-12-06 18:44:19.356 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'UskRating': [VideoGame vg_sales_769+wikidata_13541: Tetris DS / Nintendo DS / Nintendo / Nintendo / 2006-01-01 / [Genre [genre=Puzzle], Genre [genre=puzzle video game]]]
+ <> [VideoGame vg_sales_769: Tetris DS / Nintendo DS / Nintendo / Nintendo / 2006-01-01 / [Genre [genre=Puzzle]]]
+
+[TRACE] 2020-12-06 18:44:19.356 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'GameModes': [VideoGame vg_sales_769+wikidata_13541: Tetris DS / Nintendo DS / Nintendo / Nintendo / 2006-01-01 / [Genre [genre=Puzzle], Genre [genre=puzzle video game]]]
+ <> [VideoGame vg_sales_769: Tetris DS / Nintendo DS / Nintendo / Nintendo / 2006-01-01 / [Genre [genre=Puzzle]]]
+
+[TRACE] 2020-12-06 18:44:19.356 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': [VideoGame steam_games_304+steam_games_305+vg_sales_1770+wikidata_13733+wikidata_13735: Call of Duty® 4: Modern Warfare® / PC / Activision / Treyarch / 2007-01-01 / [Genre [genre=Shooter], Genre [genre=Action]]]
+ <> [VideoGame vg_sales_1770: Call of Duty 4: Modern Warfare / PC / Activision / Treyarch / 2007-01-01 / [Genre [genre=Shooter], Genre [genre=Simulation]]]
+
+[TRACE] 2020-12-06 18:44:19.356 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'GameModes': [VideoGame steam_games_304+steam_games_305+vg_sales_1770+wikidata_13733+wikidata_13735: Call of Duty® 4: Modern Warfare® / PC / Activision / Treyarch / 2007-01-01 / [Genre [genre=Shooter], Genre [genre=Action]]]
+ <> [VideoGame vg_sales_1770: Call of Duty 4: Modern Warfare / PC / Activision / Treyarch / 2007-01-01 / [Genre [genre=Shooter], Genre [genre=Simulation]]]
+
+[TRACE] 2020-12-06 18:44:19.356 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': [VideoGame steam_games_1249+steam_games_1250+vg_sales_4763+wikidata_21801+wikidata_21803: Duke Nukem Forever / PC / 2K / 3D Realms / 2011-01-01 / [Genre [genre=Shooter], Genre [genre=Action]]]
+ <> [VideoGame wikidata_21803: Duke Nukem Forever / PC / 2K Games / 3D Realms / 2011-01-01 / [Genre [genre=Shooter], Genre [genre=Adventure]]]
+
+[TRACE] 2020-12-06 18:44:19.357 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'GameModes': [VideoGame steam_games_1249+steam_games_1250+vg_sales_4763+wikidata_21801+wikidata_21803: Duke Nukem Forever / PC / 2K / 3D Realms / 2011-01-01 / [Genre [genre=Shooter], Genre [genre=Action]]]
+ <> [VideoGame wikidata_21803: Duke Nukem Forever / PC / 2K Games / 3D Realms / 2011-01-01 / [Genre [genre=Shooter], Genre [genre=Adventure]]]
+
+[TRACE] 2020-12-06 18:44:19.357 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'PublishingDate': [VideoGame steam_games_1161+vg_sales_84+wikidata_29443+wikidata_29446: The Sims™ 3 / PC / Electronic Arts / The Sims Studio / 2011-01-01 / [Genre [genre=Simulation], Genre [genre=video game with LGBT character], Genre [genre=life simulation game]]]
+ <> [VideoGame vg_sales_84: The Sims 3 / PC / Electronic Arts / The Sims Studio / 2009-01-01 / [Genre [genre=Simulation], Genre [genre=Strategy]]]
+
+[TRACE] 2020-12-06 18:44:19.357 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': [VideoGame steam_games_1161+vg_sales_84+wikidata_29443+wikidata_29446: The Sims™ 3 / PC / Electronic Arts / The Sims Studio / 2011-01-01 / [Genre [genre=Simulation], Genre [genre=video game with LGBT character], Genre [genre=life simulation game]]]
+ <> [VideoGame vg_sales_84: The Sims 3 / PC / Electronic Arts / The Sims Studio / 2009-01-01 / [Genre [genre=Simulation], Genre [genre=Strategy]]]
+
+[TRACE] 2020-12-06 18:44:19.357 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'GameModes': [VideoGame steam_games_1161+vg_sales_84+wikidata_29443+wikidata_29446: The Sims™ 3 / PC / Electronic Arts / The Sims Studio / 2011-01-01 / [Genre [genre=Simulation], Genre [genre=video game with LGBT character], Genre [genre=life simulation game]]]
+ <> [VideoGame vg_sales_84: The Sims 3 / PC / Electronic Arts / The Sims Studio / 2009-01-01 / [Genre [genre=Simulation], Genre [genre=Strategy]]]
+
+[TRACE] 2020-12-06 18:44:19.357 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Age': [VideoGame steam_games_1079+vg_sales_12101+wikidata_20906+wikidata_20912: Grid 2 / PC / Codemasters / Codemasters / 2013-01-01 / [Genre [genre=Sports], Genre [genre=racing video game], Genre [genre=Racing]]]
+ <> [VideoGame wikidata_20912: Grid 2 / PC / Codemasters / Codemasters / 2013-01-01 / [Genre [genre=Racing]]]
+
+[TRACE] 2020-12-06 18:44:19.357 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'UskRating': [VideoGame steam_games_1079+vg_sales_12101+wikidata_20906+wikidata_20912: Grid 2 / PC / Codemasters / Codemasters / 2013-01-01 / [Genre [genre=Sports], Genre [genre=racing video game], Genre [genre=Racing]]]
+ <> [VideoGame wikidata_20912: Grid 2 / PC / Codemasters / Codemasters / 2013-01-01 / [Genre [genre=Racing]]]
+
+[TRACE] 2020-12-06 18:44:19.357 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'GameModes': [VideoGame steam_games_1079+vg_sales_12101+wikidata_20906+wikidata_20912: Grid 2 / PC / Codemasters / Codemasters / 2013-01-01 / [Genre [genre=Sports], Genre [genre=racing video game], Genre [genre=Racing]]]
+ <> [VideoGame wikidata_20912: Grid 2 / PC / Codemasters / Codemasters / 2013-01-01 / [Genre [genre=Racing]]]
+
+[TRACE] 2020-12-06 18:44:19.357 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Publisher': [VideoGame steam_games_4841+vg_sales_3027+wikidata_29013: The Witcher® 3: Wild Hunt / PC / CD PROJEKT RED / CD PROJEKT RED / 2015-01-01 / [Genre [genre=Role-Playing], Genre [genre=action role-playing game], Genre [genre=RPG], Genre [genre=video game with LGBT character]]]
+ <> [VideoGame vg_sales_3027: The Witcher 3: Wild Hunt / PC / Namco Bandai Games / CD Project RED / 2015-01-01 / [Genre [genre=Role-playing], Genre [genre=Adventure]]]
+
+[TRACE] 2020-12-06 18:44:19.357 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': [VideoGame steam_games_4841+vg_sales_3027+wikidata_29013: The Witcher® 3: Wild Hunt / PC / CD PROJEKT RED / CD PROJEKT RED / 2015-01-01 / [Genre [genre=Role-Playing], Genre [genre=action role-playing game], Genre [genre=RPG], Genre [genre=video game with LGBT character]]]
+ <> [VideoGame vg_sales_3027: The Witcher 3: Wild Hunt / PC / Namco Bandai Games / CD Project RED / 2015-01-01 / [Genre [genre=Role-playing], Genre [genre=Adventure]]]
+
+[TRACE] 2020-12-06 18:44:19.359 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': [VideoGame steam_games_4143+wikidata_31155: No Man's Sky / PC / Hello Games / Hello Games / 2016-01-01 / [Genre [genre=space flight simulation game], Genre [genre=survival game], Genre [genre=Adventure], Genre [genre=Action], Genre [genre=action-adventure game]]]
+ <> [VideoGame steam_games_4143: No Man's Sky / PC / Hello Games / Hello Games / 2016-01-01 / [Genre [genre=Adventure], Genre [genre=Action], Genre [genre=Survival]]]
+
+[TRACE] 2020-12-06 18:44:19.359 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'GameModes': [VideoGame steam_games_4143+wikidata_31155: No Man's Sky / PC / Hello Games / Hello Games / 2016-01-01 / [Genre [genre=space flight simulation game], Genre [genre=survival game], Genre [genre=Adventure], Genre [genre=Action], Genre [genre=action-adventure game]]]
+ <> [VideoGame steam_games_4143: No Man's Sky / PC / Hello Games / Hello Games / 2016-01-01 / [Genre [genre=Adventure], Genre [genre=Action], Genre [genre=Survival]]]
+
+[TRACE] 2020-12-06 18:44:19.359 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Publisher': [VideoGame vg_sales_1027+wikidata_30915: Overwatch / PlayStation 4 / Activision / Blizzard Entertainment / 2016-01-01 / [Genre [genre=Shooter]]]
+ <> [VideoGame wikidata_30915: Overwatch / PlayStation 4 / Blizzard Entertainment / Blizzard Entertainment / 2016-01-01 / [Genre [genre=Shooter], Genre [genre=Strategy]]]
+
+[TRACE] 2020-12-06 18:44:19.359 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Price': [VideoGame vg_sales_1027+wikidata_30915: Overwatch / PlayStation 4 / Activision / Blizzard Entertainment / 2016-01-01 / [Genre [genre=Shooter]]]
+ <> [VideoGame wikidata_30915: Overwatch / PlayStation 4 / Blizzard Entertainment / Blizzard Entertainment / 2016-01-01 / [Genre [genre=Shooter], Genre [genre=Strategy]]]
+
+[TRACE] 2020-12-06 18:44:19.359 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'PegiRating': [VideoGame vg_sales_1027+wikidata_30915: Overwatch / PlayStation 4 / Activision / Blizzard Entertainment / 2016-01-01 / [Genre [genre=Shooter]]]
+ <> [VideoGame wikidata_30915: Overwatch / PlayStation 4 / Blizzard Entertainment / Blizzard Entertainment / 2016-01-01 / [Genre [genre=Shooter], Genre [genre=Strategy]]]
+
+[TRACE] 2020-12-06 18:44:19.359 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'GameModes': [VideoGame vg_sales_1027+wikidata_30915: Overwatch / PlayStation 4 / Activision / Blizzard Entertainment / 2016-01-01 / [Genre [genre=Shooter]]]
+ <> [VideoGame wikidata_30915: Overwatch / PlayStation 4 / Blizzard Entertainment / Blizzard Entertainment / 2016-01-01 / [Genre [genre=Shooter], Genre [genre=Strategy]]]
+
+[TRACE] 2020-12-06 18:44:19.359 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'PublishingDate': [VideoGame steam_games_1193+steam_games_1194+vg_sales_4840+wikidata_18530+wikidata_18532: Mafia II / PC / 2K Games / 2K Czech / 2011-01-01 / [Genre [genre=Action], Genre [genre=action-adventure game], Genre [genre=third-person shooter]]]
+ <> [VideoGame wikidata_18532: Mafia II / PC / 2K Games / 2K Czech / 2010-01-01 / [Genre [genre=Action], Genre [genre=Adventure], Genre [genre=Shooter]]]
+
+[TRACE] 2020-12-06 18:44:19.360 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'PegiRating': [VideoGame steam_games_1193+steam_games_1194+vg_sales_4840+wikidata_18530+wikidata_18532: Mafia II / PC / 2K Games / 2K Czech / 2011-01-01 / [Genre [genre=Action], Genre [genre=action-adventure game], Genre [genre=third-person shooter]]]
+ <> [VideoGame wikidata_18532: Mafia II / PC / 2K Games / 2K Czech / 2010-01-01 / [Genre [genre=Action], Genre [genre=Adventure], Genre [genre=Shooter]]]
+
+[TRACE] 2020-12-06 18:44:19.360 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': [VideoGame steam_games_1193+steam_games_1194+vg_sales_4840+wikidata_18530+wikidata_18532: Mafia II / PC / 2K Games / 2K Czech / 2011-01-01 / [Genre [genre=Action], Genre [genre=action-adventure game], Genre [genre=third-person shooter]]]
+ <> [VideoGame wikidata_18532: Mafia II / PC / 2K Games / 2K Czech / 2010-01-01 / [Genre [genre=Action], Genre [genre=Adventure], Genre [genre=Shooter]]]
+
+[TRACE] 2020-12-06 18:44:19.360 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Price': [VideoGame vg_sales_1525+wikidata_14828: Rise of the Tomb Raider / Xbox One / Square Enix / Crystal Dynamics / 2015-01-01 / [Genre [genre=Adventure], Genre [genre=action-adventure game]]]
+ <> [VideoGame wikidata_14828: Rise of the Tomb Raider / Xbox One / Square Enix / Crystal Dynamics / 2015-01-01 / [Genre [genre=Adventure], Genre [genre=Shooter]]]
+
+[TRACE] 2020-12-06 18:44:19.360 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': [VideoGame vg_sales_1525+wikidata_14828: Rise of the Tomb Raider / Xbox One / Square Enix / Crystal Dynamics / 2015-01-01 / [Genre [genre=Adventure], Genre [genre=action-adventure game]]]
+ <> [VideoGame wikidata_14828: Rise of the Tomb Raider / Xbox One / Square Enix / Crystal Dynamics / 2015-01-01 / [Genre [genre=Adventure], Genre [genre=Shooter]]]
+
+[TRACE] 2020-12-06 18:44:19.360 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'GameModes': [VideoGame steam_games_61+steam_games_62+vg_sales_15090+wikidata_29040: Left 4 Dead / PC / Valve / Valve / 2008-01-01 / [Genre [genre=Shooter], Genre [genre=Action], Genre [genre=survival horror]]]
+ <> [VideoGame vg_sales_15090: Left 4 Dead / PC / Valve Corporation / Valve Corporation / 2008-01-01 / [Genre [genre=Shooter]]]
+
+[TRACE] 2020-12-06 18:44:19.360 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'PegiRating': [VideoGame steam_games_18411+wikidata_35092: Life is Strange 2 / PC / Square Enix / Dontnod Entertainment / 2018-01-01 / [Genre [genre=road movie], Genre [genre=Adventure]]]
+ <> [VideoGame steam_games_18411: Life is Strange 2 / PC / Square Enix / Dontnod Entertainment / 2018-01-01 / [Genre [genre=Adventure]]]
+
+[TRACE] 2020-12-06 18:44:19.360 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Attribute-specific Accuracy:
+[TRACE] 2020-12-06 18:44:19.360 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	Developer: 0,95
+[TRACE] 2020-12-06 18:44:19.360 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	Publisher: 0,85
+[TRACE] 2020-12-06 18:44:19.360 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	Price: 0,55
+[TRACE] 2020-12-06 18:44:19.361 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	PublishingDate: 0,80
+[TRACE] 2020-12-06 18:44:19.361 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	PegiRating: 0,65
+[TRACE] 2020-12-06 18:44:19.361 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	Age: 0,85
+[TRACE] 2020-12-06 18:44:19.361 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	UskRating: 0,75
+[TRACE] 2020-12-06 18:44:19.361 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	Title: 0,95
+[TRACE] 2020-12-06 18:44:19.361 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	Platform: 0,95
+[TRACE] 2020-12-06 18:44:19.361 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	Genres: 0,30
+[TRACE] 2020-12-06 18:44:19.361 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	GameModes: 0,25
+[INFO ] 2020-12-06 22:11:19.024 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 36062 elements from wikidata_mapping_output.xml
+[INFO ] 2020-12-06 22:11:19.392 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - DataSet density: 0,69
+[INFO ] 2020-12-06 22:11:19.392 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - Attributes densities:
+[INFO ] 2020-12-06 22:11:19.456 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Developer: 0,86
+[INFO ] 2020-12-06 22:11:19.456 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Publisher: 0,86
+[INFO ] 2020-12-06 22:11:19.457 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Price: 0,00
+[INFO ] 2020-12-06 22:11:19.457 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	PegiRating: 0,39
+[INFO ] 2020-12-06 22:11:19.457 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	PublishingDate: 0,96
+[INFO ] 2020-12-06 22:11:19.457 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Age: 0,44
+[INFO ] 2020-12-06 22:11:19.457 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	UskRating: 0,32
+[INFO ] 2020-12-06 22:11:19.457 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Title: 1,00
+[INFO ] 2020-12-06 22:11:19.457 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Platform: 1,00
+[INFO ] 2020-12-06 22:11:19.458 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	GameModes: 0,86
+[INFO ] 2020-12-06 22:11:19.458 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Genres: 0,94
+[INFO ] 2020-12-06 22:11:20.709 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 40371 elements from steam_mapping_output.xml
+[INFO ] 2020-12-06 22:11:20.908 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - DataSet density: 0,82
+[INFO ] 2020-12-06 22:11:20.908 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - Attributes densities:
+[INFO ] 2020-12-06 22:11:20.973 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Developer: 1,00
+[INFO ] 2020-12-06 22:11:20.973 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Publisher: 1,00
+[INFO ] 2020-12-06 22:11:20.973 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Price: 1,00
+[INFO ] 2020-12-06 22:11:20.973 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	PegiRating: 0,00
+[INFO ] 2020-12-06 22:11:20.974 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	PublishingDate: 1,00
+[INFO ] 2020-12-06 22:11:20.974 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Age: 1,00
+[INFO ] 2020-12-06 22:11:20.974 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	UskRating: 0,00
+[INFO ] 2020-12-06 22:11:20.974 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Title: 1,00
+[INFO ] 2020-12-06 22:11:20.974 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Platform: 1,00
+[INFO ] 2020-12-06 22:11:20.975 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	GameModes: 1,00
+[INFO ] 2020-12-06 22:11:20.975 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Genres: 1,00
+[INFO ] 2020-12-06 22:11:21.229 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 16598 elements from sales_mapping_output.xml
+[INFO ] 2020-12-06 22:11:21.303 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - DataSet density: 0,45
+[INFO ] 2020-12-06 22:11:21.303 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - Attributes densities:
+[INFO ] 2020-12-06 22:11:21.316 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Developer: 0,00
+[INFO ] 2020-12-06 22:11:21.316 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Publisher: 1,00
+[INFO ] 2020-12-06 22:11:21.316 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Price: 0,00
+[INFO ] 2020-12-06 22:11:21.316 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	PegiRating: 0,00
+[INFO ] 2020-12-06 22:11:21.316 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	PublishingDate: 0,98
+[INFO ] 2020-12-06 22:11:21.317 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Age: 0,00
+[INFO ] 2020-12-06 22:11:21.317 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	UskRating: 0,00
+[INFO ] 2020-12-06 22:11:21.317 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Title: 1,00
+[INFO ] 2020-12-06 22:11:21.317 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Platform: 1,00
+[INFO ] 2020-12-06 22:11:21.318 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	GameModes: 0,00
+[INFO ] 2020-12-06 22:11:21.318 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Genres: 1,00
+[INFO ] 2020-12-06 22:11:21.367 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - Group Size Distribtion of 7184 groups:
+[INFO ] 2020-12-06 22:11:21.367 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	Group Size 	| Frequency 
+[INFO ] 2020-12-06 22:11:21.367 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	————————————————————————————
+[INFO ] 2020-12-06 22:11:21.368 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		2	| 	5674
+[INFO ] 2020-12-06 22:11:21.368 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		3	| 	1015
+[INFO ] 2020-12-06 22:11:21.368 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		4	| 	278
+[INFO ] 2020-12-06 22:11:21.368 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		5	| 	86
+[INFO ] 2020-12-06 22:11:21.369 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		6	| 	93
+[INFO ] 2020-12-06 22:11:21.369 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		7	| 	24
+[INFO ] 2020-12-06 22:11:21.369 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		8	| 	3
+[INFO ] 2020-12-06 22:11:21.369 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		9	| 	4
+[INFO ] 2020-12-06 22:11:21.369 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		10	| 	4
+[INFO ] 2020-12-06 22:11:21.369 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		12	| 	1
+[INFO ] 2020-12-06 22:11:21.369 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		13	| 	1
+[INFO ] 2020-12-06 22:11:21.369 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		15	| 	1
+[INFO ] 2020-12-06 22:11:21.376 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 20 elements from goldstandard_fusion.xml
+[INFO ] 2020-12-06 22:11:21.389 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - Attribute Consistencies:
+[INFO ] 2020-12-06 22:11:21.644 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	GameModes: 0,91
+[INFO ] 2020-12-06 22:11:21.644 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	PegiRating: 1,00
+[INFO ] 2020-12-06 22:11:21.644 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Platform: 0,31
+[INFO ] 2020-12-06 22:11:21.644 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Price: 0,98
+[INFO ] 2020-12-06 22:11:21.644 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	PublishingDate: 0,85
+[INFO ] 2020-12-06 22:11:21.644 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Developer: 0,98
+[INFO ] 2020-12-06 22:11:21.645 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Title: 0,99
+[INFO ] 2020-12-06 22:11:21.645 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Publisher: 0,75
+[INFO ] 2020-12-06 22:11:21.645 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Genres: 0,19
+[INFO ] 2020-12-06 22:11:21.645 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Age: 0,95
+[INFO ] 2020-12-06 22:11:21.645 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	UskRating: 0,99
+[INFO ] 2020-12-06 22:11:23.112 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionStrategy] - Debug results written to file: data/output/debugResultsDatafusion.csv
+[INFO ] 2020-12-06 22:11:23.415 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - DataSet density: 0,76
+[INFO ] 2020-12-06 22:11:23.415 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - Attributes densities:
+[INFO ] 2020-12-06 22:11:23.425 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Developer: 0,94
+[INFO ] 2020-12-06 22:11:23.425 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Publisher: 1,00
+[INFO ] 2020-12-06 22:11:23.426 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Price: 0,16
+[INFO ] 2020-12-06 22:11:23.426 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	PegiRating: 0,43
+[INFO ] 2020-12-06 22:11:23.426 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	PublishingDate: 1,00
+[INFO ] 2020-12-06 22:11:23.426 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Age: 0,56
+[INFO ] 2020-12-06 22:11:23.426 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	UskRating: 0,31
+[INFO ] 2020-12-06 22:11:23.426 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Title: 1,00
+[INFO ] 2020-12-06 22:11:23.426 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Platform: 1,00
+[INFO ] 2020-12-06 22:11:23.426 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	GameModes: 0,92
+[INFO ] 2020-12-06 22:11:23.426 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Genres: 1,00
+[TRACE] 2020-12-06 22:11:23.427 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Price': [VideoGame vg_sales_1321+wikidata_18728: Anno 2070 / PC / Ubisoft / Related Designs / 2011-01-01 / [Genre [genre=city-building game], Genre [genre=real-time strategy], Genre [genre=Strategy]]]
+ <> [VideoGame wikidata_18728: Anno 2070 / PC / Ubisoft / Related Design / 2011-01-01 / [Genre [genre=Strategy], Genre [genre=Real Time Strategy], Genre [genre=Simulator]]]
+
+[TRACE] 2020-12-06 22:11:23.427 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': [VideoGame vg_sales_1321+wikidata_18728: Anno 2070 / PC / Ubisoft / Related Designs / 2011-01-01 / [Genre [genre=city-building game], Genre [genre=real-time strategy], Genre [genre=Strategy]]]
+ <> [VideoGame wikidata_18728: Anno 2070 / PC / Ubisoft / Related Design / 2011-01-01 / [Genre [genre=Strategy], Genre [genre=Real Time Strategy], Genre [genre=Simulator]]]
+
+[TRACE] 2020-12-06 22:11:23.428 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'GameModes': [VideoGame vg_sales_1321+wikidata_18728: Anno 2070 / PC / Ubisoft / Related Designs / 2011-01-01 / [Genre [genre=city-building game], Genre [genre=real-time strategy], Genre [genre=Strategy]]]
+ <> [VideoGame wikidata_18728: Anno 2070 / PC / Ubisoft / Related Design / 2011-01-01 / [Genre [genre=Strategy], Genre [genre=Real Time Strategy], Genre [genre=Simulator]]]
+
+[TRACE] 2020-12-06 22:11:23.428 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Price': [VideoGame vg_sales_892+wikidata_15072: Watch Dogs / PlayStation 3 / Ubisoft / Ubisoft Montreal / 2014-01-01 / [Genre [genre=cyberpunk], Genre [genre=Action], Genre [genre=action-adventure game]]]
+ <> [VideoGame vg_sales_892: Watch Dogs / PlayStation 3 / Ubisoft / Ubisoft Montreal / 2015-01-01 / [Genre [genre=Adventure], Genre [genre=Shooter]]]
+
+[TRACE] 2020-12-06 22:11:23.428 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'PublishingDate': [VideoGame vg_sales_892+wikidata_15072: Watch Dogs / PlayStation 3 / Ubisoft / Ubisoft Montreal / 2014-01-01 / [Genre [genre=cyberpunk], Genre [genre=Action], Genre [genre=action-adventure game]]]
+ <> [VideoGame vg_sales_892: Watch Dogs / PlayStation 3 / Ubisoft / Ubisoft Montreal / 2015-01-01 / [Genre [genre=Adventure], Genre [genre=Shooter]]]
+
+[TRACE] 2020-12-06 22:11:23.428 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': [VideoGame vg_sales_892+wikidata_15072: Watch Dogs / PlayStation 3 / Ubisoft / Ubisoft Montreal / 2014-01-01 / [Genre [genre=cyberpunk], Genre [genre=Action], Genre [genre=action-adventure game]]]
+ <> [VideoGame vg_sales_892: Watch Dogs / PlayStation 3 / Ubisoft / Ubisoft Montreal / 2015-01-01 / [Genre [genre=Adventure], Genre [genre=Shooter]]]
+
+[TRACE] 2020-12-06 22:11:23.429 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'GameModes': [VideoGame vg_sales_892+wikidata_15072: Watch Dogs / PlayStation 3 / Ubisoft / Ubisoft Montreal / 2014-01-01 / [Genre [genre=cyberpunk], Genre [genre=Action], Genre [genre=action-adventure game]]]
+ <> [VideoGame vg_sales_892: Watch Dogs / PlayStation 3 / Ubisoft / Ubisoft Montreal / 2015-01-01 / [Genre [genre=Adventure], Genre [genre=Shooter]]]
+
+[TRACE] 2020-12-06 22:11:23.429 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'PegiRating': [VideoGame steam_games_21964+wikidata_16139: Devil May Cry 5 / PC / Capcom / Capcom / 2019-01-01 / [Genre [genre=hack and slash], Genre [genre=Action], Genre [genre=action-adventure game]]]
+ <> [VideoGame wikidata_16139: Devil May Cry 5 / PC / Capcom / Capcom / 2019-01-01 / [Genre [genre=Action], Genre [genre=Hack and slash]]]
+
+[TRACE] 2020-12-06 22:11:23.429 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'UskRating': [VideoGame steam_games_21964+wikidata_16139: Devil May Cry 5 / PC / Capcom / Capcom / 2019-01-01 / [Genre [genre=hack and slash], Genre [genre=Action], Genre [genre=action-adventure game]]]
+ <> [VideoGame wikidata_16139: Devil May Cry 5 / PC / Capcom / Capcom / 2019-01-01 / [Genre [genre=Action], Genre [genre=Hack and slash]]]
+
+[TRACE] 2020-12-06 22:11:23.429 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': [VideoGame steam_games_21964+wikidata_16139: Devil May Cry 5 / PC / Capcom / Capcom / 2019-01-01 / [Genre [genre=hack and slash], Genre [genre=Action], Genre [genre=action-adventure game]]]
+ <> [VideoGame wikidata_16139: Devil May Cry 5 / PC / Capcom / Capcom / 2019-01-01 / [Genre [genre=Action], Genre [genre=Hack and slash]]]
+
+[TRACE] 2020-12-06 22:11:23.429 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'GameModes': [VideoGame steam_games_21964+wikidata_16139: Devil May Cry 5 / PC / Capcom / Capcom / 2019-01-01 / [Genre [genre=hack and slash], Genre [genre=Action], Genre [genre=action-adventure game]]]
+ <> [VideoGame wikidata_16139: Devil May Cry 5 / PC / Capcom / Capcom / 2019-01-01 / [Genre [genre=Action], Genre [genre=Hack and slash]]]
+
+[TRACE] 2020-12-06 22:11:23.429 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Price': [VideoGame vg_sales_49+wikidata_13643: Super Mario Galaxy / Nintendo Wii / Nintendo / Nintendo Entertainment Analysis & Development / 2007-01-01 / [Genre [genre=Platform], Genre [genre=platform game]]]
+ <> [VideoGame wikidata_13643: Super Mario Galaxy / Nintendo Wii / Nintendo / Nintendo EAD / 2007-01-01 / [Genre [genre=Platform], Genre [genre=Adventure]]]
+
+[TRACE] 2020-12-06 22:11:23.429 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': [VideoGame vg_sales_49+wikidata_13643: Super Mario Galaxy / Nintendo Wii / Nintendo / Nintendo Entertainment Analysis & Development / 2007-01-01 / [Genre [genre=Platform], Genre [genre=platform game]]]
+ <> [VideoGame wikidata_13643: Super Mario Galaxy / Nintendo Wii / Nintendo / Nintendo EAD / 2007-01-01 / [Genre [genre=Platform], Genre [genre=Adventure]]]
+
+[TRACE] 2020-12-06 22:11:23.429 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'GameModes': [VideoGame vg_sales_49+wikidata_13643: Super Mario Galaxy / Nintendo Wii / Nintendo / Nintendo Entertainment Analysis & Development / 2007-01-01 / [Genre [genre=Platform], Genre [genre=platform game]]]
+ <> [VideoGame wikidata_13643: Super Mario Galaxy / Nintendo Wii / Nintendo / Nintendo EAD / 2007-01-01 / [Genre [genre=Platform], Genre [genre=Adventure]]]
+
+[TRACE] 2020-12-06 22:11:23.430 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Price': [VideoGame steam_games_2742+vg_sales_2962+wikidata_14261+wikidata_14267+wikidata_32089: Assassin’s Creed® IV Black Flag™ / PC / Ubisoft / Ubisoft Quebec / 2013-01-01 / [Genre [genre=Adventure], Genre [genre=stealth game], Genre [genre=Action], Genre [genre=action-adventure game]]]
+ <> [VideoGame wikidata_14267: Assassin's Creed IV: Black Flag / PC / Ubisoft / Ubisoft Montreal / 2013-01-01 / [Genre [genre=Adventure], Genre [genre=Action]]]
+
+[TRACE] 2020-12-06 22:11:23.430 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'GameModes': [VideoGame steam_games_2742+vg_sales_2962+wikidata_14261+wikidata_14267+wikidata_32089: Assassin’s Creed® IV Black Flag™ / PC / Ubisoft / Ubisoft Quebec / 2013-01-01 / [Genre [genre=Adventure], Genre [genre=stealth game], Genre [genre=Action], Genre [genre=action-adventure game]]]
+ <> [VideoGame wikidata_14267: Assassin's Creed IV: Black Flag / PC / Ubisoft / Ubisoft Montreal / 2013-01-01 / [Genre [genre=Adventure], Genre [genre=Action]]]
+
+[TRACE] 2020-12-06 22:11:23.430 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'PegiRating': [VideoGame steam_games_10045+vg_sales_1631: Fallout 4 / PC / Bethesda Softworks / Bethesda Game Studios / 2015-01-01 / [Genre [genre=Role-Playing], Genre [genre=RPG]]]
+ <> [VideoGame vg_sales_1631: Fallout 4 / PC / Bethesda Softworks / Bethesda Game Studios / 2015-01-01 / [Genre [genre=Role-playing], Genre [genre=Shooter]]]
+
+[TRACE] 2020-12-06 22:11:23.430 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'UskRating': [VideoGame steam_games_10045+vg_sales_1631: Fallout 4 / PC / Bethesda Softworks / Bethesda Game Studios / 2015-01-01 / [Genre [genre=Role-Playing], Genre [genre=RPG]]]
+ <> [VideoGame vg_sales_1631: Fallout 4 / PC / Bethesda Softworks / Bethesda Game Studios / 2015-01-01 / [Genre [genre=Role-playing], Genre [genre=Shooter]]]
+
+[TRACE] 2020-12-06 22:11:23.430 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': [VideoGame steam_games_10045+vg_sales_1631: Fallout 4 / PC / Bethesda Softworks / Bethesda Game Studios / 2015-01-01 / [Genre [genre=Role-Playing], Genre [genre=RPG]]]
+ <> [VideoGame vg_sales_1631: Fallout 4 / PC / Bethesda Softworks / Bethesda Game Studios / 2015-01-01 / [Genre [genre=Role-playing], Genre [genre=Shooter]]]
+
+[TRACE] 2020-12-06 22:11:23.430 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Price': [VideoGame vg_sales_2698+wikidata_21488: Lost Planet 2 / Xbox 360 / Capcom / Capcom / 2010-01-01 / [Genre [genre=Shooter], Genre [genre=third-person shooter]]]
+ <> [VideoGame wikidata_21488: Lost Planet 2 / Xbox 360 / Capcom / Capcom / 2010-01-01 / [Genre [genre=Shooter], Genre [genre=Adventure]]]
+
+[TRACE] 2020-12-06 22:11:23.430 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': [VideoGame vg_sales_2698+wikidata_21488: Lost Planet 2 / Xbox 360 / Capcom / Capcom / 2010-01-01 / [Genre [genre=Shooter], Genre [genre=third-person shooter]]]
+ <> [VideoGame wikidata_21488: Lost Planet 2 / Xbox 360 / Capcom / Capcom / 2010-01-01 / [Genre [genre=Shooter], Genre [genre=Adventure]]]
+
+[TRACE] 2020-12-06 22:11:23.430 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'GameModes': [VideoGame vg_sales_2698+wikidata_21488: Lost Planet 2 / Xbox 360 / Capcom / Capcom / 2010-01-01 / [Genre [genre=Shooter], Genre [genre=third-person shooter]]]
+ <> [VideoGame wikidata_21488: Lost Planet 2 / Xbox 360 / Capcom / Capcom / 2010-01-01 / [Genre [genre=Shooter], Genre [genre=Adventure]]]
+
+[TRACE] 2020-12-06 22:11:23.430 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Price': [VideoGame vg_sales_769+wikidata_13541: Tetris DS / Nintendo DS / Nintendo / Nintendo / 2006-01-01 / [Genre [genre=Puzzle], Genre [genre=puzzle video game]]]
+ <> [VideoGame vg_sales_769: Tetris DS / Nintendo DS / Nintendo / Nintendo / 2006-01-01 / [Genre [genre=Puzzle]]]
+
+[TRACE] 2020-12-06 22:11:23.431 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'PegiRating': [VideoGame vg_sales_769+wikidata_13541: Tetris DS / Nintendo DS / Nintendo / Nintendo / 2006-01-01 / [Genre [genre=Puzzle], Genre [genre=puzzle video game]]]
+ <> [VideoGame vg_sales_769: Tetris DS / Nintendo DS / Nintendo / Nintendo / 2006-01-01 / [Genre [genre=Puzzle]]]
+
+[TRACE] 2020-12-06 22:11:23.431 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Age': [VideoGame vg_sales_769+wikidata_13541: Tetris DS / Nintendo DS / Nintendo / Nintendo / 2006-01-01 / [Genre [genre=Puzzle], Genre [genre=puzzle video game]]]
+ <> [VideoGame vg_sales_769: Tetris DS / Nintendo DS / Nintendo / Nintendo / 2006-01-01 / [Genre [genre=Puzzle]]]
+
+[TRACE] 2020-12-06 22:11:23.432 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'UskRating': [VideoGame vg_sales_769+wikidata_13541: Tetris DS / Nintendo DS / Nintendo / Nintendo / 2006-01-01 / [Genre [genre=Puzzle], Genre [genre=puzzle video game]]]
+ <> [VideoGame vg_sales_769: Tetris DS / Nintendo DS / Nintendo / Nintendo / 2006-01-01 / [Genre [genre=Puzzle]]]
+
+[TRACE] 2020-12-06 22:11:23.432 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'GameModes': [VideoGame vg_sales_769+wikidata_13541: Tetris DS / Nintendo DS / Nintendo / Nintendo / 2006-01-01 / [Genre [genre=Puzzle], Genre [genre=puzzle video game]]]
+ <> [VideoGame vg_sales_769: Tetris DS / Nintendo DS / Nintendo / Nintendo / 2006-01-01 / [Genre [genre=Puzzle]]]
+
+[TRACE] 2020-12-06 22:11:23.432 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': [VideoGame steam_games_304+steam_games_305+vg_sales_1770+wikidata_13733+wikidata_13735: Call of Duty® 4: Modern Warfare® / PC / Activision / Treyarch / 2007-01-01 / [Genre [genre=Shooter], Genre [genre=Action]]]
+ <> [VideoGame vg_sales_1770: Call of Duty 4: Modern Warfare / PC / Activision / Treyarch / 2007-01-01 / [Genre [genre=Shooter], Genre [genre=Simulation]]]
+
+[TRACE] 2020-12-06 22:11:23.432 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'GameModes': [VideoGame steam_games_304+steam_games_305+vg_sales_1770+wikidata_13733+wikidata_13735: Call of Duty® 4: Modern Warfare® / PC / Activision / Treyarch / 2007-01-01 / [Genre [genre=Shooter], Genre [genre=Action]]]
+ <> [VideoGame vg_sales_1770: Call of Duty 4: Modern Warfare / PC / Activision / Treyarch / 2007-01-01 / [Genre [genre=Shooter], Genre [genre=Simulation]]]
+
+[TRACE] 2020-12-06 22:11:23.432 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': [VideoGame steam_games_1249+steam_games_1250+vg_sales_4763+wikidata_21801+wikidata_21803: Duke Nukem Forever / PC / 2K / 3D Realms / 2011-01-01 / [Genre [genre=Shooter], Genre [genre=Action]]]
+ <> [VideoGame wikidata_21803: Duke Nukem Forever / PC / 2K Games / 3D Realms / 2011-01-01 / [Genre [genre=Shooter], Genre [genre=Adventure]]]
+
+[TRACE] 2020-12-06 22:11:23.432 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'GameModes': [VideoGame steam_games_1249+steam_games_1250+vg_sales_4763+wikidata_21801+wikidata_21803: Duke Nukem Forever / PC / 2K / 3D Realms / 2011-01-01 / [Genre [genre=Shooter], Genre [genre=Action]]]
+ <> [VideoGame wikidata_21803: Duke Nukem Forever / PC / 2K Games / 3D Realms / 2011-01-01 / [Genre [genre=Shooter], Genre [genre=Adventure]]]
+
+[TRACE] 2020-12-06 22:11:23.432 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'PublishingDate': [VideoGame steam_games_1161+vg_sales_84+wikidata_29443+wikidata_29446: The Sims™ 3 / PC / Electronic Arts / The Sims Studio / 2011-01-01 / [Genre [genre=Simulation], Genre [genre=video game with LGBT character], Genre [genre=life simulation game]]]
+ <> [VideoGame vg_sales_84: The Sims 3 / PC / Electronic Arts / The Sims Studio / 2009-01-01 / [Genre [genre=Simulation], Genre [genre=Strategy]]]
+
+[TRACE] 2020-12-06 22:11:23.432 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': [VideoGame steam_games_1161+vg_sales_84+wikidata_29443+wikidata_29446: The Sims™ 3 / PC / Electronic Arts / The Sims Studio / 2011-01-01 / [Genre [genre=Simulation], Genre [genre=video game with LGBT character], Genre [genre=life simulation game]]]
+ <> [VideoGame vg_sales_84: The Sims 3 / PC / Electronic Arts / The Sims Studio / 2009-01-01 / [Genre [genre=Simulation], Genre [genre=Strategy]]]
+
+[TRACE] 2020-12-06 22:11:23.432 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'GameModes': [VideoGame steam_games_1161+vg_sales_84+wikidata_29443+wikidata_29446: The Sims™ 3 / PC / Electronic Arts / The Sims Studio / 2011-01-01 / [Genre [genre=Simulation], Genre [genre=video game with LGBT character], Genre [genre=life simulation game]]]
+ <> [VideoGame vg_sales_84: The Sims 3 / PC / Electronic Arts / The Sims Studio / 2009-01-01 / [Genre [genre=Simulation], Genre [genre=Strategy]]]
+
+[TRACE] 2020-12-06 22:11:23.433 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Age': [VideoGame steam_games_1079+vg_sales_12101+wikidata_20906+wikidata_20912: Grid 2 / PC / Codemasters / Codemasters / 2013-01-01 / [Genre [genre=Sports], Genre [genre=racing video game], Genre [genre=Racing]]]
+ <> [VideoGame wikidata_20912: Grid 2 / PC / Codemasters / Codemasters / 2013-01-01 / [Genre [genre=Racing]]]
+
+[TRACE] 2020-12-06 22:11:23.433 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'UskRating': [VideoGame steam_games_1079+vg_sales_12101+wikidata_20906+wikidata_20912: Grid 2 / PC / Codemasters / Codemasters / 2013-01-01 / [Genre [genre=Sports], Genre [genre=racing video game], Genre [genre=Racing]]]
+ <> [VideoGame wikidata_20912: Grid 2 / PC / Codemasters / Codemasters / 2013-01-01 / [Genre [genre=Racing]]]
+
+[TRACE] 2020-12-06 22:11:23.433 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'GameModes': [VideoGame steam_games_1079+vg_sales_12101+wikidata_20906+wikidata_20912: Grid 2 / PC / Codemasters / Codemasters / 2013-01-01 / [Genre [genre=Sports], Genre [genre=racing video game], Genre [genre=Racing]]]
+ <> [VideoGame wikidata_20912: Grid 2 / PC / Codemasters / Codemasters / 2013-01-01 / [Genre [genre=Racing]]]
+
+[TRACE] 2020-12-06 22:11:23.433 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Publisher': [VideoGame steam_games_4841+vg_sales_3027+wikidata_29013: The Witcher® 3: Wild Hunt / PC / CD PROJEKT RED / CD PROJEKT RED / 2015-01-01 / [Genre [genre=Role-Playing], Genre [genre=action role-playing game], Genre [genre=RPG], Genre [genre=video game with LGBT character]]]
+ <> [VideoGame vg_sales_3027: The Witcher 3: Wild Hunt / PC / Namco Bandai Games / CD Project RED / 2015-01-01 / [Genre [genre=Role-playing], Genre [genre=Adventure]]]
+
+[TRACE] 2020-12-06 22:11:23.433 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': [VideoGame steam_games_4841+vg_sales_3027+wikidata_29013: The Witcher® 3: Wild Hunt / PC / CD PROJEKT RED / CD PROJEKT RED / 2015-01-01 / [Genre [genre=Role-Playing], Genre [genre=action role-playing game], Genre [genre=RPG], Genre [genre=video game with LGBT character]]]
+ <> [VideoGame vg_sales_3027: The Witcher 3: Wild Hunt / PC / Namco Bandai Games / CD Project RED / 2015-01-01 / [Genre [genre=Role-playing], Genre [genre=Adventure]]]
+
+[TRACE] 2020-12-06 22:11:23.433 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': [VideoGame steam_games_4143+wikidata_31155: No Man's Sky / PC / Hello Games / Hello Games / 2016-01-01 / [Genre [genre=space flight simulation game], Genre [genre=survival game], Genre [genre=Adventure], Genre [genre=Action], Genre [genre=action-adventure game]]]
+ <> [VideoGame steam_games_4143: No Man's Sky / PC / Hello Games / Hello Games / 2016-01-01 / [Genre [genre=Adventure], Genre [genre=Action], Genre [genre=Survival]]]
+
+[TRACE] 2020-12-06 22:11:23.433 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'GameModes': [VideoGame steam_games_4143+wikidata_31155: No Man's Sky / PC / Hello Games / Hello Games / 2016-01-01 / [Genre [genre=space flight simulation game], Genre [genre=survival game], Genre [genre=Adventure], Genre [genre=Action], Genre [genre=action-adventure game]]]
+ <> [VideoGame steam_games_4143: No Man's Sky / PC / Hello Games / Hello Games / 2016-01-01 / [Genre [genre=Adventure], Genre [genre=Action], Genre [genre=Survival]]]
+
+[TRACE] 2020-12-06 22:11:23.433 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Publisher': [VideoGame vg_sales_1027+wikidata_30915: Overwatch / PlayStation 4 / Activision / Blizzard Entertainment / 2016-01-01 / [Genre [genre=Shooter]]]
+ <> [VideoGame wikidata_30915: Overwatch / PlayStation 4 / Blizzard Entertainment / Blizzard Entertainment / 2016-01-01 / [Genre [genre=Shooter], Genre [genre=Strategy]]]
+
+[TRACE] 2020-12-06 22:11:23.434 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Price': [VideoGame vg_sales_1027+wikidata_30915: Overwatch / PlayStation 4 / Activision / Blizzard Entertainment / 2016-01-01 / [Genre [genre=Shooter]]]
+ <> [VideoGame wikidata_30915: Overwatch / PlayStation 4 / Blizzard Entertainment / Blizzard Entertainment / 2016-01-01 / [Genre [genre=Shooter], Genre [genre=Strategy]]]
+
+[TRACE] 2020-12-06 22:11:23.435 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'PegiRating': [VideoGame vg_sales_1027+wikidata_30915: Overwatch / PlayStation 4 / Activision / Blizzard Entertainment / 2016-01-01 / [Genre [genre=Shooter]]]
+ <> [VideoGame wikidata_30915: Overwatch / PlayStation 4 / Blizzard Entertainment / Blizzard Entertainment / 2016-01-01 / [Genre [genre=Shooter], Genre [genre=Strategy]]]
+
+[TRACE] 2020-12-06 22:11:23.435 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'GameModes': [VideoGame vg_sales_1027+wikidata_30915: Overwatch / PlayStation 4 / Activision / Blizzard Entertainment / 2016-01-01 / [Genre [genre=Shooter]]]
+ <> [VideoGame wikidata_30915: Overwatch / PlayStation 4 / Blizzard Entertainment / Blizzard Entertainment / 2016-01-01 / [Genre [genre=Shooter], Genre [genre=Strategy]]]
+
+[TRACE] 2020-12-06 22:11:23.435 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'PublishingDate': [VideoGame steam_games_1193+steam_games_1194+vg_sales_4840+wikidata_18530+wikidata_18532: Mafia II / PC / 2K Games / 2K Czech / 2011-01-01 / [Genre [genre=Action], Genre [genre=action-adventure game], Genre [genre=third-person shooter]]]
+ <> [VideoGame wikidata_18532: Mafia II / PC / 2K Games / 2K Czech / 2010-01-01 / [Genre [genre=Action], Genre [genre=Adventure], Genre [genre=Shooter]]]
+
+[TRACE] 2020-12-06 22:11:23.435 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'PegiRating': [VideoGame steam_games_1193+steam_games_1194+vg_sales_4840+wikidata_18530+wikidata_18532: Mafia II / PC / 2K Games / 2K Czech / 2011-01-01 / [Genre [genre=Action], Genre [genre=action-adventure game], Genre [genre=third-person shooter]]]
+ <> [VideoGame wikidata_18532: Mafia II / PC / 2K Games / 2K Czech / 2010-01-01 / [Genre [genre=Action], Genre [genre=Adventure], Genre [genre=Shooter]]]
+
+[TRACE] 2020-12-06 22:11:23.435 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': [VideoGame steam_games_1193+steam_games_1194+vg_sales_4840+wikidata_18530+wikidata_18532: Mafia II / PC / 2K Games / 2K Czech / 2011-01-01 / [Genre [genre=Action], Genre [genre=action-adventure game], Genre [genre=third-person shooter]]]
+ <> [VideoGame wikidata_18532: Mafia II / PC / 2K Games / 2K Czech / 2010-01-01 / [Genre [genre=Action], Genre [genre=Adventure], Genre [genre=Shooter]]]
+
+[TRACE] 2020-12-06 22:11:23.435 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Price': [VideoGame vg_sales_1525+wikidata_14828: Rise of the Tomb Raider / Xbox One / Square Enix / Crystal Dynamics / 2015-01-01 / [Genre [genre=Adventure], Genre [genre=action-adventure game]]]
+ <> [VideoGame wikidata_14828: Rise of the Tomb Raider / Xbox One / Square Enix / Crystal Dynamics / 2015-01-01 / [Genre [genre=Adventure], Genre [genre=Shooter]]]
+
+[TRACE] 2020-12-06 22:11:23.436 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Genres': [VideoGame vg_sales_1525+wikidata_14828: Rise of the Tomb Raider / Xbox One / Square Enix / Crystal Dynamics / 2015-01-01 / [Genre [genre=Adventure], Genre [genre=action-adventure game]]]
+ <> [VideoGame wikidata_14828: Rise of the Tomb Raider / Xbox One / Square Enix / Crystal Dynamics / 2015-01-01 / [Genre [genre=Adventure], Genre [genre=Shooter]]]
+
+[TRACE] 2020-12-06 22:11:23.436 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'GameModes': [VideoGame steam_games_61+steam_games_62+vg_sales_15090+wikidata_29040: Left 4 Dead / PC / Valve / Valve / 2008-01-01 / [Genre [genre=Shooter], Genre [genre=Action], Genre [genre=survival horror]]]
+ <> [VideoGame vg_sales_15090: Left 4 Dead / PC / Valve Corporation / Valve Corporation / 2008-01-01 / [Genre [genre=Shooter]]]
+
+[TRACE] 2020-12-06 22:11:23.436 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'PegiRating': [VideoGame steam_games_18411+wikidata_35092: Life is Strange 2 / PC / Square Enix / Dontnod Entertainment / 2018-01-01 / [Genre [genre=road movie], Genre [genre=Adventure]]]
+ <> [VideoGame steam_games_18411: Life is Strange 2 / PC / Square Enix / Dontnod Entertainment / 2018-01-01 / [Genre [genre=Adventure]]]
+
+[TRACE] 2020-12-06 22:11:23.436 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Attribute-specific Accuracy:
+[TRACE] 2020-12-06 22:11:23.436 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	Developer: 0,95
+[TRACE] 2020-12-06 22:11:23.436 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	Publisher: 0,85
+[TRACE] 2020-12-06 22:11:23.436 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	Price: 0,55
+[TRACE] 2020-12-06 22:11:23.436 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	PublishingDate: 0,80
+[TRACE] 2020-12-06 22:11:23.436 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	PegiRating: 0,65
+[TRACE] 2020-12-06 22:11:23.437 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	Age: 0,85
+[TRACE] 2020-12-06 22:11:23.437 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	UskRating: 0,75
+[TRACE] 2020-12-06 22:11:23.437 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	Title: 0,95
+[TRACE] 2020-12-06 22:11:23.437 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	Platform: 0,95
+[TRACE] 2020-12-06 22:11:23.437 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	Genres: 0,30
+[TRACE] 2020-12-06 22:11:23.437 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	GameModes: 0,25
