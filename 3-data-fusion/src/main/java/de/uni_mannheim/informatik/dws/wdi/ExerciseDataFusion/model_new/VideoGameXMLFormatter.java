@@ -23,14 +23,13 @@ public class VideoGameXMLFormatter extends XMLFormatter<VideoGame> {
         videoGame.appendChild(createTextElementWithProvenance("title", record.getTitle(), record.getMergedAttributeProvenance(VideoGame.TITLE), doc));
         videoGame.appendChild(createTextElementWithProvenance("platform", record.getPlatform(), record.getMergedAttributeProvenance(VideoGame.PLATFORM), doc));
         videoGame.appendChild(createTextElementWithProvenance("publisher", record.getPublisher(), record.getMergedAttributeProvenance(VideoGame.PUBLISHER), doc));
-        if (record.getPublishingDate()!=null) {
-        	String[] pubDate = record.getPublishingDate().toString().split("-");
+        if (record.getPublishingDate() != null) {
+            String[] pubDate = record.getPublishingDate().toString().split("-");
             String pubDateYear = pubDate[0];
-            
-            videoGame.appendChild(createTextElementWithProvenance("publishingdate",pubDateYear, record.getMergedAttributeProvenance(VideoGame.PUBLISHING_DATE), doc));
-        }
-        else {
-        	videoGame.appendChild(createTextElementWithProvenance("publishingdate","", record.getMergedAttributeProvenance(VideoGame.PUBLISHING_DATE), doc));
+
+            videoGame.appendChild(createTextElementWithProvenance("publishingdate", pubDateYear, record.getMergedAttributeProvenance(VideoGame.PUBLISHING_DATE), doc));
+        } else {
+            videoGame.appendChild(createTextElementWithProvenance("publishingdate", "", record.getMergedAttributeProvenance(VideoGame.PUBLISHING_DATE), doc));
         }
         videoGame.appendChild(createTextElement("developer", record.getDeveloper(), doc));
         videoGame.appendChild(createTextElement("usk_rating", record.getUskRating(), doc));
@@ -51,8 +50,10 @@ public class VideoGameXMLFormatter extends XMLFormatter<VideoGame> {
     protected Element createGenresElement(VideoGame record, Document doc) {
         Element genreRoot = genreFormatter.createRootElement(doc);
 
-        for (Genre g : record.getGenres()) {
-            genreRoot.appendChild(genreFormatter.createElementFromRecord(g, doc));
+        if (record.getGenres() != null) {
+            for (Genre g : record.getGenres()) {
+                genreRoot.appendChild(genreFormatter.createElementFromRecord(g, doc));
+            }
         }
         return genreRoot;
     }
@@ -60,8 +61,10 @@ public class VideoGameXMLFormatter extends XMLFormatter<VideoGame> {
     protected Element createGameModesElement(VideoGame record, Document doc) {
         Element gameModeRoot = gameModeFormatter.createRootElement(doc);
 
-        for (GameMode g : record.getGameModes()) {
-            gameModeRoot.appendChild(gameModeFormatter.createElementFromRecord(g, doc));
+        if (record.getGameModes() != null) {
+            for (GameMode g : record.getGameModes()) {
+                gameModeRoot.appendChild(gameModeFormatter.createElementFromRecord(g, doc));
+            }
         }
         return gameModeRoot;
     }

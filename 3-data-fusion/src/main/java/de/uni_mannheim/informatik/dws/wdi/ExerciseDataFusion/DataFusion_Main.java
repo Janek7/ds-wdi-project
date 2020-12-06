@@ -10,13 +10,10 @@ import java.util.Locale;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.*;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.custom_conflict_resolution_functions.GameModeResolution;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.custom_conflict_resolution_functions.GenreResolution;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.resolution_functions.Max;
-import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.Voting;
-import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.list.Intersection;
-import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.list.Union;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.custom_conflict_resolution_functions.Max;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.custom_conflict_resolution_functions.MostRecentDate;
 import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.meta.FavourSources;
 import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.meta.MostRecent;
-import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.numeric.Average;
 import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.string.LongestString;
 import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.string.ShortestString;
 import org.apache.logging.log4j.Logger;
@@ -77,11 +74,7 @@ public class DataFusion_Main {
         new VideoGameXMLReader().loadFromXML(new File("data/input/sales_mapping_output.xml"), "/videogames/videogame", dsSales);
         dsSales.printDataSetDensityReport();
 
-        // Maintain Provenance
-        // Scores (e.g. from rating)
-        dsWikidata.setScore(2.0);
-        dsSteam.setScore(3.0);
-        dsSales.setScore(1.0);
+        // hier war weighting
 
         // Date (e.g. last update)
         DateTimeFormatter formatter = new DateTimeFormatterBuilder()
@@ -117,18 +110,26 @@ public class DataFusion_Main {
         // write debug results to file
         strategy.activateDebugReport("data/output/debugResultsDatafusion.csv", -1, gs);
 
+        // Maintain Provenance
+        // Scores (e.g. from rating)
+        dsWikidata.setScore(2.0);
+        dsSteam.setScore(3.0);
+        dsSales.setScore(1.0);
+
         // add attribute fusers
         strategy.addAttributeFuser(VideoGame.TITLE, new TitleFuser(new LongestString()), new TitleEvaluationRule());
-        strategy.addAttributeFuser(VideoGame.PLATFORM, new PlatformFuser(new Voting()), new PlatformEvaluationRule());
+        strategy.addAttributeFuser(VideoGame.PLATFORM, new PlatformFuser(new ShortestString()), new PlatformEvaluationRule());
         strategy.addAttributeFuser(VideoGame.PUBLISHER, new PublisherFuser(new LongestString()), new PublisherEvaluationRule());
-        strategy.addAttributeFuser(VideoGame.PUBLISHING_DATE, new PublishingDateFuser(new MostRecent()), new PublishingDateEvaluationRule());
-        strategy.addAttributeFuser(VideoGame.DEVELOPER, new DeveloperFuser(new Voting()), new DeveloperEvaluationRule());
+        strategy.addAttributeFuser(VideoGame.PUBLISHING_DATE, new PublishingDateFuser(new MostRecentDate()), new PublishingDateEvaluationRule());
+        strategy.addAttributeFuser(VideoGame.DEVELOPER, new DeveloperFuser(new LongestString()), new DeveloperEvaluationRule());
+
         strategy.addAttributeFuser(VideoGame.GENRES, new GenreFuser(new GenreResolution()), new GenreEvaluationRule());
         strategy.addAttributeFuser(VideoGame.GAME_MODES, new GameModeFuser(new GameModeResolution()), new GameModeEvaluationRule());
+
         strategy.addAttributeFuser(VideoGame.PRICE, new PriceFuser(new FavourSources()), new PriceEvaluationRule());
         strategy.addAttributeFuser(VideoGame.AGE, new AgeFuser(new Max()), new AgeEvaluationRule());
-        strategy.addAttributeFuser(VideoGame.USK_RATING, new UskRatingFuser(), new UskEvaluationRule());
-        strategy.addAttributeFuser(VideoGame.PEGI_RATING, new PegiRatingFuser(), new PegiEvaluationRule());
+        strategy.addAttributeFuser(VideoGame.USK_RATING, new UskRatingFuser(new LongestString()), new UskEvaluationRule());
+        strategy.addAttributeFuser(VideoGame.PEGI_RATING, new PegiRatingFuser(new LongestString<>()), new PegiEvaluationRule());
 
         // create the fusion engine
         DataFusionEngine<VideoGame, Attribute> engine = new DataFusionEngine<>(strategy);

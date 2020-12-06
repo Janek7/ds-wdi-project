@@ -58,7 +58,7 @@ public class PlatformFuser extends AttributeValueFuser<String, VideoGame, Attrib
 
 	@Override
 	public String getValue(VideoGame record, Correspondence<Attribute, Matchable> correspondence) {
-		return getPlatformTargetValue(record.getPlatform());
+        return getPlatformTargetValue(record.getPlatform());
 	}
 
 	// helper stuff
@@ -115,6 +115,11 @@ public class PlatformFuser extends AttributeValueFuser<String, VideoGame, Attrib
 			this.blockingKey = blockingKey;
 		}
 
+		@Override
+        public String toString() {
+		    return platform + ": " + blockingKey;
+        }
+
 	}
 
 	private static List<PlatformBlockingKeyPair> loadPlatformBlockingKeyList() {
@@ -147,13 +152,18 @@ public class PlatformFuser extends AttributeValueFuser<String, VideoGame, Attrib
 			this.targetValue = targetValue;
 		}
 
+        @Override
+        public String toString() {
+            return blockingKey + ": " + targetValue;
+        }
+
 	}
 
 	private static List<BlockingKeyTargetValuePair> loadBlockingKeyTargetValueList() {
 
 		List<BlockingKeyTargetValuePair> blockingKeyTargetValuePairList = new ArrayList<>();
 
-		try (BufferedReader br = new BufferedReader(new FileReader("data/platform/platform_blocking_keys.csv"))) {
+		try (BufferedReader br = new BufferedReader(new FileReader("data/platform/blocking_keys_fused_values.csv"))) {
 			String line;
 			while ((line = br.readLine()) != null) {
 				String[] elements = line.split(";");

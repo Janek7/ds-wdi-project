@@ -25,8 +25,8 @@ import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 
 public class UskRatingFuser extends AttributeValueFuser<String, VideoGame, Attribute> {
 
-	public UskRatingFuser() {
-		super(new LongestString<>());
+	public UskRatingFuser(ConflictResolutionFunction resolutionFunction) {
+		super(resolutionFunction);
 	}
 
 	@Override
