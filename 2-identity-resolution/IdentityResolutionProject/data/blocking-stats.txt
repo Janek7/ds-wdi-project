@@ -1,0 +1,115 @@
+Blocking results: 		(am beispiel von wikidata sales ml tree based):
+
+
+1) TITLE FIRST 3 + THE | STANDARD
+- reduction ratio: 0.9997149344534689
+- Identity Resolution finished after 0:00:04.442; found 20.003 correspondences.
+Precision: 0,9769
+Recall: 0,8639
+F1: 0,9170
+
+2) TITLE FIRST 3 + THE | NEIGHBORHOOD 75
+- reduction ratio: 0.996098537476817
+- Identity Resolution finished after 0:00:42.306; found 33.386 correspondences.
+Precision: 0,9632
+Recall: 0,8912
+F1: 0,9258
+
+3) TITLE FIRST 3 + THE | NEIGHBORHOOD 20
+- reduction ratio: 0.9989972017305163
+- Identity Resolution finished after 0:00:11.579; found 22.627 correspondences.
+Precision: 0,9630
+Recall: 0,8844
+F1: 0,9220
+
+
+
+4) TITLE FIRST 3 + THE + FIRST TWO PLATFROM | STANDARD
+- reduction ratio: 0.9999993033245839
+- Identity Resolution finished after 0:00:00.390; found 310 correspondences.
+Precision: 1,0000
+Recall: 0,0068
+F1: 0,0135
+
+5) TITLE FIRST 3 + THE + FIRST TWO PLATFROM | NEIGHBORHOOD 20
+- reduction ratio: 0.9989972334735209
+- Identity Resolution finished after 0:00:11.801; found 11.669 correspondences
+Precision: 0,8636
+Recall: 0,1293
+F1: 0,2249
+
+6) TITLE FIRST 3 + THE + FIRST TWO PLATFROM | NEIGHBORHOOD 75
+- reduction ratio: 0.9960989668427209
+- Identity Resolution finished after 0:00:43.301; found 18.129 correspondences.
+Precision: 0,8750
+Recall: 0,1429
+F1: 0,2456
+
+
+
+7) TITLE FIRST 3 + THE + PLATFORM | STANDARD
+- reduction ratio: 0.999964653329067
+- Identity Resolution finished after 0:00:01.125; found 19.389 correspondences.
+Precision: 0,9764
+Recall: 0,8435
+F1: 0,9051
+
+8) TITLE FIRST 3 + THE + PLATFORM | NEIGHBORHOOD 20
+- reduction ratio: 0.9989972334735209
+- Identity Resolution finished after 0:00:12.230; found 27.080 correspondences.
+Precision: 0,9621
+Recall: 0,8639
+F1: 0,9104
+
+9) TITLE FIRST 3 + THE + PLATFORM | NEIGHBORHOOD 75
+- reduction ratio: 0.9960989417824542
+- Identity Resolution finished after 0:00:41.610; found 33.544 correspondences.
+Precision: 0,9621
+Recall: 0,8639
+F1: 0,9104
+
+
+
+10) TITLE ALL + THE + PLATFORM | STANDARD
+- reduction ratio: 0.9999823943272538
+- Identity Resolution finished after 0:00:00.983; found 9.696 correspondences.
+Precision: 0,9762
+Recall: 0,8367
+F1: 0,9011
+
+11) TITLE ALL + THE + PLATFORM | NEIGHBORHOOD 20
+- reduction ratio: 0.9989972334735209
+- Identity Resolution finished after 0:00:11.570; found 21.764 correspondences.
+Precision: 0,9618
+Recall: 0,8571
+F1: 0,9065
+
+12) TITLE ALL + THE + PLATFORM | NEIGHBORHOOD 75
+- reduction ratio: 0.9960989635013521
+- Identity Resolution finished after 0:00:42.032; found 29.336 correspondences.
+Precision: 0,9618
+Recall: 0,8571
+F1: 0,9065
+
+
+
+13) TITLE ALL + THE + PLATFORM + LAST NUMBER | STANDARD
+- reduction ratio: 0.9999862201946469
+- Identity Resolution finished after 0:00:01.354; found 7.539 correspondences.
+Precision: 0,9839
+Recall: 0,8299
+F1: 0,9004
+
+13) TITLE ALL + THE + PLATFORM + LAST NUMBER | NEIGHBORHOOD 20
+- reduction ratio: 0.9989972334735209
+- Identity Resolution finished after 0:00:12.586; found 20.641 correspondences.
+Precision: 0,9690
+Recall: 0,8503
+F1: 0,9058
+
+13) TITLE ALL + THE + PLATFORM + LAST NUMBER | NEIGHBORHOOD 75
+- Identity Resolution finished after 0:00:43.956; found 28.194 correspondences.
+- reduction ratio: 0.9960989635013521
+Precision: 0,9690
+Recall: 0,8503
+F1: 0,9058
